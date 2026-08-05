@@ -33,7 +33,7 @@ L'ensemble du contenu de ce site — textes, images, graphismes, logo, structure
 
 ## Données personnelles
 
-Les informations recueillies via le formulaire de contact sont utilisées exclusivement pour répondre à votre demande. Elles ne sont ni stockées au-delà du traitement de votre message par e-mail, ni transmises à des tiers.
+Les informations recueillies via le formulaire de contact — nom, adresse e-mail, nom de l'entreprise et message — sont transmises à Formspree, Inc. (https://formspree.io), notre sous-traitant, aux seules fins de nous acheminer votre message. Elles sont utilisées exclusivement pour répondre à votre demande, ne sont pas stockées sur nos serveurs et ne sont communiquées à aucun tiers. Formspree, Inc. étant établie aux États-Unis, cet acheminement implique un transfert de données hors de l'Union européenne.
 
 Aucun outil de suivi analytique n'est utilisé sur ce site. Aucune donnée de navigation n'est collectée.
 

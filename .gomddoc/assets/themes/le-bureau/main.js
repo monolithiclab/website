@@ -272,7 +272,7 @@ class ContactFormElement extends HTMLElement {
       '<div class="container">' +
         '<div class="contact-layout">' +
           '<div class="contact-layout__form">' +
-            '<form class="contact-form" action="https://formspree.io/f/YOUR_FORM_ID" method="POST">' +
+            '<form class="contact-form" action="https://formspree.io/f/myegyjky" method="POST">' +
               '<div aria-hidden="true" style="position:absolute;left:-9999px;">' +
                 '<label for="_gotcha">Do not fill this field</label>' +
                 '<input type="text" id="_gotcha" name="_gotcha" tabindex="-1" autocomplete="off">' +
