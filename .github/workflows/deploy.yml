@@ -33,9 +33,10 @@ jobs:
         with:
           go-version: 'stable'
       # github.com/diffuzed/gomddoc is private, so `go install` could never
-      # authenticate from CI. The module now lives in the public repo.
+      # authenticate from CI. The module now lives in the public repo, and main
+      # is under cmd/ — the module root holds no package.
       - name: Install gomddoc
-        run: go install github.com/monolithiclab/gomddoc@${GOMDDOC_VERSION}
+        run: go install github.com/monolithiclab/gomddoc/cmd/gomddoc@${GOMDDOC_VERSION}
       - name: Setup Pages
         id: pages
         uses: actions/configure-pages@v5
