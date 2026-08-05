@@ -260,18 +260,56 @@ customElements.define("step-item", StepItem);
 
 /* --- contact-form --- */
 
+/* Formspree accepts a plain POST, so the form works with JS disabled via its
+   action attribute. With JS we intercept it and submit the same FormData with
+   an Accept: application/json header, which makes Formspree answer in JSON
+   instead of redirecting the visitor off-site to its own confirmation page.
+
+   Success is decided from the body, not the status code: an error answer
+   carries { errors: [{ message, field, code }] } or { error: "..." }. We also
+   treat a non-ok response with an unreadable body as a failure, so an HTML
+   error page can never be mistaken for a success. */
+
+var CONTACT_STRINGS = {
+  fr: {
+    send: "Envoyer",
+    sending: "Envoi en cours\u2026",
+    successTitle: "Message envoy\u00e9",
+    successBody: "Merci, votre message est bien parti. Nous vous r\u00e9pondons sous 48\u00a0heures ouvr\u00e9es.",
+    errorTitle: "L\u2019envoi a \u00e9chou\u00e9",
+    errorBody: "Votre message n\u2019a pas pu \u00eatre envoy\u00e9. R\u00e9essayez, ou \u00e9crivez-nous directement \u00e0 contact@monolithiclab.fr.",
+    networkBody: "Connexion impossible. V\u00e9rifiez votre connexion, puis r\u00e9essayez."
+  },
+  en: {
+    send: "Send",
+    sending: "Sending\u2026",
+    successTitle: "Message sent",
+    successBody: "Thank you, your message is on its way. We reply within two business days.",
+    errorTitle: "Send failed",
+    errorBody: "Your message could not be sent. Try again, or email us directly at contact@monolithiclab.fr.",
+    networkBody: "Could not connect. Check your connection, then try again."
+  }
+};
+
+/* Field names we will look up in the DOM. Formspree echoes the field name back
+   on a validation error; whitelisting keeps that server-controlled string out
+   of a querySelector. */
+var CONTACT_FIELDS = ["name", "email", "company", "message"];
+
 class ContactFormElement extends HTMLElement {
   connectedCallback() {
     var lang = document.documentElement.lang || "fr";
     var isEn = lang === "en";
+    var t = isEn ? CONTACT_STRINGS.en : CONTACT_STRINGS.fr;
 
     this.className = "section";
     this.setAttribute("data-reveal", "");
-    var self = this;
     this.innerHTML =
       '<div class="container">' +
         '<div class="contact-layout">' +
           '<div class="contact-layout__form">' +
+            // Outside the form: a success message has to outlive hiding it.
+            '<div class="contact-form__status" role="status" aria-live="polite" tabindex="-1" hidden></div>' +
             '<form class="contact-form" action="https://formspree.io/f/myegyjky" method="POST">' +
               '<div aria-hidden="true" style="position:absolute;left:-9999px;">' +
                 '<label for="_gotcha">Do not fill this field</label>' +
@@ -280,20 +318,24 @@ class ContactFormElement extends HTMLElement {
               '<div class="contact-form__field">' +
                 '<label class="contact-form__label" for="contact-name">' + (isEn ? "Name" : "Nom") + '</label>' +
                 '<input class="contact-form__input" type="text" id="contact-name" name="name" placeholder="' + (isEn ? "Your name" : "Votre nom") + '" required>' +
+                '<span class="contact-form__error" data-error-for="name" hidden></span>' +
               '</div>' +
               '<div class="contact-form__field">' +
                 '<label class="contact-form__label" for="contact-email">Email</label>' +
                 '<input class="contact-form__input" type="email" id="contact-email" name="email" placeholder="' + (isEn ? "you@company.com" : "votre@email.com") + '" required>' +
+                '<span class="contact-form__error" data-error-for="email" hidden></span>' +
               '</div>' +
               '<div class="contact-form__field">' +
                 '<label class="contact-form__label" for="contact-company">' + (isEn ? "Company" : "Entreprise") + ' <span class="contact-form__optional">(' + (isEn ? "optional" : "facultatif") + ')</span></label>' +
                 '<input class="contact-form__input" type="text" id="contact-company" name="company" placeholder="' + (isEn ? "Your company name" : "Nom de votre entreprise") + '">' +
+                '<span class="contact-form__error" data-error-for="company" hidden></span>' +
               '</div>' +
               '<div class="contact-form__field">' +
                 '<label class="contact-form__label" for="contact-message">Message</label>' +
                 '<textarea class="contact-form__textarea" id="contact-message" name="message" rows="5" placeholder="' + (isEn ? "Tell us about your project or needs..." : "D\u00e9crivez votre projet ou votre besoin...") + '" required></textarea>' +
+                '<span class="contact-form__error" data-error-for="message" hidden></span>' +
               '</div>' +
-              '<button class="contact-form__submit" type="submit">' + (isEn ? "Send" : "Envoyer") + '</button>' +
+              '<button class="contact-form__submit" type="submit">' + t.send + '</button>' +
               '<p class="contact-form__privacy">' + (isEn ? "Your data is processed solely to respond to your inquiry. No information is shared with third parties." : "Vos donn\u00e9es sont trait\u00e9es uniquement pour r\u00e9pondre \u00e0 votre demande. Aucune information n\u2019est partag\u00e9e avec des tiers.") + '</p>' +
             '</form>' +
           '</div>' +
@@ -317,6 +359,109 @@ class ContactFormElement extends HTMLElement {
       '</div>';
     var self2 = this;
     requestAnimationFrame(function() { observeReveal(self2); });
+
+    var form = this.querySelector(".contact-form");
+    var status = this.querySelector(".contact-form__status");
+    var submit = this.querySelector(".contact-form__submit");
+    if (!form || !status || !submit) return;
+
+    /* Server-supplied text is written with textContent, never innerHTML. */
+    function showStatus(kind, title, body) {
+      status.className = "contact-form__status contact-form__status--" + kind;
+      status.textContent = "";
+      var heading = document.createElement("p");
+      heading.className = "contact-form__status-title";
+      heading.textContent = title;
+      var detail = document.createElement("p");
+      detail.className = "contact-form__status-body";
+      detail.textContent = body;
+      status.appendChild(heading);
+      status.appendChild(detail);
+      status.hidden = false;
+    }
+
+    function clearErrors() {
+      status.hidden = true;
+      CONTACT_FIELDS.forEach(function (name) {
+        var slot = form.querySelector('[data-error-for="' + name + '"]');
+        var field = form.querySelector('[name="' + name + '"]');
+        if (slot) { slot.textContent = ""; slot.hidden = true; }
+        if (field) { field.removeAttribute("aria-invalid"); }
+      });
+    }
+
+    function readErrors(body) {
+      if (body && Array.isArray(body.errors)) {
+        return body.errors.filter(function (e) { return e && typeof e.message === "string"; });
+      }
+      if (body && typeof body.error === "string") { return [{ message: body.error }]; }
+      return [];
+    }
+
+    function showErrors(errors) {
+      var general = [];
+      errors.forEach(function (err) {
+        var name = CONTACT_FIELDS.indexOf(err.field) !== -1 ? err.field : null;
+        var slot = name && form.querySelector('[data-error-for="' + name + '"]');
+        var field = name && form.querySelector('[name="' + name + '"]');
+        if (slot && field) {
+          slot.textContent = err.message;
+          slot.hidden = false;
+          field.setAttribute("aria-invalid", "true");
+        } else {
+          general.push(err.message);
+        }
+      });
+      showStatus("error", t.errorTitle, general.length ? general.join(" ") : t.errorBody);
+      var firstInvalid = form.querySelector('[aria-invalid="true"]');
+      (firstInvalid || status).focus();
+    }
+
+    form.addEventListener("submit", function (event) {
+      // No fetch means no interception: the native POST still works.
+      if (!window.fetch) { return; }
+      event.preventDefault();
+      if (form.dataset.sending === "true") { return; }
+
+      clearErrors();
+      form.dataset.sending = "true";
+      submit.disabled = true;
+      submit.textContent = t.sending;
+
+      fetch(form.action, {
+        method: "POST",
+        mode: "cors",
+        body: new FormData(form),
+        headers: { Accept: "application/json" }
+      })
+        .then(function (response) {
+          return response.json()
+            .catch(function () { return {}; })
+            .then(function (body) { return { ok: response.ok, body: body }; });
+        })
+        .then(function (result) {
+          var errors = readErrors(result.body);
+          if (errors.length) { showErrors(errors); return; }
+          // A failed response with an unreadable body must not read as success.
+          if (!result.ok) {
+            showStatus("error", t.errorTitle, t.errorBody);
+            status.focus();
+            return;
+          }
+          form.hidden = true;
+          showStatus("success", t.successTitle, t.successBody);
+          status.focus();
+        })
+        .catch(function () {
+          showStatus("error", t.errorTitle, t.networkBody);
+          status.focus();
+        })
+        .then(function () {
+          form.dataset.sending = "false";
+          submit.disabled = false;
+          submit.textContent = t.send;
+        });
+    });
   }
 }
 

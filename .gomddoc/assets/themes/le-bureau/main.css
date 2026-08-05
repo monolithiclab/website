@@ -1233,6 +1233,64 @@ strong {
   line-height: 1.6;
 }
 
+/* --- Contact Form Status --- */
+
+.contact-form__status {
+  background-color: var(--color-surface);
+  border-left: 2px solid var(--color-border);
+  padding: 24px 28px;
+  margin-bottom: 32px;
+  outline: none;
+}
+
+.contact-form__status--success {
+  border-left-color: var(--color-text);
+}
+
+.contact-form__status--error {
+  border-left-color: var(--color-accent);
+}
+
+.contact-form__status-title {
+  font-family: var(--font-sans);
+  font-weight: 600;
+  font-size: 13px;
+  text-transform: uppercase;
+  letter-spacing: 0.1em;
+  color: var(--color-text);
+  margin: 0 0 10px;
+}
+
+.contact-form__status-body {
+  margin: 0;
+  font-size: 15px;
+  line-height: 1.6;
+  color: var(--color-text-secondary);
+}
+
+.contact-form__error {
+  display: block;
+  margin-top: 10px;
+  font-family: var(--font-sans);
+  font-size: 13px;
+  line-height: 1.5;
+  color: var(--color-accent);
+}
+
+.contact-form__input[aria-invalid="true"],
+.contact-form__textarea[aria-invalid="true"] {
+  border-color: var(--color-accent);
+}
+
+.contact-form__submit[disabled] {
+  opacity: 0.55;
+  cursor: default;
+}
+
+.contact-form__submit[disabled]:hover {
+  background-color: var(--color-accent);
+}
+
 /* --- Contact Info Sidebar --- */
 
 .contact-info__block {
