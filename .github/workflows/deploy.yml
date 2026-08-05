@@ -21,7 +21,10 @@ jobs:
   build:
     runs-on: ubuntu-latest
     env:
-      GOMDDOC_VERSION: "latest"
+      # Pinned, not "latest": the generator controls the whole output, so an
+      # upstream release must not silently change the published site. Bump
+      # deliberately, after rebuilding locally.
+      GOMDDOC_VERSION: "v0.1.1"
     steps:
       - name: Checkout
         uses: actions/checkout@v4
@@ -29,8 +32,10 @@ jobs:
         uses: actions/setup-go@v5
         with:
           go-version: 'stable'
+      # github.com/diffuzed/gomddoc is private, so `go install` could never
+      # authenticate from CI. The module now lives in the public repo.
       - name: Install gomddoc
-        run: go install github.com/diffuzed/gomddoc@${GOMDDOC_VERSION}
+        run: go install github.com/monolithiclab/gomddoc@${GOMDDOC_VERSION}
       - name: Setup Pages
         id: pages
         uses: actions/configure-pages@v5
