@@ -1,8 +1,9 @@
 .PHONY: dev build clean deploy prune
 
-# Files that live in the repo but must never be served. gomddoc's `exclude`
-# does not cover markdown sources — it only suppresses page rendering, and the
-# raw file is copied anyway. See the comment in .gomddoc/config.yml.
+# Files that live in the repo but must never be served. gomddoc v0.1.1's
+# `exclude` suppresses page rendering but still emits a meta-refresh stub at the
+# markdown path, publishing the filename. No content leaks in build mode, but
+# the name does. See the comment in .gomddoc/config.yml.
 PRUNE = public/CLAUDE.md
 
 ## Development server with live reload

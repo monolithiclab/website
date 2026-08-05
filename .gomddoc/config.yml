@@ -5,17 +5,28 @@ meta:
 
 language: fr
 
-# WARNING: `exclude` is NOT a confidentiality boundary.
+# WARNING: in gomddoc v0.1.1 — the version this repo pins in CI — `exclude` is
+# NOT a confidentiality boundary.
 #
-# It stops a file being *rendered* as a page. It does not stop the raw file
-# being copied into the output — gomddoc copies every markdown source so that
-# /contact.md can 301-redirect to /contact. Verified against gomddoc as
-# installed: listing "PLAN.md" or "docs/" here still ships them verbatim to
-# monolithiclab.fr/PLAN.md. Directory patterns do not work at all for markdown,
-# with or without a trailing slash or /**.
+# It suppresses page rendering, search, navigation and metadata, so every
+# visible signal says the file is excluded. But `resolve.Build` was never given
+# this list, so it still mints a clean URL for each entry, and the exclusion
+# check runs against the *request* path, which strip_extensions has already
+# stripped: the pattern "PLAN.md" never matches a request for "/PLAN".
+#   - gomddoc serve: /PLAN returns 200 with the full rendered content.
+#   - gomddoc build: no content is written, but a 260-byte meta-refresh stub
+#     lands at public/PLAN.md, disclosing the filename. This is what `make
+#     prune` deletes.
+# Directory patterns ("docs/") hold in serve mode — they carry no extension, so
+# they still match the stripped path — but leak stubs in build mode.
 #
-# The actual defence is that private material is not in this repository: see
-# .gitignore, and `make build`'s prune step for the files that must stay.
+# Fixed upstream by c80981e, unmerged and unreleased as of v0.1.1. See
+# TICKET-exclude-confidentiality.md in the gomddoc checkout. Once a release
+# carries it, bump GOMDDOC_VERSION in .github/workflows/deploy.yml; keep the
+# prune step regardless, as defence in depth.
+#
+# The real defence is that private material is not in this repository at all:
+# see .gitignore.
 exclude:
   - "CLAUDE.md"
   - "Makefile"
