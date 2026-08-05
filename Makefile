@@ -10,7 +10,11 @@ dev:
 	gomddoc preview --open
 
 ## Production build (static site in public/)
-build:
+# Cleans first on purpose. gomddoc skips only the output directory it is
+# currently writing to, so a stale public/ left in the source tree gets walked
+# as content — a build into any other directory then renders 48 files instead
+# of 16, duplicating every page under public/.
+build: clean
 	gomddoc build . -o public -d monolithiclab.fr
 	$(MAKE) prune
 

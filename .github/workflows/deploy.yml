@@ -40,8 +40,15 @@ jobs:
       - name: Setup Pages
         id: pages
         uses: actions/configure-pages@v5
+      # No -d flag. It used to pass steps.pages.outputs.base_url, but gomddoc
+      # rejects that outright: the value is a full URL, and the flag refuses
+      # both a scheme ("should not include protocol") and a path component
+      # ("should not include path"), which a project page always has. The
+      # canonical domain comes from meta.domain in .gomddoc/config.yml instead,
+      # and CNAME in the artifact tells Pages to serve it there — so canonicals
+      # and the served domain agree once DNS is pointed (PLAN.md item 0.7).
       - name: Build
-        run: gomddoc build . -o public -d "${{ steps.pages.outputs.base_url }}"
+        run: gomddoc build . -o public
       # Fails the deploy rather than publishing a private file. gomddoc's
       # `exclude` does not stop markdown sources being copied — see
       # .gomddoc/config.yml.
