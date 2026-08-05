@@ -1,0 +1,27 @@
+{{- $lang := or (index .Page.Meta "lang") "fr" -}}
+{{- $hero := index .Page.Meta "hero" -}}
+<!DOCTYPE html>
+<html lang="{{ $lang }}">
+{{ template "head" . }}
+<body>
+  <a href="#main-content" class="skip-link">
+    {{ if eq $lang "en" }}Skip to content{{ else }}Aller au contenu{{ end }}
+  </a>
+  {{ template "header" . }}
+  <main id="main-content">
+    {{ template "hero" . }}
+    {{ if .Page.Content }}
+    <section class="section{{ if not $hero }} page--no-hero{{ end }}">
+      <div class="container">
+        <div class="page-content">
+          {{ .Page.Content }}
+        </div>
+      </div>
+    </section>
+    {{ end }}
+    {{ template "cta-band" . }}
+  </main>
+  {{ template "footer" . }}
+  {{ template "scripts" . }}
+</body>
+</html>

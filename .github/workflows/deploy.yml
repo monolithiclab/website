@@ -1,0 +1,58 @@
+name: Deploy site to GitHub Pages
+
+on:
+  push:
+    branches: [main]
+  workflow_dispatch:
+
+permissions:
+  contents: read
+  pages: write
+  id-token: write
+
+concurrency:
+  group: "pages"
+  cancel-in-progress: false
+
+# The site is the repository root. It used to live in a Website/ subdirectory
+# of the old combined tree, which is why this block existed at all.
+
+jobs:
+  build:
+    runs-on: ubuntu-latest
+    env:
+      GOMDDOC_VERSION: "latest"
+    steps:
+      - name: Checkout
+        uses: actions/checkout@v4
+      - name: Setup Go
+        uses: actions/setup-go@v5
+        with:
+          go-version: 'stable'
+      - name: Install gomddoc
+        run: go install github.com/diffuzed/gomddoc@${GOMDDOC_VERSION}
+      - name: Setup Pages
+        id: pages
+        uses: actions/configure-pages@v5
+      - name: Build
+        run: gomddoc build . -o public -d "${{ steps.pages.outputs.base_url }}"
+      # Fails the deploy rather than publishing a private file. gomddoc's
+      # `exclude` does not stop markdown sources being copied — see
+      # .gomddoc/config.yml.
+      - name: Prune private files from the build output
+        run: make prune
+      - name: Upload artifact
+        uses: actions/upload-pages-artifact@v3
+        with:
+          path: ./public
+
+  deploy:
+    environment:
+      name: github-pages
+      url: ${{ steps.deployment.outputs.page_url }}
+    runs-on: ubuntu-latest
+    needs: build
+    steps:
+      - name: Deploy to GitHub Pages
+        id: deployment
+        uses: actions/deploy-pages@v4

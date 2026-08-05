@@ -1,0 +1,29 @@
+meta:
+  title: "Monolithic Lab"
+  description: "Monolithic Lab aide les entreprises en croissance à structurer leurs opérations, clarifier leurs décisions techniques et construire les systèmes qui soutiennent leur croissance."
+  domain: "monolithiclab.fr"
+
+language: fr
+
+# WARNING: `exclude` is NOT a confidentiality boundary.
+#
+# It stops a file being *rendered* as a page. It does not stop the raw file
+# being copied into the output — gomddoc copies every markdown source so that
+# /contact.md can 301-redirect to /contact. Verified against gomddoc as
+# installed: listing "PLAN.md" or "docs/" here still ships them verbatim to
+# monolithiclab.fr/PLAN.md. Directory patterns do not work at all for markdown,
+# with or without a trailing slash or /**.
+#
+# The actual defence is that private material is not in this repository: see
+# .gitignore, and `make build`'s prune step for the files that must stay.
+exclude:
+  - "CLAUDE.md"
+  - "Makefile"
+  - "DESIGN_PROMPT.md"
+  - "PLAN.md"
+  - "docs/"
+
+theme:
+  name: le-bureau
+
+color_chips: false

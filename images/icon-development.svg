@@ -1,0 +1,13 @@
+<svg xmlns="http://www.w3.org/2000/svg" viewBox="0 0 48 48" fill="none" stroke-width="1.5" stroke-linecap="square" stroke-linejoin="miter">
+  <!-- Left bracket -->
+  <polyline points="14,8 6,24 14,40" stroke="currentColor"/>
+  <!-- Right bracket -->
+  <polyline points="34,8 42,24 34,40" stroke="#F97316"/>
+  <!-- Interlocking gear/element in center -->
+  <rect x="19" y="16" width="10" height="4" stroke="currentColor"/>
+  <rect x="19" y="22" width="10" height="4" stroke="#F97316"/>
+  <rect x="19" y="28" width="10" height="4" stroke="currentColor"/>
+  <!-- Connecting verticals -->
+  <line x1="21" y1="16" x2="21" y2="32" stroke="currentColor"/>
+  <line x1="27" y1="16" x2="27" y2="32" stroke="currentColor"/>
+</svg>

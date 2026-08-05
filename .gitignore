@@ -1,0 +1,19 @@
+public/
+.DS_Store
+
+# Agent-local state, never shared.
+.claude/
+.claude/worktrees/
+
+# Vendored gomddoc themes we do not author. Only le-bureau is ours.
+.gomddoc/assets/themes/dalle/
+.gomddoc/assets/themes/default/
+.gomddoc/assets/themes/monolithic/
+.gomddoc/assets/themes/terminal/
+
+# Strategy, brand rationale and planning docs live in the private company
+# repo, not here. This repo is public: assume anything committed once is
+# permanently readable.
+PLAN.md
+DESIGN_PROMPT.md
+docs/

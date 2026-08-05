@@ -1,0 +1,26 @@
+<svg xmlns="http://www.w3.org/2000/svg" viewBox="0 0 199 38" fill="#000">
+  <!-- M icon (38x38) -->
+  <path d="M 0 0 H 38 V 38 H 0 Z
+           M 7 30 V 8 L 19 20 L 31 8 V 30
+           H 27 V 13 L 19 23 L 11 13 V 30 Z"
+        fill-rule="evenodd"/>
+
+  <!-- O -->
+  <path d="M 42 8 H 60 V 30 H 42 Z M 45 11 H 57 V 27 H 45 Z" fill-rule="evenodd"/>
+  <!-- N -->
+  <path d="M 64 8 H 67 L 79 25 V 8 H 82 V 30 H 79 L 67 13 V 30 H 64 Z"/>
+  <!-- O -->
+  <path d="M 86 8 H 104 V 30 H 86 Z M 89 11 H 101 V 27 H 89 Z" fill-rule="evenodd"/>
+  <!-- L -->
+  <path d="M 108 8 H 111 V 27 H 121 V 30 H 108 Z"/>
+  <!-- I -->
+  <path d="M 125 8 H 128 V 30 H 125 Z"/>
+  <!-- T -->
+  <path d="M 132 8 H 148 V 11 H 141.5 V 30 H 138.5 V 11 H 132 Z"/>
+  <!-- H -->
+  <path d="M 152 8 H 155 V 17.5 H 167 V 8 H 170 V 30 H 167 V 20.5 H 155 V 30 H 152 Z"/>
+  <!-- I -->
+  <path d="M 174 8 H 177 V 30 H 174 Z"/>
+  <!-- C -->
+  <path d="M 181 8 H 199 V 11 H 184 V 27 H 199 V 30 H 181 Z"/>
+</svg>

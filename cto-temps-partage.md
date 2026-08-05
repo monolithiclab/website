@@ -1,0 +1,109 @@
+---
+title: "CTO à Temps Partagé — Monolithic Lab"
+description: "Une direction technique intégrée à votre équipe 1 à 3 jours par semaine. Pour les entreprises qui ont besoin de leadership, de structure et de décisions solides sans recruter trop tôt un CTO à plein temps."
+alternate: "/en-us/fractional-cto"
+hero:
+  compact: true
+  label: "CTO à temps partagé"
+  headline: "Le rôle de CTO quand le besoin est réel, mais pas encore le poste à plein temps"
+  subheadline: "Monolithic Lab prend un rôle de direction technique intégré : clarifier, arbitrer, structurer, recruter si nécessaire, et remettre de la continuité là où tout repose encore sur trop peu de personnes."
+cta_band:
+  text: "Vous vous reconnaissez dans cette situation ? Parlons-en."
+  button_text: "Prendre contact"
+  button_url: "/contact"
+---
+
+## Ce qu'est un CTO à temps partagé
+
+Un CTO à temps partagé n'est pas un consultant qui donne un avis de loin. C'est une fonction de direction exercée à temps partiel, avec une vraie continuité de présence et de responsabilité.
+
+Le rôle consiste à rejoindre l'entreprise assez profondément pour comprendre ses contraintes réelles, participer aux arbitrages importants, structurer l'équipe et les systèmes, puis faire monter l'organisation en autonomie.
+
+En pratique, cela signifie :
+- participer aux décisions importantes ;
+- donner du cadre à l'équipe technique ;
+- relier les enjeux business, produit, opérations et technique ;
+- installer des systèmes qui tiennent au-delà de la mission.
+
+## Quand ce modèle devient utile
+
+### Vous avez une équipe technique, mais pas encore de direction technique solide
+
+Les sujets s'accumulent : architecture, recrutement, dette technique, priorisation, coordination produit-tech, sécurité, outils. Le fondateur ou les profils seniors absorbent comme ils peuvent, mais personne n'a vraiment le mandat ni le temps de structurer l'ensemble.
+
+### Vous avez grandi plus vite que vos méthodes
+
+Ce qui marchait au début ne suffit plus. Les décisions ralentissent, les dépendances s'accumulent, la lisibilité baisse. L'équipe avance, mais avec trop de friction.
+
+### Vous traversez une phase critique
+
+Départ d'un CTO, période de transition, due diligence, réorganisation, refonte d'architecture, internationalisation, montée en charge. La situation demande de l'expérience et du calme, sans forcément justifier un recrutement permanent immédiat.
+
+## Ce que couvre le rôle
+
+### Direction et arbitrages
+- vision et priorités techniques ;
+- arbitrages d'architecture et de stack ;
+- alignement entre choix techniques et enjeux business ;
+- cadrage des grands sujets à traiter maintenant versus plus tard.
+
+### Équipe et organisation
+- clarification des rôles ;
+- structuration de l'équipe ;
+- participation aux recrutements ;
+- montée en compétence des profils en place ;
+- amélioration du fonctionnement collectif.
+
+### Systèmes et opérations
+- système d'information et circulation de l'information ;
+- outils, intégrations, workflows ;
+- sécurité, fiabilité, dette, maintenabilité ;
+- coordination avec les sujets produit, service client, opérations ou supply selon le contexte.
+
+### Pilotage
+- visibilité donnée au CEO et à la direction ;
+- priorisation ;
+- documentation ;
+- continuité d'exécution ;
+- préparation de la suite, y compris la sortie de mission ou la transmission à un futur CTO interne.
+
+## Comment ça fonctionne
+
+### Cadence
+
+Typiquement 1 à 3 jours par semaine. Suffisant pour être utile, suivre les sujets, et créer de la continuité — sans imposer à l'entreprise un recrutement à plein temps trop tôt.
+
+### Durée
+
+Cela dépend du contexte. Certaines missions servent de pont sur quelques mois. D'autres accompagnent une phase de structuration plus profonde. Le point important n'est pas la durée théorique, mais le fait que l'intervention rende l'entreprise plus solide et moins dépendante à la fin.
+
+### Les premières semaines
+
+Les premières semaines servent à :
+1. comprendre la situation réelle ;
+2. identifier les points de risque et les zones de confusion ;
+3. fixer les priorités ;
+4. mettre en place un plan d'action crédible ;
+5. commencer à installer du cadre rapidement.
+
+## Ce que ce n'est pas
+
+### Ce n'est pas une couche de conseil externe de plus
+
+Le rôle n'est pas de produire des slides ou des recommandations laissées à exécuter par d'autres.
+
+### Ce n'est pas du renfort freelance au ticket
+
+Le sujet est la direction, la structuration, la continuité et les arbitrages — pas une simple capacité d'exécution technique isolée.
+
+### Ce n'est pas une dépendance organisée
+
+L'objectif n'est pas de rester indispensable. Le bon résultat est une entreprise mieux structurée, plus lisible, et plus autonome qu'au départ.
+
+## Pourquoi Monolithic Lab
+
+Monolithic Lab s'appuie sur une expérience de structuration menée de l'intérieur, pas sur une accumulation de missions périphériques.
+
+Chez **MeilleursAgents**, Nicolas Mussat a structuré les opérations et le SI qui ont accompagné la croissance de la plateforme jusqu'à son acquisition par Axel Springer. Chez **Prose**, il a posé des fondations opérationnelles capables d'encaisser une montée en puissance internationale.
+
+Le point commun : prendre des systèmes réels, des équipes réelles, des contraintes réelles — et faire en sorte que tout tienne mieux, avec plus de clarté, moins de dépendance implicite, et de meilleures décisions.

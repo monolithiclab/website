@@ -1,0 +1,77 @@
+{{ define "head" }}
+{{- $lang := or (index .Page.Meta "lang") "fr" -}}
+{{- $isHome := or (eq .Page.Path "/") (eq .Page.Path "/en-us/") -}}
+{{- $title := index .Page.Meta "title" -}}
+{{- $description := or (index .Page.Meta "description") .Site.Meta.Description -}}
+{{- $alternate := index .Page.Meta "alternate" -}}
+{{- $canonical := canonicalURL .Page.Path -}}
+<head>
+  <meta charset="utf-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1">
+  <title>{{ if $title }}{{ $title }}{{ else }}{{ .Site.Meta.Title }}{{ end }}</title>
+  <meta name="description" content="{{ $description }}">
+  {{ if $canonical }}<link rel="canonical" href="{{ $canonical }}">{{ end }}
+
+  <!-- Fonts -->
+  <link rel="preconnect" href="https://fonts.googleapis.com">
+  <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+  <link rel="stylesheet" href="https://fonts.googleapis.com/css2?family=Instrument+Serif&family=DM+Sans:wght@400;500;600&display=swap">
+
+  <!-- Favicon -->
+  <link rel="icon" type="image/svg+xml" href="/images/favicon.svg">
+
+  <!-- Stylesheet -->
+  <style>{{ inlineCSSAsset "main.css" }}</style>
+
+  <!-- Open Graph -->
+  {{ if $canonical }}
+  <meta property="og:title" content="{{ or $title .Site.Meta.Title }}">
+  <meta property="og:description" content="{{ $description }}">
+  <meta property="og:type" content="{{ if $isHome }}website{{ else }}article{{ end }}">
+  <meta property="og:url" content="{{ $canonical }}">
+  <meta property="og:locale" content="{{ if eq $lang "en" }}en_US{{ else }}fr_FR{{ end }}">
+  <meta name="twitter:card" content="summary">
+  <meta name="twitter:title" content="{{ or $title .Site.Meta.Title }}">
+  <meta name="twitter:description" content="{{ $description }}">
+  {{ end }}
+
+  <!-- Hreflang -->
+  {{ if $alternate }}
+  {{ if eq $lang "en" }}
+  <link rel="alternate" hreflang="en" href="{{ $canonical }}">
+  <link rel="alternate" hreflang="fr" href="https://{{ .Site.Meta.Domain }}{{ $alternate }}">
+  <link rel="alternate" hreflang="x-default" href="https://{{ .Site.Meta.Domain }}{{ $alternate }}">
+  {{ else }}
+  <link rel="alternate" hreflang="fr" href="{{ $canonical }}">
+  <link rel="alternate" hreflang="en" href="https://{{ .Site.Meta.Domain }}{{ $alternate }}">
+  <link rel="alternate" hreflang="x-default" href="{{ $canonical }}">
+  {{ end }}
+  {{ end }}
+
+  <!-- JSON-LD -->
+  {{ if $isHome }}
+  {{ if eq $lang "fr" }}
+  <script type="application/ld+json">
+  {
+    "@context": "https://schema.org",
+    "@type": "Organization",
+    "name": "Monolithic Lab",
+    "url": "https://monolithiclab.fr",
+    "description": "{{ .Site.Meta.Description }}",
+    "address": {
+      "@type": "PostalAddress",
+      "streetAddress": "14 rue de Cambrai",
+      "addressLocality": "Paris",
+      "postalCode": "75019",
+      "addressCountry": "FR"
+    },
+    "founder": {
+      "@type": "Person",
+      "name": "Nicolas Mussat"
+    }
+  }
+  </script>
+  {{ end }}
+  {{ end }}
+</head>
+{{ end }}

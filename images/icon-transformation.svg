@@ -1,0 +1,19 @@
+<svg xmlns="http://www.w3.org/2000/svg" viewBox="0 0 48 48" fill="none" stroke-width="1.5" stroke-linecap="square" stroke-linejoin="miter">
+  <!-- Outer gauge arc (square/geometric interpretation) -->
+  <path d="M8 40L8 8L40 8L40 40" stroke="currentColor"/>
+  <!-- Tick marks -->
+  <line x1="8" y1="40" x2="12" y2="40" stroke="currentColor"/>
+  <line x1="8" y1="8" x2="8" y2="12" stroke="currentColor"/>
+  <line x1="40" y1="8" x2="40" y2="12" stroke="currentColor"/>
+  <line x1="40" y1="40" x2="36" y2="40" stroke="currentColor"/>
+  <!-- Mid ticks -->
+  <line x1="8" y1="24" x2="12" y2="24" stroke="currentColor"/>
+  <line x1="24" y1="8" x2="24" y2="12" stroke="currentColor"/>
+  <line x1="40" y1="24" x2="36" y2="24" stroke="currentColor"/>
+  <!-- Needle pointing upper-right (progress) -->
+  <line x1="24" y1="40" x2="36" y2="14" stroke="#F97316" stroke-width="2"/>
+  <!-- Needle base -->
+  <rect x="22" y="38" width="4" height="4" stroke="currentColor"/>
+  <!-- Base line -->
+  <line x1="4" y1="40" x2="44" y2="40" stroke="currentColor"/>
+</svg>

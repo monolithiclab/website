@@ -1,0 +1,19 @@
+<svg xmlns="http://www.w3.org/2000/svg" viewBox="0 0 48 48" fill="none" stroke-width="1.5" stroke-linecap="square" stroke-linejoin="miter">
+  <!-- Person 1 (head + body) -->
+  <rect x="10" y="8" width="6" height="6" stroke="#64748B"/>
+  <line x1="13" y1="14" x2="13" y2="28" stroke="#64748B"/>
+  <line x1="8" y1="20" x2="18" y2="20" stroke="#64748B"/>
+  <!-- Person 2 -->
+  <rect x="26" y="8" width="6" height="6" stroke="#64748B"/>
+  <line x1="29" y1="14" x2="29" y2="28" stroke="#64748B"/>
+  <line x1="24" y1="20" x2="34" y2="20" stroke="#64748B"/>
+  <!-- Upward growth arrow -->
+  <line x1="38" y1="40" x2="38" y2="16" stroke="#F97316" stroke-width="2"/>
+  <polyline points="34,20 38,16 42,20" stroke="#F97316" stroke-width="2"/>
+  <!-- Growth steps -->
+  <line x1="8" y1="34" x2="16" y2="34" stroke="#64748B"/>
+  <line x1="16" y1="34" x2="16" y2="30" stroke="#64748B"/>
+  <line x1="16" y1="30" x2="24" y2="30" stroke="#64748B"/>
+  <line x1="24" y1="30" x2="24" y2="26" stroke="#64748B"/>
+  <line x1="24" y1="26" x2="34" y2="26" stroke="#64748B"/>
+</svg>
