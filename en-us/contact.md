@@ -6,8 +6,8 @@ alternate: "/contact"
 hero:
   compact: true
   label: "Contact"
-  headline: "Let's talk about what is actually getting harder"
-  subheadline: "Technical leadership, operating structure, systems, organization, practical AI workflows — the first conversation is there to clarify the real problem, not to push you into a prefabricated offer."
+  headline: "Let’s talk about what is actually getting harder"
+  subheadline: "Technical leadership, operating structure, systems, organization, practical AI workflows — the first conversation is there to understand the problem before discussing format."
 ---
 
 <contact-form></contact-form>
@@ -23,6 +23,6 @@ What helps most is usually to clarify:
 - how urgent the situation is.
 
 If Monolithic Lab can help, the right engagement format should become clear quickly.
-If it is not the right fit, it is better to say so early.
+And if something else serves you better, that is worth saying early too.
 
 Direct email: **contact@monolithiclab.fr**.

@@ -1,24 +1,24 @@
 ---
 title: "Fractional CTO — Monolithic Lab"
-description: "An embedded technical leadership role for companies that genuinely need direction, structure, and better decisions — without hiring a full-time CTO too early."
+description: "An embedded technical leadership role for companies that genuinely need direction, structure, and better decisions, before a full-time CTO makes sense."
 lang: "en"
 alternate: "/cto-temps-partage"
 hero:
   compact: true
   label: "Fractional CTO"
-  headline: "The CTO role when the need is real, but the full-time hire is not"
+  headline: "The CTO role when the need is there, before the full-time hire makes sense"
   subheadline: "Monolithic Lab takes on an embedded technical leadership role: clarifying, arbitrating, structuring, hiring when needed, and restoring continuity where too much still depends on too few people."
 cta_band:
-  text: "Does that sound like your current situation? Let's talk."
+  text: "Does that sound like your current situation? Let’s talk."
   button_text: "Get in touch"
   button_url: "/en-us/contact"
 ---
 
 ## What a fractional CTO actually is
 
-A fractional CTO is not an outside adviser making occasional comments from a distance. It is a leadership function exercised part-time, with real continuity, real involvement, and real accountability.
+A fractional CTO is a leadership function exercised part-time, with genuine continuity of presence and accountability.
 
-The role is to join the company deeply enough to understand its actual constraints, participate in important decisions, structure the team and systems, and help the organization become more capable over time.
+The role is to join the company deeply enough to understand its constraints, participate in important decisions, structure the team and systems, and help the organization become more capable over time.
 
 In practice, that means:
 - being involved in important decisions;
@@ -72,39 +72,39 @@ A CTO departure, due diligence, a reorganization, an architectural shift, intern
 
 ### Cadence
 
-Typically 1 to 3 days per week. Enough to be genuinely useful, stay close to the real issues, and create continuity — without forcing the company into a full-time executive hire too early.
+Typically 1 to 3 days per week. Enough to stay close to the real issues, weigh in on decisions, and create continuity, while letting the full-time hire come in its own time.
 
 ### Duration
 
-It depends on the context. Some engagements are bridges over a transition. Others support a deeper structuring phase. The important point is not a theoretical duration, but whether the company becomes more solid and less dependent by the end.
+It depends on the context. Some engagements are bridges over a transition. Others support a deeper structuring phase. What counts is the outcome: a company that is more solid and more autonomous by the end.
 
 ### The first weeks
 
 The first weeks are usually about:
-1. understanding the actual situation;
+1. understanding the situation;
 2. identifying risk and confusion points;
 3. setting priorities;
 4. defining a credible action path;
 5. putting useful structure in place quickly.
 
-## What it is not
+## What defines the role
 
-### It is not another layer of outside consulting
+### Accountability that is owned
 
-The role is not to produce slides or recommendations and leave others to deal with the consequences.
+Decisions get made, carried, and defended in front of the leadership team and in front of the engineers. Whatever is decided commits the person who decided it.
 
-### It is not freelance execution at ticket level
+### Leadership, sustained over time
 
-The subject is leadership, structure, continuity, and arbitration — not isolated technical output.
+The subject is direction, structure, continuity, and arbitration. Regular presence is what makes it possible to follow a piece of work through until it stands on its own.
 
-### It is not organized dependency
+### Autonomy built in from the start
 
-The goal is not to remain indispensable. A good result is a company that is more legible, more structured, and more autonomous than it was before.
+A good result is a company that is more legible, more structured, and more autonomous than it was before. The exit gets prepared from the first weeks.
 
 ## Why Monolithic Lab
 
-Monolithic Lab is built on operating structure work carried out from the inside, not on a collection of peripheral missions.
+Monolithic Lab is built on systems constructed and sustained from the inside, over time.
 
-At **MeilleursAgents**, Nicolas Mussat structured operations and information systems through a growth phase that led to the company's acquisition by Axel Springer. At **Prose**, he laid operational foundations able to support an international scale-up.
+At **MeilleursAgents**, Nicolas Mussat structured operations and information systems through a growth phase that led to the company’s acquisition by Axel Springer. At **Prose**, he laid operational foundations able to support an international scale-up.
 
-The common thread is the same: take real teams, real systems, real constraints — and make the whole thing hold together with better clarity, less hidden dependency, and stronger decisions.
+The common thread is the same: take existing systems, the team already in place, and concrete constraints — and make the whole thing hold together with better clarity, less hidden dependency, and stronger decisions.
