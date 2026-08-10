@@ -59,22 +59,13 @@ service-list, trust-grid, step-timeline, contact-form { display: block; }
 
 /* --- Custom Properties --- */
 
+/* The --color-* properties are NOT here. They come from _tokens.css, generated
+   from the palette in the private company repo and inlined ahead of this file
+   — see the header of that file. Adding a colour here would drift. */
 :root {
   --font-serif: "Instrument Serif", "Georgia", serif;
   --font-sans: "DM Sans", "Helvetica Neue", sans-serif;
 
-  --color-bg: #F5F0EB;
-  --color-surface: #EDE8E2;
-  --color-text: #0A0A0A;
-  --color-text-secondary: #3D3D3D;
-  --color-muted: #8A8A8A;
-  --color-border: #D4CFC8;
-  --color-accent: #8B1A1A;
-  --color-accent-hover: #6B1414;
-  --color-dark: #0A0A0A;
-  --color-dark-text: #F5F0EB;
-  --color-dark-muted: #8A8A8A;
-  --color-dark-border: #2A2A2A;
   --header-blocker-height: 112px;
 
   --container-max: 1240px;
@@ -189,7 +180,7 @@ strong {
   font-family: var(--font-sans);
   font-size: 14px;
   font-weight: 600;
-  color: #fff;
+  color: var(--color-dark-text);
   background-color: var(--color-accent);
 }
 
@@ -262,7 +253,7 @@ strong {
 
 .header--home {
   background-color: var(--color-dark);
-  border-bottom-color: rgba(245, 240, 235, 0.12);
+  border-bottom-color: rgb(var(--rgb-paper) / 0.12);
 }
 
 .header__logo-text,
@@ -385,7 +376,7 @@ strong {
 }
 
 .header--home .header__nav-link--cta {
-  border-color: rgba(245, 240, 235, 0.6);
+  border-color: rgb(var(--rgb-paper) / 0.6);
   color: var(--color-dark-text);
 }
 
@@ -397,9 +388,9 @@ strong {
   display: grid;
   gap: 2px;
   padding: 10px;
-  background-color: rgba(245, 240, 235, 0.98);
+  background-color: rgb(var(--rgb-paper) / 0.98);
   border: 1px solid var(--color-border);
-  box-shadow: 0 16px 32px rgba(10, 10, 10, 0.08);
+  box-shadow: 0 16px 32px rgb(var(--rgb-near-black) / 0.08);
   opacity: 0;
   visibility: hidden;
   transform: translateY(6px);
@@ -473,7 +464,7 @@ strong {
   right: 20px;
   width: 44px;
   height: 44px;
-  border: 1px solid rgba(245, 240, 235, 0.24);
+  border: 1px solid rgb(var(--rgb-paper) / 0.24);
   border-radius: 999px;
   background: transparent;
   color: var(--color-dark-text);
@@ -514,7 +505,7 @@ strong {
   gap: 10px;
   margin-left: 12px;
   padding-left: 16px;
-  border-left: 1px solid rgba(245, 240, 235, 0.16);
+  border-left: 1px solid rgb(var(--rgb-paper) / 0.16);
 }
 
 .header__mobile-subnav-link {
@@ -580,7 +571,7 @@ strong {
 .lang-switcher__link:hover,
 .lang-switcher__link:focus-visible {
   color: var(--color-text);
-  background-color: rgba(10, 10, 10, 0.06);
+  background-color: rgb(var(--rgb-near-black) / 0.06);
   border-radius: 999px;
 }
 
@@ -589,7 +580,7 @@ strong {
 .header__mobile-lang .lang-switcher__link:hover,
 .header__mobile-lang .lang-switcher__link:focus-visible {
   color: var(--color-dark-text);
-  background-color: rgba(245, 240, 235, 0.14);
+  background-color: rgb(var(--rgb-paper) / 0.14);
   border-radius: 999px;
 }
 
@@ -722,8 +713,8 @@ strong {
   background: linear-gradient(
     to bottom,
     transparent,
-    rgba(139, 26, 26, 0.3) 30%,
-    rgba(139, 26, 26, 0.3) 70%,
+    rgb(var(--rgb-burgundy) / 0.3) 30%,
+    rgb(var(--rgb-burgundy) / 0.3) 70%,
     transparent
   );
 }
@@ -1022,7 +1013,7 @@ strong {
 .home-process__card {
   padding: 24px;
   border: 1px solid var(--color-border);
-  background-color: rgba(237, 232, 226, 0.55);
+  background-color: rgb(var(--rgb-surface) / 0.55);
 }
 
 .home-process__step {

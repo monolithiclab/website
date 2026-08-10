@@ -34,7 +34,14 @@ photographs. Sharp corners, flat colours, grid layouts, mobile-first.
 - **No nesting deeper than 2 levels** in selectors
 - **Custom properties** for all colors, spacing, and type sizes
 - **Mobile-first** media queries
-- Single CSS file (`.gomddoc/assets/themes/le-bureau/main.css`), inlined via `inlineCSSAsset`
+- Two CSS files, both inlined via `inlineCSSAsset` and both under
+  `.gomddoc/assets/themes/le-bureau/`:
+  - `_tokens.css` — **generated, do not edit.** The palette, rendered from `brand/tokens.json` in
+    the private company repo by `make brand` there. Inlined first so `main.css` can use it.
+  - `main.css` — everything else. Write no colour literal here: use `var(--color-*)`, or
+    `rgb(var(--rgb-*) / <alpha>)` for the translucent cases. Adding a hex reintroduces the drift
+    the tokens exist to prevent.
+- **Fonts are self-hosted** in `fonts/` — nothing may be loaded from Google's CDN (RGPD)
 
 ## Marketing Voice
 
@@ -51,10 +58,13 @@ The site is the repository root — there is no `Website/` wrapper directory.
   .gomddoc/
     config.yml                          # Site config (title, domain, theme, language)
     assets/themes/le-bureau/
-      layouts/default.html.tmpl         # Single page template (handles all layouts)
+      layouts/default.html.tmpl         # Page template (handles all layouts)
+      layouts/error.html.tmpl           # 404 — without it gomddoc falls back to the default theme
       partials/                         # Header, footer, head partials
+      _tokens.css                       # GENERATED palette — see company/brand/tokens.json
       main.css                          # Stylesheet (inlined via inlineCSSAsset)
       main.js                           # JS — menu + scroll reveal (inlined via inlineJSAsset)
+  fonts/                                # Self-hosted woff2 + OFL notices (never load from Google)
   README.md                             # FR homepage (directory index)
   approche.md                           # FR approach page
   cto-temps-partage.md                  # FR fractional CTO pillar page
