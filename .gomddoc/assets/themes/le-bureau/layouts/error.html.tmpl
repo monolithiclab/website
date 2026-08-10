@@ -1,0 +1,50 @@
+{{- /*
+  Without this file gomddoc falls back to the default theme for the whole
+  render, not just the layout: the published 404 came out with the stock
+  header, a search box, a dark-mode toggle, Inter and JetBrains Mono from
+  Google Fonts, and an untranslated "go_to_homepage" string.
+
+  The error context carries no `lang` key, so every partial here resolves to
+  French — which is right for the single /404.html that GitHub Pages serves.
+  An English line sits underneath for anyone who landed from /en-us/.
+*/ -}}
+{{- $code := index .Page.Meta "error_code" -}}
+<!DOCTYPE html>
+<html lang="fr">
+{{ template "head" . }}
+<body>
+  <a href="#main-content" class="skip-link">Aller au contenu</a>
+  {{ template "header" . }}
+  <main id="main-content">
+    <section class="hero-compact" aria-label="Erreur">
+      <div class="hero-compact__inner">
+        <span class="hero-compact__label">Erreur {{ $code }}</span>
+        <h1 class="hero-compact__headline">Cette page a changé d’adresse ou a été retirée</h1>
+        <p class="hero-compact__sub">Le lien qui vous a mené ici date probablement d’une version précédente du site.</p>
+      </div>
+    </section>
+    <section class="section">
+      <div class="container">
+        <div class="page-content">
+          <p>Voici les pages principales :</p>
+          <ul>
+            <li><a href="/">Accueil</a></li>
+            <li><a href="{{ contentURL "approche.md" }}">Approche</a></li>
+            <li><a href="{{ contentURL "expertises.md" }}">Expertises</a></li>
+            <li><a href="{{ contentURL "references.md" }}">Références</a></li>
+            <li><a href="{{ contentURL "faq.md" }}">FAQ</a></li>
+            <li><a href="{{ contentURL "contact.md" }}">Contact</a></li>
+          </ul>
+          <p>Si vous cherchez quelque chose de précis, écrivez à
+            <a href="mailto:contact@monolithiclab.fr">contact@monolithiclab.fr</a>.</p>
+          <hr>
+          <p lang="en">This page has moved or been retired.
+            <a href="{{ contentURL "en-us/README.md" }}">Go to the English home page</a>.</p>
+        </div>
+      </div>
+    </section>
+  </main>
+  {{ template "footer" . }}
+  {{ template "scripts" . }}
+</body>
+</html>

@@ -5,17 +5,31 @@
 {{- $description := or (index .Page.Meta "description") .Site.Meta.Description -}}
 {{- $alternate := index .Page.Meta "alternate" -}}
 {{- $canonical := canonicalURL .Page.Path -}}
+{{- /* Error pages arrive with an English status line for a title ("Not Found")
+       and a /404 path. Give them a French title and no canonical, which also
+       suppresses the Open Graph and hreflang blocks below — none of it belongs
+       on a page that should stay out of the index. */ -}}
+{{- $errorCode := index .Page.Meta "error_code" -}}
+{{- if $errorCode -}}
+  {{- $title = printf "Page introuvable (%v) — %s" $errorCode .Site.Meta.Title -}}
+  {{- $canonical = "" -}}
+{{- end -}}
+{{- $robots := index .Page.Meta "robots" -}}
 <head>
   <meta charset="utf-8">
   <meta name="viewport" content="width=device-width, initial-scale=1">
   <title>{{ if $title }}{{ $title }}{{ else }}{{ .Site.Meta.Title }}{{ end }}</title>
   <meta name="description" content="{{ $description }}">
+  {{ if $robots }}<meta name="robots" content="{{ $robots }}">{{ end }}
   {{ if $canonical }}<link rel="canonical" href="{{ $canonical }}">{{ end }}
 
-  <!-- Fonts -->
-  <link rel="preconnect" href="https://fonts.googleapis.com">
-  <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
-  <link rel="stylesheet" href="https://fonts.googleapis.com/css2?family=Instrument+Serif&family=DM+Sans:wght@400;500;600&display=swap">
+  <!-- Fonts. Self-hosted: no request leaves for fonts.googleapis.com or
+       fonts.gstatic.com, so no visitor IP reaches Google before consent.
+       The @font-face rules live in main.css, inlined below. Only the two latin
+       files are preloaded — latin-ext is for accented outliers and its
+       unicode-range keeps it out of the way until something needs it. -->
+  <link rel="preload" as="font" type="font/woff2" href="/fonts/instrument-serif-latin.woff2" crossorigin>
+  <link rel="preload" as="font" type="font/woff2" href="/fonts/dm-sans-latin.woff2" crossorigin>
 
   <!-- Favicon -->
   <link rel="icon" type="image/svg+xml" href="/images/favicon.svg">
