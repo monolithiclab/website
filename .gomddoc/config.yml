@@ -36,5 +36,12 @@ exclude:
 
 theme:
   name: le-bureau
+  vars:
+    # Not a CSS custom property despite living under theme.vars — gomddoc
+    # v0.1.1's MetaConfig has no field for arbitrary IDs, and theme.vars is the
+    # only extensible map exposed to templates. Safe here because head.html.tmpl
+    # never calls the CSS-generating function that would otherwise turn every
+    # theme.vars key into a --theme-* custom property.
+    gtm_id: "GTM-T26W68XM"
 
 color_chips: false

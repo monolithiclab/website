@@ -466,3 +466,118 @@ class ContactFormElement extends HTMLElement {
 }
 
 customElements.define("contact-form", ContactFormElement);
+
+/* --- cookie-banner ---
+
+   Consent Mode's default (all denied) is set inline in <head>, before GTM
+   loads, so GA collects nothing until this component records an explicit
+   accept. Binary choice only — analytics is the only non-essential purpose
+   this site has, so a granular category picker would be pure overhead.
+
+   The choice is re-asked every 6 months (CNIL's guidance on maximum consent
+   validity), and can be revisited any time via the "manage cookies" footer
+   button, which just re-opens this same element. */
+
+var COOKIE_CONSENT_KEY = "mlab-cookie-consent";
+var COOKIE_CONSENT_MAX_AGE_MS = 1000 * 60 * 60 * 24 * 180; // 180 days
+
+var COOKIE_BANNER_STRINGS = {
+  fr: {
+    text: "Ce site utilise Google Analytics pour mesurer l’audience. Vos données ne sont collectées qu’avec votre accord. Voir les ",
+    linkText: "mentions légales",
+    accept: "Accepter",
+    decline: "Refuser"
+  },
+  en: {
+    text: "This site uses Google Analytics to measure audience. Your data is only collected with your consent. See the ",
+    linkText: "legal notice",
+    accept: "Accept",
+    decline: "Decline"
+  }
+};
+
+function readCookieConsent() {
+  var raw;
+  try {
+    raw = localStorage.getItem(COOKIE_CONSENT_KEY);
+  } catch (e) {
+    return null;
+  }
+  if (!raw) { return null; }
+  var parsed;
+  try {
+    parsed = JSON.parse(raw);
+  } catch (e) {
+    return null;
+  }
+  if (!parsed || typeof parsed.ts !== "number") { return null; }
+  if (Date.now() - parsed.ts > COOKIE_CONSENT_MAX_AGE_MS) { return null; }
+  return parsed;
+}
+
+function writeCookieConsent(analytics) {
+  try {
+    localStorage.setItem(COOKIE_CONSENT_KEY, JSON.stringify({ analytics: analytics, ts: Date.now() }));
+  } catch (e) {
+    // Private browsing or storage disabled: consent still applies for this
+    // page view via updateAnalyticsConsent, it just won't be remembered.
+  }
+}
+
+function updateAnalyticsConsent(granted) {
+  if (typeof window.gtag !== "function") { return; }
+  window.gtag("consent", "update", { analytics_storage: granted ? "granted" : "denied" });
+}
+
+class CookieBannerElement extends HTMLElement {
+  connectedCallback() {
+    var lang = this.getAttribute("lang") === "en" ? "en" : "fr";
+    var t = COOKIE_BANNER_STRINGS[lang];
+    var legalHref = lang === "en" ? "/en-us/legal" : "/mentions-legales";
+
+    this.className = "cookie-banner";
+    this.innerHTML =
+      '<div class="cookie-banner__inner">' +
+        '<p class="cookie-banner__text">' + t.text + '<a href="' + legalHref + '">' + t.linkText + '</a>.</p>' +
+        '<div class="cookie-banner__actions">' +
+          '<button type="button" class="cookie-banner__button cookie-banner__button--decline" data-decline>' + t.decline + '</button>' +
+          '<button type="button" class="cookie-banner__button cookie-banner__button--accept" data-accept>' + t.accept + '</button>' +
+        '</div>' +
+      '</div>';
+
+    var self = this;
+    var declineButton = this.querySelector("[data-decline]");
+    var acceptButton = this.querySelector("[data-accept]");
+
+    declineButton.addEventListener("click", function () {
+      writeCookieConsent(false);
+      self.hidden = true;
+    });
+
+    acceptButton.addEventListener("click", function () {
+      writeCookieConsent(true);
+      updateAnalyticsConsent(true);
+      self.hidden = true;
+    });
+
+    var stored = readCookieConsent();
+    if (stored) {
+      if (stored.analytics) { updateAnalyticsConsent(true); }
+      this.hidden = true;
+    } else {
+      this.hidden = false;
+    }
+  }
+
+  open() {
+    this.hidden = false;
+  }
+}
+
+customElements.define("cookie-banner", CookieBannerElement);
+
+document.addEventListener("click", function (event) {
+  if (!event.target.closest("[data-cookie-manage]")) { return; }
+  var banner = document.querySelector("cookie-banner");
+  if (banner) { banner.open(); }
+});

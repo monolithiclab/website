@@ -9,10 +9,17 @@
   An English line sits underneath for anyone who landed from /en-us/.
 */ -}}
 {{- $code := index .Page.Meta "error_code" -}}
+{{- $gtmID := index .Site.Theme.Vars "gtm_id" -}}
 <!DOCTYPE html>
 <html lang="fr">
 {{ template "head" . }}
 <body>
+  {{ if $gtmID }}
+  <!-- Google Tag Manager (noscript) -->
+  <noscript><iframe src="https://www.googletagmanager.com/ns.html?id={{ $gtmID }}"
+  height="0" width="0" style="display:none;visibility:hidden"></iframe></noscript>
+  <!-- End Google Tag Manager (noscript) -->
+  {{ end }}
   <a href="#main-content" class="skip-link">Aller au contenu</a>
   {{ template "header" . }}
   <main id="main-content">
@@ -45,6 +52,7 @@
     </section>
   </main>
   {{ template "footer" . }}
+  {{ if $gtmID }}<cookie-banner lang="fr"></cookie-banner>{{ end }}
   {{ template "scripts" . }}
 </body>
 </html>

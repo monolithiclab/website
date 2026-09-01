@@ -27,7 +27,12 @@
     </div>
     <div class="footer__bottom">
       <p class="footer__copy">&copy; 2026 Monolithic Lab SASU</p>
-      <a href="{{ if eq $lang "en" }}{{ contentURL "en-us/legal.md" }}{{ else }}{{ contentURL "mentions-legales.md" }}{{ end }}" class="footer__legal">{{ if eq $lang "en" }}Legal notice{{ else }}Mentions légales{{ end }}</a>
+      <div class="footer__legal-links">
+        <a href="{{ if eq $lang "en" }}{{ contentURL "en-us/legal.md" }}{{ else }}{{ contentURL "mentions-legales.md" }}{{ end }}" class="footer__legal">{{ if eq $lang "en" }}Legal notice{{ else }}Mentions légales{{ end }}</a>
+        {{- if index .Site.Theme.Vars "gtm_id" }}
+        <button type="button" class="footer__legal footer__cookie-manage" data-cookie-manage>{{ if eq $lang "en" }}Manage cookies{{ else }}Gérer les cookies{{ end }}</button>
+        {{- end }}
+      </div>
     </div>
   </div>
 </footer>

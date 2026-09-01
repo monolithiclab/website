@@ -30,7 +30,11 @@ https://github.com
 
 ## Personal data and privacy
 
-This website does not use cookies. It does not use any analytics or tracking tools. No personal data is collected during your visit.
+This website uses Google Tag Manager to load Google Analytics 4, an audience-measurement tool from Google Ireland Limited. It is only activated after your consent, collected via the banner shown on your first visit. You can change your choice at any time via the “Manage cookies” button in the footer.
+
+If you consent, Google Analytics sets cookies (_ga, _ga_*) for up to 13 months for audience-measurement purposes (pages viewed, traffic source, visit duration). This data is processed by Google Ireland Limited and may be transferred to the United States. If you decline or do not respond to the banner, no cookie is set and no browsing data is collected.
+
+Outside of the possible consent to Google Analytics described above, this website sets no cookies. Your consent choice is stored locally in your browser for 6 months and is not shared with any third party.
 
 When you submit the contact form, your name, email address, company name, and message are transmitted to Formspree, Inc. (https://formspree.io) for the sole purpose of delivering your message. This data is not stored on our servers and is not shared with any third party.
 

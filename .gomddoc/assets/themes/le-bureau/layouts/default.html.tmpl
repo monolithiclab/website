@@ -1,9 +1,16 @@
 {{- $lang := or (index .Page.Meta "lang") "fr" -}}
 {{- $hero := index .Page.Meta "hero" -}}
+{{- $gtmID := index .Site.Theme.Vars "gtm_id" -}}
 <!DOCTYPE html>
 <html lang="{{ $lang }}">
 {{ template "head" . }}
 <body>
+  {{ if $gtmID }}
+  <!-- Google Tag Manager (noscript) -->
+  <noscript><iframe src="https://www.googletagmanager.com/ns.html?id={{ $gtmID }}"
+  height="0" width="0" style="display:none;visibility:hidden"></iframe></noscript>
+  <!-- End Google Tag Manager (noscript) -->
+  {{ end }}
   <a href="#main-content" class="skip-link">
     {{ if eq $lang "en" }}Skip to content{{ else }}Aller au contenu{{ end }}
   </a>
@@ -22,6 +29,7 @@
     {{ template "cta-band" . }}
   </main>
   {{ template "footer" . }}
+  {{ if $gtmID }}<cookie-banner lang="{{ $lang }}"></cookie-banner>{{ end }}
   {{ template "scripts" . }}
 </body>
 </html>

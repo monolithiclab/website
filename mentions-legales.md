@@ -35,13 +35,15 @@ L’ensemble du contenu de ce site — textes, images, graphismes, logo, structu
 
 Les informations recueillies via le formulaire de contact — nom, adresse e-mail, nom de l’entreprise et message — sont transmises à Formspree, Inc. (https://formspree.io), notre sous-traitant, aux seules fins de nous acheminer votre message. Elles sont utilisées exclusivement pour répondre à votre demande, ne sont pas stockées sur nos serveurs et ne sont communiquées à aucun tiers. Formspree, Inc. étant établie aux États-Unis, cet acheminement implique un transfert de données hors de l’Union européenne.
 
-Aucun outil de suivi analytique n’est utilisé sur ce site. Aucune donnée de navigation n’est collectée.
+Ce site utilise Google Tag Manager pour charger Google Analytics 4, un outil de mesure d’audience de Google Ireland Limited. Cet outil n’est activé qu’après votre consentement, recueilli via la bannière affichée lors de votre première visite. Vous pouvez modifier votre choix à tout moment via le bouton « Gérer les cookies » en pied de page.
+
+Si vous consentez au suivi, Google Analytics dépose des cookies (_ga, _ga_*) pendant 13 mois maximum, à des fins de mesure d’audience (pages consultées, provenance du trafic, durée de visite). Ces données sont traitées par Google Ireland Limited et peuvent être transférées vers les États-Unis. Si vous refusez ou ne répondez pas à la bannière, aucun cookie n’est déposé et aucune donnée de navigation n’est collectée.
 
 Conformément au Règlement Général sur la Protection des Données (RGPD) et à la loi Informatique et Libertés, vous disposez d’un droit d’accès, de rectification, de suppression et d’opposition concernant vos données personnelles. Pour exercer ces droits, contactez-nous à l’adresse : contact@monolithiclab.fr.
 
 ## Cookies
 
-Ce site n’utilise aucun cookie.
+En dehors du consentement éventuel à Google Analytics décrit ci-dessus, ce site ne dépose aucun cookie. Votre choix de consentement est mémorisé localement dans votre navigateur pendant 6 mois, sans être partagé avec un tiers.
 
 ## Limitation de responsabilité
 
