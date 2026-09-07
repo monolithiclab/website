@@ -24,14 +24,14 @@ jobs:
       # Pinned, not "latest": the generator controls the whole output, so an
       # upstream release must not silently change the published site. Bump
       # deliberately, after rebuilding locally.
-      GOMDDOC_VERSION: "v0.1.1"
+      GOMDDOC_VERSION: "v0.1.2"
     steps:
       - name: Checkout
         uses: actions/checkout@v7
       - name: Setup Go
         uses: actions/setup-go@v7
         with:
-          go-version: 'stable'
+          go-version: "stable"
           # There is no go.sum here — gomddoc is fetched with `go install` from
           # a remote module. Left on, the cache step looks for one, fails to
           # find it, and warns on every run.
