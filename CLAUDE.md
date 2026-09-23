@@ -45,6 +45,16 @@ photographs. Sharp corners, flat colours, grid layouts, mobile-first.
 
 ## Marketing Voice
 
+- **Positioning:** fractional CTO (*CTO à temps partagé*) and interim CTO (*CTO de transition*) for
+  small and mid-sized companies, both carrying the company's AI transformation (engineering and
+  every other team). Fixed-price projects (*missions au forfait*: assessment, AI exploration, POC,
+  MVP) are a separate offer: a defined deliverable, never a substitute for the CTO roles
+- **AI approach:** modeled on the forward deployed engineer (on site, real data, judged on usage);
+  the adoption plan is co-built with the client's teams, never a ready-made method
+- **Leadership stance:** a CTO who builds, not just manages: knows the craft hands-on and drives AI
+  agents for execution
+- **EN terminology:** "interim CTO" is the primary term (US search usage); "transitional CTO" appears
+  as a synonym
 - **No first person** — never use "je"/"I", "mon"/"my", "moi"/"me" in any page copy
 - Use impersonal constructions, "Monolithic Lab" as subject, or third person for the bio
 - Direct address ("vous"/"you") is fine
@@ -68,20 +78,28 @@ The site is the repository root — there is no `Website/` wrapper directory.
   README.md                             # FR homepage (directory index)
   approche.md                           # FR approach page
   cto-temps-partage.md                  # FR fractional CTO pillar page
-  expertises.md                         # FR expertise page (4 modes d'intervention)
+  cto-de-transition.md                  # FR interim (transitional) CTO pillar page
+  transformation-ia.md                  # FR AI transformation page (FDE approach, adoption plan)
+  expertises.md                         # FR offers page (CTO roles + missions au forfait)
   references.md                         # FR case studies (MeilleursAgents, Prose)
   faq.md                                # FR frequently asked questions
   contact.md                            # FR contact page
   mentions-legales.md                   # FR legal page
+  articles/
+    README.md                           # FR articles index
+    *.md                                # FR articles (definitions, SMB case, FDE, AI-era CTO, experience)
   en-us/
     README.md                           # EN homepage (directory index)
     approach.md                         # EN approach page
     fractional-cto.md                   # EN fractional CTO page
-    expertise.md                        # EN expertise page
+    interim-cto.md                      # EN interim CTO page
+    ai-transformation.md                # EN AI transformation page
+    expertise.md                        # EN services page (CTO roles + fixed-price projects)
     references.md                       # EN references page
     faq.md                              # EN FAQ page
     contact.md                          # EN contact page
     legal.md                            # EN legal page
+    articles/                           # EN articles index (README.md) + articles
   images/                               # Static images, SVGs, favicon
 ```
 
@@ -89,7 +107,7 @@ The site is the repository root — there is no `Website/` wrapper directory.
 
 - gomddoc strips `.md` extensions by default (`strip_extensions: [".md"]`)
 - Content pages use flat `.md` files (e.g., `approche.md`), not `folder/README.md`
-- Only homepage indexes remain as `README.md` (root and `en-us/`)
+- Only section indexes remain as `README.md` (root, `en-us/`, and the two `articles/` directories)
 - All internal links use extensionless paths (e.g., `/contact`, `/en-us/approach`)
 - Requests to `/contact.md` are 301-redirected to `/contact` by gomddoc
 - In build mode, `approche.md` outputs to `approche/index.html` for static host compatibility

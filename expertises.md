@@ -1,115 +1,76 @@
 ---
-title: "Expertises — Monolithic Lab"
-description: "Direction technique à temps partagé, structuration des opérations, design de systèmes et workflows IA utiles. Quatre modes d’intervention pour remettre de la clarté et du levier là où la croissance complique tout."
+title: "Offres — Monolithic Lab"
+description: "CTO à temps partagé, CTO de transition, et missions au forfait : diagnostic technique, exploration IA, POC, MVP. Direction technique senior et transformation IA pour PME et scale-ups."
 alternate: "/en-us/expertise"
 hero:
   compact: true
-  label: "Expertises"
-  headline: "Quatre modes d’intervention, un même objectif : rendre l’entreprise plus lisible et plus solide"
-  subheadline: "Chaque intervention doit améliorer la qualité des décisions, la clarté des responsabilités, et la capacité à exécuter sans chaos."
+  label: "Offres"
+  headline: "Diriger dans la durée, ou livrer un résultat précis"
+  subheadline: "Deux rôles de CTO pour diriger la technique et la transformation IA dans la durée. Des missions au forfait pour répondre à une question précise, avec un livrable et un prix fixés d’avance."
 cta_band:
-  text: "Un besoin précis ou une situation difficile à formuler ? Discutons-en."
+  text: "Vous hésitez entre un rôle de CTO et une mission au forfait ? Le premier échange sert à trancher."
   button_text: "Prendre contact"
   button_url: "/contact"
 ---
 
-## 01 — Direction technique à temps partagé
+## Les rôles de CTO
 
-Quand une entreprise a besoin de leadership technique et qu’un CTO à plein temps serait prématuré ou trop lourd, Monolithic Lab prend ce rôle de manière intégrée.
+Une direction technique dans la durée, facturée au temps passé. Le CTO décide, dirige l’équipe et conduit la transformation IA de l’entreprise.
 
-Au-delà des arbitrages de stack et de roadmap, il s’agit d’aligner la technique avec les priorités business, de structurer l’équipe, de clarifier les responsabilités, et de remettre de la continuité là où tout dépend encore de quelques personnes.
+### CTO à temps partagé
 
-**Ce que cela couvre**
-- vision et priorités techniques ;
-- architecture et arbitrages structurants ;
-- cadrage des recrutements et montée en compétence de l’équipe ;
-- pilotage de sujets techniques critiques ;
-- lien entre direction, produit, opérations et exécution technique.
+Le rôle complet, 1 à 3 jours par semaine, de quelques mois à plus d’un an. Pour les entreprises qui ont une équipe technique mais pas de direction, et pas encore le besoin d’un CTO à plein temps.
 
-**Format typique**
-- 1 à 3 jours par semaine ;
-- intervention intégrée aux rituels de l’entreprise ;
-- durée de quelques mois à plus d’un an selon le contexte.
+[Détail du CTO à temps partagé](/cto-temps-partage)
 
----
+### CTO de transition
 
-## 02 — Diagnostic et structuration des opérations
+Le poste de CTO est vacant ou fragilisé. Monolithic Lab le reprend, stabilise l’équipe, tranche ce qui ne peut pas attendre, puis recrute et installe le successeur.
 
-Quand la croissance a dépassé les habitudes initiales, l’entreprise continue souvent d’avancer — mais de manière plus lente, plus confuse, et plus coûteuse qu’elle ne le devrait.
+[Détail du CTO de transition](/cto-de-transition)
 
-Monolithic Lab intervient pour rendre la situation intelligible : cartographier ce qui fonctionne réellement, identifier les points de friction, clarifier les zones grises, puis proposer une trajectoire de structuration réaliste.
+### La transformation IA, dans les deux rôles
 
-L’objectif est de donner un cadre directement utile à l’action.
+Dans l’équipe technique comme dans les autres équipes, le CTO identifie les usages, les construit avec les équipes concernées, et pilote un plan d’adoption construit avec elles.
 
-**Ce que cela couvre**
-- diagnostic de l’organisation, des processus et des circuits de décision ;
-- identification des points de blocage, des doublons et des risques ;
-- proposition d’organisation cible ou d’ajustements concrets ;
-- feuille de route priorisée et exploitable.
-
-**Format typique**
-- intervention courte et dense ;
-- 2 à 8 semaines selon le périmètre ;
-- livrables directement actionnables.
+[La transformation IA en détail](/transformation-ia)
 
 ---
 
-## 03 — Systèmes, outils et intégrations
+## Les missions au forfait
 
-Certaines difficultés tiennent aux outils, aux intégrations et aux systèmes plus qu’aux équipes.
+Une question précise, un livrable défini, un délai et un prix fixés à l’avance. Une mission au forfait ne remplace pas une direction technique : elle produit un résultat, puis s’arrête. Elle peut précéder un rôle de CTO, sans jamais l’imposer.
 
-Quand la solution utile reste à construire — ou quand la valeur se situe dans la façon de connecter les briques existantes — Monolithic Lab peut concevoir, cadrer et construire ce qui manque.
+### Diagnostic technique
 
-Cela peut prendre la forme d’un outil métier léger, d’une automatisation ciblée, d’une intégration entre systèmes, ou d’un dispositif interne permettant à l’équipe de travailler avec moins de friction.
+Un état des lieux indépendant de l’architecture, du code, de l’équipe, de la sécurité et des coûts, en 2 à 8 semaines selon le périmètre. Avant une levée ou une cession, avant de recruter un CTO, après un incident grave, ou pour un second avis sur une équipe ou un prestataire.
 
-**Ce que cela couvre**
-- cadrage fonctionnel et technique ;
-- choix build vs buy ;
-- intégrations et automatisations ;
-- outils internes ciblés ;
-- documentation pour reprise en main par l’équipe.
+**Livrable** : rapport écrit, risques classés par gravité, plan d’action priorisé, restitution à la direction.
 
-**Principe important**
-Le développement se justifie par ce qu’il produit : un coût supprimé, une friction réduite, ou un levier créé.
+### Exploration IA
 
----
+Où l’IA peut-elle réellement servir dans votre entreprise ? Entretiens et observation dans les équipes concernées, inventaire des cas d’usage, premiers tests sur vos données.
 
-## 04 — IA utile pour les opérations
+**Livrable** : cas d’usage classés par gain, risque et faisabilité, et un plan d’adoption construit avec les équipes.
 
-Ici, l’IA est un outil d’exécution parmi d’autres.
+### POC
 
-La question est de savoir où elle améliore le travail : documentation, recherche, structuration d’information, workflows internes, assistants opérationnels, ou systèmes agentiques ciblés.
+Vérifier qu’une idée fonctionne avant d’investir : un prototype sur vos données réelles, testé par les personnes qui l’utiliseront, avec un critère de réussite fixé au départ.
 
-Cette expertise est pertinente lorsque l’entreprise veut augmenter sa capacité d’exécution sans ajouter une nouvelle couche de confusion.
+**Livrable** : prototype fonctionnel, résultats mesurés, recommandation claire de poursuivre ou d’arrêter.
 
-**Ce que cela couvre**
-- cartographie des workflows où l’IA peut être utile ;
-- design de processus assistés par IA ;
-- systèmes de documentation et de mémoire opérationnelle ;
-- assistants internes et chaînes de traitement ciblées ;
-- garde-fous qui gardent chaque usage justifié.
+### MVP
+
+Une première version en production, utilisée par de vrais utilisateurs, sur un périmètre volontairement restreint. Produit interne, outil métier, fonctionnalité IA ou nouveau service.
+
+**Livrable** : un produit en production, le code, la documentation, et une équipe capable de le faire évoluer.
 
 ---
 
-## Trois formats d’engagement
+## Les règles, quel que soit le format
 
-### Diagnostic
-Pour comprendre rapidement une situation, identifier les vrais problèmes, et prioriser ce qui mérite d’être traité.
-
-### Sprint
-Pour résoudre un problème cadré sur un temps court : organisation, architecture, système interne, workflow critique.
-
-### Advisory / accompagnement continu
-Pour apporter du jugement, du cadre et de la continuité sur la durée, typiquement dans un rôle de direction technique à temps partagé.
-
-## Le contrat implicite
-
-Quelle que soit la forme de l’intervention, les mêmes règles s’appliquent :
-
-- un interlocuteur unique et senior, présent du premier échange jusqu’au transfert ;
-- un périmètre défini à l’avance, avec ce qui en fait partie et ce qui attendra ;
-- des livrables qu’une équipe interne peut reprendre et faire vivre ;
-- une indépendance complète vis-à-vis des éditeurs et des intégrateurs ;
-- une sortie de mission préparée dès le départ.
-
-Le point commun des interventions reste le même : clarifier, structurer, installer ce qui manque, et laisser derrière soi une entreprise plus solide qu’avant.
+- un seul interlocuteur senior, du premier échange au passage de relais ;
+- un périmètre écrit : ce qui est inclus, ce qui ne l’est pas ;
+- des livrables que votre équipe peut reprendre ;
+- aucune commission d’éditeur, d’intégrateur ou de fournisseur d’IA ;
+- une fin de mission préparée dès le début.

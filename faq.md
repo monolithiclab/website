@@ -1,142 +1,112 @@
 ---
 title: "Questions fréquentes — Monolithic Lab"
-description: "Comment travaille Monolithic Lab, pour quels types de situations, et dans quels cas cela a du sens."
+description: "CTO à temps partagé, CTO de transition, missions au forfait, transformation IA : différences, rythme, durée, tarifs, recrutement, confidentialité. Les réponses aux questions posées avant une mission."
 alternate: "/en-us/faq"
 hero:
   compact: true
   label: "FAQ"
-  headline: "Les questions qui reviennent avant de travailler ensemble"
-  subheadline: "Des réponses franches sur ce qui aide à décider si Monolithic Lab est le bon choix pour votre situation."
+  headline: "Les questions posées avant une mission"
+  subheadline: "Des réponses directes, pour savoir si Monolithic Lab convient à votre situation."
 cta_band:
-  text: "Une autre question ? Posez-la directement."
+  text: "Votre question n’est pas ici ? Posez-la directement."
   button_text: "Prendre contact"
   button_url: "/contact"
 ---
 
-## Comprendre ce que fait Monolithic Lab
+## Les deux rôles
 
-### Monolithic Lab, c’est du conseil ?
+### Quelle différence entre un CTO à temps partagé et un CTO de transition ?
 
-Oui et non.
+Le **CTO à temps partagé** répond à un besoin durable qui ne remplit pas une semaine : 1 à 3 jours par semaine, de quelques mois à plus d’un an.
 
-Il y a une dimension de diagnostic, de cadrage et de décision. Mais Monolithic Lab est pensé pour rester jusqu’à ce que la structuration tienne : installation de systèmes, mise en place de nouveaux modes de fonctionnement, et construction de ce qui manque quand c’est nécessaire.
+Le **CTO de transition** occupe un poste vacant pour une durée limitée : présence plus forte, mission plus courte, objectif précis — stabiliser, puis installer un successeur.
 
-### Monolithic Lab, c’est un CTO à temps partagé ?
+[CTO à temps partagé](/articles/cto-temps-partage-definition) · [CTO de transition](/articles/cto-de-transition-definition)
 
-C’est l’un des formats les plus naturels, parmi plusieurs.
+### Et les missions au forfait ?
 
-J’interviens aussi sur :
-- des diagnostics de structuration ;
-- des sujets d’organisation engineering et process ;
-- des systèmes internes, intégrations et outils ;
-- des workflows IA utiles pour les opérations ;
-- des interventions courtes sur un sujet critique.
+Diagnostic technique, exploration IA, POC, MVP : une question précise, un livrable, un délai et un prix fixés à l’avance. Une mission au forfait produit un résultat, puis s’arrête. Elle ne remplace pas une direction technique : si le besoin est de diriger l’équipe dans la durée, c’est un rôle de CTO. [Voir les offres](/expertises)
 
-### Est-ce que Monolithic Lab construit aussi, ou seulement conseille ?
+### Quelle différence avec un consultant ?
 
-Les deux. Certaines situations demandent surtout du jugement, du cadre et des arbitrages. D’autres exigent qu’un système, un outil, une intégration ou un workflow soit mis en place.
+Un consultant recommande. Un CTO décide, dirige l’équipe et répond des résultats. Monolithic Lab prend le rôle, avec le mandat qui va avec.
 
-La règle est simple : ce qui est construit doit apporter un levier.
+### Et avec un freelance ou une agence ?
 
-## Pour quels types d’entreprises ?
+Un freelance ou une agence produisent du code. Le CTO décide quoi construire, comment, avec qui, et pilote ceux qui le construisent, y compris les prestataires. Si le besoin est uniquement de la capacité de développement, un freelance ou une agence sera moins cher.
 
-### Quel est le bon fit ?
+### Monolithic Lab code-t-il ?
 
-Le bon fit, ce sont des entreprises en croissance ou en transition qui commencent à sentir que leur fonctionnement devient trop implicite, trop fragile ou trop coûteux.
+Oui, avec des agents IA : prototypes, analyse d’un code existant, outils internes, automatisations, MVP. Un CTO qui ne sait plus faire ne sait plus juger ce que produisent son équipe et ses agents. Le rôle reste la direction ; la pratique la rend crédible.
 
-Typiquement :
-- startups et scale-ups ;
-- PME avec un sujet réel de structuration ;
-- équipes entre une dizaine et quelques dizaines de personnes ;
-- contextes où l’enjeu est autant organisationnel que technique.
+## Pour quelles entreprises ?
 
-### Dans quels cas vaut-il mieux autre chose ?
+### Quel type d’entreprise ?
 
-Quand le besoin est purement exécutif et sans dimension de structuration, un freelance spécialisé peut être plus adapté.
+Des PME et scale-ups, typiquement de 10 à 100 personnes, dont le produit ou les opérations reposent sur la technique. Dirigées par un fondateur technique débordé, ou par un fondateur non technique qui a besoin d’un interlocuteur de confiance.
 
-Quand il faut une équipe entière de production ou une capacité de delivery large, une agence ou une ESN sera probablement plus pertinente.
+### Quand ce n’est pas la bonne réponse ?
 
-Et l’intervention produit sa valeur quand la direction accepte de remettre en question son fonctionnement et de déléguer un mandat clair. À défaut, mieux vaut attendre le bon moment.
+- quand le besoin est uniquement de la capacité de développement ;
+- quand l’équipe technique compte plusieurs dizaines d’ingénieurs et a besoin d’un dirigeant présent tous les jours ;
+- quand la direction n’est pas prête à confier un vrai mandat : un CTO sans pouvoir de décision ne sert à rien.
 
-## Comment se passe un premier échange ?
+## Rythme, durée, tarifs
 
-Un premier échange sert à comprendre la situation, avant toute question d’offre.
+### Combien de jours par semaine ?
 
-L’objectif est d’identifier :
-- ce qui bloque réellement ;
-- pourquoi cela bloque maintenant ;
-- quel type d’intervention serait pertinent ;
-- si Monolithic Lab est un bon fit.
+En temps partagé, 1 à 3 jours. En transition, souvent proche d’un temps plein au démarrage, puis dégressif.
 
-Et autant le dire tôt, dans un sens comme dans l’autre.
+### Combien de temps dure une mission ?
 
-## Cadence, durée, format
+Temps partagé : de quelques mois à plus d’un an. Transition : le temps de recruter et d’installer le successeur, en général quelques mois. Missions au forfait : durée fixée à l’avance ; 2 à 8 semaines pour un diagnostic.
 
-### Quelle est la cadence d’intervention ?
+### Sur site ou à distance ?
 
-Cela dépend du format :
-- **direction technique à temps partagé** : typiquement 1 à 3 jours par semaine ;
-- **diagnostic / structuration** : intervention concentrée sur quelques semaines ;
-- **sprint ciblé** : rythme court et dense autour d’un sujet précis ;
-- **accompagnement continu** : présence régulière selon le niveau de continuité utile.
+Les deux. La première phase se fait de préférence sur site, au contact de l’équipe. La suite se répartit selon vos besoins.
 
-### Présentiel ou distanciel ?
+### Combien ça coûte ?
 
-Les deux. Le bon dosage dépend du contexte. Une partie du travail peut se faire à distance, et certaines phases gagnent énormément à être menées au contact direct de l’équipe et du terrain.
+Les rôles de CTO sont facturés au temps, selon le rythme. Les missions au forfait ont un prix fixe. Dans les deux cas, une proposition écrite suit le premier échange, avec un prix ferme. À rythme égal, un CTO à temps partagé coûte une fraction d’un CTO salarié, sans frais de recrutement ni préavis.
 
-### Y a-t-il une durée minimale ?
+## Recrutement et équipe
 
-Le format doit rester cohérent avec le problème traité, et c’est le seul critère. Certaines interventions sont courtes et très ciblées, d’autres demandent de la continuité.
+### Monolithic Lab peut-il recruter notre futur CTO ?
 
-## Ce qui se passe à la fin
+Oui, c’est souvent l’aboutissement de la mission : définir le profil, participer aux entretiens, puis accompagner les premières semaines du nouveau CTO.
 
-### Que se passe-t-il quand la mission se termine ?
+### Et si nous recrutons un CTO en cours de mission ?
 
-L’intervention doit laisser derrière elle plus de clarté et moins de dépendance.
+C’est un bon résultat. La mission se transforme en passage de relais, puis s’arrête.
 
-Cela veut dire, selon les cas :
-- documentation ;
-- décisions explicites ;
-- équipe plus autonome ;
-- système repris en main ;
-- transition vers un CTO interne ou une équipe stabilisée.
+### Comment se passe le travail avec l’équipe en place ?
 
-### Et si un CTO à plein temps est recruté en cours de route ?
-
-Très bien. Dans beaucoup de cas, c’est même un bon résultat. J’aide alors à préparer la transition, à clarifier le rôle, et à transmettre ce qui doit l’être.
-
-## Tarifs et modèle d’engagement
-
-### Comment se fait la facturation ?
-
-Le modèle dépend du format d’intervention, avec une logique simple et explicite : le tarif se discute une fois le périmètre compris.
-
-### Pourquoi le tarif dépend-il de la mission ?
-
-Parce qu’un diagnostic court, une présence de CTO à temps partagé et un sprint de structuration relèvent de natures et de niveaux d’engagement différents. Une proposition adaptée au besoin dit plus qu’un tarif universel.
+L’équipe reste la vôtre. Le CTO la dirige, la fait progresser et prépare un lead interne à prendre plus de responsabilités quand c’est possible.
 
 ## Confidentialité et indépendance
 
-### Un NDA est-il possible ?
+### Un accord de confidentialité est-il possible ?
 
-Oui. Dès qu’un échange implique des informations sensibles, un accord de confidentialité peut être mis en place.
+Oui, dès le premier échange si nécessaire.
 
-### Monolithic Lab est-il lié à des éditeurs, intégrateurs ou partenaires à placer ?
+### Monolithic Lab touche-t-il des commissions ?
 
-Non. L’indépendance fait partie du modèle : les recommandations servent une seule chose, la situation du client.
+Non. Aucun partenariat avec des éditeurs, des intégrateurs, des fournisseurs d’IA ou des cabinets de recrutement. Les recommandations ne servent que votre entreprise.
 
-### Monolithic Lab peut-il travailler avec mon équipe existante ?
+## Transformation IA
 
-Oui. C’est même souvent là que l’intervention est la plus utile : donner du cadre, clarifier les responsabilités, aider l’équipe à mieux fonctionner, et construire ce qui manque avec les personnes en place.
+### L’IA concerne-t-elle seulement l’équipe technique ?
 
-## IA et systèmes
+Non. Les développeurs changent de pratiques avec les agents de code, mais les gains sont souvent aussi rapides ailleurs : service client, ventes, finance, opérations, RH. La transformation porte sur toute l’entreprise. [La transformation IA en détail](/transformation-ia)
 
-### Monolithic Lab fait-il « de l’IA » ?
+### Qu’est-ce qu’un Forward Deployed Engineer, et quel rapport ?
 
-Oui, sur un périmètre précis.
+Un ingénieur qui travaille au sein des équipes du client pour transformer un problème mal défini en système qui fonctionne en production. Le modèle vient de Palantir, et OpenAI comme Anthropic l’utilisent pour déployer l’IA chez leurs clients. Monolithic Lab s’en inspire : sur place, sur vos données, jugé sur l’usage réel. [Lire l’article](/articles/forward-deployed-engineer)
 
-Le sujet est de voir où elle améliore l’exécution : documentation, recherche, workflows internes, assistants ciblés, chaînes de traitement, mémoire opérationnelle.
+### Avez-vous une méthode toute faite ?
 
-### Qu’est-ce qui garantit un usage utile ?
+Non, et c’est volontaire. L’IA est récente, et peu d’entreprises l’ont déployée avec succès dans une vraie transformation. Le plan d’adoption se construit avec vos équipes, à partir de leur travail : cartographier, prioriser, tester sur le réel, déployer, transmettre.
 
-Partir du problème plutôt que de la technologie disponible. L’IA entre en jeu là où le levier est mesurable.
+### Par où commencer ?
+
+Par une exploration IA au forfait si la question est « où l’IA peut-elle nous servir ? ». Par un rôle de CTO si la transformation doit être conduite dans la durée, avec le reste de la direction technique.

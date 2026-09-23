@@ -948,19 +948,15 @@ strong {
   border-bottom: 1px solid var(--color-border);
 }
 
-.trust-card__watermark {
-  position: absolute;
-  top: 50%;
-  left: 50%;
-  transform: translate(-50%, -50%);
+.trust-card__value {
+  display: block;
   font-family: var(--font-serif);
-  font-size: clamp(8rem, 15vw, 14rem);
+  font-size: clamp(3.5rem, 6vw, 5rem);
   font-weight: 400;
-  color: var(--color-dark);
-  opacity: 0.04;
   line-height: 1;
-  pointer-events: none;
-  user-select: none;
+  color: var(--color-accent);
+  text-align: center;
+  margin-bottom: 16px;
 }
 
 .trust-card__content {
@@ -978,8 +974,8 @@ strong {
 }
 
 .trust-card__desc {
-  font-size: 14px;
-  color: var(--color-muted);
+  font-size: 15px;
+  color: var(--color-text-secondary);
 }
 
 @media (min-width: 768px) {

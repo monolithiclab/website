@@ -1,58 +1,56 @@
 ---
 title: "Approche — Monolithic Lab"
-description: "Clarifier avant d’accélérer. Comprendre la situation, trouver les points de levier, installer des systèmes utiles, et transférer ce qui doit rester après l’intervention."
+description: "Comprendre avant d’agir, décider et assumer, construire avec les équipes, transmettre avant de partir. La méthode de Monolithic Lab, et le parcours de Nicolas Mussat."
 alternate: "/en-us/approach"
 hero:
   compact: true
   label: "Approche"
-  headline: "Comprendre la situation, puis agir là où le levier est le plus fort"
-  subheadline: "Chaque intervention part de votre situation. L’objectif est de rendre l’entreprise plus claire, plus solide et plus capable d’exécuter avec moins de friction."
+  headline: "Comprendre, décider, transmettre"
+  subheadline: "Une mission de CTO se juge à ce qu’elle laisse derrière elle : de meilleures décisions, une équipe plus solide, et une entreprise qui n’a plus besoin de renfort."
 cta_band:
-  text: "Si cette manière de travailler vous parle, échangeons."
+  text: "Cette façon de travailler correspond à votre situation ? Décrivez-la."
   button_text: "Prendre contact"
   button_url: "/contact"
 ---
 
 <step-timeline>
-  <step-item number="01" title="Clarifier avant de corriger">Le premier travail est de comprendre ce qui se passe : comment les décisions se prennent, où l’information se perd, ce qui dépend de quelques personnes, et ce qui coûte déjà plus cher que nécessaire.</step-item>
-  <step-item number="02" title="Chercher les vrais points de levier">Certaines choses méritent d’être traitées tout de suite, d’autres plus tard. Le travail consiste à trouver les interventions qui changent la situation : meilleures décisions, responsabilités plus lisibles, systèmes plus solides, exécution plus fluide.</step-item>
-  <step-item number="03" title="Installer du cadre sans bureaucratie">Le bon niveau de structure dépend du stade de l’entreprise : assez de cadre pour tenir la croissance, assez de souplesse pour garder le rythme.</step-item>
-  <step-item number="04" title="Construire ce qui manque quand c’est nécessaire">Parfois le bon résultat passe par une décision, parfois par une réorganisation, parfois par un système, un outil, une intégration ou un workflow mieux conçu. Quand la situation l’exige, l’intervention va au-delà du diagnostic.</step-item>
-  <step-item number="05" title="Documenter et transférer">Une bonne intervention laisse derrière elle de la clarté, des décisions explicites, des systèmes repris en main, et une organisation moins dépendante de la personne qui est intervenue.</step-item>
+  <step-item number="01" title="Comprendre avant d’agir">Architecture, code, équipe, organisation, contrats, coûts. Le constat vient avant les recommandations, et il est écrit.</step-item>
+  <step-item number="02" title="Choisir peu de priorités">Tout ne se traite pas en même temps. Trois ou quatre chantiers qui changent la situation valent mieux qu’une liste de trente.</step-item>
+  <step-item number="03" title="Décider et assumer">Un CTO tranche. Les décisions sont expliquées à l’équipe, défendues devant la direction, et leur auteur en répond.</step-item>
+  <step-item number="04" title="Construire avec les équipes">Un outil, une automatisation ou un usage de l’IA se construit avec les personnes qui s’en serviront, sur leurs données, et se justifie par ce qu’il rapporte : un coût supprimé, un délai raccourci, un risque éliminé.</step-item>
+  <step-item number="05" title="Transmettre avant de partir">Décisions documentées, équipe autonome, successeur recruté ou formé. La mission est réussie quand l’entreprise peut s’en passer.</step-item>
 </step-timeline>
 
-## Principes de travail
+## Principes
 
-### Le résultat avant le livrable
+### Comprendre le métier, piloter les agents
 
-Une intervention se juge à ce qu’elle améliore : l’exécution, la clarté, la qualité des arbitrages. Le reste est du décor.
+Les profils de pur manager disparaissent. Un bon CTO comprend le travail de ses équipes sur le plan opérationnel, et pilote lui-même des agents IA pour exécuter : analyser un code, prototyper une idée, construire un outil. Il juge sur des résultats, et il sait vérifier ce que les agents produisent.
 
-### Ce qui fonctionne bat ce qui brille
+### Construire le plan d’adoption avec vous
 
-Les bonnes solutions sont celles qui tiennent chez vous : votre équipe, vos contraintes, votre rythme, votre niveau de maturité, votre capacité d’appropriation.
+L’IA est récente, et peu d’entreprises l’ont déployée avec succès dans une vraie transformation. Aucune méthode toute faite ne s’applique telle quelle. Le plan d’adoption se construit avec vos équipes, sur leur travail réel, dans une approche inspirée du [Forward Deployed Engineer](/articles/forward-deployed-engineer).
 
-### Chaque intervention doit laisser des traces utiles
+### Assez de structure, pas plus
 
-Une intervention doit laisser derrière elle au moins une de ces choses :
-- une meilleure lisibilité ;
-- un système plus solide ;
-- une organisation plus claire ;
-- des décisions mieux cadrées ;
-- de la documentation utile ;
-- une équipe plus autonome.
+Une équipe de 8 personnes n’a pas besoin des processus d’une équipe de 80. Le niveau d’organisation suit la taille et le stade de l’entreprise.
 
-### Le transfert fait partie du travail
+### Ce qui fonctionne chez vous
 
-Une intervention réussie laisse l’entreprise capable de mieux fonctionner sans elle. C’est le critère.
+Les bonnes solutions sont celles que votre équipe peut faire vivre, avec vos contraintes et votre budget. Une solution élégante que personne ne maintient ne sert à rien.
 
-## Le consultant
+### L’indépendance
 
-### Nicolas Mussat
+Aucun partenariat avec des éditeurs, des intégrateurs, des fournisseurs d’IA ou des cabinets de recrutement. Les recommandations ne servent que votre entreprise.
 
-Deux scale-ups construites de l’intérieur.
+## Nicolas Mussat
 
-Chez MeilleursAgents, j’ai structuré l’ensemble des opérations — SI, processus, équipes — qui ont accompagné la croissance de la plateforme jusqu’à son acquisition par Axel Springer. Chez Prose, j’ai posé les fondations opérationnelles d’une marque de beauté personnalisée capable de se déployer à l’international.
+Fondateur de Monolithic Lab. Plus de 25 ans d’expérience en technique, systèmes d’information et opérations, et une pratique quotidienne des agents IA pour prototyper, analyser et construire.
 
-Le fil rouge est le même : prendre une réalité imparfaite, clarifier ce qui compte, installer les bons systèmes, et laisser une organisation plus capable qu’avant.
+Chez **MeilleursAgents**, il a construit les opérations de l’entreprise — système d’information, processus, équipes — pendant la croissance qui a mené au rachat par Axel Springer.
 
-J’interviens en direct, seul. Mes recommandations répondent à votre seule situation : l’indépendance vis-à-vis des éditeurs et des intégrateurs fait partie du modèle.
+Chez **Prose**, marque de beauté personnalisée, il a posé les fondations opérationnelles qui ont permis le déploiement international depuis New York.
+
+Il mène chaque mission lui-même, sans équipe junior ni sous-traitance.
+
+[Voir les références](/references) · [Ce que 25 ans d’expérience apportent à un poste de CTO](/articles/experience-cto-senior)

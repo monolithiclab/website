@@ -1,6 +1,6 @@
 meta:
   title: "Monolithic Lab"
-  description: "Monolithic Lab aide les entreprises en croissance à structurer leurs opérations, clarifier leurs décisions techniques et construire les systèmes qui soutiennent leur croissance."
+  description: "CTO à temps partagé et CTO de transition pour PME et scale-ups. Plus de 25 ans d’expérience en direction technique, systèmes et opérations."
   domain: "monolithiclab.fr"
 
 language: fr
@@ -27,12 +27,13 @@ language: fr
 #
 # The real defence is that private material is not in this repository at all:
 # see .gitignore.
+#
+# PLAN.md, DESIGN_PROMPT.md and docs/ are gitignored and absent from any
+# checkout, so they are not listed here (gomddoc doctor flags patterns that
+# match nothing); the Makefile's prune step still checks for them.
 exclude:
   - "CLAUDE.md"
   - "Makefile"
-  - "DESIGN_PROMPT.md"
-  - "PLAN.md"
-  - "docs/"
 
 theme:
   name: le-bureau
@@ -43,5 +44,5 @@ theme:
     # never calls the CSS-generating function that would otherwise turn every
     # theme.vars key into a --theme-* custom property.
     gtm_id: "GTM-T26W68XM"
-
-color_chips: false
+  features:
+    color_chips: false

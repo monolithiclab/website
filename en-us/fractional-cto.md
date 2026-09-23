@@ -1,110 +1,98 @@
 ---
-title: "Fractional CTO — Monolithic Lab"
-description: "An embedded technical leadership role for companies that genuinely need direction, structure, and better decisions, before a full-time CTO makes sense."
+title: "Fractional CTO for Small and Mid-Sized Companies — Monolithic Lab"
+description: "A senior CTO 1 to 3 days a week: technical decisions, team, hiring, AI transformation. For companies that need technical leadership before a full-time hire makes sense."
 lang: "en"
 alternate: "/cto-temps-partage"
 hero:
   compact: true
   label: "Fractional CTO"
-  headline: "The CTO role when the need is there, before the full-time hire makes sense"
-  subheadline: "Monolithic Lab takes on an embedded technical leadership role: clarifying, arbitrating, structuring, hiring when needed, and restoring continuity where too much still depends on too few people."
+  headline: "Full technical leadership, a few days a week"
+  subheadline: "For companies that have an engineering team but no one to lead it. Monolithic Lab holds the CTO role 1 to 3 days a week, and drives AI transformation across the whole company."
 cta_band:
-  text: "Does that sound like your current situation? Let’s talk."
+  text: "Is your engineering team moving without direction? Describe your situation."
   button_text: "Get in touch"
   button_url: "/en-us/contact"
 ---
 
-## What a fractional CTO actually is
+## Definition
 
-A fractional CTO is a leadership function exercised part-time, with genuine continuity of presence and accountability.
+A **fractional CTO** is a technology executive who holds the full CTO role for a company, but only part of the week. Some call it a part-time or outsourced CTO.
 
-The role is to join the company deeply enough to understand its constraints, participate in important decisions, structure the team and systems, and help the organization become more capable over time.
+A fractional CTO is not a consultant or a contractor. They make the decisions, lead the team, and answer for the results, like an in-house CTO. What changes is the volume: a few days a week instead of five, and a fee instead of a salary.
 
-In practice, that means:
-- being involved in important decisions;
-- giving the technical team more structure and direction;
-- connecting business, product, operations, and technical concerns;
-- putting systems in place that continue to hold after the engagement ends.
+[Read the full article: what is a fractional CTO?](/en-us/articles/what-is-a-fractional-cto)
 
-## When this model becomes useful
+## Who it’s for
 
-### You have a technical team, but not yet strong technical leadership
+### You have developers, but no CTO
 
-Architecture, hiring, technical debt, prioritization, product-tech coordination, security, internal systems — the topics keep accumulating. Founders or senior profiles absorb what they can, but nobody really has the mandate or room to structure the whole picture.
+The founder makes technical calls without the time to do it well. The longest-serving developer has become the de facto lead. Decisions get made, but no one owns them.
 
-### You have grown faster than your operating methods
+### Your engineering organization hasn’t kept up with growth
 
-What worked at the beginning no longer holds. Decisions slow down, dependencies pile up, and overall visibility gets worse. The team is still moving, but with too much friction.
+What worked with 5 developers breaks at 15. Releases slow down, incidents repeat, debt piles up, and no one has the mandate to reorganize.
 
-### You are going through a critical phase
+### You’re heading into a milestone that depends on technology
 
-A CTO departure, due diligence, a reorganization, an architectural shift, international growth, or a period where the company simply needs more experienced technical judgment than it currently has internally.
+A fundraise, due diligence, an acquisition, a rebuild, international expansion, hiring a future CTO. You need a senior opinion, and someone to stand behind it.
 
-## What the role covers
+## What a fractional CTO does
 
-### Direction and arbitration
-- technical priorities and direction;
-- architecture and structural choices;
-- alignment between technical decisions and business objectives;
-- deciding what needs to be addressed now versus later.
+### Technical decisions
 
-### Team and organization
-- role clarity;
-- team structuring;
-- help with hiring;
-- helping existing people level up;
-- improving how the team functions together.
+- architecture and stack;
+- build, buy, or stop;
+- technical priorities tied to business goals;
+- technical debt: what to pay down now, what can wait.
 
-### Systems and operations
-- information systems and information flow;
-- tools, integrations, and workflows;
-- security, reliability, debt, maintainability;
-- coordination with product, operations, customer support, supply, or other functions depending on context.
+### Team
 
-### Leadership continuity
-- better visibility for the CEO and leadership team;
-- stronger prioritization;
-- documentation;
-- continuity of execution;
-- preparing the next step, including handover to an internal CTO if needed.
+- structure and roles;
+- hiring, from job description to final interview;
+- coaching team leads and senior engineers;
+- preparing a future in-house CTO, hired or promoted.
+
+### AI transformation
+
+- AI agents in the development cycle: writing, review, testing, documentation;
+- new practices and guardrails for the engineering team;
+- AI use cases in other teams: customer support, sales, finance, operations;
+- an adoption plan built with the teams, modeled on the forward deployed engineer: on site, on your data, judged on real usage.
+
+[AI transformation in detail](/en-us/ai-transformation)
+
+### Reliability and operations
+
+- security, backups, access management;
+- incidents and service continuity;
+- back-office systems, internal tools, integrations, automation.
+
+### Governance
+
+- technical counterpart to the CEO, the leadership team, and the board;
+- technology budget and vendor selection;
+- answers for investors and acquirers during due diligence.
 
 ## How it works
 
-### Cadence
+**Cadence.** 1 to 3 days a week, on site or remote as needed. The CTO joins the team’s rituals and stays reachable between days on site.
 
-Typically 1 to 3 days per week. Enough to stay close to the real issues, weigh in on decisions, and create continuity, while letting the full-time hire come in its own time.
+**First weeks.** An assessment of the architecture, code, team, and risks. You get a written report and a prioritized plan.
 
-### Duration
+**Length.** A few months to more than a year. The engagement ends when the company can do without it.
 
-It depends on the context. Some engagements are bridges over a transition. Others support a deeper structuring phase. What counts is the outcome: a company that is more solid and more autonomous by the end.
+**Exit.** Planned from day one: decisions documented, architecture described, successor hired or trained.
 
-### The first weeks
+## Fractional, interim, or fixed-price?
 
-The first weeks are usually about:
-1. understanding the situation;
-2. identifying risk and confusion points;
-3. setting priorities;
-4. defining a credible action path;
-5. putting useful structure in place quickly.
-
-## What defines the role
-
-### Accountability that is owned
-
-Decisions get made, carried, and defended in front of the leadership team and in front of the engineers. Whatever is decided commits the person who decided it.
-
-### Leadership, sustained over time
-
-The subject is direction, structure, continuity, and arbitration. Regular presence is what makes it possible to follow a piece of work through until it stands on its own.
-
-### Autonomy built in from the start
-
-A good result is a company that is more legible, more structured, and more autonomous than it was before. The exit gets prepared from the first weeks.
+A fractional CTO fits when the need is ongoing but doesn’t fill a week. If the CTO seat is empty and you need someone close to full-time for a few months, that’s an [interim CTO](/en-us/interim-cto) engagement. For a one-off, well-defined need — assessment, AI exploration, POC, MVP — a [fixed-price project](/en-us/expertise) is enough.
 
 ## Why Monolithic Lab
 
-Monolithic Lab is built on systems constructed and sustained from the inside, over time.
+25+ years of technical and operational experience. At **MeilleursAgents**, Nicolas Mussat built the operations and information systems that carried the company’s growth through its acquisition by Axel Springer. At **Prose**, he laid the operational foundations for its international expansion from New York.
 
-At **MeilleursAgents**, Nicolas Mussat structured operations and information systems through a growth phase that led to the company’s acquisition by Axel Springer. At **Prose**, he laid operational foundations able to support an international scale-up.
+A CTO who builds, not just manages: Nicolas Mussat drives AI agents himself to prototype, analyze, and build, and passes that practice on to the teams.
 
-The common thread is the same: take existing systems, the team already in place, and concrete constraints — and make the whole thing hold together with better clarity, less hidden dependency, and stronger decisions.
+One point of contact, independent of any software vendor, integrator, or AI provider: every recommendation serves your company alone.
+
+[See references](/en-us/references)

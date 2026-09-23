@@ -1,143 +1,113 @@
 ---
 title: "FAQ — Monolithic Lab"
-description: "How Monolithic Lab works, what kinds of situations it is built for, and when it is the right fit."
+description: "Fractional CTO, interim CTO, fixed-price projects, AI transformation: differences, cadence, length, pricing, hiring, confidentiality. Answers to the questions asked before an engagement."
 lang: "en"
 alternate: "/faq"
 hero:
   compact: true
   label: "FAQ"
-  headline: "Questions that usually come up before working together"
-  subheadline: "Straight answers on what helps you decide whether Monolithic Lab is the right choice for your situation."
+  headline: "Questions asked before an engagement"
+  subheadline: "Straight answers, so you can tell whether Monolithic Lab fits your situation."
 cta_band:
-  text: "Another question? Ask directly."
+  text: "Don’t see your question? Ask it directly."
   button_text: "Get in touch"
   button_url: "/en-us/contact"
 ---
 
-## Understanding what Monolithic Lab actually does
+## The two roles
 
-### Is Monolithic Lab consulting?
+### What’s the difference between a fractional CTO and an interim CTO?
 
-Yes and no.
+A **fractional CTO** covers an ongoing need that doesn’t fill a week: 1 to 3 days a week, from a few months to more than a year.
 
-There is a diagnostic, framing, and decision-making dimension to the work. But Monolithic Lab is designed to stay until the structure holds: installing systems, changing how things run, and building what is missing when that is what the situation requires.
+An **interim CTO** fills an empty seat for a set period: more hours, shorter engagement, a clear goal — steady the team, then onboard a successor.
 
-### Is Monolithic Lab a fractional CTO service?
+[Fractional CTO](/en-us/articles/what-is-a-fractional-cto) · [Interim CTO](/en-us/articles/what-is-an-interim-cto)
 
-That is one of the most natural formats, among several.
+### What about fixed-price projects?
 
-I also work on:
-- operating structure diagnostics;
-- engineering organization and process issues;
-- systems, internal tools, and integrations;
-- practical AI workflows for internal operations;
-- short interventions around a critical issue.
+Technology assessment, AI exploration, POC, MVP: a specific question, with deliverable, timeline, and price set up front. A fixed-price project delivers a result, then ends. It doesn’t replace technical leadership: if you need someone to lead the team over time, that’s a CTO role. [See services](/en-us/expertise)
 
-### Does Monolithic Lab build things too, or only advise?
+### How is that different from a consultant?
 
-Both. Some situations require judgment, framing, and better decisions. Others require an actual system, integration, workflow, or operating layer to be put in place.
+A consultant recommends. A CTO decides, leads the team, and answers for the results. Monolithic Lab takes the role, with the mandate that comes with it.
 
-The rule is simple: whatever gets built has to create leverage.
+### Or from a freelancer or an agency?
 
-## What kind of companies are a good fit?
+Freelancers and agencies write code. A CTO decides what to build, how, and with whom, and manages the people building it, vendors included. If all you need is development capacity, a freelancer or an agency will cost less.
 
-### What does a good fit look like?
+### Does Monolithic Lab write code?
 
-A good fit is usually a growing or transitional company starting to feel that too much of how it operates is still implicit, fragile, or unnecessarily costly.
+Yes, with AI agents: prototypes, analysis of existing code, internal tools, automation, MVPs. A CTO who can no longer build can no longer judge what the team and its agents produce. The role is leadership; hands-on practice makes it credible.
 
-Typically:
-- startups and scale-ups;
-- SMBs with a real operating structure issue;
-- teams ranging from around ten to a few dozen people;
-- contexts where the problem is organizational and technical at the same time.
+## Who it’s for
 
-### When is something else the better call?
+### What kind of company?
 
-If the need is purely execution with no structuring dimension, a specialized freelancer may be a better fit.
+Small and mid-sized companies and scale-ups, typically 10 to 100 people, whose product or operations depend on technology. Led either by a technical founder who’s stretched too thin, or by a non-technical founder who needs a technical counterpart they can trust.
 
-If the company needs a full delivery team, an agency or larger services firm is probably more appropriate.
+### When is it the wrong answer?
 
-And the work creates its value when leadership is ready to question how the company currently runs and to delegate a clear mandate. Short of that, it is worth waiting for the right moment.
+- when all you need is development capacity;
+- when the engineering team is several dozen people and needs a leader there every day;
+- when leadership isn’t ready to hand over a real mandate: a CTO with no authority to decide is useless.
 
-## What does a first conversation look like?
+## Cadence, length, pricing
 
-The first conversation is there to understand the situation, before any question of an offer.
+### How many days a week?
 
-The goal is to identify:
-- what is actually blocking the company;
-- why it matters now;
-- what kind of engagement would help;
-- whether Monolithic Lab is the right fit.
+Fractional: 1 to 3 days. Interim: often close to full-time at the start, then tapering off.
 
-And that is worth saying early, either way.
+### How long does an engagement last?
 
-## Cadence, duration, and formats
+Fractional: from a few months to more than a year. Interim: long enough to hire and onboard the successor, usually a few months. Fixed-price projects: timeline set up front; 2 to 8 weeks for an assessment.
 
-### What is the usual engagement cadence?
+### On site or remote?
 
-That depends on the format:
-- **fractional technical leadership**: typically 1 to 3 days per week;
-- **diagnosis / operating structure**: concentrated work over a few weeks;
-- **focused sprint**: a short, dense engagement around a specific issue;
-- **ongoing advisory / support**: regular involvement based on how much continuity is actually useful.
+Both. The first phase works best on site, close to the team. After that, the split depends on your needs.
 
-### On-site or remote?
+### How much does it cost?
 
-Both. The right balance depends on the context. Some of the work can be done remotely, and certain phases benefit a lot from direct exposure to the team and the operating reality on the ground.
+CTO roles are billed on time, based on cadence. Fixed-price projects have a fixed price. Either way, a written proposal with a firm price follows the first conversation. At the same cadence, a fractional CTO costs a fraction of an in-house CTO, with no recruiting fees and no notice period.
 
-### Is there a minimum commitment?
+## Hiring and the team
 
-The format has to match the problem, and that is the only criterion. Some engagements are short and tightly scoped, others need continuity.
+### Can Monolithic Lab hire our future CTO?
 
-## What happens at the end?
+Yes, and it’s often how the engagement ends: defining the profile, joining the interviews, then supporting the new CTO’s first weeks.
 
-### What happens when the engagement ends?
+### What if we hire a CTO mid-engagement?
 
-The engagement should leave the company with more clarity and less dependency.
+That’s a good outcome. The engagement turns into a handover, then ends.
 
-That can mean:
-- documentation;
-- explicit decisions;
-- a more autonomous team;
-- systems that are easier to own;
-- a clean transition to an internal CTO or a stabilized team.
+### How does it work with the existing team?
 
-### What if we hire a full-time CTO during the engagement?
-
-That is often a good outcome. I help prepare the transition, clarify the role, and transfer whatever needs to be transferred.
-
-## Pricing and engagement model
-
-### How does pricing work?
-
-It depends on the type of engagement, with a simple and explicit logic: pricing gets discussed once the actual scope is understood.
-
-### Why does the rate depend on the engagement?
-
-Because a short diagnostic, a fractional CTO engagement, and a focused structuring sprint are different kinds of work at different levels of commitment. A proposal tailored to the real need says more than a universal price.
+The team stays yours. The CTO leads it, helps it grow, and prepares an internal lead to take on more responsibility where possible.
 
 ## Confidentiality and independence
 
-### Is an NDA possible?
+### Can we sign an NDA?
 
-Yes. As soon as the conversation involves sensitive information, a confidentiality agreement can be put in place.
+Yes, from the first conversation if needed.
 
-### Is Monolithic Lab tied to vendors, integrators, or partners that need to be pushed?
+### Does Monolithic Lab take commissions?
 
-No. Independence is part of the model: recommendations serve one thing, the client’s situation.
+No. No partnerships with software vendors, integrators, AI providers, or recruiting firms. Every recommendation serves your company alone.
 
-### Can Monolithic Lab work with my existing team?
+## AI transformation
 
-Yes. That is often where the work is most useful: giving the team more structure, clearer responsibilities, and better systems, with the people already in place.
+### Is AI only for the engineering team?
 
-## AI and systems
+No. Developers are changing how they work with coding agents, but the gains are often just as fast elsewhere: customer support, sales, finance, operations, HR. The transformation covers the whole company. [AI transformation in detail](/en-us/ai-transformation)
 
-### Does Monolithic Lab “do AI”?
+### What’s a forward deployed engineer, and how does it relate?
 
-Yes, within a precise scope.
+An engineer who works inside a client’s teams to turn a loosely defined problem into a system that runs in production. The model comes from Palantir, and both OpenAI and Anthropic use it to deploy AI at their customers. Monolithic Lab takes its cue from it: on site, on your data, judged on real usage. [Read the article](/en-us/articles/forward-deployed-engineer)
 
-The question is where it improves execution in a concrete way: documentation, research, internal workflows, targeted assistants, processing chains, operational memory.
+### Do you have a ready-made method?
 
-### What keeps the work useful rather than gimmicky?
+No, and that’s deliberate. AI is new, and few companies have deployed it successfully in a real transformation. The adoption plan gets built with your teams, starting from their work: map, prioritize, test on real work, deploy, hand over.
 
-Starting from the problem rather than from the available technology. AI comes in where the leverage is measurable.
+### Where to start?
+
+With a fixed-price AI exploration if the question is “where can AI help us?” With a CTO role if the transformation needs to be led over time, along with the rest of technical leadership.

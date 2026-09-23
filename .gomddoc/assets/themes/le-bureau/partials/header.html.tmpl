@@ -18,14 +18,15 @@
       <ul class="header__nav-list">
         <li><a href="{{ if eq $lang "en" }}{{ contentURL "en-us/approach.md" }}{{ else }}{{ contentURL "approche.md" }}{{ end }}" class="header__nav-link">{{ if eq $lang "en" }}Approach{{ else }}Approche{{ end }}</a></li>
         <li class="header__nav-item header__nav-item--has-submenu">
-          <a href="{{ if eq $lang "en" }}{{ contentURL "en-us/expertise.md" }}{{ else }}{{ contentURL "expertises.md" }}{{ end }}" class="header__nav-link">{{ if eq $lang "en" }}Expertise{{ else }}Expertises{{ end }}</a>
-          <div class="header__submenu" aria-label="{{ if eq $lang "en" }}Expertise submenu{{ else }}Sous-menu expertises{{ end }}">
+          <a href="{{ if eq $lang "en" }}{{ contentURL "en-us/expertise.md" }}{{ else }}{{ contentURL "expertises.md" }}{{ end }}" class="header__nav-link">{{ if eq $lang "en" }}Services{{ else }}Offres{{ end }}</a>
+          <div class="header__submenu" aria-label="{{ if eq $lang "en" }}Services submenu{{ else }}Sous-menu offres{{ end }}">
             <a href="{{ if eq $lang "en" }}{{ contentURL "en-us/fractional-cto.md" }}{{ else }}{{ contentURL "cto-temps-partage.md" }}{{ end }}" class="header__submenu-link">{{ if eq $lang "en" }}Fractional CTO{{ else }}CTO à temps partagé{{ end }}</a>
-            <a href="{{ if eq $lang "en" }}{{ contentURL "en-us/expertise.md" }}{{ else }}{{ contentURL "expertises.md" }}{{ end }}" class="header__submenu-link">{{ if eq $lang "en" }}Operating structure{{ else }}Structuration des opérations{{ end }}</a>
-            <a href="{{ if eq $lang "en" }}{{ contentURL "en-us/expertise.md" }}{{ else }}{{ contentURL "expertises.md" }}{{ end }}" class="header__submenu-link">{{ if eq $lang "en" }}Systems & integrations{{ else }}Systèmes & intégrations{{ end }}</a>
-            <a href="{{ if eq $lang "en" }}{{ contentURL "en-us/expertise.md" }}{{ else }}{{ contentURL "expertises.md" }}{{ end }}" class="header__submenu-link">{{ if eq $lang "en" }}AI workflows{{ else }}Workflows IA utiles{{ end }}</a>
+            <a href="{{ if eq $lang "en" }}{{ contentURL "en-us/interim-cto.md" }}{{ else }}{{ contentURL "cto-de-transition.md" }}{{ end }}" class="header__submenu-link">{{ if eq $lang "en" }}Interim CTO{{ else }}CTO de transition{{ end }}</a>
+            <a href="{{ if eq $lang "en" }}{{ contentURL "en-us/ai-transformation.md" }}{{ else }}{{ contentURL "transformation-ia.md" }}{{ end }}" class="header__submenu-link">{{ if eq $lang "en" }}AI transformation{{ else }}Transformation IA{{ end }}</a>
+            <a href="{{ if eq $lang "en" }}{{ contentURL "en-us/expertise.md" }}{{ else }}{{ contentURL "expertises.md" }}{{ end }}" class="header__submenu-link">{{ if eq $lang "en" }}Fixed-price projects{{ else }}Missions au forfait{{ end }}</a>
           </div>
         </li>
+        <li><a href="{{ if eq $lang "en" }}{{ contentURL "en-us/articles/README.md" }}{{ else }}{{ contentURL "articles/README.md" }}{{ end }}" class="header__nav-link">Articles</a></li>
         <li><a href="{{ if eq $lang "en" }}{{ contentURL "en-us/references.md" }}{{ else }}{{ contentURL "references.md" }}{{ end }}" class="header__nav-link">{{ if eq $lang "en" }}References{{ else }}Références{{ end }}</a></li>
         <li><a href="{{ if eq $lang "en" }}{{ contentURL "en-us/contact.md" }}{{ else }}{{ contentURL "contact.md" }}{{ end }}" class="header__nav-link header__nav-link--cta">Contact</a></li>
       </ul>
@@ -51,14 +52,15 @@
       <ul class="header__mobile-nav-list">
         <li><a href="{{ if eq $lang "en" }}{{ contentURL "en-us/approach.md" }}{{ else }}{{ contentURL "approche.md" }}{{ end }}" class="header__mobile-nav-link">{{ if eq $lang "en" }}Approach{{ else }}Approche{{ end }}</a></li>
         <li class="header__mobile-nav-group">
-          <a href="{{ if eq $lang "en" }}{{ contentURL "en-us/expertise.md" }}{{ else }}{{ contentURL "expertises.md" }}{{ end }}" class="header__mobile-nav-link">{{ if eq $lang "en" }}Expertise{{ else }}Expertises{{ end }}</a>
+          <a href="{{ if eq $lang "en" }}{{ contentURL "en-us/expertise.md" }}{{ else }}{{ contentURL "expertises.md" }}{{ end }}" class="header__mobile-nav-link">{{ if eq $lang "en" }}Services{{ else }}Offres{{ end }}</a>
           <ul class="header__mobile-subnav-list">
             <li><a href="{{ if eq $lang "en" }}{{ contentURL "en-us/fractional-cto.md" }}{{ else }}{{ contentURL "cto-temps-partage.md" }}{{ end }}" class="header__mobile-subnav-link">{{ if eq $lang "en" }}Fractional CTO{{ else }}CTO à temps partagé{{ end }}</a></li>
-            <li><a href="{{ if eq $lang "en" }}{{ contentURL "en-us/expertise.md" }}{{ else }}{{ contentURL "expertises.md" }}{{ end }}" class="header__mobile-subnav-link">{{ if eq $lang "en" }}Operating structure{{ else }}Structuration des opérations{{ end }}</a></li>
-            <li><a href="{{ if eq $lang "en" }}{{ contentURL "en-us/expertise.md" }}{{ else }}{{ contentURL "expertises.md" }}{{ end }}" class="header__mobile-subnav-link">{{ if eq $lang "en" }}Systems & integrations{{ else }}Systèmes & intégrations{{ end }}</a></li>
-            <li><a href="{{ if eq $lang "en" }}{{ contentURL "en-us/expertise.md" }}{{ else }}{{ contentURL "expertises.md" }}{{ end }}" class="header__mobile-subnav-link">{{ if eq $lang "en" }}AI workflows{{ else }}Workflows IA utiles{{ end }}</a></li>
+            <li><a href="{{ if eq $lang "en" }}{{ contentURL "en-us/interim-cto.md" }}{{ else }}{{ contentURL "cto-de-transition.md" }}{{ end }}" class="header__mobile-subnav-link">{{ if eq $lang "en" }}Interim CTO{{ else }}CTO de transition{{ end }}</a></li>
+            <li><a href="{{ if eq $lang "en" }}{{ contentURL "en-us/ai-transformation.md" }}{{ else }}{{ contentURL "transformation-ia.md" }}{{ end }}" class="header__mobile-subnav-link">{{ if eq $lang "en" }}AI transformation{{ else }}Transformation IA{{ end }}</a></li>
+            <li><a href="{{ if eq $lang "en" }}{{ contentURL "en-us/expertise.md" }}{{ else }}{{ contentURL "expertises.md" }}{{ end }}" class="header__mobile-subnav-link">{{ if eq $lang "en" }}Fixed-price projects{{ else }}Missions au forfait{{ end }}</a></li>
           </ul>
         </li>
+        <li><a href="{{ if eq $lang "en" }}{{ contentURL "en-us/articles/README.md" }}{{ else }}{{ contentURL "articles/README.md" }}{{ end }}" class="header__mobile-nav-link">Articles</a></li>
         <li><a href="{{ if eq $lang "en" }}{{ contentURL "en-us/references.md" }}{{ else }}{{ contentURL "references.md" }}{{ end }}" class="header__mobile-nav-link">{{ if eq $lang "en" }}References{{ else }}Références{{ end }}</a></li>
         <li><a href="{{ if eq $lang "en" }}{{ contentURL "en-us/contact.md" }}{{ else }}{{ contentURL "contact.md" }}{{ end }}" class="header__mobile-nav-link header__mobile-nav-link--cta">Contact</a></li>
       </ul>

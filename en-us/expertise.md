@@ -1,116 +1,77 @@
 ---
-title: "Expertise — Monolithic Lab"
-description: "Fractional technical leadership, operating structure, systems design, and practical AI workflows. Four engagement models to restore clarity and leverage where growth has made everything harder."
+title: "Services — Monolithic Lab"
+description: "Fractional CTO, interim CTO, and fixed-price projects: technology assessment, AI exploration, POC, MVP. Senior technical leadership and AI transformation for small and mid-sized companies."
 lang: "en"
 alternate: "/expertises"
 hero:
   compact: true
-  label: "Expertise"
-  headline: "Four engagement models, one objective: a company that is more legible and more solid"
-  subheadline: "Every engagement has to improve the quality of decisions, the clarity of responsibilities, and the ability to execute without chaos."
+  label: "Services"
+  headline: "Lead over time, or deliver a specific result"
+  subheadline: "Two CTO roles to lead technology and AI transformation over time. Fixed-price projects to answer a specific question, with deliverable and price set up front."
 cta_band:
-  text: "Have a specific need, or a situation that is hard to put into words? Let’s talk."
+  text: "Not sure whether you need a CTO role or a fixed-price project? That’s what the first conversation is for."
   button_text: "Get in touch"
   button_url: "/en-us/contact"
 ---
 
-## 01 — Fractional technical leadership
+## CTO roles
 
-When a company needs technical leadership and a full-time CTO would be premature or too heavy, Monolithic Lab takes on that role as an embedded function.
+Ongoing technical leadership, billed on time. The CTO makes decisions, leads the team, and drives the company’s AI transformation.
 
-Beyond stack and roadmap calls, the work is to align technology with business priorities, structure the team, clarify responsibilities, and restore continuity where too much still depends on too few people.
+### Fractional CTO
 
-**What it covers**
-- technical vision and priorities;
-- architecture and structural decisions;
-- hiring plans and levelling up the existing team;
-- leading critical technical topics;
-- connecting leadership, product, operations, and technical execution.
+The full role, 1 to 3 days a week, from a few months to more than a year. For companies with an engineering team but no leader, that don’t yet need a full-time CTO.
 
-**Typical format**
-- 1 to 3 days per week;
-- embedded in the company’s existing rituals;
-- from a few months to more than a year, depending on context.
+[Fractional CTO in detail](/en-us/fractional-cto)
 
----
+### Interim CTO
 
-## 02 — Diagnostic and operating structure
+The CTO seat is empty or at risk. Monolithic Lab takes it over, steadies the team, makes the calls that can’t wait, then hires and onboards the successor.
 
-When growth outpaces the habits a company started with, it usually keeps moving — just more slowly, more confusedly, and at a higher cost than it should.
+[Interim CTO in detail](/en-us/interim-cto)
 
-Monolithic Lab makes the situation legible: map how things actually work, identify friction points, clarify the grey areas, then propose a realistic path toward structure.
+### AI transformation, in both roles
 
-The goal is to hand over a framework that is directly usable for action.
+In the engineering team and every other team, the CTO finds the use cases, builds them with the people concerned, and runs an adoption plan developed with them.
 
-**What it covers**
-- diagnostic of the organization, processes, and decision paths;
-- identification of bottlenecks, duplication, and risk;
-- a target operating model or concrete adjustments;
-- a prioritized, workable roadmap.
-
-**Typical format**
-- short and dense engagement;
-- 2 to 8 weeks depending on scope;
-- directly actionable deliverables.
+[AI transformation in detail](/en-us/ai-transformation)
 
 ---
 
-## 03 — Systems, tools, and integrations
+## Fixed-price projects
 
-Some difficulties come down to tools, integrations, and systems more than to the people using them.
+A specific question, a defined deliverable, timeline and price set up front. A fixed-price project doesn’t replace technical leadership: it delivers a result, then ends. It can come before a CTO role, but never requires one.
 
-When the useful solution still has to be built — or when the value lies in how existing pieces connect — Monolithic Lab can design, scope, and build what is missing.
+### Technology assessment
 
-That can take the form of a lightweight business tool, a targeted automation, an integration between systems, or an internal setup that lets the team work with less friction.
+An independent assessment of architecture, code, team, security, and costs, in 2 to 8 weeks depending on scope. Before a fundraise or a sale, before hiring a CTO, after a serious incident, or for a second opinion on a team or a vendor.
 
-**What it covers**
-- functional and technical scoping;
-- build vs buy decisions;
-- integrations and automation;
-- targeted internal tools;
-- documentation so the team can take ownership.
+**Deliverable**: a written report, risks ranked by severity, a prioritized action plan, a debrief with leadership.
 
-**A guiding principle**
-Development justifies itself by what it produces: a cost removed, a friction reduced, or a leverage point created.
+### AI exploration
 
----
+Where can AI really help your company? Interviews and observation in the teams concerned, an inventory of use cases, first tests on your data.
 
-## 04 — Practical AI for operations
+**Deliverable**: use cases ranked by gain, risk, and feasibility, and an adoption plan built with the teams.
 
-Here, AI is one execution tool among others.
+### POC
 
-The question is where it improves the work: documentation, search, information structuring, internal workflows, operational assistants, or targeted agentic systems.
+Check that an idea works before investing: a prototype on your real data, tested by the people who will use it, with a success criterion set at the start.
 
-This is the right fit when a company wants more execution capacity without adding a new layer of confusion.
+**Deliverable**: a working prototype, measured results, a clear go or no-go recommendation.
 
-**What it covers**
-- mapping the workflows where AI is genuinely useful;
-- designing AI-assisted processes;
-- documentation and operational memory systems;
-- internal assistants and targeted processing chains;
-- guardrails that keep every use justified.
+### MVP
+
+A first version in production, used by real users, on a deliberately narrow scope. An internal product, a business tool, an AI feature, or a new service.
+
+**Deliverable**: a product in production, the code, the documentation, and a team able to evolve it.
 
 ---
 
-## Three engagement formats
+## The rules, whatever the format
 
-### Diagnostic
-To understand a situation quickly, identify the real problems, and prioritize what deserves attention.
-
-### Sprint
-To solve one scoped problem in a short window: organization, architecture, an internal system, a critical workflow.
-
-### Advisory / ongoing support
-To bring judgment, structure, and continuity over time, typically in a fractional technical leadership role.
-
-## The implicit contract
-
-Whatever shape the work takes, the same rules apply:
-
-- a single senior counterpart, present from the first conversation through to handover;
-- a scope agreed upfront, covering what is included and what will wait;
-- deliverables an internal team can pick up and keep running;
-- complete independence from vendors and integrators;
-- an exit prepared from the start.
-
-The common thread stays the same: clarify, structure, install what is missing, and leave behind a company that is stronger than it was before.
+- one senior point of contact, from the first call to the handover;
+- a written scope: what’s included, what isn’t;
+- deliverables your team can take over;
+- no commissions from software vendors, integrators, or AI providers;
+- an exit planned from the start.

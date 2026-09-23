@@ -1,27 +1,23 @@
 ---
 title: "Contact — Monolithic Lab"
-description: "Un premier échange pour comprendre votre situation, identifier le vrai problème et voir si Monolithic Lab est le bon levier."
+description: "Décrivez votre situation : CTO à temps partagé, CTO de transition ou diagnostic technique. Réponse personnelle de Nicolas Mussat."
 alternate: "/en-us/contact"
 hero:
   compact: true
   label: "Contact"
-  headline: "Parlons de ce qui se complique vraiment"
-  subheadline: "Direction technique, structuration, systèmes, organisation, workflows IA utiles : le premier échange sert à comprendre le sujet avant de parler format."
+  headline: "Décrivez votre situation"
+  subheadline: "CTO à temps partagé, CTO de transition ou diagnostic technique : le premier échange sert à comprendre le problème, pas à vendre un format."
 ---
 
 <contact-form></contact-form>
 
-Décrivez votre situation avec vos mots.
+Quelques lignes suffisent. Les informations les plus utiles :
 
-Le plus utile est souvent de préciser :
+- la taille de l’entreprise et de l’équipe technique ;
+- ce qui bloque aujourd’hui ;
+- l’échéance, s’il y en a une : levée, départ, rachat, lancement ;
+- ce qui a déjà été essayé.
 
-- votre stade de croissance ;
-- ce qui bloque aujourd’hui ;
-- ce qui devient trop fragile, trop flou ou trop coûteux ;
-- ce que vous avez déjà essayé ;
-- le niveau d’urgence.
+Chaque message reçoit une réponse de Nicolas Mussat. Si Monolithic Lab n’est pas la bonne réponse, vous le saurez tout de suite.
 
-Si Monolithic Lab peut aider, le bon format d’intervention sera clarifié rapidement.
-Et si une autre option vous sert mieux, autant le dire tôt.
-
-Contact direct par email : **contact@monolithiclab.fr**.
+Email direct : **contact@monolithiclab.fr**

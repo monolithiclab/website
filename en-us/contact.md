@@ -1,28 +1,24 @@
 ---
 title: "Contact — Monolithic Lab"
-description: "A first conversation to understand your situation, identify the real issue, and see whether Monolithic Lab is the right lever."
+description: "Describe your situation: fractional CTO, interim CTO, or technology assessment. A personal reply from Nicolas Mussat."
 lang: "en"
 alternate: "/contact"
 hero:
   compact: true
   label: "Contact"
-  headline: "Let’s talk about what is actually getting harder"
-  subheadline: "Technical leadership, operating structure, systems, organization, practical AI workflows — the first conversation is there to understand the problem before discussing format."
+  headline: "Describe your situation"
+  subheadline: "Fractional CTO, interim CTO, or technology assessment: the first conversation is about understanding the problem, not selling a format."
 ---
 
 <contact-form></contact-form>
 
-Describe your situation in your own words.
+A few lines are enough. The most useful details:
 
-What helps most is usually to clarify:
+- the size of the company and of the engineering team;
+- what’s blocking you today;
+- the deadline, if there is one: a fundraise, a departure, an acquisition, a launch;
+- what you’ve already tried.
 
-- your growth stage;
-- what is blocking you right now;
-- what is becoming too fragile, too unclear, or too costly;
-- what you have already tried;
-- how urgent the situation is.
+Every message gets a reply from Nicolas Mussat. If Monolithic Lab isn’t the right answer, you’ll hear it right away.
 
-If Monolithic Lab can help, the right engagement format should become clear quickly.
-And if something else serves you better, that is worth saying early too.
-
-Direct email: **contact@monolithiclab.fr**.
+Email: **contact@monolithiclab.fr**

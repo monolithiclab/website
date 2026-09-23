@@ -1,73 +1,52 @@
 ---
 title: "References — Monolithic Lab"
-description: "Two foundational operating experiences carried out from the inside: MeilleursAgents and Prose. Real systems and operations built at the center of the company, over time."
+description: "MeilleursAgents through its acquisition by Axel Springer, Prose through its international expansion: two growing companies, built from the inside."
 lang: "en"
 alternate: "/references"
 hero:
   compact: true
   label: "References"
-  headline: "Two experiences that anchor the Monolithic Lab model"
-  subheadline: "Systems, processes, and organizations built from within, at the point where growth makes everything more demanding."
+  headline: "Two growing companies, built from the inside"
+  subheadline: "Years inside the company, not a few weeks of consulting. That’s where Monolithic Lab’s method comes from."
 cta_band:
-  text: "Going through something similar? Let’s talk."
+  text: "Is your company going through a similar phase? Describe your situation."
   button_text: "Get in touch"
   button_url: "/en-us/contact"
 ---
 
-## Why these references matter
-
-Monolithic Lab is built on two long engagements carried out from the inside. That is where the model comes from: building systems inside growing companies, under real coordination and scale pressure.
-
-What these references say is mostly about **the nature of the work**: clarify, structure, make the organization hold together, and leave the company stronger than it was before.
-
----
-
 ## MeilleursAgents
 
-### Structuring the operations of a fast-growing platform before complexity overtakes speed
+### Operations built for growth, through to acquisition
 
-**Context.** MeilleursAgents was growing quickly. The product was becoming more complex, teams were expanding, and internal dependencies were increasing. What had worked early on was no longer enough as the company gained scale.
+**Context.** MeilleursAgents is growing fast. The product gets more complex, teams expand, internal dependencies multiply. The tools and habits of the early days no longer hold up.
 
-**The real problem.** In this kind of phase, the difficulty reaches well beyond technology. The whole system starts to tighten: information flow, coherence of tools, coordination across teams, process robustness, and clarity of responsibilities.
+**Role.** Nicolas Mussat builds the company’s operations as a whole: information systems, internal processes, team organization. Several years of work, side by side with the teams.
 
-**What was done.** Nicolas Mussat structured the company’s operations as a whole: information systems, internal processes, organization, and operating methods. A durable build effort carried out alongside the teams and their constraints.
+**Outcome.** MeilleursAgents becomes France’s leading online real-estate valuation platform, then is acquired by **Axel Springer**. Operations hold up through the growth, then through the integration into the group.
 
-**What this proves.**
-- a growing company needs legible systems before chaos starts absorbing its speed;
-- a coherent information system is as much a leadership tool as a technical topic;
-- useful operating structure gets built inside the company, at the pace of its constraints.
-
-**Outcome.** MeilleursAgents became France’s leading online real estate valuation platform and was later acquired by **Axel Springer**. The operational foundations held through scale-up and transition.
+**The lesson for a CTO.** Information systems are a management tool, not just a technical topic. And a company prepares for due diligence years before it happens.
 
 ---
 
 ## Prose
 
-### Building the operating foundations of a company designed to scale internationally
+### Operational foundations for international expansion
 
-**Context.** Prose combines algorithmic personalization, e-commerce, and made-to-order production. It is the kind of model where growth creates as much complexity as volume.
+**Context.** Prose combines algorithmic personalization, e-commerce, and made-to-order manufacturing. Every order runs through product, production, logistics, and customer service. A weakness in one link slows down all the others.
 
-**The real problem.** When a business depends on several tightly linked chains — product, operations, supply, customer support, technology — any weakness in organization or systems quickly becomes a structural constraint.
+**Role.** Nicolas Mussat lays the company’s operational foundations: processes, information systems, cross-team coordination, workflow automation.
 
-**What was done.** Nicolas Mussat built the company’s operational foundations: processes, information systems, cross-functional coordination, and an operating architecture able to absorb real scale.
+**Outcome.** Prose expands internationally from New York, with operations that absorb growing volume without losing control of the complexity.
 
-**What this proves.**
-- international operations need to be prepared before they become obviously necessary;
-- automation and structure are conditions for healthy growth;
-- the real measure of a successful engagement is what the team can own on its own afterward.
-
-**Outcome.** Prose was able to expand internationally from New York, with operations capable of supporting growth while keeping complexity under control.
+**The lesson for a CTO.** When technology and operations are intertwined, technical leadership can’t stop at the product. And an international organization gets built before you need it.
 
 ---
 
-## The common thread
+## What the two have in common
 
-In both cases, the role was essentially the same:
+- joining a fast-growing company, with its existing systems and teams;
+- spotting what will break first;
+- building what’s missing, at the company’s pace;
+- leaving systems the team runs without outside help.
 
-- step into a complex operating reality;
-- understand what is holding poorly;
-- structure what is missing;
-- anchor growth to systems that can carry it;
-- transfer a system the company can continue to run itself.
-
-That is the same thread Monolithic Lab extends today: work at the intersection of technical leadership, operations, systems, and the ability to execute without chaos.
+That’s exactly the job of a [fractional CTO](/en-us/fractional-cto) or an [interim CTO](/en-us/interim-cto).

@@ -1,71 +1,88 @@
 ---
-title: "Monolithic Lab — Technical and Operational Leadership for Growing Companies"
-description: "Monolithic Lab helps growing companies structure operations, clarify technical decisions, and build the systems they need to scale without chaos."
+title: "Monolithic Lab — Fractional CTO, Interim CTO, and AI Transformation for Small and Mid-Sized Companies"
+description: "A senior CTO to lead your technology and drive your AI transformation: fractional, interim, or as a fixed-price project. 25+ years of experience, including MeilleursAgents and Prose."
 lang: "en"
 alternate: "/"
 hero:
-  headline: "Add structure before complexity turns into drag."
-  subheadline: "When operations, systems, and technical decisions start getting in each other’s way, Monolithic Lab brings clarity, direction, and the ability to build what is missing. Fractional technical leadership, operating structure, internal systems, and practical AI workflows when they create real leverage."
-  cta_text: "Let’s talk about your situation"
+  label: "Fractional CTO · Interim CTO · AI transformation"
+  headline: "A senior CTO to lead your technology and make your move to AI work."
+  subheadline: "Monolithic Lab leads technology for small and mid-sized companies that don’t need a full-time CTO yet, or that just lost theirs, and drives their AI transformation, in the engineering team and every other team. 25+ years of experience, including MeilleursAgents through its acquisition by Axel Springer, and Prose through its international expansion."
+  cta_text: "Describe your situation"
   cta_url: "/en-us/contact"
 cta_band:
-  text: "Dealing with a real structure, systems, or technical leadership issue? Let’s talk."
-  button_text: "Get in touch"
+  text: "An engineering team with no one leading it, an empty CTO seat, or an AI project to launch? One conversation is enough to know whether Monolithic Lab is the right fit."
+  button_text: "Describe your situation"
   button_url: "/en-us/contact"
 ---
 
-<service-list label="Typical situations" heading="Three situations where growth starts getting expensive">
-  <service-item title="Too much still depends on a few people" href="/en-us/expertise">Critical decisions, operational memory, and key processes still live in too few heads. Every departure is a risk, and every new hire needs too long to understand how things actually work.</service-item>
-  <service-item title="Growth is creating more friction than speed" href="/en-us/expertise">What worked at 10 or 15 people no longer holds at 40 or 60. Tools pile up, responsibilities blur, decisions slow down, and nobody has enough room to restore clarity properly.</service-item>
-  <service-item title="The need calls for judgment, structure, and execution at once" href="/en-us/expertise">The situation requires understanding, arbitration, structure, and sometimes actual build work: an internal system, an integration, a workflow, a clearer operating model, or a genuinely useful application of AI in internal operations.</service-item>
+<service-list label="Three formats" heading="Two CTO roles, plus fixed-price projects">
+  <service-item title="Fractional CTO" href="/en-us/fractional-cto">1 to 3 days a week, over several months. Technical leadership and AI transformation for companies that have developers but no one to lead them, and don’t yet need a full-time CTO.</service-item>
+  <service-item title="Interim CTO" href="/en-us/interim-cto">The CTO seat is empty, or the person in it can no longer do the job. Technical leadership picks up right away and holds until a successor arrives, with a team already moving on AI.</service-item>
+  <service-item title="Fixed-price projects" href="/en-us/expertise">Technology assessment, AI exploration, POC, MVP. A specific question, with deliverable, timeline, and price set up front.</service-item>
 </service-list>
 
 <trust-grid label="Why Monolithic Lab">
-  <trust-card value="2" label="Scale-ups built from the inside">MeilleursAgents through its acquisition by Axel Springer, then Prose through international scale-up.</trust-card>
-  <trust-card value="25" label="Years of operational experience">Systems, processes, and teams structured in the field, inside the companies concerned.</trust-card>
-  <trust-card value="1" label="Counterpart">Nicolas Mussat, from the first conversation through to handover. The person who hears the problem is the person who does the work.</trust-card>
+  <trust-card value="25+" label="Years of experience">Architecture, information systems, operations, and team leadership, always from inside the company.</trust-card>
+  <trust-card value="2" label="Scale-ups built from the inside">MeilleursAgents through its acquisition by Axel Springer. Prose through its international expansion.</trust-card>
+  <trust-card value="1" label="Point of contact">Nicolas Mussat runs every engagement personally, from the first call to the handover. No juniors, no subcontractors.</trust-card>
 </trust-grid>
 
-## What Monolithic Lab does
+## Fractional or interim
 
-Monolithic Lab operates where technical, operational, and organizational complexity start interfering with one another.
+**Fractional CTO.** A technology executive who holds the full CTO role — decisions, team, budget, AI transformation — only a few days a week. The need is ongoing, but it doesn’t fill a full week. [What is a fractional CTO?](/en-us/articles/what-is-a-fractional-cto)
 
-The goal is to restore clarity, priorities, and systems that can hold as the company grows.
+**Interim CTO.** Also called a transitional CTO. A technology executive who fills an empty seat for a set period, with a clear mandate: steady the team, make the calls that can’t wait, and prepare the successor. More hours, shorter engagement. [What is an interim CTO?](/en-us/articles/what-is-an-interim-cto)
 
-Most engagements fall into four categories:
+For a one-off, well-defined need — an assessment, an AI exploration, a POC, an MVP — a [fixed-price project](/en-us/expertise) is enough.
 
-- **fractional technical leadership**, when the company needs direction but hiring a full-time executive would be premature;
-- **diagnosis and operating structure**, when growth has outpaced the methods that used to work;
-- **systems, internal tools, and integrations**, when the useful solution still has to be built;
-- **practical AI workflows**, when the objective is measurable operational leverage.
+## AI across the whole company
 
-## What makes Monolithic Lab different
+AI is changing how every team works: engineering, customer support, sales, finance, operations. Demos are easy; successful deployments are rare, and no one has a proven playbook to drop onto your company yet.
 
-### An operator mindset
+Monolithic Lab takes its cue from the **forward deployed engineer**, the model OpenAI and Anthropic use to deploy AI at their customers: work inside the teams, build on real data and real tools, and measure usage after go-live. The adoption plan gets built with your teams, starting from their work.
 
-Understand, decide, install, document, transfer: the work runs the length of that chain.
+[AI transformation in detail](/en-us/ai-transformation)
 
-### Work calibrated to your context
+## A CTO who builds, not just manages
 
-The right level of structure changes at 12, at 35, at 80 people. Solutions need to hold with your constraints, your resources, and your pace of growth.
+Pure-manager profiles are on their way out. With AI, a small team can produce far more than before, provided it’s led by someone who understands the work in detail.
 
-### A leverage-oriented approach
+A good CTO today knows the craft hands-on, drives AI agents to get work done, and can judge what they produce. That’s how Monolithic Lab works: a prototype gets tested in days, and decisions rest on results, not opinions.
 
-Every engagement should do at least one of the following:
+[Read the article: the CTO in the AI era](/en-us/articles/cto-in-the-ai-era)
 
-- reduce chaos;
-- improve decision quality;
-- make responsibilities clearer;
-- create reusable systems;
-- increase execution capacity without increasing confusion.
+## Why it makes sense for a small or mid-sized company
 
-## How an engagement usually unfolds
+- **A full-time CTO is expensive and slow to hire.** Many companies have neither the budget nor enough leadership work to fill five days a week.
+- **Without a CTO, technical decisions still get made.** By default, by a founder with no time, or by the longest-serving developer.
+- **Those decisions get expensive later.** An architecture that can’t handle growth, a vendor no one manages, an AI project that goes nowhere, a painful due diligence.
+- **A fractional CTO gives you the same level of experience**, in the amount your company actually needs.
 
-It starts by clarifying the situation: what is blocking, what is costing, what deserves attention now, and what can wait.
+[Read the full article](/en-us/articles/fractional-cto-for-small-business)
+
+## What the role covers
+
+- **Architecture and technical choices**: what to build, what to buy, what to stop.
+- **Team**: structure, roles, hiring, coaching team leads.
+- **AI transformation**: agents in the development cycle, use cases in other teams, adoption plan, guardrails.
+- **Delivery**: priorities, pace, how product and engineering work together.
+- **Reliability and security**: technical debt, incidents, backups, access.
+- **Governance**: a technical counterpart for the CEO, the board, and investors, due diligence included.
+
+## How an engagement starts
 
 <step-timeline>
-  <step-item number="01" title="Clarify the situation">Understand what is blocking, what is already costing too much, and what can still wait.</step-item>
-  <step-item number="02" title="Set the priorities">Surface the useful trade-offs and the leverage points that will change the situation.</step-item>
-  <step-item number="03" title="Install what is missing">Put in place the structure, decisions, systems, or tools that will make the organization more legible and more solid.</step-item>
-  <step-item number="04" title="Transfer and stabilize">Leave a company that is clearer, more autonomous, and better equipped to carry on by itself.</step-item>
+  <step-item number="01" title="First conversation">Your situation, your constraints, your timeline. If Monolithic Lab isn’t the right answer, you’ll know by the end of the call.</step-item>
+  <step-item number="02" title="Assessment">The first weeks: architecture, code, team, organization, risks, potential uses of AI. You get a written assessment and a list of priorities.</step-item>
+  <step-item number="03" title="Leadership">Decisions get made and owned. The team knows who makes the call, on what, and why.</step-item>
+  <step-item number="04" title="Handover">The engagement ends when the company no longer needs it: a CTO hired and settled in, an internal lead promoted, or a well-equipped team that runs on its own.</step-item>
 </step-timeline>
+
+## Articles
+
+- [What is a fractional CTO?](/en-us/articles/what-is-a-fractional-cto)
+- [What is an interim CTO?](/en-us/articles/what-is-an-interim-cto)
+- [Why a fractional CTO makes sense for small and mid-sized companies](/en-us/articles/fractional-cto-for-small-business)
+- [What is a forward deployed engineer?](/en-us/articles/forward-deployed-engineer)
+- [The CTO in the AI era: the end of the pure manager](/en-us/articles/cto-in-the-ai-era)
+- [What 25 years of experience brings to the CTO role](/en-us/articles/what-25-years-of-experience-brings)

@@ -1,59 +1,57 @@
 ---
 title: "Approach — Monolithic Lab"
-description: "Clarify before accelerating. Understand the situation, find the leverage points, install useful systems, and transfer what should remain after the work is done."
+description: "Understand before acting, make and own decisions, build with the teams, hand over before leaving. How Monolithic Lab works, and Nicolas Mussat’s background."
 lang: "en"
 alternate: "/approche"
 hero:
   compact: true
   label: "Approach"
-  headline: "Understand the situation, then act where leverage is highest"
-  subheadline: "Every engagement starts from your situation. The goal is to make the company clearer, stronger, and more able to execute with less friction."
+  headline: "Understand, decide, hand over"
+  subheadline: "A CTO engagement is judged by what it leaves behind: better decisions, a stronger team, and a company that no longer needs outside help."
 cta_band:
-  text: "If this way of working fits how you think, let’s talk."
+  text: "Does this way of working fit your situation? Describe it."
   button_text: "Get in touch"
   button_url: "/en-us/contact"
 ---
 
 <step-timeline>
-  <step-item number="01" title="Clarify before correcting">The first job is to understand what is actually happening: how decisions are made, where information gets lost, what depends on too few people, and what is already costing more than it should.</step-item>
-  <step-item number="02" title="Look for the real leverage points">Some things deserve attention right away, others later. The work is to find the interventions that change the situation: better decisions, clearer responsibilities, stronger systems, smoother execution.</step-item>
-  <step-item number="03" title="Add structure without bureaucracy">The right level of structure depends on the stage of the company: enough framework to carry the growth, enough flexibility to keep the pace.</step-item>
-  <step-item number="04" title="Build what is missing when needed">Sometimes the right answer is a decision. Sometimes it is a reorganization. Sometimes it is a system, a tool, an integration, or a better workflow. When the situation calls for it, the work goes beyond diagnosis.</step-item>
-  <step-item number="05" title="Document and transfer">A good engagement leaves behind clearer decisions, better-owned systems, useful documentation, and an organization that is less dependent on the person who stepped in.</step-item>
+  <step-item number="01" title="Understand before acting">Architecture, code, team, organization, contracts, costs. The assessment comes before the recommendations, and it’s in writing.</step-item>
+  <step-item number="02" title="Pick few priorities">Not everything gets fixed at once. Three or four projects that change the situation beat a list of thirty.</step-item>
+  <step-item number="03" title="Decide and own it">A CTO makes the call. Decisions are explained to the team, defended in front of leadership, and owned by whoever made them.</step-item>
+  <step-item number="04" title="Build with the teams">A tool, an automation, or an AI use case gets built with the people who will use it, on their data, and has to earn its place: a cost removed, a delay cut, a risk eliminated.</step-item>
+  <step-item number="05" title="Hand over before leaving">Decisions documented, team self-sufficient, successor hired or trained. The engagement succeeds when the company can do without it.</step-item>
 </step-timeline>
 
-## Working principles
+## Principles
 
-### Results before deliverables
+### Know the craft, drive the agents
 
-An engagement is judged by what it improves: execution, clarity, the quality of important decisions. The rest is scenery.
+Pure-manager profiles are on their way out. A good CTO understands the team’s work hands-on, and drives AI agents to get work done: analyzing code, prototyping an idea, building a tool. They judge on results, and they know how to check what agents produce.
 
-### What works beats what shines
+### Build the adoption plan with you
 
-Good solutions are the ones that hold where you are: your team, your constraints, your pace, your level of maturity, and your ability to absorb change.
+AI is new, and few companies have deployed it successfully in a real transformation. No ready-made method applies as is. The adoption plan gets built with your teams, on their real work, in an approach modeled on the [forward deployed engineer](/en-us/articles/forward-deployed-engineer).
 
-### Every engagement should leave useful traces behind
+### Enough structure, no more
 
-An engagement should leave at least one of these behind:
-- better clarity;
-- a stronger system;
-- a more legible organization;
-- better-framed decisions;
-- useful documentation;
-- a more autonomous team.
+A team of 8 doesn’t need the processes of a team of 80. The level of organization follows the company’s size and stage.
 
-### Transfer is part of the work
+### What works for you
 
-A successful engagement leaves the company able to function better without it. That is the test.
+The right solutions are the ones your team can keep running, within your constraints and budget. An elegant system no one can maintain is worthless.
 
-## The consultant
+### Independence
 
-### Nicolas Mussat
+No partnerships with software vendors, integrators, AI providers, or recruiting firms. Every recommendation serves your company alone.
 
-Two scale-ups built from the inside.
+## Nicolas Mussat
 
-At MeilleursAgents, I structured the full operating system of the company — information systems, processes, teams — through a phase of growth that ultimately led to its acquisition by Axel Springer. At Prose, I laid the operational foundations for a personalized beauty company designed to scale internationally.
+Founder of Monolithic Lab. 25+ years of experience in technology, information systems, and operations, and a daily practice of driving AI agents to prototype, analyze, and build.
 
-The common thread is the same: take an imperfect reality, clarify what matters, install the right systems, and leave the organization more capable than it was before.
+At **MeilleursAgents**, he built the company’s operations — information systems, processes, teams — through the growth that led to its acquisition by Axel Springer.
 
-I work directly, on my own. My recommendations answer to your situation and to nothing else: independence from vendors and integrators is part of the model.
+At **Prose**, the personalized beauty brand, he laid the operational foundations that made its international expansion from New York possible.
+
+He runs every engagement personally, with no junior staff and no subcontractors.
+
+[See references](/en-us/references) · [What 25 years of experience brings to the CTO role](/en-us/articles/what-25-years-of-experience-brings)

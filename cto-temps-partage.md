@@ -1,109 +1,97 @@
 ---
-title: "CTO à Temps Partagé — Monolithic Lab"
-description: "Une direction technique intégrée à votre équipe 1 à 3 jours par semaine. Pour les entreprises qui ont besoin de leadership, de structure et de décisions solides sans recruter trop tôt un CTO à plein temps."
+title: "CTO à temps partagé pour PME et scale-ups — Monolithic Lab"
+description: "Un CTO senior 1 à 3 jours par semaine : décisions techniques, équipe, recrutements, transformation IA. Pour les PME qui ont besoin d’une direction technique avant de pouvoir justifier un poste à plein temps."
 alternate: "/en-us/fractional-cto"
 hero:
   compact: true
   label: "CTO à temps partagé"
-  headline: "Le rôle de CTO quand le besoin est là, avant que le poste à plein temps se justifie"
-  subheadline: "Monolithic Lab prend un rôle de direction technique intégré : clarifier, arbitrer, structurer, recruter si nécessaire, et remettre de la continuité là où tout repose encore sur trop peu de personnes."
+  headline: "Une direction technique complète, quelques jours par semaine"
+  subheadline: "Pour les PME et scale-ups qui ont une équipe technique mais personne pour la diriger. Monolithic Lab tient le rôle de CTO 1 à 3 jours par semaine, et conduit la transformation IA de toute l’entreprise."
 cta_band:
-  text: "Vous vous reconnaissez dans cette situation ? Parlons-en."
+  text: "Votre équipe technique avance sans direction ? Décrivez votre situation."
   button_text: "Prendre contact"
   button_url: "/contact"
 ---
 
-## Ce qu’est un CTO à temps partagé
+## Définition
 
-Un CTO à temps partagé est une fonction de direction exercée à temps partiel, avec une continuité de présence et de responsabilité.
+Un **CTO à temps partagé** — on dit aussi CTO fractionné, ou *fractional CTO* en anglais — est un directeur technique qui exerce le rôle complet pour une entreprise, sur une partie de son temps seulement.
 
-Le rôle consiste à rejoindre l’entreprise assez profondément pour comprendre ses contraintes, participer aux arbitrages importants, structurer l’équipe et les systèmes, puis faire monter l’organisation en autonomie.
+Ce n’est ni un consultant ni un prestataire. Il prend les décisions, dirige l’équipe et répond des résultats, comme un CTO salarié. La différence porte sur le volume : quelques jours par semaine au lieu de cinq, et des honoraires au lieu d’un salaire.
 
-En pratique, cela signifie :
-- participer aux décisions importantes ;
-- donner du cadre à l’équipe technique ;
-- relier les enjeux business, produit, opérations et technique ;
-- installer des systèmes qui tiennent au-delà de la mission.
+[Lire l’article complet : qu’est-ce qu’un CTO à temps partagé ?](/articles/cto-temps-partage-definition)
 
-## Quand ce modèle devient utile
+## Pour qui
 
-### Vous avez une équipe technique, mais pas encore de direction technique solide
+### Vous avez des développeurs, mais pas de CTO
 
-Les sujets s’accumulent : architecture, recrutement, dette technique, priorisation, coordination produit-tech, sécurité, outils. Le fondateur ou les profils seniors absorbent comme ils peuvent, mais personne n’a vraiment le mandat ni le temps de structurer l’ensemble.
+Le fondateur arbitre les choix techniques sans en avoir le temps. Le développeur le plus ancien fait office de responsable par défaut. Des décisions se prennent, mais personne n’en répond.
 
-### Vous avez grandi plus vite que vos méthodes
+### Votre organisation technique n’a pas suivi la croissance
 
-Ce qui marchait au début ne suffit plus. Les décisions ralentissent, les dépendances s’accumulent, la lisibilité baisse. L’équipe avance, mais avec trop de friction.
+Ce qui marchait à 5 développeurs ne marche plus à 15. Les livraisons ralentissent, les incidents se répètent, la dette s’accumule, et personne n’a le mandat pour réorganiser.
 
-### Vous traversez une phase critique
+### Vous préparez une étape qui engage la technique
 
-Départ d’un CTO, période de transition, due diligence, réorganisation, refonte d’architecture, internationalisation, montée en charge. La situation demande de l’expérience et du calme, sans forcément justifier un recrutement permanent immédiat.
+Levée de fonds, due diligence, rachat, refonte, ouverture à l’international, recrutement d’un futur CTO. Il faut un avis senior, et quelqu’un pour l’assumer.
 
-## Ce que couvre le rôle
+## Ce que fait le CTO à temps partagé
 
-### Direction et arbitrages
-- vision et priorités techniques ;
-- arbitrages d’architecture et de stack ;
-- alignement entre choix techniques et enjeux business ;
-- cadrage des grands sujets à traiter maintenant versus plus tard.
+### Décisions techniques
 
-### Équipe et organisation
-- clarification des rôles ;
-- structuration de l’équipe ;
-- participation aux recrutements ;
-- montée en compétence des profils en place ;
-- amélioration du fonctionnement collectif.
+- architecture et choix de stack ;
+- construire, acheter ou arrêter ;
+- priorités techniques alignées sur les objectifs de l’entreprise ;
+- dette technique : ce qui se rembourse maintenant, ce qui attend.
 
-### Systèmes et opérations
-- système d’information et circulation de l’information ;
-- outils, intégrations, workflows ;
-- sécurité, fiabilité, dette, maintenabilité ;
-- coordination avec les sujets produit, service client, opérations ou supply selon le contexte.
+### Équipe
 
-### Pilotage
-- visibilité donnée au CEO et à la direction ;
-- priorisation ;
-- documentation ;
-- continuité d’exécution ;
-- préparation de la suite, y compris la sortie de mission ou la transmission à un futur CTO interne.
+- organisation et rôles ;
+- recrutements, de la fiche de poste à l’entretien final ;
+- accompagnement des leads et des profils seniors ;
+- préparation d’un futur CTO interne, recruté ou promu.
 
-## Comment ça fonctionne
+### Transformation IA
 
-### Cadence
+- agents IA dans le cycle de développement : écriture, revue, tests, documentation ;
+- nouvelles pratiques et garde-fous pour l’équipe technique ;
+- usages de l’IA dans les autres équipes : service client, ventes, finance, opérations ;
+- plan d’adoption construit avec les équipes, dans une approche inspirée du Forward Deployed Engineer : sur place, sur vos données, jugé sur l’usage réel.
 
-Typiquement 1 à 3 jours par semaine. Assez pour suivre les sujets, peser sur les décisions et créer de la continuité, tout en laissant le recrutement à plein temps venir à son heure.
+[La transformation IA en détail](/transformation-ia)
 
-### Durée
+### Fiabilité et opérations
 
-Cela dépend du contexte. Certaines missions servent de pont sur quelques mois. D’autres accompagnent une phase de structuration plus profonde. Ce qui compte est le résultat : une entreprise plus solide et plus autonome à la fin.
+- sécurité, sauvegardes, gestion des accès ;
+- incidents et continuité de service ;
+- SI, outils internes, intégrations, automatisations.
 
-### Les premières semaines
+### Gouvernance
 
-Les premières semaines servent à :
-1. comprendre la situation ;
-2. identifier les points de risque et les zones de confusion ;
-3. fixer les priorités ;
-4. mettre en place un plan d’action crédible ;
-5. commencer à installer du cadre rapidement.
+- interlocuteur technique du CEO, du comité de direction et du board ;
+- budget technique et choix des fournisseurs ;
+- réponses aux investisseurs et aux acquéreurs en due diligence.
 
-## Ce qui définit le rôle
+## Fonctionnement
 
-### Une responsabilité assumée
+**Rythme.** 1 à 3 jours par semaine, sur site ou à distance selon vos besoins. Le CTO participe aux rituels de l’équipe et reste joignable entre deux jours de présence.
 
-Les décisions sont prises, portées et défendues devant la direction comme devant l’équipe. Ce qui est décidé engage celui qui l’a décidé.
+**Premières semaines.** État des lieux de l’architecture, du code, de l’équipe et des risques. Vous recevez un constat écrit et un plan priorisé.
 
-### De la direction, sur la durée
+**Durée.** De quelques mois à plus d’un an. La mission s’arrête quand l’entreprise peut s’en passer.
 
-Le sujet est la direction, la structuration, la continuité et les arbitrages. La présence régulière est ce qui permet de suivre un chantier jusqu’à ce qu’il tienne debout.
+**Fin de mission.** Elle se prépare dès le départ : décisions documentées, architecture décrite, successeur recruté ou formé.
 
-### Une autonomie construite dès le départ
+## Temps partagé, transition ou forfait ?
 
-Le bon résultat est une entreprise mieux structurée, plus lisible et plus autonome qu’au départ. La sortie de mission se prépare dès les premières semaines.
+Le temps partagé convient quand le besoin est durable mais ne remplit pas une semaine. Si le poste de CTO est vacant et qu’il faut quelqu’un de très présent pendant quelques mois, il s’agit d’une mission de [CTO de transition](/cto-de-transition). Pour un besoin ponctuel et délimité — diagnostic, exploration IA, POC, MVP — une [mission au forfait](/expertises) suffit.
 
 ## Pourquoi Monolithic Lab
 
-Monolithic Lab s’appuie sur des systèmes construits et tenus de l’intérieur, sur la durée.
+Plus de 25 ans d’expérience technique et opérationnelle. Chez **MeilleursAgents**, Nicolas Mussat a construit les opérations et le système d’information qui ont porté la croissance de l’entreprise jusqu’à son rachat par Axel Springer. Chez **Prose**, il a posé les fondations opérationnelles du déploiement international depuis New York.
 
-Chez **MeilleursAgents**, Nicolas Mussat a structuré les opérations et le SI qui ont accompagné la croissance de la plateforme jusqu’à son acquisition par Axel Springer. Chez **Prose**, il a posé des fondations opérationnelles capables d’encaisser une montée en puissance internationale.
+Un CTO qui fait, pas seulement qui gère : Nicolas Mussat pilote lui-même des agents IA pour prototyper, analyser et construire, et transmet cette pratique aux équipes.
 
-Le point commun : prendre des systèmes existants, des équipes en place, des contraintes concrètes — et faire en sorte que tout tienne mieux, avec plus de clarté, moins de dépendance implicite, et de meilleures décisions.
+Un seul interlocuteur, indépendant de tout éditeur, intégrateur ou fournisseur d’IA : les recommandations ne servent que votre entreprise.
+
+[Voir les références](/references)

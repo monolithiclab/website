@@ -193,7 +193,7 @@ class TrustCard extends HTMLElement {
     card.className = "trust-card";
     card.setAttribute("data-reveal-item", "");
     card.innerHTML =
-      '<span class="trust-card__watermark" aria-hidden="true">' + value + '</span>' +
+      '<span class="trust-card__value">' + value + '</span>' +
       '<div class="trust-card__content">' +
         '<span class="trust-card__label">' + label + '</span>' +
         '<p class="trust-card__desc">' + desc + '</p>' +
