@@ -1,0 +1,1342 @@
+/* ==========================================================================
+   Basalt
+   A dark basalt ground, bone ink, one ochre. The monolith slab is the only
+   motif; rules, not boxes, carry the structure.
+   ========================================================================== */
+
+/* --- Web Components --- */
+service-list, trust-grid, step-timeline, contact-form { display: block; }
+
+/* --- Fonts --- */
+
+/* Self-hosted from /fonts rather than Google's CDN. Served from there, every
+   visitor's IP would reach a US server before they had consented to anything —
+   the CNIL has ruled that unlawful. The files are the CDN's own, so rendering
+   is identical; only the origin moves. The unicode-range values are Google's
+   too, kept so the browser skips the latin-ext file unless a page needs it.
+
+   Both families are variable: the woff2 Google serves for each weight is one
+   and the same file per subset, so one face declared with a weight range
+   replaces several. */
+
+/* Big Shoulders Display — latin, variable */
+@font-face {
+  font-family: 'Big Shoulders Display';
+  font-style: normal;
+  font-weight: 100 900;
+  font-display: swap;
+  src: url('/fonts/big-shoulders-display-latin.woff2') format('woff2');
+  unicode-range: U+0000-00FF, U+0131, U+0152-0153, U+02BB-02BC, U+02C6, U+02DA, U+02DC, U+0304, U+0308, U+0329, U+2000-206F, U+20AC, U+2122, U+2191, U+2193, U+2212, U+2215, U+FEFF, U+FFFD;
+}
+
+/* Big Shoulders Display — latin-ext, variable */
+@font-face {
+  font-family: 'Big Shoulders Display';
+  font-style: normal;
+  font-weight: 100 900;
+  font-display: swap;
+  src: url('/fonts/big-shoulders-display-latin-ext.woff2') format('woff2');
+  unicode-range: U+0100-02BA, U+02BD-02C5, U+02C7-02CC, U+02CE-02D7, U+02DD-02FF, U+0304, U+0308, U+0329, U+1D00-1DBF, U+1E00-1E9F, U+1EF2-1EFF, U+2020, U+20A0-20AB, U+20AD-20C0, U+2113, U+2C60-2C7F, U+A720-A7FF;
+}
+
+/* Hanken Grotesk — latin, variable */
+@font-face {
+  font-family: 'Hanken Grotesk';
+  font-style: normal;
+  font-weight: 100 900;
+  font-display: swap;
+  src: url('/fonts/hanken-grotesk-latin.woff2') format('woff2');
+  unicode-range: U+0000-00FF, U+0131, U+0152-0153, U+02BB-02BC, U+02C6, U+02DA, U+02DC, U+0304, U+0308, U+0329, U+2000-206F, U+20AC, U+2122, U+2191, U+2193, U+2212, U+2215, U+FEFF, U+FFFD;
+}
+
+/* Hanken Grotesk — latin-ext, variable */
+@font-face {
+  font-family: 'Hanken Grotesk';
+  font-style: normal;
+  font-weight: 100 900;
+  font-display: swap;
+  src: url('/fonts/hanken-grotesk-latin-ext.woff2') format('woff2');
+  unicode-range: U+0100-02BA, U+02BD-02C5, U+02C7-02CC, U+02CE-02D7, U+02DD-02FF, U+0304, U+0308, U+0329, U+1D00-1DBF, U+1E00-1E9F, U+1EF2-1EFF, U+2020, U+20A0-20AB, U+20AD-20C0, U+2113, U+2C60-2C7F, U+A720-A7FF;
+}
+
+/* --- Custom Properties --- */
+
+/* The --color-* properties are NOT here. They come from _tokens.css, generated
+   from the palette in the private company repo and inlined ahead of this file
+   — see the header of that file. Adding a colour here would drift. */
+:root {
+  --font-display: "Big Shoulders Display", "Arial Narrow", sans-serif;
+  --font-body: "Hanken Grotesk", system-ui, sans-serif;
+
+  /* Type scale. Display sizes are fluid and large on purpose: the headline is
+     the page's image. */
+  --display-xl: clamp(48px, 9.5vw, 164px);
+  --display-l: clamp(44px, 8vw, 136px);
+  --display-m: clamp(40px, 6vw, 96px);
+  --display-prose: clamp(36px, 4.4vw, 68px);
+  --display-s: clamp(28px, 3.4vw, 52px);
+  --display-quote: clamp(26px, 2.6vw, 38px);
+  /* Display line-heights. In Big Shoulders an accented capital (É, À) reaches
+     1.03em above the baseline against 0.8em for a plain one, so the design's
+     0.86–0.9 drove the accents into the line above. Most readers are French;
+     1.1 keeps every accent clear of the capitals, cedillas and commas above. */
+  --lh-display: 1.1;
+  --lh-quote: 1.1;
+  --text-base: 18px;
+  --text-sm: 16px;
+  --text-ui: 15px;
+  --text-label: 13px;
+  --tracking-label: 0.14em;
+
+  /* Layout. Sections are full-bleed; --inset is the side padding that keeps
+     their content inside --page-max on very wide screens. */
+  --gutter: clamp(20px, 5vw, 72px);
+  --page-max: 1600px;
+  --inset: max(var(--gutter), calc((100% - var(--page-max)) / 2));
+  --section-y: clamp(64px, 9vw, 128px);
+  --hero-y: clamp(40px, 7vw, 104px);
+  --slab-col: clamp(32px, 9vw, 160px);
+  --measure: 62ch;
+  --header-height: 76px;
+
+  /* The monolith: ochre strata, 22px bands on a 2px darker seam. */
+  --strata: repeating-linear-gradient(180deg, var(--color-accent) 0 22px, var(--color-accent-seam) 22px 24px);
+  --strata-fine: repeating-linear-gradient(180deg, var(--color-accent) 0 14px, var(--color-accent-seam) 14px 16px);
+  --ease-rise: cubic-bezier(0.2, 0.7, 0.1, 1);
+  --dur-rise: 1.8s;
+  --dur-hover: 0.15s;
+}
+
+/* --- Reset --- */
+
+*,
+*::before,
+*::after {
+  box-sizing: border-box;
+  margin: 0;
+  padding: 0;
+}
+
+html {
+  -webkit-text-size-adjust: 100%;
+  scroll-padding-top: calc(var(--header-height) + 16px);
+}
+
+body {
+  font-family: var(--font-body);
+  font-size: var(--text-base);
+  font-weight: 400;
+  line-height: 1.6;
+  color: var(--color-text);
+  background-color: var(--color-bg);
+  -webkit-font-smoothing: antialiased;
+  -moz-osx-font-smoothing: grayscale;
+}
+
+img, picture, video, canvas, svg {
+  display: block;
+  max-width: 100%;
+}
+
+input, button, textarea, select {
+  font: inherit;
+}
+
+a {
+  color: inherit;
+  text-decoration: none;
+  transition: color var(--dur-hover);
+}
+
+a:hover {
+  color: var(--color-accent);
+}
+
+ul, ol {
+  list-style: none;
+}
+
+address {
+  font-style: normal;
+}
+
+::selection {
+  color: var(--color-text-inverse);
+  background-color: var(--color-accent);
+}
+
+:focus-visible {
+  outline: 2px solid var(--color-accent);
+  outline-offset: 2px;
+}
+
+::placeholder {
+  color: var(--color-text-placeholder);
+}
+
+/* --- Typography --- */
+
+h1, h2, h3, h4 {
+  color: var(--color-text);
+  text-wrap: balance;
+}
+
+h1, h2 {
+  font-family: var(--font-display);
+  font-weight: 800;
+  line-height: var(--lh-display);
+  text-transform: uppercase;
+}
+
+h3, h4 {
+  font-family: var(--font-body);
+  font-weight: 600;
+  line-height: 1.2;
+}
+
+p {
+  color: var(--color-text-body);
+  text-wrap: pretty;
+}
+
+strong {
+  font-weight: 600;
+  color: var(--color-text);
+}
+
+.accent {
+  color: var(--color-accent);
+}
+
+/* --- Primitives --- */
+
+.eyebrow {
+  display: block;
+  font-family: var(--font-body);
+  font-size: var(--text-label);
+  font-weight: 600;
+  line-height: 1.2;
+  letter-spacing: var(--tracking-label);
+  text-transform: uppercase;
+  color: var(--color-accent);
+}
+
+.eyebrow--muted {
+  color: var(--color-text-muted);
+}
+
+.eyebrow--ink {
+  color: var(--color-text-inverse);
+}
+
+/* Hover is an instant fill swap — no slides, no fades beyond the swap. */
+.btn {
+  display: inline-flex;
+  align-items: center;
+  justify-content: space-between;
+  gap: 40px;
+  padding: 18px 24px;
+  font-family: var(--font-body);
+  font-size: 17px;
+  font-weight: 600;
+  line-height: 1.2;
+  text-align: left;
+  border: 2px solid transparent;
+  border-radius: 0;
+  cursor: pointer;
+  transition: background-color var(--dur-hover), color var(--dur-hover), border-color var(--dur-hover);
+}
+
+.btn--primary {
+  color: var(--color-text-inverse);
+  background-color: var(--color-accent);
+}
+
+.btn--primary:hover {
+  color: var(--color-text-inverse);
+  background-color: var(--color-inverse);
+}
+
+.btn--primary:active {
+  background-color: var(--color-accent-seam);
+}
+
+.btn--outline {
+  color: var(--color-text);
+  background-color: transparent;
+  border-color: var(--color-inverse);
+}
+
+.btn--outline:hover {
+  color: var(--color-text-inverse);
+  background-color: var(--color-inverse);
+}
+
+.btn--ink {
+  padding: 20px 28px;
+  font-size: 18px;
+  color: var(--color-text);
+  background-color: var(--color-bg);
+}
+
+.btn--ink:hover {
+  color: var(--color-text);
+  background-color: var(--color-surface-pressed);
+}
+
+.btn[disabled] {
+  opacity: 0.45;
+  pointer-events: none;
+}
+
+/* The monolith. Rises from the ground on load: clip-path uncovers it from the
+   bottom, so the strata stay put instead of stretching the way a height or
+   scaleY animation would squash them. */
+.slab {
+  width: 100%;
+  height: 100%;
+  background: var(--strata);
+  animation: slab-rise var(--dur-rise) var(--ease-rise) 150ms both;
+}
+
+@keyframes slab-rise {
+  from { clip-path: inset(100% 0 0 0); }
+  to { clip-path: inset(0 0 0 0); }
+}
+
+/* A sequence bar: one step of a staircase. --step (1, 2, 3…) sets its height. */
+.strata-bar {
+  height: calc(var(--step, 1) * var(--strata-step, 24px));
+  background: var(--strata-fine);
+}
+
+/* --- Skip Link --- */
+
+.skip-link {
+  position: absolute;
+  top: -100%;
+  left: 0;
+  z-index: 200;
+  padding: 12px 24px;
+  font-size: 14px;
+  font-weight: 600;
+  color: var(--color-text-inverse);
+  background-color: var(--color-accent);
+}
+
+.skip-link:focus {
+  top: 0;
+}
+
+/* --- Header --- */
+
+.header {
+  position: sticky;
+  top: 0;
+  z-index: 100;
+  background-color: var(--color-bg);
+  border-bottom: 1px solid var(--color-rule);
+}
+
+.header__inner {
+  display: flex;
+  align-items: center;
+  justify-content: space-between;
+  gap: 24px;
+  min-height: var(--header-height);
+  padding: 0 var(--inset);
+}
+
+.header__logo {
+  display: flex;
+  align-items: center;
+  gap: 12px;
+  flex-shrink: 0;
+  color: var(--color-text);
+}
+
+.header__logo-mark {
+  display: block;
+  width: 10px;
+  height: 28px;
+  background-color: var(--color-accent);
+}
+
+.header__logo-text {
+  font-family: var(--font-display);
+  font-size: 26px;
+  font-weight: 800;
+  line-height: 1;
+  letter-spacing: 0.04em;
+  text-transform: uppercase;
+}
+
+.header__logo:hover {
+  color: var(--color-text);
+}
+
+/* Desktop nav */
+.header__nav {
+  display: none;
+}
+
+.header__nav-list {
+  display: flex;
+  align-items: center;
+  gap: 28px;
+}
+
+.header__nav-item {
+  position: relative;
+}
+
+.header__nav-link {
+  font-size: var(--text-ui);
+  font-weight: 500;
+  color: var(--color-text);
+}
+
+.header__nav-link[aria-current="page"] {
+  color: var(--color-accent);
+}
+
+.header__nav-link--cta {
+  display: inline-flex;
+  padding: 10px 18px;
+  font-weight: 600;
+  color: var(--color-text-inverse);
+  background-color: var(--color-accent);
+  transition: background-color var(--dur-hover);
+}
+
+.header__nav-link--cta:hover,
+.header__nav-link--cta[aria-current="page"] {
+  color: var(--color-text-inverse);
+  background-color: var(--color-inverse);
+}
+
+/* The submenu sits flush under its trigger. padding-top on the wrapper bridges
+   the gap to the link, so the pointer can travel into it without the :hover
+   dropping. */
+.header__submenu {
+  position: absolute;
+  top: 100%;
+  left: -18px;
+  display: none;
+  min-width: 280px;
+  padding-top: 24px;
+}
+
+.header__submenu-panel {
+  display: grid;
+  background-color: var(--color-surface);
+  border: 1px solid var(--color-rule);
+  border-top: 2px solid var(--color-accent);
+}
+
+.header__nav-item--has-submenu:hover .header__submenu,
+.header__nav-item--has-submenu:focus-within .header__submenu {
+  display: block;
+}
+
+.header__submenu-link {
+  display: block;
+  padding: 14px 18px;
+  font-size: var(--text-ui);
+  font-weight: 500;
+  color: var(--color-text);
+  border-bottom: 1px solid var(--color-rule);
+}
+
+.header__submenu-link:last-child {
+  border-bottom: none;
+}
+
+.header__submenu-link:hover {
+  background-color: var(--color-surface-pressed);
+}
+
+.header__actions {
+  display: flex;
+  align-items: center;
+  gap: 20px;
+}
+
+/* Hamburger — two bars */
+.header__hamburger {
+  display: flex;
+  flex-direction: column;
+  justify-content: center;
+  gap: 7px;
+  width: 28px;
+  height: 28px;
+  padding: 0;
+  background: none;
+  border: none;
+  cursor: pointer;
+}
+
+.header__hamburger-line {
+  display: block;
+  width: 100%;
+  height: 2px;
+  background-color: var(--color-text);
+}
+
+/* Mobile nav overlay */
+.header__mobile-nav {
+  position: fixed;
+  inset: 0;
+  z-index: 150;
+  display: none;
+  flex-direction: column;
+  justify-content: center;
+  gap: 48px;
+  padding: 96px var(--gutter) 48px;
+  overflow-y: auto;
+  background-color: var(--color-bg);
+}
+
+.header__mobile-nav.is-open {
+  display: flex;
+}
+
+.header__mobile-close {
+  position: absolute;
+  top: 16px;
+  right: var(--gutter);
+  width: 44px;
+  height: 44px;
+  font-size: 28px;
+  line-height: 1;
+  color: var(--color-text);
+  background: transparent;
+  border: 2px solid var(--color-rule);
+  cursor: pointer;
+}
+
+.header__mobile-nav-list {
+  display: flex;
+  flex-direction: column;
+  border-top: 2px solid var(--color-inverse);
+}
+
+.header__mobile-nav-list > li {
+  border-bottom: 1px solid var(--color-rule);
+}
+
+.header__mobile-nav-link {
+  display: block;
+  padding: 14px 0;
+  font-family: var(--font-display);
+  font-size: clamp(32px, 8vw, 52px);
+  font-weight: 800;
+  line-height: 1;
+  text-transform: uppercase;
+  color: var(--color-text);
+}
+
+.header__mobile-nav-link--cta {
+  color: var(--color-accent);
+}
+
+.header__mobile-subnav-list {
+  display: grid;
+  gap: 4px;
+  padding: 0 0 16px;
+}
+
+.header__mobile-subnav-link {
+  display: flex;
+  gap: 14px;
+  font-size: var(--text-sm);
+  color: var(--color-text-muted);
+}
+
+.header__mobile-subnav-link::before {
+  content: '—';
+  color: var(--color-accent);
+}
+
+@media (min-width: 900px) {
+  .header__nav {
+    display: block;
+  }
+
+  .header__hamburger {
+    display: none;
+  }
+}
+
+/* --- Language Switcher --- */
+
+.lang-switcher {
+  display: inline-flex;
+  align-items: center;
+  gap: 6px;
+  font-size: var(--text-ui);
+  font-weight: 500;
+  color: var(--color-text-muted);
+}
+
+.lang-switcher__link {
+  color: var(--color-text-muted);
+}
+
+.lang-switcher__link--active {
+  color: var(--color-text);
+}
+
+/* ==========================================================================
+   HERO — the monolith beside the headline
+   ========================================================================== */
+
+.hero {
+  display: grid;
+  grid-template-columns: var(--slab-col) minmax(0, 1fr);
+  gap: clamp(20px, 4vw, 64px);
+  align-items: end;
+  padding: var(--hero-y) var(--inset) clamp(56px, 8vw, 120px);
+}
+
+.hero__slab {
+  display: flex;
+  align-self: stretch;
+  align-items: flex-end;
+  min-height: 280px;
+}
+
+.hero__content {
+  display: flex;
+  flex-direction: column;
+  gap: 32px;
+  min-width: 0;
+}
+
+.hero__headline {
+  font-size: var(--display-xl);
+  line-height: var(--lh-display);
+  letter-spacing: -0.01em;
+  overflow-wrap: break-word;
+  hyphens: auto;
+}
+
+.hero__foot {
+  display: grid;
+  grid-template-columns: repeat(auto-fit, minmax(min(100%, 280px), 1fr));
+  gap: 32px;
+  align-items: end;
+  padding-top: 32px;
+  border-top: 1px solid var(--color-rule);
+}
+
+.hero__sub {
+  max-width: 60ch;
+}
+
+.hero__cta {
+  justify-self: start;
+}
+
+@media (min-width: 768px) {
+  .hero__slab {
+    min-height: 360px;
+  }
+}
+
+/* ==========================================================================
+   HERO COMPACT — inner pages: label, headline, lead on a rule
+   ========================================================================== */
+
+.hero-compact {
+  display: flex;
+  flex-direction: column;
+  gap: 32px;
+  padding: var(--hero-y) var(--inset) clamp(48px, 6vw, 88px);
+}
+
+.hero-compact__headline {
+  max-width: 18ch;
+  font-size: var(--display-l);
+  line-height: var(--lh-display);
+  overflow-wrap: break-word;
+  hyphens: auto;
+}
+
+.hero-compact__sub {
+  max-width: 60ch;
+  padding-top: 28px;
+  border-top: 1px solid var(--color-rule);
+}
+
+/* ==========================================================================
+   PAGE CONTENT — prose between the bands
+   ========================================================================== */
+
+/* Bands inside the content are full-bleed, so the page body has no side
+   padding of its own. Running text gets it here, element by element, together
+   with the reading measure. */
+.page-content {
+  padding: clamp(24px, 3vw, 40px) 0 var(--section-y);
+}
+
+.page-content:has(> .band:first-child) {
+  padding-top: 0;
+}
+
+.page-content--no-hero {
+  padding-top: var(--hero-y);
+}
+
+.page-content > :where(h1, h2, h3, h4, p, ul, ol, blockquote, hr, table) {
+  max-width: var(--measure);
+  margin-left: var(--inset);
+  margin-right: var(--inset);
+}
+
+/* A component tag written with its closing tag on the same line is not an HTML
+   block for the Markdown parser, so it comes out wrapped in a <p>. Taking that
+   paragraph out of the box tree lets the component be full-bleed. */
+.page-content > p:has(> service-list, > trust-grid, > step-timeline, > contact-form) {
+  display: contents;
+}
+
+.page-content > h1 {
+  margin-top: clamp(40px, 5vw, 72px);
+  margin-bottom: 32px;
+  font-size: var(--display-l);
+}
+
+.page-content > h2 {
+  max-width: 24ch;
+  margin-top: clamp(64px, 8vw, 112px);
+  margin-bottom: 28px;
+  font-size: var(--display-prose);
+}
+
+.page-content > h2:first-child {
+  margin-top: clamp(40px, 5vw, 72px);
+}
+
+.page-content > h3 {
+  margin-top: 44px;
+  margin-bottom: 12px;
+  font-size: 24px;
+}
+
+.page-content > h2 + h3 {
+  margin-top: 16px;
+}
+
+.page-content > p {
+  margin-bottom: 18px;
+}
+
+.page-content > :where(p, ul, ol, blockquote, h3) a {
+  color: var(--color-text);
+  text-decoration: underline;
+  text-decoration-color: var(--color-accent);
+  text-decoration-thickness: 1px;
+  text-underline-offset: 4px;
+}
+
+.page-content > :where(p, ul, ol, blockquote, h3) a:hover {
+  color: var(--color-accent);
+}
+
+/* Lists: rows on a rule, an ochre em-dash (or a numeral) as the marker. */
+.page-content > ul,
+.page-content > ol {
+  margin-top: 8px;
+  margin-bottom: 28px;
+  border-top: 1px solid var(--color-rule);
+  counter-reset: list;
+}
+
+/* The marker is positioned rather than a flex item: a flex <li> would split
+   "<strong>Lead.</strong> rest of the sentence" into two columns. */
+.page-content li {
+  position: relative;
+  padding: 12px 0 12px 32px;
+  color: var(--color-text-body);
+  border-bottom: 1px solid var(--color-rule);
+  counter-increment: list;
+}
+
+.page-content li::before {
+  position: absolute;
+  left: 0;
+  content: '—';
+  color: var(--color-accent);
+}
+
+.page-content ol > li {
+  padding-left: 40px;
+}
+
+.page-content ol > li::before {
+  font-family: var(--font-display);
+  font-weight: 800;
+  content: counter(list, decimal-leading-zero);
+}
+
+.page-content > hr {
+  margin-top: 56px;
+  margin-bottom: 56px;
+  border: none;
+  border-top: 2px solid var(--color-inverse);
+}
+
+.page-content > blockquote {
+  margin-top: 32px;
+  margin-bottom: 32px;
+  padding-top: 16px;
+  border-top: 2px solid var(--color-accent);
+}
+
+.page-content > blockquote p {
+  font-family: var(--font-display);
+  font-size: var(--display-quote);
+  font-weight: 600;
+  line-height: var(--lh-quote);
+  color: var(--color-text);
+}
+
+/* --- Hide gomddoc heading anchors --- */
+
+.heading-anchor {
+  display: none;
+}
+
+/* ==========================================================================
+   BANDS — full-bleed component sections inside the page content
+   ========================================================================== */
+
+.band {
+  margin: var(--section-y) 0;
+  padding: var(--section-y) var(--inset);
+}
+
+.page-content > .band:first-child,
+.page-content > p:first-child > .band {
+  margin-top: 0;
+}
+
+.page-content > .band:last-child,
+.page-content > p:last-child > .band {
+  margin-bottom: calc(-1 * var(--section-y));
+}
+
+.band__head {
+  display: flex;
+  flex-direction: column;
+  gap: 24px;
+  margin-bottom: 56px;
+}
+
+.band__title {
+  max-width: 18ch;
+  font-size: var(--display-m);
+}
+
+/* --- Service rows (service-list) --- */
+
+.band--rows {
+  border-top: 1px solid var(--color-rule);
+}
+
+.rows {
+  border-top: 2px solid var(--color-inverse);
+}
+
+.row {
+  display: grid;
+  grid-template-columns: 40px minmax(0, 1fr);
+  gap: 12px 16px;
+  align-items: baseline;
+  padding: 28px 0;
+  color: var(--color-text);
+  border-bottom: 1px solid var(--color-rule);
+  transition: background-color var(--dur-hover);
+}
+
+.row:hover {
+  color: var(--color-text);
+  background-color: var(--color-surface);
+}
+
+.row__num {
+  font-family: var(--font-display);
+  font-size: 24px;
+  font-weight: 800;
+  color: var(--color-accent);
+}
+
+.row__title {
+  font-family: var(--font-display);
+  font-size: var(--display-s);
+  font-weight: 800;
+  line-height: var(--lh-display);
+  text-transform: uppercase;
+}
+
+.row__desc {
+  grid-column: 2;
+  max-width: 48ch;
+}
+
+.row__arrow {
+  display: none;
+  font-size: 24px;
+  color: var(--color-accent);
+}
+
+@media (min-width: 900px) {
+  .row {
+    grid-template-columns: 64px minmax(0, 1.1fr) minmax(0, 1fr) 32px;
+    gap: 24px;
+    padding: 32px 0;
+  }
+
+  .row__desc {
+    grid-column: auto;
+  }
+
+  .row__arrow {
+    display: block;
+  }
+}
+
+/* --- Proof (trust-grid): the bone field --- */
+
+.band--inverse {
+  color: var(--color-text-inverse);
+  background-color: var(--color-inverse);
+}
+
+.band--inverse .eyebrow {
+  margin-bottom: 40px;
+  color: var(--color-text-inverse);
+}
+
+.proof-grid {
+  display: grid;
+  grid-template-columns: repeat(auto-fit, minmax(min(100%, 280px), 1fr));
+  gap: clamp(40px, 5vw, 80px);
+}
+
+.proof {
+  display: flex;
+  flex-direction: column;
+  gap: 12px;
+  padding-top: 20px;
+  border-top: 3px solid var(--color-text-inverse);
+}
+
+.proof__value {
+  font-family: var(--font-display);
+  font-size: clamp(64px, 7vw, 112px);
+  font-weight: 800;
+  line-height: 0.86;
+}
+
+.proof__label {
+  font-family: var(--font-display);
+  font-size: var(--display-quote);
+  font-weight: 600;
+  line-height: var(--lh-quote);
+  text-wrap: balance;
+}
+
+.proof__desc {
+  color: var(--color-text-inverse);
+}
+
+/* --- Steps (step-timeline): the staircase --- */
+
+.steps {
+  display: grid;
+  grid-template-columns: repeat(auto-fit, minmax(min(100%, 220px), 1fr));
+  gap: 40px 24px;
+  align-items: end;
+  margin: 48px var(--inset) 64px;
+  --strata-step: 16px;
+}
+
+.step {
+  display: flex;
+  flex-direction: column;
+  gap: 20px;
+}
+
+.step__num {
+  font-family: var(--font-display);
+  font-size: 24px;
+  font-weight: 800;
+  line-height: 1;
+  color: var(--color-accent);
+}
+
+.step__title {
+  margin-top: -8px;
+  font-family: var(--font-display);
+  font-size: clamp(30px, 2.8vw, 40px);
+  font-weight: 800;
+  line-height: var(--lh-display);
+  text-transform: uppercase;
+}
+
+.step__desc {
+  font-size: var(--text-sm);
+}
+
+@media (min-width: 600px) {
+  .steps {
+    --strata-step: 48px;
+  }
+}
+
+/* --- CTA band: the ochre field, once per page --- */
+
+.cta-band {
+  display: flex;
+  flex-direction: column;
+  align-items: flex-start;
+  gap: 40px;
+  padding: clamp(56px, 8vw, 112px) var(--inset);
+  color: var(--color-text-inverse);
+  background-color: var(--color-accent);
+}
+
+.cta-band__text {
+  max-width: 22ch;
+  font-family: var(--font-display);
+  font-size: clamp(36px, 5vw, 80px);
+  font-weight: 800;
+  line-height: var(--lh-display);
+  text-transform: uppercase;
+  text-wrap: balance;
+  color: var(--color-text-inverse);
+}
+
+/* ==========================================================================
+   CONTACT
+   ========================================================================== */
+
+.band--contact {
+  display: grid;
+  grid-template-columns: repeat(auto-fit, minmax(min(100%, 360px), 1fr));
+  padding: 0;
+  border-top: 2px solid var(--color-inverse);
+}
+
+.contact-layout__info,
+.contact-layout__form {
+  padding: clamp(48px, 6vw, 88px) var(--gutter);
+}
+
+.contact-layout__form {
+  background-color: var(--color-surface);
+}
+
+/* The form comes first in the source so it leads on a phone; side by side,
+   the contact details take the left column as in the rest of the layout. */
+@media (min-width: 800px) {
+  .contact-layout__info {
+    order: -1;
+  }
+}
+
+.contact-info {
+  display: flex;
+  flex-direction: column;
+  gap: 32px;
+}
+
+.contact-info__lead {
+  font-family: var(--font-display);
+  font-size: var(--display-quote);
+  font-weight: 600;
+  line-height: var(--lh-quote);
+  color: var(--color-text);
+}
+
+.contact-info__block {
+  display: flex;
+  flex-direction: column;
+  gap: 6px;
+  padding-top: 20px;
+  border-top: 1px solid var(--color-rule);
+}
+
+.contact-info__block--accent {
+  border-top: 2px solid var(--color-accent);
+}
+
+.contact-info__email {
+  font-family: var(--font-display);
+  font-size: clamp(28px, 3vw, 44px);
+  font-weight: 800;
+  line-height: 1;
+  overflow-wrap: anywhere;
+}
+
+.contact-info__value {
+  color: var(--color-text-body);
+}
+
+.contact-form {
+  display: flex;
+  flex-direction: column;
+  gap: 28px;
+}
+
+.contact-form__field {
+  display: flex;
+  flex-direction: column;
+  gap: 8px;
+}
+
+.contact-form__optional {
+  letter-spacing: 0;
+  text-transform: none;
+  font-weight: 400;
+}
+
+.contact-form__input,
+.contact-form__textarea {
+  width: 100%;
+  font-size: var(--text-base);
+  color: var(--color-text);
+  border-radius: 0;
+  outline: none;
+  transition: border-color var(--dur-hover);
+}
+
+.contact-form__input {
+  padding: 10px 0;
+  background: transparent;
+  border: none;
+  border-bottom: 2px solid var(--color-rule);
+}
+
+.contact-form__textarea {
+  padding: 14px 16px;
+  resize: vertical;
+  background-color: var(--color-bg);
+  border: 2px solid var(--color-rule);
+}
+
+.contact-form__input:focus,
+.contact-form__textarea:focus,
+.contact-form__input[aria-invalid="true"],
+.contact-form__textarea[aria-invalid="true"] {
+  border-color: var(--color-accent);
+}
+
+.contact-form__submit {
+  align-self: flex-start;
+}
+
+.contact-form__privacy {
+  font-size: 13px;
+  color: var(--color-text-muted);
+}
+
+.contact-form__error {
+  font-size: 14px;
+  color: var(--color-accent);
+}
+
+.contact-form__status {
+  display: flex;
+  flex-direction: column;
+  gap: 16px;
+  margin-bottom: 32px;
+  outline: none;
+}
+
+.contact-form__status--error {
+  padding-top: 16px;
+  border-top: 2px solid var(--color-accent);
+}
+
+.contact-form__status-mark {
+  width: 72px;
+  height: 160px;
+  background: var(--strata-fine);
+}
+
+.contact-form__status-title {
+  font-family: var(--font-display);
+  font-size: clamp(36px, 4vw, 64px);
+  font-weight: 800;
+  line-height: var(--lh-display);
+  text-transform: uppercase;
+  color: var(--color-text);
+}
+
+.contact-form__status--error .contact-form__status-title {
+  font-size: var(--display-quote);
+}
+
+/* ==========================================================================
+   FOOTER
+   ========================================================================== */
+
+.footer {
+  padding: 56px var(--inset) 32px;
+  font-size: var(--text-ui);
+  color: var(--color-text-muted);
+  border-top: 1px solid var(--color-rule);
+}
+
+/* The ochre CTA band closes the page; the footer sits right under it. */
+.cta-band + .footer,
+main:has(> .cta-band:last-child) + .footer {
+  border-top: none;
+}
+
+.footer__grid {
+  display: grid;
+  grid-template-columns: repeat(auto-fit, minmax(220px, 1fr));
+  gap: 40px;
+}
+
+.footer__brand {
+  display: flex;
+  flex-direction: column;
+  gap: 10px;
+}
+
+.footer__logo-text {
+  font-family: var(--font-display);
+  font-size: 26px;
+  font-weight: 800;
+  line-height: 1;
+  letter-spacing: 0.04em;
+  text-transform: uppercase;
+  color: var(--color-text);
+}
+
+.footer__heading {
+  margin-bottom: 8px;
+  font-size: var(--text-ui);
+  font-weight: 600;
+  color: var(--color-text);
+}
+
+.footer__list {
+  display: flex;
+  flex-direction: column;
+  gap: 8px;
+}
+
+.footer__link,
+.footer__legal {
+  color: var(--color-text-muted);
+}
+
+.footer__bottom {
+  display: flex;
+  flex-wrap: wrap;
+  justify-content: space-between;
+  gap: 16px;
+  margin-top: 40px;
+  padding-top: 24px;
+  font-size: var(--text-label);
+  border-top: 1px solid var(--color-rule);
+}
+
+.footer__legal-links {
+  display: flex;
+  flex-wrap: wrap;
+  gap: 24px;
+}
+
+.footer__cookie-manage {
+  font-size: inherit;
+  background: none;
+  border: none;
+  padding: 0;
+  cursor: pointer;
+  transition: color var(--dur-hover);
+}
+
+.footer__cookie-manage:hover {
+  color: var(--color-accent);
+}
+
+/* ==========================================================================
+   COOKIE BANNER
+   ========================================================================== */
+
+.cookie-banner {
+  position: fixed;
+  left: 0;
+  right: 0;
+  bottom: 0;
+  z-index: 100;
+  padding: 24px var(--gutter);
+  background-color: var(--color-surface);
+  border-top: 2px solid var(--color-accent);
+}
+
+.cookie-banner__inner {
+  display: flex;
+  flex-direction: column;
+  gap: 16px;
+  max-width: var(--page-max);
+  margin: 0 auto;
+}
+
+.cookie-banner__text {
+  font-size: var(--text-ui);
+}
+
+.cookie-banner__text a {
+  color: var(--color-text);
+  text-decoration: underline;
+  text-decoration-color: var(--color-accent);
+  text-underline-offset: 3px;
+}
+
+.cookie-banner__actions {
+  display: flex;
+  flex-wrap: wrap;
+  gap: 12px;
+}
+
+.cookie-banner__actions .btn {
+  padding: 12px 20px;
+  font-size: var(--text-ui);
+}
+
+@media (min-width: 768px) {
+  .cookie-banner__inner {
+    flex-direction: row;
+    align-items: center;
+    justify-content: space-between;
+    gap: 32px;
+  }
+
+  .cookie-banner__actions {
+    flex-shrink: 0;
+  }
+}
+
+/* ==========================================================================
+   REDUCED MOTION
+   ========================================================================== */
+
+@media (prefers-reduced-motion: reduce) {
+  .slab {
+    animation: none;
+  }
+
+  *,
+  *::before,
+  *::after {
+    transition-duration: 0.01ms !important;
+  }
+}

@@ -1,6 +1,5 @@
 {{ define "header" }}
 {{- $lang := or (index .Page.Meta "lang") "fr" -}}
-{{- $isHome := eq (or (index .Page.Meta "layout") "page") "home" -}}
 {{- $frURL := "#" -}}
 {{- $enURL := "#" -}}
 {{- if eq $lang "en" -}}
@@ -8,9 +7,10 @@
 {{- else -}}
   {{- $enURL = or (index .Page.Meta "alternate") "/en-us/" -}}
 {{- end -}}
-<header class="header{{ if $isHome }} header--home{{ end }}" id="site-header">
+<header class="header" id="site-header">
   <div class="header__inner">
     <a href="{{ if eq $lang "en" }}{{ contentURL "en-us/README.md" }}{{ else }}/{{ end }}" class="header__logo" aria-label="{{ if eq $lang "en" }}Monolithic Lab — Home{{ else }}Monolithic Lab — Accueil{{ end }}">
+      <span class="header__logo-mark" aria-hidden="true"></span>
       <span class="header__logo-text">Monolithic Lab</span>
     </a>
 
@@ -20,10 +20,12 @@
         <li class="header__nav-item header__nav-item--has-submenu">
           <a href="{{ if eq $lang "en" }}{{ contentURL "en-us/expertise.md" }}{{ else }}{{ contentURL "expertises.md" }}{{ end }}" class="header__nav-link">{{ if eq $lang "en" }}Services{{ else }}Offres{{ end }}</a>
           <div class="header__submenu" aria-label="{{ if eq $lang "en" }}Services submenu{{ else }}Sous-menu offres{{ end }}">
-            <a href="{{ if eq $lang "en" }}{{ contentURL "en-us/fractional-cto.md" }}{{ else }}{{ contentURL "cto-temps-partage.md" }}{{ end }}" class="header__submenu-link">{{ if eq $lang "en" }}Fractional CTO{{ else }}CTO à temps partagé{{ end }}</a>
-            <a href="{{ if eq $lang "en" }}{{ contentURL "en-us/interim-cto.md" }}{{ else }}{{ contentURL "cto-de-transition.md" }}{{ end }}" class="header__submenu-link">{{ if eq $lang "en" }}Interim CTO{{ else }}CTO de transition{{ end }}</a>
-            <a href="{{ if eq $lang "en" }}{{ contentURL "en-us/ai-transformation.md" }}{{ else }}{{ contentURL "transformation-ia.md" }}{{ end }}" class="header__submenu-link">{{ if eq $lang "en" }}AI transformation{{ else }}Transformation IA{{ end }}</a>
-            <a href="{{ if eq $lang "en" }}{{ contentURL "en-us/expertise.md" }}{{ else }}{{ contentURL "expertises.md" }}{{ end }}" class="header__submenu-link">{{ if eq $lang "en" }}Fixed-price projects{{ else }}Missions au forfait{{ end }}</a>
+            <div class="header__submenu-panel">
+              <a href="{{ if eq $lang "en" }}{{ contentURL "en-us/fractional-cto.md" }}{{ else }}{{ contentURL "cto-temps-partage.md" }}{{ end }}" class="header__submenu-link">{{ if eq $lang "en" }}Fractional CTO{{ else }}CTO à temps partagé{{ end }}</a>
+              <a href="{{ if eq $lang "en" }}{{ contentURL "en-us/interim-cto.md" }}{{ else }}{{ contentURL "cto-de-transition.md" }}{{ end }}" class="header__submenu-link">{{ if eq $lang "en" }}Interim CTO{{ else }}CTO de transition{{ end }}</a>
+              <a href="{{ if eq $lang "en" }}{{ contentURL "en-us/ai-transformation.md" }}{{ else }}{{ contentURL "transformation-ia.md" }}{{ end }}" class="header__submenu-link">{{ if eq $lang "en" }}AI transformation{{ else }}Transformation IA{{ end }}</a>
+              <a href="{{ if eq $lang "en" }}{{ contentURL "en-us/expertise.md" }}{{ else }}{{ contentURL "expertises.md" }}{{ end }}" class="header__submenu-link">{{ if eq $lang "en" }}Fixed-price projects{{ else }}Missions au forfait{{ end }}</a>
+            </div>
           </div>
         </li>
         <li><a href="{{ if eq $lang "en" }}{{ contentURL "en-us/articles/README.md" }}{{ else }}{{ contentURL "articles/README.md" }}{{ end }}" class="header__nav-link">Articles</a></li>

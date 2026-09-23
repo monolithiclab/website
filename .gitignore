@@ -5,7 +5,7 @@ public/
 .claude/
 .claude/worktrees/
 
-# Vendored gomddoc themes we do not author. Only le-bureau is ours.
+# Vendored gomddoc themes we do not author. Only basalt is ours.
 .gomddoc/assets/themes/dalle/
 .gomddoc/assets/themes/default/
 .gomddoc/assets/themes/monolithic/

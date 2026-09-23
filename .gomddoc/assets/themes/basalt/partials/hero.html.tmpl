@@ -1,0 +1,32 @@
+{{ define "hero" }}
+{{- $hero := index .Page.Meta "hero" -}}
+{{ if $hero }}
+{{- $compact := index $hero "compact" -}}
+{{- $heroLabel := index $hero "label" -}}
+{{- $heroSub := index $hero "subheadline" -}}
+
+{{ if not $compact }}
+    <section class="hero" aria-label="Hero">
+      <div class="hero__slab" aria-hidden="true"><div class="slab"></div></div>
+      <div class="hero__content">
+        {{ if $heroLabel }}<span class="eyebrow">{{ $heroLabel }}</span>{{ end }}
+        <h1 class="hero__headline" data-accent-last>{{ index $hero "headline" }}</h1>
+        {{ $heroCTA := index $hero "cta_text" }}
+        {{ if or $heroSub $heroCTA }}
+        <div class="hero__foot">
+          {{ if $heroSub }}<p class="hero__sub">{{ $heroSub }}</p>{{ end }}
+          {{ if $heroCTA }}<a href="{{ index $hero "cta_url" }}" class="btn btn--outline hero__cta">{{ $heroCTA }}<span aria-hidden="true">&rarr;</span></a>{{ end }}
+        </div>
+        {{ end }}
+      </div>
+    </section>
+{{ else }}
+    <section class="hero-compact" aria-label="Hero">
+      {{ if $heroLabel }}<span class="eyebrow">{{ $heroLabel }}</span>{{ end }}
+      <h1 class="hero-compact__headline" data-accent-last>{{ index $hero "headline" }}</h1>
+      {{ if $heroSub }}<p class="hero-compact__sub">{{ $heroSub }}</p>{{ end }}
+    </section>
+{{ end }}
+
+{{ end }}
+{{ end }}

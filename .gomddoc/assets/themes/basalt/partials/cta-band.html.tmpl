@@ -1,0 +1,9 @@
+{{ define "cta-band" }}
+{{- $ctaBand := index .Page.Meta "cta_band" -}}
+{{ if $ctaBand }}
+    <section class="cta-band">
+      <p class="cta-band__text">{{ index $ctaBand "text" }}</p>
+      <a href="{{ index $ctaBand "button_url" }}" class="btn btn--ink">{{ index $ctaBand "button_text" }}<span aria-hidden="true">&rarr;</span></a>
+    </section>
+{{ end }}
+{{ end }}

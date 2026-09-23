@@ -24,32 +24,26 @@
   {{ template "header" . }}
   <main id="main-content">
     <section class="hero-compact" aria-label="Erreur">
-      <div class="hero-compact__inner">
-        <span class="hero-compact__label">Erreur {{ $code }}</span>
-        <h1 class="hero-compact__headline">Cette page a changé d’adresse ou a été retirée</h1>
-        <p class="hero-compact__sub">Le lien qui vous a mené ici date probablement d’une version précédente du site.</p>
-      </div>
+      <span class="eyebrow">Erreur {{ $code }}</span>
+      <h1 class="hero-compact__headline" data-accent-last>Cette page a changé d’adresse ou a été retirée</h1>
+      <p class="hero-compact__sub">Le lien qui vous a mené ici date probablement d’une version précédente du site.</p>
     </section>
-    <section class="section">
-      <div class="container">
-        <div class="page-content">
-          <p>Voici les pages principales :</p>
-          <ul>
-            <li><a href="/">Accueil</a></li>
-            <li><a href="{{ contentURL "approche.md" }}">Approche</a></li>
-            <li><a href="{{ contentURL "expertises.md" }}">Expertises</a></li>
-            <li><a href="{{ contentURL "references.md" }}">Références</a></li>
-            <li><a href="{{ contentURL "faq.md" }}">FAQ</a></li>
-            <li><a href="{{ contentURL "contact.md" }}">Contact</a></li>
-          </ul>
-          <p>Si vous cherchez quelque chose de précis, écrivez à
-            <a href="mailto:contact@monolithiclab.fr">contact@monolithiclab.fr</a>.</p>
-          <hr>
-          <p lang="en">This page has moved or been retired.
-            <a href="{{ contentURL "en-us/README.md" }}">Go to the English home page</a>.</p>
-        </div>
-      </div>
-    </section>
+    <div class="page-content">
+      <p>Voici les pages principales :</p>
+      <ul>
+        <li><a href="/">Accueil</a></li>
+        <li><a href="{{ contentURL "approche.md" }}">Approche</a></li>
+        <li><a href="{{ contentURL "expertises.md" }}">Expertises</a></li>
+        <li><a href="{{ contentURL "references.md" }}">Références</a></li>
+        <li><a href="{{ contentURL "faq.md" }}">FAQ</a></li>
+        <li><a href="{{ contentURL "contact.md" }}">Contact</a></li>
+      </ul>
+      <p>Si vous cherchez quelque chose de précis, écrivez à
+        <a href="mailto:contact@monolithiclab.fr">contact@monolithiclab.fr</a>.</p>
+      <hr>
+      <p lang="en">This page has moved or been retired.
+        <a href="{{ contentURL "en-us/README.md" }}">Go to the English home page</a>.</p>
+    </div>
   </main>
   {{ template "footer" . }}
   {{ if $gtmID }}<cookie-banner lang="fr"></cookie-banner>{{ end }}

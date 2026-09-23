@@ -7,26 +7,29 @@ private `monolithiclab/company` repository** — that is the single source of tr
 shared with the print documents so the site and the PDFs cannot drift apart. This repository is public
 and holds the implementation only; this file covers technical conventions.
 
-Summary, so a change can be sanity-checked without the private repo to hand: warm paper and burgundy
-palette, Instrument Serif headings, DM Sans body. No border-radius, no box-shadows, no gradients, no
-photographs. Sharp corners, flat colours, grid layouts, mobile-first.
+Summary, so a change can be sanity-checked without the private repo to hand ("Basalt"): dark basalt
+ground, stone and bone text, one ochre accent. Big Shoulders Display 800 uppercase for display,
+Hanken Grotesk for everything else. The one motif is the monolith: an ochre strata slab beside hero
+headlines, repeated as staircase bars in step sequences. Rules, not boxes. No border-radius, no
+shadows, no transparency, no soft gradients (the strata's hard-stop stripes are the exception), no
+photographs. Hover is an instant fill swap; the slab rising on load is the only animation.
 
 ## Stack
 
 - **Static site generator:** gomddoc (no JavaScript framework)
 - **CSS:** Hand-written, no framework — vanilla CSS with custom properties
 - **JS:** Vanilla JavaScript, minimal and progressive-enhancement only
-- **Fonts:** Google Fonts (Instrument Serif, DM Sans) via `<link>` in template
+- **Fonts:** Big Shoulders Display + Hanken Grotesk, self-hosted in `fonts/` (variable woff2)
 - **Assets:** CSS and JS inlined into HTML via gomddoc's `inlineCSSAsset` / `inlineJSAsset`
 
 ## Build & Serve
 
-| Command      | Description                                          |
-| ------------ | ---------------------------------------------------- |
-| `make dev`   | Start development server with live reload            |
-| `make build` | Production build (static output in `public/`)        |
-| `make clean` | Remove build output                                  |
-| `make deploy`| Push to `main`, triggering GitHub Actions → GitHub Pages |
+| Command       | Description                                              |
+| ------------- | -------------------------------------------------------- |
+| `make dev`    | Start development server with live reload                |
+| `make build`  | Production build (static output in `public/`)            |
+| `make clean`  | Remove build output                                      |
+| `make deploy` | Push to `main`, triggering GitHub Actions → GitHub Pages |
 
 ## CSS Conventions
 
@@ -35,7 +38,7 @@ photographs. Sharp corners, flat colours, grid layouts, mobile-first.
 - **Custom properties** for all colors, spacing, and type sizes
 - **Mobile-first** media queries
 - Two CSS files, both inlined via `inlineCSSAsset` and both under
-  `.gomddoc/assets/themes/le-bureau/`:
+  `.gomddoc/assets/themes/basalt/`:
   - `_tokens.css` — **generated, do not edit.** The palette, rendered from `brand/tokens.json` in
     the private company repo by `make brand` there. Inlined first so `main.css` can use it.
   - `main.css` — everything else. Write no colour literal here: use `var(--color-*)`, or
@@ -45,9 +48,9 @@ photographs. Sharp corners, flat colours, grid layouts, mobile-first.
 
 ## Marketing Voice
 
-- **Positioning:** fractional CTO (*CTO à temps partagé*) and interim CTO (*CTO de transition*) for
+- **Positioning:** fractional CTO (_CTO à temps partagé_) and interim CTO (_CTO de transition_) for
   small and mid-sized companies, both carrying the company's AI transformation (engineering and
-  every other team). Fixed-price projects (*missions au forfait*: assessment, AI exploration, POC,
+  every other team). Fixed-price projects (_missions au forfait_: assessment, AI exploration, POC,
   MVP) are a separate offer: a defined deliverable, never a substitute for the CTO roles
 - **AI approach:** modeled on the forward deployed engineer (on site, real data, judged on usage);
   the adoption plan is co-built with the client's teams, never a ready-made method
@@ -67,13 +70,13 @@ The site is the repository root — there is no `Website/` wrapper directory.
 .
   .gomddoc/
     config.yml                          # Site config (title, domain, theme, language)
-    assets/themes/le-bureau/
+    assets/themes/basalt/
       layouts/default.html.tmpl         # Page template (handles all layouts)
       layouts/error.html.tmpl           # 404 — without it gomddoc falls back to the default theme
       partials/                         # Header, footer, head partials
       _tokens.css                       # GENERATED palette — see company/brand/tokens.json
       main.css                          # Stylesheet (inlined via inlineCSSAsset)
-      main.js                           # JS — menu + scroll reveal (inlined via inlineJSAsset)
+      main.js                           # JS — menu, nav state, content components, form, cookies
   fonts/                                # Self-hosted woff2 + OFL notices (never load from Google)
   README.md                             # FR homepage (directory index)
   approche.md                           # FR approach page
@@ -122,9 +125,10 @@ The site is the repository root — there is no `Website/` wrapper directory.
 
 ## gomddoc Theme
 
-The site uses a custom `le-bureau` theme with a single `default.html.tmpl` template.
+The site uses a custom `basalt` theme with a single `default.html.tmpl` template.
 
 **Template functions:**
+
 - `inlineCSSAsset "main.css"` — inlines CSS inside `<style>` (returns `template.CSS`)
 - `inlineJSAsset "main.js"` — inlines JS inside `<script>` (returns `template.JS`)
 - `canonicalURL .Page.Path` — returns the canonical URL for a page
