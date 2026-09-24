@@ -171,13 +171,13 @@ class StepTimeline extends HTMLElement {
 
     items.forEach(function (item, i) {
       var step = el("div", "step");
+      var bar = el("div", "strata-bar");
+      bar.style.setProperty("--step", i + 1);
+      step.appendChild(bar);
       var number = item.getAttribute("number");
       if (number) { step.appendChild(el("span", "step__num", number)); }
       step.appendChild(el("h3", "step__title", item.getAttribute("title")));
       step.appendChild(el("p", "step__desc", item.textContent.trim()));
-      var bar = el("div", "strata-bar");
-      bar.style.setProperty("--step", i + 1);
-      step.appendChild(bar);
       this.appendChild(step);
     }, this);
   }

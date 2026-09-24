@@ -958,15 +958,18 @@ strong {
   display: grid;
   grid-template-columns: repeat(auto-fit, minmax(min(100%, 220px), 1fr));
   gap: 40px 24px;
-  align-items: end;
   margin: 48px var(--inset) 64px;
-  --strata-step: 16px;
 }
 
 .step {
   display: flex;
   flex-direction: column;
   gap: 20px;
+}
+
+/* The staircase needs columns to read as one; stacked on a phone it is noise. */
+.step .strata-bar {
+  display: none;
 }
 
 .step__num {
@@ -993,6 +996,18 @@ strong {
 @media (min-width: 600px) {
   .steps {
     --strata-step: 48px;
+  }
+
+  /* Subgrid rows line up every step's bar base, number, title and text. */
+  .step {
+    display: grid;
+    grid-row: span 4;
+    grid-template-rows: subgrid;
+  }
+
+  .step .strata-bar {
+    display: block;
+    align-self: end;
   }
 }
 
