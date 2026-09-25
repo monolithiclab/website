@@ -103,7 +103,7 @@ The site is the repository root — there is no `Website/` wrapper directory.
     contact.md                          # EN contact page
     legal.md                            # EN legal page
     articles/                           # EN articles index (README.md) + articles
-  images/                               # Static images, SVGs, favicon
+  images/                               # favicon.svg, og-image{,-en}.png (rendered by `make og` in company)
 ```
 
 ## URLs
