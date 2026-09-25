@@ -229,6 +229,11 @@ class ContactFormElement extends HTMLElement {
     var isEn = lang === "en";
     var t = isEn ? CONTACT_STRINGS.en : CONTACT_STRINGS.fr;
 
+    /* The Markdown written inside the tag (what to include in a message) is
+       kept and moved into the how-to column. */
+    var howto = el("div", "contact-layout__howto");
+    while (this.firstChild) { howto.appendChild(this.firstChild); }
+
     this.className = "band band--contact";
     this.innerHTML =
       '<div class="contact-layout__form">' +
@@ -256,18 +261,23 @@ class ContactFormElement extends HTMLElement {
           '</div>' +
           '<div class="contact-form__field">' +
             '<label class="eyebrow eyebrow--muted" for="contact-message">Message</label>' +
-            '<textarea class="contact-form__textarea" id="contact-message" name="message" rows="7" placeholder="' + (isEn ? "Tell us about your project or needs..." : "D\u00e9crivez votre projet ou votre besoin...") + '" required></textarea>' +
+            '<textarea class="contact-form__textarea" id="contact-message" name="message" rows="7" placeholder="' + (isEn ? "Your situation, what\u2019s blocking, the deadline\u2026" : "Votre situation, ce qui bloque, l\u2019\u00e9ch\u00e9ance\u2026") + '" required></textarea>' +
             '<span class="contact-form__error" data-error-for="message" hidden></span>' +
           '</div>' +
           '<button class="btn btn--primary contact-form__submit" type="submit">' + t.send + '</button>' +
-          '<p class="contact-form__privacy">' + (isEn ? "Your data is processed solely to respond to your inquiry. No information is shared with third parties." : "Vos donn\u00e9es sont trait\u00e9es uniquement pour r\u00e9pondre \u00e0 votre demande. Aucune information n\u2019est partag\u00e9e avec des tiers.") + '</p>' +
+          '<p class="contact-form__privacy">' + (isEn ? 'Your data is used only to answer your request. <a href="/en-us/legal">Details in the legal notice</a>.' : 'Vos donn\u00e9es servent uniquement \u00e0 r\u00e9pondre \u00e0 votre demande. <a href="/mentions-legales">D\u00e9tails dans les mentions l\u00e9gales</a>.') + '</p>' +
         '</form>' +
       '</div>' +
       '<div class="contact-layout__info">' +
+        '<p class="eyebrow">' + (isEn ? "Contact details" : "Coordonn\u00e9es") + '</p>' +
         '<div class="contact-info">' +
           '<div class="contact-info__block contact-info__block--accent">' +
-            '<span class="eyebrow eyebrow--muted">' + (isEn ? "Direct email" : "Email direct") + '</span>' +
+            '<span class="eyebrow eyebrow--muted">Email</span>' +
             '<a class="contact-info__email" href="mailto:contact@monolithiclab.fr">contact@monolithiclab.fr</a>' +
+          '</div>' +
+          '<div class="contact-info__block">' +
+            '<span class="eyebrow eyebrow--muted">' + (isEn ? "Reply" : "R\u00e9ponse") + '</span>' +
+            '<span class="contact-info__value">' + (isEn ? "Within two business days, from Nicolas Mussat" : "Sous 48\u00a0heures ouvr\u00e9es, par Nicolas Mussat") + '</span>' +
           '</div>' +
           '<div class="contact-info__block">' +
             '<span class="eyebrow eyebrow--muted">' + (isEn ? "Address" : "Adresse") + '</span>' +
@@ -279,6 +289,8 @@ class ContactFormElement extends HTMLElement {
           '</div>' +
         '</div>' +
       '</div>';
+    /* Source order is the phone order: form, how-to, contact details. */
+    this.insertBefore(howto, this.querySelector(".contact-layout__info"));
 
     var form = this.querySelector(".contact-form");
     var status = this.querySelector(".contact-form__status");

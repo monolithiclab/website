@@ -1040,13 +1040,13 @@ strong {
 
 .band--contact {
   display: grid;
-  grid-template-columns: repeat(auto-fit, minmax(min(100%, 360px), 1fr));
   padding: 0;
   border-top: 2px solid var(--color-inverse);
 }
 
-.contact-layout__info,
-.contact-layout__form {
+.contact-layout__form,
+.contact-layout__howto,
+.contact-layout__info {
   padding: clamp(48px, 6vw, 88px) var(--gutter);
 }
 
@@ -1054,18 +1054,52 @@ strong {
   background-color: var(--color-surface);
 }
 
-/* The form comes first in the source so it leads on a phone; side by side,
-   the contact details take the left column as in the rest of the layout. */
+.contact-layout__info {
+  border-top: 1px solid var(--color-rule);
+}
+
+/* Source order is the phone order: form, how-to, contact details. Wider, the
+   form and the how-to sit side by side, the details run across below. */
 @media (min-width: 800px) {
+  .band--contact {
+    grid-template-columns: 1fr 1fr;
+  }
+
   .contact-layout__info {
-    order: -1;
+    grid-column: 1 / -1;
   }
 }
 
+/* The how-to is Markdown written inside <contact-form>, so it is not a
+   direct child of .page-content and gets its own prose rules here. */
+.contact-layout__howto h2 {
+  margin-bottom: 28px;
+  font-size: var(--display-s);
+}
+
+.contact-layout__howto p {
+  max-width: var(--measure);
+  margin-bottom: 18px;
+}
+
+.contact-layout__howto ul {
+  max-width: var(--measure);
+  margin: 8px 0 28px;
+  border-top: 1px solid var(--color-rule);
+}
+
 .contact-info {
-  display: flex;
-  flex-direction: column;
+  display: grid;
+  grid-template-columns: repeat(auto-fit, minmax(min(100%, 240px), 1fr));
   gap: 32px;
+  margin-top: 24px;
+}
+
+/* The email is the one detail set large, so it gets the wide column. */
+@media (min-width: 1000px) {
+  .contact-info {
+    grid-template-columns: 2fr 1fr 1fr 1fr;
+  }
 }
 
 .contact-info__lead {
@@ -1090,7 +1124,7 @@ strong {
 
 .contact-info__email {
   font-family: var(--font-display);
-  font-size: clamp(28px, 3vw, 44px);
+  font-size: clamp(28px, 2.6vw, 44px);
   font-weight: 800;
   line-height: 1;
   overflow-wrap: anywhere;
@@ -1156,6 +1190,16 @@ strong {
 .contact-form__privacy {
   font-size: 13px;
   color: var(--color-text-muted);
+}
+
+.contact-form__privacy a {
+  text-decoration: underline;
+  text-decoration-color: var(--color-accent);
+  text-underline-offset: 3px;
+}
+
+.contact-form__privacy a:hover {
+  color: var(--color-accent);
 }
 
 .contact-form__error {
