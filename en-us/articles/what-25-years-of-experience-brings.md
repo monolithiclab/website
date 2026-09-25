@@ -46,7 +46,7 @@ The safest answer is often existing software, a simple integration, or the decis
 
 ## Connecting technology and operations
 
-Nicolas Mussat’s background spans technology, information systems, and operations. In a small or mid-sized company, these aren’t separate: an order, an invoice, or a support ticket runs through every system the company has.
+Nicolas Mussat’s background runs from software development to infrastructure, all the way to the software that runs Prose’s factories. In a small or mid-sized company, these aren’t separate: an order, an invoice, or a support ticket runs through every system the company has.
 
 A CTO who only looks at the product leaves part of the gains, and part of the risks, on the table.
 

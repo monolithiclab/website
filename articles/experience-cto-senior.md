@@ -45,7 +45,7 @@ La solution la plus sûre est souvent un logiciel existant, une intégration sim
 
 ## Relier la technique aux opérations
 
-Le parcours de Nicolas Mussat couvre la technique, le système d’information et les opérations. Dans une PME, ces sujets ne sont pas séparés : une commande, une facture ou un ticket de support traverse tous les systèmes de l’entreprise.
+Le parcours de Nicolas Mussat va du développement à l’infrastructure, jusqu’aux logiciels qui pilotent les usines de Prose. Dans une PME, ces sujets ne sont pas séparés : une commande, une facture ou un ticket de support traverse tous les systèmes de l’entreprise.
 
 Un CTO qui ne regarde que le produit laisse de côté une partie des gains, et une partie des risques.
 

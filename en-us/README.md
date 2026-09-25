@@ -22,7 +22,7 @@ cta_band:
 </service-list>
 
 <trust-grid label="Why Monolithic Lab">
-  <trust-card value="25+" label="Years of experience">Architecture, information systems, operations, and team leadership, always from inside the company.</trust-card>
+  <trust-card value="25+" label="Years of experience">Software development, architecture, and infrastructure, building and leading engineering teams, always from inside the company.</trust-card>
   <trust-card value="2" label="Scale-ups built from the inside">MeilleursAgents, from the first server to 1.8 million visitors a month. Prose, cofounded in 2017: more than 15 million products made to order.</trust-card>
   <trust-card value="1" label="Point of contact">Nicolas Mussat runs every engagement personally, from the first call to the handover. No juniors, no subcontractors.</trust-card>
 </trust-grid>
