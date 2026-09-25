@@ -8,6 +8,12 @@
   if (toggle && overlay) {
     var lines = toggle.querySelectorAll(".header__hamburger-line");
     var closeButton = overlay.querySelector(".header__mobile-close");
+    // Everything the full-screen overlay covers: made inert so Tab stays in the menu.
+    var behind = document.querySelectorAll(".skip-link, .header__inner, main, .footer, cookie-banner");
+
+    function setBehindInert(on) {
+      behind.forEach(function (node) { node.inert = on; });
+    }
 
     function openMenu() {
       overlay.classList.add("is-open");
@@ -18,9 +24,12 @@
         lines[0].style.transform = "translateY(4.5px) rotate(45deg)";
         lines[1].style.transform = "translateY(-4.5px) rotate(-45deg)";
       }
+      setBehindInert(true);
+      if (closeButton) { closeButton.focus(); }
     }
 
-    function closeMenu() {
+    // restoreFocus is false when a link was followed: focus goes with the navigation.
+    function closeMenu(restoreFocus) {
       overlay.classList.remove("is-open");
       overlay.setAttribute("aria-hidden", "true");
       toggle.setAttribute("aria-expanded", "false");
@@ -29,6 +38,8 @@
         lines[0].style.transform = "";
         lines[1].style.transform = "";
       }
+      setBehindInert(false);
+      if (restoreFocus !== false) { toggle.focus(); }
     }
 
     toggle.addEventListener("click", function () {
@@ -37,11 +48,11 @@
     });
 
     if (closeButton) {
-      closeButton.addEventListener("click", closeMenu);
+      closeButton.addEventListener("click", function () { closeMenu(); });
     }
 
     overlay.querySelectorAll("a").forEach(function (link) {
-      link.addEventListener("click", closeMenu);
+      link.addEventListener("click", function () { closeMenu(false); });
     });
 
     document.addEventListener("keydown", function (e) {
@@ -317,6 +328,7 @@ class ContactFormElement extends HTMLElement {
 
     function clearErrors() {
       status.hidden = true;
+      status.textContent = "";
       CONTACT_FIELDS.forEach(function (name) {
         var slot = form.querySelector('[data-error-for="' + name + '"]');
         var field = form.querySelector('[name="' + name + '"]');

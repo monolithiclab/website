@@ -117,6 +117,11 @@ service-list, trust-grid, step-timeline, contact-form { display: block; }
   padding: 0;
 }
 
+/* Components set display:flex, which would otherwise beat the UA [hidden] rule. */
+[hidden] {
+  display: none !important;
+}
+
 html {
   -webkit-text-size-adjust: 100%;
   scroll-padding-top: calc(var(--header-height) + 16px);
@@ -171,7 +176,7 @@ address {
 }
 
 ::placeholder {
-  color: var(--color-text-placeholder);
+  color: var(--color-text-muted);
 }
 
 /* --- Typography --- */
@@ -364,7 +369,8 @@ strong {
 
 .header__logo-text {
   font-family: var(--font-display);
-  font-size: 26px;
+  /* Shrinks below 400px so the header fits a 320px screen without scrolling. */
+  font-size: clamp(20px, 6.5vw, 26px);
   font-weight: 800;
   line-height: 1;
   letter-spacing: 0.04em;
@@ -1058,6 +1064,11 @@ strong {
   background-color: var(--color-accent);
 }
 
+/* The default ochre ring vanishes on the ochre field. */
+.cta-band :focus-visible {
+  outline-color: var(--color-text-inverse);
+}
+
 .cta-band__text {
   max-width: 22ch;
   font-family: var(--font-display);
@@ -1201,14 +1212,14 @@ strong {
   padding: 10px 0;
   background: transparent;
   border: none;
-  border-bottom: 2px solid var(--color-rule);
+  border-bottom: 2px solid var(--color-text-placeholder);
 }
 
 .contact-form__textarea {
   padding: 14px 16px;
   resize: vertical;
   background-color: var(--color-bg);
-  border: 2px solid var(--color-rule);
+  border: 2px solid var(--color-text-placeholder);
 }
 
 .contact-form__input:focus,
@@ -1315,8 +1326,11 @@ main:has(> .cta-band:last-child) + .footer {
 
 .footer__heading {
   margin-bottom: 8px;
+  font-family: var(--font-body);
   font-size: var(--text-ui);
   font-weight: 600;
+  line-height: 1.2;
+  text-transform: none;
   color: var(--color-text);
 }
 
