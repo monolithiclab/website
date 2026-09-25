@@ -50,7 +50,7 @@ jobs:
       # ("should not include path"), which a project page always has. The
       # canonical domain comes from meta.domain in .gomddoc/config.yml instead,
       # and CNAME in the artifact tells Pages to serve it there — so canonicals
-      # and the served domain agree once DNS is pointed (PLAN.md item 0.7).
+      # and the served domain agree.
       - name: Build
         run: gomddoc build . -o public
       # Fails the deploy rather than publishing a private file. gomddoc's
