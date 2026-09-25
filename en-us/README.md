@@ -6,7 +6,7 @@ alternate: "/"
 hero:
   label: "Fractional CTO · Interim CTO · AI transformation"
   headline: "A senior CTO to lead your technology and make your move to AI work."
-  subheadline: "Monolithic Lab leads technology for small and mid-sized companies that don’t need a full-time CTO yet, or that just lost theirs, and drives their AI transformation, in the engineering team and every other team. 25+ years of experience, including MeilleursAgents through its acquisition by Axel Springer, and Prose through its international expansion."
+  subheadline: "Monolithic Lab leads technology for small and mid-sized companies that don’t need a full-time CTO yet, or that just lost theirs, and drives their AI transformation, in the engineering team and every other team. 25+ years of experience, including MeilleursAgents, built from scratch into France’s leading online real estate valuation platform, and Prose, cofounded in 2017, whose platform he built from the consultation to the factory."
   cta_text: "Describe your situation"
   cta_url: "/en-us/contact"
 cta_band:
@@ -23,7 +23,7 @@ cta_band:
 
 <trust-grid label="Why Monolithic Lab">
   <trust-card value="25+" label="Years of experience">Architecture, information systems, operations, and team leadership, always from inside the company.</trust-card>
-  <trust-card value="2" label="Scale-ups built from the inside">MeilleursAgents through its acquisition by Axel Springer. Prose through its international expansion.</trust-card>
+  <trust-card value="2" label="Scale-ups built from the inside">MeilleursAgents, from the first server to 1.8 million visitors a month. Prose, cofounded in 2017: up to 50,000 unique bottles made a day.</trust-card>
   <trust-card value="1" label="Point of contact">Nicolas Mussat runs every engagement personally, from the first call to the handover. No juniors, no subcontractors.</trust-card>
 </trust-grid>
 

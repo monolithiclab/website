@@ -88,7 +88,7 @@ The two sometimes follow each other: an assessment shows technical leadership is
 
 ## Why Monolithic Lab
 
-Every project is led by a CTO who has held the role: 25+ years in growing companies, including MeilleursAgents through its acquisition by Axel Springer and Prose during its international expansion. An assessment reads differently when it comes from someone who has had to live with the result, and a POC is judged on what it will take to put it into production.
+Every project is led by a CTO who has held the role: 25+ years in growing companies, including MeilleursAgents, from its first days to market leader, and Prose, cofounded in 2017. An assessment reads differently when it comes from someone who has had to live with the result, and a POC is judged on what it will take to put it into production.
 
 Nicolas Mussat builds hands-on, driving AI agents: prototypes and MVPs ship in weeks, not quarters, and the code is still reviewed and tested.
 

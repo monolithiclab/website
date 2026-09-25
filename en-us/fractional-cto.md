@@ -89,7 +89,7 @@ A fractional CTO fits when the need is ongoing but doesn’t fill a week. If the
 
 ## Why Monolithic Lab
 
-25+ years of technical and operational experience. At **MeilleursAgents**, Nicolas Mussat built the operations and information systems that carried the company’s growth through its acquisition by Axel Springer. At **Prose**, he laid the operational foundations for its international expansion from New York.
+25+ years of experience in software development, architecture, and engineering leadership. At **MeilleursAgents**, first employee turned CTO, Nicolas Mussat built from scratch the technology and the team behind a platform serving 1.8 million visitors a month. At **Prose**, as cofounder and CTO, he built the personalization and made-to-order manufacturing platform that runs the company.
 
 A CTO who builds, not just manages: Nicolas Mussat drives AI agents himself to prototype, analyze, and build, and passes that practice on to the teams.
 

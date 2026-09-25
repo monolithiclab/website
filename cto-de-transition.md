@@ -71,7 +71,7 @@ Rachat, fusion, due diligence, incident majeur, migration critique, changement d
 
 ## Pourquoi Monolithic Lab
 
-Reprendre un poste en cours de route demande de comprendre vite des systèmes et des équipes construits par d’autres. Plus de 25 ans passés dans des entreprises en croissance, dont MeilleursAgents jusqu’à son rachat par Axel Springer et Prose pendant son développement international, apprennent à repérer rapidement où se trouve le risque, qui porte quoi, et ce qui peut attendre.
+Reprendre un poste en cours de route demande de comprendre vite des systèmes et des équipes construits par d’autres. Plus de 25 ans passés dans des entreprises en croissance, dont MeilleursAgents, de ses débuts au rang de leader français, et Prose, cofondée en 2017, apprennent à repérer rapidement où se trouve le risque, qui porte quoi, et ce qui peut attendre.
 
 Un CTO de transition qui fait, pas seulement qui gère : Nicolas Mussat pilote lui-même des agents IA pour analyser un code qu’il n’a pas écrit, prototyper et construire, ce qui accélère la reprise en main.
 

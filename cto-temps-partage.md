@@ -88,7 +88,7 @@ Le temps partagé convient quand le besoin est durable mais ne remplit pas une s
 
 ## Pourquoi Monolithic Lab
 
-Plus de 25 ans d’expérience technique et opérationnelle. Chez **MeilleursAgents**, Nicolas Mussat a construit les opérations et le système d’information qui ont porté la croissance de l’entreprise jusqu’à son rachat par Axel Springer. Chez **Prose**, il a posé les fondations opérationnelles du déploiement international depuis New York.
+Plus de 25 ans d’expérience en développement, architecture et direction d’équipes techniques. Chez **MeilleursAgents**, premier salarié devenu CTO, Nicolas Mussat a construit de zéro la technique et l’équipe d’une plateforme de 1,8 million de visiteurs par mois. Chez **Prose**, cofondateur et CTO, il a construit la plateforme de personnalisation et de fabrication à la commande qui fait tourner l’entreprise.
 
 Un CTO qui fait, pas seulement qui gère : Nicolas Mussat pilote lui-même des agents IA pour prototyper, analyser et construire, et transmet cette pratique aux équipes.
 

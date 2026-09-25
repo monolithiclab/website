@@ -72,7 +72,7 @@ An acquisition, a merger, due diligence, a major incident, a critical migration,
 
 ## Why Monolithic Lab
 
-Taking over a role midstream means understanding systems and teams someone else built, fast. 25+ years inside growing companies — including MeilleursAgents through its acquisition by Axel Springer and Prose through its international expansion — teach you to spot quickly where the risk is, who owns what, and what can wait.
+Taking over a role midstream means understanding systems and teams someone else built, fast. 25+ years inside growing companies — including MeilleursAgents, from its first days to market leader, and Prose, cofounded in 2017 — teach you to spot quickly where the risk is, who owns what, and what can wait.
 
 An interim CTO who builds, not just manages: Nicolas Mussat drives AI agents himself to analyze code he didn’t write, prototype, and build, which speeds up taking control.
 

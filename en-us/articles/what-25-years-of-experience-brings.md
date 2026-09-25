@@ -26,7 +26,7 @@ That’s what Nicolas Mussat brings with 25+ years in the field.
 
 A growing company always breaks in the same places, in a fairly predictable order: knowledge concentrated in two or three heads, tools stacked with no coherence, blurry lines between product and engineering, debt that slows every release, security pushed to later.
 
-At MeilleursAgents, from growth through its acquisition by Axel Springer, then at Prose through its international expansion, Nicolas Mussat built the systems and organizations that had to hold up through those phases. That experience means dealing with a problem before it becomes a crisis.
+At MeilleursAgents, from the first server to a team of 30, then at Prose from its founding to 300 people, Nicolas Mussat built the systems and organizations that had to hold up through those phases. That experience means dealing with a problem before it becomes a crisis.
 
 ## Having seen the trends come and go
 

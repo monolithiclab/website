@@ -46,11 +46,11 @@ No partnerships with software vendors, integrators, AI providers, or recruiting 
 
 ## Nicolas Mussat
 
-Founder of Monolithic Lab. 25+ years of experience in technology, information systems, and operations, and a daily practice of driving AI agents to prototype, analyze, and build.
+Founder of Monolithic Lab. 25+ years of experience in software development, architecture, and infrastructure, building and leading engineering teams, and a daily practice of driving AI agents to prototype, analyze, and build.
 
-At **MeilleursAgents**, he built the company’s operations — information systems, processes, teams — through the growth that led to its acquisition by Axel Springer.
+At **MeilleursAgents**, as first employee in 2008, he built the company’s three products with the technical cofounder, then the engineering team, which he went on to lead as CTO. Nine years later, MeilleursAgents was France’s leading online real estate valuation platform.
 
-At **Prose**, the personalized beauty brand, he laid the operational foundations that made its international expansion from New York possible.
+At **Prose**, the personalized hair and skincare brand, he was cofounder and CTO from 2017 to 2025. He built from scratch the platform that runs the company, from the online consultation to made-to-order manufacturing in two US factories.
 
 He runs every engagement personally, with no junior staff and no subcontractors.
 

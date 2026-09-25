@@ -25,7 +25,7 @@ C’est ce que Nicolas Mussat apporte avec plus de 25 ans de métier.
 
 Une entreprise qui grandit casse toujours aux mêmes endroits, dans un ordre assez prévisible : la connaissance concentrée dans deux ou trois têtes, les outils empilés sans cohérence, les responsabilités floues entre produit et technique, la dette qui ralentit chaque livraison, la sécurité reportée à plus tard.
 
-Chez MeilleursAgents, de la croissance jusqu’au rachat par Axel Springer, puis chez Prose, pendant le développement international, Nicolas Mussat a construit les systèmes et les organisations qui devaient tenir pendant ces phases. Cette expérience permet de traiter un problème avant qu’il ne devienne une crise.
+Chez MeilleursAgents, du premier serveur à une équipe de 30 personnes, puis chez Prose, de la cofondation à 300 personnes, Nicolas Mussat a construit les systèmes et les organisations qui devaient tenir pendant ces phases. Cette expérience permet de traiter un problème avant qu’il ne devienne une crise.
 
 ## Avoir vu passer les modes
 

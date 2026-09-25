@@ -5,7 +5,7 @@ alternate: "/en-us/"
 hero:
   label: "CTO à temps partagé · CTO de transition · Transformation IA"
   headline: "Un CTO senior pour diriger votre technique et réussir votre passage à l’IA."
-  subheadline: "Monolithic Lab prend la direction technique des PME et scale-ups qui n’ont pas encore besoin d’un CTO à plein temps, ou qui viennent de perdre le leur, et conduit leur transformation IA, dans l’équipe technique comme dans toutes les autres. Plus de 25 ans d’expérience, dont MeilleursAgents jusqu’à son rachat par Axel Springer, et Prose pendant son développement international."
+  subheadline: "Monolithic Lab prend la direction technique des PME et scale-ups qui n’ont pas encore besoin d’un CTO à plein temps, ou qui viennent de perdre le leur, et conduit leur transformation IA, dans l’équipe technique comme dans toutes les autres. Plus de 25 ans d’expérience, dont MeilleursAgents, construit de zéro jusqu’au leader français de l’estimation immobilière en ligne, et Prose, cofondée en 2017, dont il a construit la plateforme de la consultation à l’usine."
   cta_text: "Décrire votre situation"
   cta_url: "/contact"
 cta_band:
@@ -22,7 +22,7 @@ cta_band:
 
 <trust-grid label="Pourquoi Monolithic Lab">
   <trust-card value="25+" label="Ans d’expérience">Architecture, systèmes d’information, opérations et direction d’équipes, toujours depuis l’intérieur de l’entreprise.</trust-card>
-  <trust-card value="2" label="Scale-ups construites de l’intérieur">MeilleursAgents jusqu’à son rachat par Axel Springer. Prose pendant son développement international.</trust-card>
+  <trust-card value="2" label="Scale-ups construites de l’intérieur">MeilleursAgents, du premier serveur à 1,8 million de visiteurs par mois. Prose, cofondée en 2017 : jusqu’à 50 000 flacons uniques fabriqués par jour.</trust-card>
   <trust-card value="1" label="Interlocuteur">Nicolas Mussat mène chaque mission lui-même, du premier échange au passage de relais. Pas de junior, pas de sous-traitance.</trust-card>
 </trust-grid>
 

@@ -87,7 +87,7 @@ Les deux s’enchaînent parfois : un diagnostic révèle qu’il manque une dir
 
 ## Pourquoi Monolithic Lab
 
-Chaque mission est menée par un CTO qui a tenu le rôle : plus de 25 ans dans des entreprises en croissance, dont MeilleursAgents jusqu’à son rachat par Axel Springer et Prose pendant son développement international. Un diagnostic se lit avec les yeux de celui qui devra vivre avec, et un POC se juge sur ce qu’il faudra pour le mettre en production.
+Chaque mission est menée par un CTO qui a tenu le rôle : plus de 25 ans dans des entreprises en croissance, dont MeilleursAgents, de ses débuts au rang de leader français, et Prose, cofondée en 2017. Un diagnostic se lit avec les yeux de celui qui devra vivre avec, et un POC se juge sur ce qu’il faudra pour le mettre en production.
 
 Nicolas Mussat construit lui-même, en pilotant des agents IA : les prototypes et les MVP sortent en semaines, pas en trimestres, et le code reste relu et testé.
 
