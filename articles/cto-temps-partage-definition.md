@@ -25,13 +25,13 @@ Le terme important est **directeur**. Le CTO à temps partagé ne conseille pas 
 
 Les mêmes choses qu’un CTO à plein temps, concentrées sur ce qui demande de l’expérience :
 
-- **décider** : architecture, stack, construire ou acheter, ce qu’on arrête ;
-- **prioriser** : aligner la feuille de route technique sur les objectifs de l’entreprise ;
-- **diriger l’équipe** : organisation, rôles, recrutements, accompagnement des leads ;
-- **transformer** : conduire l’adoption de l’IA, dans l’équipe technique comme dans les autres ;
-- **sécuriser** : fiabilité, sécurité, sauvegardes, accès, dette technique ;
-- **piloter les prestataires** : agences, freelances, éditeurs ;
-- **représenter la technique** auprès du CEO, du board et des investisseurs.
+- **décider** : architecture, stack, construire ou acheter, ce qu’on arrête
+- **prioriser** : aligner la feuille de route technique sur les objectifs de l’entreprise
+- **diriger l’équipe** : organisation, rôles, recrutements, accompagnement des leads
+- **transformer** : conduire l’adoption de l’IA, dans l’équipe technique comme dans les autres
+- **sécuriser** : fiabilité, sécurité, sauvegardes, accès, dette technique
+- **piloter les prestataires** : agences, freelances, éditeurs
+- **représenter la technique** auprès du CEO, du board et des investisseurs
 
 ## Ce qu’il ne fait pas
 
@@ -57,9 +57,9 @@ Le rythme évolue avec la mission : plus soutenu au début pour faire l’état 
 
 De quelques mois à plus d’un an. La mission s’arrête quand l’un de ces cas se présente :
 
-- l’entreprise a grandi et recrute un CTO à plein temps, que le CTO à temps partagé aide à choisir puis à installer ;
-- un lead interne est prêt à prendre le rôle ;
-- l’équipe est organisée et n’a plus besoin que d’un regard ponctuel.
+- l’entreprise a grandi et recrute un CTO à plein temps, que le CTO à temps partagé aide à choisir puis à installer
+- un lead interne est prêt à prendre le rôle
+- l’équipe est organisée et n’a plus besoin que d’un regard ponctuel
 
 ## Combien ça coûte ?
 

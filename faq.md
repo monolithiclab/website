@@ -47,9 +47,9 @@ Des PME et scale-ups, typiquement de 10 à 100 personnes, dont le produit ou les
 
 ### Quand ce n’est pas la bonne réponse ?
 
-- quand le besoin est uniquement de la capacité de développement ;
-- quand l’équipe technique compte plusieurs dizaines d’ingénieurs et a besoin d’un dirigeant présent tous les jours ;
-- quand la direction n’est pas prête à confier un vrai mandat : un CTO sans pouvoir de décision ne sert à rien.
+- quand le besoin est uniquement de la capacité de développement
+- quand l’équipe technique compte plusieurs dizaines d’ingénieurs et a besoin d’un dirigeant présent tous les jours
+- quand la direction n’est pas prête à confier un vrai mandat : un CTO sans pouvoir de décision ne sert à rien
 
 ## Rythme, durée, tarifs
 

@@ -25,19 +25,19 @@ Pendant des années, une carrière technique menait naturellement au management 
 
 Ce modèle ne tient plus, pour trois raisons :
 
-- **les équipes rétrécissent.** Une petite équipe outillée d’agents produit beaucoup plus qu’avant. Il y a moins de monde à coordonner, et plus de décisions techniques à prendre ;
-- **juger demande de comprendre.** Un dirigeant qui ne comprend pas le travail ne peut évaluer ni ce que produisent les agents, ni les personnes qui les pilotent ;
-- **la vitesse change.** Une idée se teste en quelques jours. Un CTO qui ne sait pas la tester lui-même décide sur des opinions, pas sur des résultats.
+- **les équipes rétrécissent.** Une petite équipe outillée d’agents produit beaucoup plus qu’avant. Il y a moins de monde à coordonner, et plus de décisions techniques à prendre
+- **juger demande de comprendre.** Un dirigeant qui ne comprend pas le travail ne peut évaluer ni ce que produisent les agents, ni les personnes qui les pilotent
+- **la vitesse change.** Une idée se teste en quelques jours. Un CTO qui ne sait pas la tester lui-même décide sur des opinions, pas sur des résultats
 
 ## Le CTO qui fait
 
 Un bon CTO aujourd’hui :
 
-- **comprend son métier sur le plan opérationnel** : il lit du code, connaît le parcours d’une commande dans les systèmes, sait où se trouvent les données ;
-- **pilote lui-même des agents IA** pour analyser un code existant, prototyper une idée, construire un outil ;
-- **fixe les règles de qualité** : ce qui doit être relu, testé, validé par un humain, et par qui ;
-- **pense organisation avec les agents** : quels rôles changent, quels profils recruter, comment former l’équipe ;
-- **reste un dirigeant** : il décide, il assume, il parle au board. Faire ne remplace pas diriger ; cela le rend crédible.
+- **comprend son métier sur le plan opérationnel** : il lit du code, connaît le parcours d’une commande dans les systèmes, sait où se trouvent les données
+- **pilote lui-même des agents IA** pour analyser un code existant, prototyper une idée, construire un outil
+- **fixe les règles de qualité** : ce qui doit être relu, testé, validé par un humain, et par qui
+- **pense organisation avec les agents** : quels rôles changent, quels profils recruter, comment former l’équipe
+- **reste un dirigeant** : il décide, il assume, il parle au board. Faire ne remplace pas diriger, mais le rend crédible
 
 ## Ce que cela change pour une PME
 

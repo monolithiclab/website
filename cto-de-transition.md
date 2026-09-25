@@ -41,33 +41,33 @@ Rachat, fusion, due diligence, incident majeur, migration critique, changement d
 
 ### Reprendre la main
 
-- rencontrer chaque membre de l’équipe ;
-- recenser les chantiers en cours, les risques et les engagements pris ;
-- sécuriser les accès, les sauvegardes et les fournisseurs critiques ;
-- trancher les décisions bloquées.
+- rencontrer chaque membre de l’équipe
+- recenser les chantiers en cours, les risques et les engagements pris
+- sécuriser les accès, les sauvegardes et les fournisseurs critiques
+- trancher les décisions bloquées
 
 ### Stabiliser et diriger
 
-- remettre des priorités claires et un rythme de livraison ;
-- engager la transformation IA : outiller l’équipe technique avec des agents, lancer les premiers usages dans les autres équipes, poser un plan d’adoption construit avec elles ;
-- traiter les risques identifiés ;
-- retenir l’équipe : une vacance de CTO provoque souvent d’autres départs ;
-- informer la direction, et le board si besoin, de l’état réel de la technique.
+- remettre des priorités claires et un rythme de livraison
+- engager la transformation IA : outiller l’équipe technique avec des agents, lancer les premiers usages dans les autres équipes, poser un plan d’adoption construit avec elles
+- traiter les risques identifiés
+- retenir l’équipe : une vacance de CTO provoque souvent d’autres départs
+- informer la direction, et le board si besoin, de l’état réel de la technique
 
 ### Passer le relais
 
-- définir le profil du successeur avec la direction, y compris sa capacité à conduire la suite de la transformation IA ;
-- participer au recrutement ;
-- accompagner les premières semaines du nouveau CTO ;
-- documenter les décisions, l’architecture et les chantiers ouverts.
+- définir le profil du successeur avec la direction, y compris sa capacité à conduire la suite de la transformation IA
+- participer au recrutement
+- accompagner les premières semaines du nouveau CTO
+- documenter les décisions, l’architecture et les chantiers ouverts
 
 ## Ce que vous obtenez
 
-- une direction technique sans interruption ;
-- un état des lieux écrit, honnête, utilisable pour recruter ;
-- un recrutement mieux ciblé, parce que le besoin a été mesuré de l’intérieur ;
-- un successeur qui arrive sur une situation connue ;
-- une transformation IA engagée plutôt que reportée : une transition est souvent le bon moment pour changer les pratiques.
+- une direction technique sans interruption
+- un état des lieux écrit, honnête, utilisable pour recruter
+- un recrutement mieux ciblé, parce que le besoin a été mesuré de l’intérieur
+- un successeur qui arrive sur une situation connue
+- une transformation IA engagée plutôt que reportée : une transition est souvent le bon moment pour changer les pratiques
 
 ## Pourquoi Monolithic Lab
 

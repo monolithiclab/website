@@ -40,38 +40,38 @@ A fundraise, due diligence, an acquisition, a rebuild, international expansion, 
 
 ### Technical decisions
 
-- architecture and stack;
-- build, buy, or stop;
-- technical priorities tied to business goals;
-- technical debt: what to pay down now, what can wait.
+- architecture and stack
+- build, buy, or stop
+- technical priorities tied to business goals
+- technical debt: what to pay down now, what can wait
 
 ### Team
 
-- structure and roles;
-- hiring, from job description to final interview;
-- coaching team leads and senior engineers;
-- preparing a future in-house CTO, hired or promoted.
+- structure and roles
+- hiring, from job description to final interview
+- coaching team leads and senior engineers
+- preparing a future in-house CTO, hired or promoted
 
 ### AI transformation
 
-- AI agents in the development cycle: writing, review, testing, documentation;
-- new practices and guardrails for the engineering team;
-- AI use cases in other teams: customer support, sales, finance, operations;
-- an adoption plan built with the teams, modeled on the forward deployed engineer: on site, on your data, judged on real usage.
+- AI agents in the development cycle: writing, review, testing, documentation
+- new practices and guardrails for the engineering team
+- AI use cases in other teams: customer support, sales, finance, operations
+- an adoption plan built with the teams, modeled on the forward deployed engineer: on site, on your data, judged on real usage
 
 [AI transformation in detail](/en-us/ai-transformation)
 
 ### Reliability and operations
 
-- security, backups, access management;
-- incidents and service continuity;
-- back-office systems, internal tools, integrations, automation.
+- security, backups, access management
+- incidents and service continuity
+- back-office systems, internal tools, integrations, automation
 
 ### Governance
 
-- technical counterpart to the CEO, the leadership team, and the board;
-- technology budget and vendor selection;
-- answers for investors and acquirers during due diligence.
+- technical counterpart to the CEO, the leadership team, and the board
+- technology budget and vendor selection
+- answers for investors and acquirers during due diligence
 
 ## How it works
 

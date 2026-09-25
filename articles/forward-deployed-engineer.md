@@ -39,10 +39,10 @@ La plupart des projets IA qui échouent ont les mêmes défauts : un outil chois
 
 Le modèle du FDE corrige chacun de ces défauts :
 
-- **le problème vient du terrain**, pas d’un catalogue de fonctionnalités ;
-- **la solution se construit sur les données réelles**, avec leurs défauts ;
-- **les utilisateurs participent dès le premier prototype** ;
-- **le succès se mesure à l’usage**, pas à la démonstration.
+- **le problème vient du terrain**, pas d’un catalogue de fonctionnalités
+- **la solution se construit sur les données réelles**, avec leurs défauts
+- **les utilisateurs participent dès le premier prototype**
+- **le succès se mesure à l’usage**, pas à la démonstration
 
 ## Ce qu’une PME peut en retenir
 

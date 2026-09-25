@@ -14,10 +14,10 @@ hero:
 
 A few lines are enough. The most useful details:
 
-- the size of the company and of the engineering team;
-- what’s blocking you today;
-- the deadline, if there is one: a fundraise, a departure, an acquisition, a launch;
-- what you’ve already tried.
+- the size of the company and of the engineering team
+- what’s blocking you today
+- the deadline, if there is one: a fundraise, a departure, an acquisition, a launch
+- what you’ve already tried
 
 Every message gets a reply from Nicolas Mussat. If Monolithic Lab isn’t the right answer, you’ll hear it right away.
 

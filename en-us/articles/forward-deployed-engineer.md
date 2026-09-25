@@ -40,10 +40,10 @@ Most failed AI projects share the same flaws: a tool picked before the problem, 
 
 The FDE model fixes each of them:
 
-- **the problem comes from the field**, not from a feature catalog;
-- **the solution is built on real data**, flaws and all;
-- **users are involved from the first prototype**;
-- **success is measured by usage**, not by the demo.
+- **the problem comes from the field**, not from a feature catalog
+- **the solution is built on real data**, flaws and all
+- **users are involved from the first prototype**
+- **success is measured by usage**, not by the demo
 
 ## What a small or mid-sized company can take from it
 

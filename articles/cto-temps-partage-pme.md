@@ -25,10 +25,10 @@ L’entreprise se retrouve donc face à un faux choix : recruter un CTO trop tô
 
 Le salaire n’est qu’une partie du coût. Il faut y ajouter :
 
-- **les charges et la part variable** ;
-- **le capital**, souvent demandé par les profils expérimentés ;
-- **le recrutement** : honoraires de cabinet, temps des dirigeants, et plusieurs mois de recherche ;
-- **le risque d’erreur** : un CTO mal choisi se découvre après six mois, et ses décisions restent quand il part.
+- **les charges et la part variable**
+- **le capital**, souvent demandé par les profils expérimentés
+- **le recrutement** : honoraires de cabinet, temps des dirigeants, et plusieurs mois de recherche
+- **le risque d’erreur** : un CTO mal choisi se découvre après six mois, et ses décisions restent quand il part
 
 Pour une PME, c’est souvent le poste le plus cher et le plus risqué à recruter.
 
@@ -38,13 +38,13 @@ Sans CTO, les décisions techniques se prennent quand même. Elles se prennent p
 
 Les conséquences apparaissent plus tard, et coûtent plus cher :
 
-- une architecture qui ne passe pas la croissance et qu’il faut refaire ;
-- une dépendance totale à un développeur ou à une agence ;
-- des recrutements ratés, faute de savoir évaluer les candidats ;
-- des prestataires facturés sans que personne ne vérifie ce qu’ils livrent ;
-- des failles de sécurité découvertes par un client ou un attaquant ;
-- une due diligence qui fait baisser la valorisation, ou bloque l’opération ;
-- une adoption de l’IA laissée à l’initiative de chacun, sans règles ni mesure, ou pas d’adoption du tout.
+- une architecture qui ne passe pas la croissance et qu’il faut refaire
+- une dépendance totale à un développeur ou à une agence
+- des recrutements ratés, faute de savoir évaluer les candidats
+- des prestataires facturés sans que personne ne vérifie ce qu’ils livrent
+- des failles de sécurité découvertes par un client ou un attaquant
+- une due diligence qui fait baisser la valorisation, ou bloque l’opération
+- une adoption de l’IA laissée à l’initiative de chacun, sans règles ni mesure, ou pas d’adoption du tout
 
 ## Ce que le temps partagé change
 
@@ -62,13 +62,13 @@ Les conséquences apparaissent plus tard, et coûtent plus cher :
 
 ## Les signes que le moment est venu
 
-- le fondateur passe plus de temps sur les sujets techniques que sur la vente ou le produit ;
-- personne ne peut dire avec certitude si l’équipe technique est bonne ;
-- les livraisons prennent de plus en plus de temps, sans explication claire ;
-- l’entreprise dépend d’un seul développeur ou d’une seule agence ;
-- un recrutement technique important approche ;
-- une levée de fonds, une cession ou un gros client exige des réponses techniques précises ;
-- le CTO vient de partir. Dans ce cas, voir le [CTO de transition](/articles/cto-de-transition-definition).
+- le fondateur passe plus de temps sur les sujets techniques que sur la vente ou le produit
+- personne ne peut dire avec certitude si l’équipe technique est bonne
+- les livraisons prennent de plus en plus de temps, sans explication claire
+- l’entreprise dépend d’un seul développeur ou d’une seule agence
+- un recrutement technique important approche
+- une levée de fonds, une cession ou un gros client exige des réponses techniques précises
+- le CTO vient de partir. Dans ce cas, voir le [CTO de transition](/articles/cto-de-transition-definition)
 
 ## Quand ce n’est pas la bonne réponse
 

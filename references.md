@@ -43,9 +43,9 @@ cta_band:
 
 ## Ce que ces deux expériences ont en commun
 
-- entrer dans une entreprise en pleine croissance, avec ses systèmes et ses équipes existants ;
-- repérer ce qui va casser en premier ;
-- construire ce qui manque, au rythme de l’entreprise ;
-- laisser des systèmes que l’équipe fait vivre sans aide extérieure.
+- entrer dans une entreprise en pleine croissance, avec ses systèmes et ses équipes existants
+- repérer ce qui va casser en premier
+- construire ce qui manque, au rythme de l’entreprise
+- laisser des systèmes que l’équipe fait vivre sans aide extérieure
 
 C’est exactement le travail d’un [CTO à temps partagé](/cto-temps-partage) ou d’un [CTO de transition](/cto-de-transition).

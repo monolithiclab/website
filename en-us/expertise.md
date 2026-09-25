@@ -70,8 +70,8 @@ A first version in production, used by real users, on a deliberately narrow scop
 
 ## The rules, whatever the format
 
-- one senior point of contact, from the first call to the handover;
-- a written scope: what’s included, what isn’t;
-- deliverables your team can take over;
-- no commissions from software vendors, integrators, or AI providers;
-- an exit planned from the start.
+- one senior point of contact, from the first call to the handover
+- a written scope: what’s included, what isn’t
+- deliverables your team can take over
+- no commissions from software vendors, integrators, or AI providers
+- an exit planned from the start

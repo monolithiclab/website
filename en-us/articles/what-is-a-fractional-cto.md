@@ -26,13 +26,13 @@ The key word is **executive**. A fractional CTO doesn’t advise from the sideli
 
 The same things as a full-time CTO, focused on what takes experience:
 
-- **decide**: architecture, stack, build or buy, what to stop;
-- **prioritize**: tie the technical roadmap to company goals;
-- **lead the team**: structure, roles, hiring, coaching team leads;
-- **transform**: drive AI adoption, in engineering and every other team;
-- **protect**: reliability, security, backups, access, technical debt;
-- **manage vendors**: agencies, freelancers, software providers;
-- **represent technology** to the CEO, the board, and investors.
+- **decide**: architecture, stack, build or buy, what to stop
+- **prioritize**: tie the technical roadmap to company goals
+- **lead the team**: structure, roles, hiring, coaching team leads
+- **transform**: drive AI adoption, in engineering and every other team
+- **protect**: reliability, security, backups, access, technical debt
+- **manage vendors**: agencies, freelancers, software providers
+- **represent technology** to the CEO, the board, and investors
 
 ## What they don’t do
 
@@ -58,9 +58,9 @@ The cadence shifts over the engagement: heavier at the start for the assessment,
 
 A few months to more than a year. The engagement ends in one of these cases:
 
-- the company has grown and hires a full-time CTO, whom the fractional CTO helps choose and onboard;
-- an internal lead is ready to step into the role;
-- the team is organized and only needs occasional oversight.
+- the company has grown and hires a full-time CTO, whom the fractional CTO helps choose and onboard
+- an internal lead is ready to step into the role
+- the team is organized and only needs occasional oversight
 
 ## What does it cost?
 

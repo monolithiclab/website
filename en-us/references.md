@@ -44,9 +44,9 @@ cta_band:
 
 ## What the two have in common
 
-- joining a fast-growing company, with its existing systems and teams;
-- spotting what will break first;
-- building what’s missing, at the company’s pace;
-- leaving systems the team runs without outside help.
+- joining a fast-growing company, with its existing systems and teams
+- spotting what will break first
+- building what’s missing, at the company’s pace
+- leaving systems the team runs without outside help
 
 That’s exactly the job of a [fractional CTO](/en-us/fractional-cto) or an [interim CTO](/en-us/interim-cto).

@@ -26,10 +26,10 @@ So the company faces a false choice: hire a CTO too early, or go without one for
 
 Salary is only part of it. Add:
 
-- **payroll taxes, benefits, and bonus**;
-- **equity**, which experienced candidates often expect;
-- **recruiting**: search firm fees, leadership time, and months of searching;
-- **the risk of getting it wrong**: a bad CTO hire shows after six months, and their decisions stay after they leave.
+- **payroll taxes, benefits, and bonus**
+- **equity**, which experienced candidates often expect
+- **recruiting**: search firm fees, leadership time, and months of searching
+- **the risk of getting it wrong**: a bad CTO hire shows after six months, and their decisions stay after they leave
 
 For a small company, it’s often the most expensive and riskiest hire it will make.
 
@@ -39,13 +39,13 @@ Without a CTO, technical decisions still get made. By default, by a founder with
 
 The consequences show up later, and cost more:
 
-- an architecture that can’t handle growth and has to be rebuilt;
-- total dependence on one developer or one agency;
-- bad hires, because no one can properly evaluate candidates;
-- vendors billing for work no one checks;
-- security holes found by a customer or an attacker;
-- a due diligence that lowers the valuation, or kills the deal;
-- AI adoption left to individual initiative, with no rules or measurement, or no adoption at all.
+- an architecture that can’t handle growth and has to be rebuilt
+- total dependence on one developer or one agency
+- bad hires, because no one can properly evaluate candidates
+- vendors billing for work no one checks
+- security holes found by a customer or an attacker
+- a due diligence that lowers the valuation, or kills the deal
+- AI adoption left to individual initiative, with no rules or measurement, or no adoption at all
 
 ## What a fractional CTO changes
 
@@ -63,13 +63,13 @@ The consequences show up later, and cost more:
 
 ## Signs it’s time
 
-- the founder spends more time on technical issues than on sales or product;
-- no one can say for sure whether the engineering team is any good;
-- releases keep taking longer, with no clear explanation;
-- the company depends on a single developer or a single agency;
-- a major technical hire is coming up;
-- a fundraise, a sale, or a large customer demands precise technical answers;
-- the CTO just left. In that case, see [interim CTO](/en-us/articles/what-is-an-interim-cto).
+- the founder spends more time on technical issues than on sales or product
+- no one can say for sure whether the engineering team is any good
+- releases keep taking longer, with no clear explanation
+- the company depends on a single developer or a single agency
+- a major technical hire is coming up
+- a fundraise, a sale, or a large customer demands precise technical answers
+- the CTO just left. In that case, see [interim CTO](/en-us/articles/what-is-an-interim-cto)
 
 ## When it’s the wrong answer
 

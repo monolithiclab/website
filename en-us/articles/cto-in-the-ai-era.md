@@ -26,19 +26,19 @@ For years, a technical career led naturally to management: less hands-on work, m
 
 That model no longer holds, for three reasons:
 
-- **teams are shrinking.** A small team equipped with agents produces far more than before. There are fewer people to coordinate, and more technical decisions to make;
-- **judging takes understanding.** A leader who doesn’t understand the work can’t evaluate what agents produce, or the people driving them;
-- **the pace has changed.** An idea can be tested in days. A CTO who can’t test it themselves decides on opinions, not results.
+- **teams are shrinking.** A small team equipped with agents produces far more than before. There are fewer people to coordinate, and more technical decisions to make
+- **judging takes understanding.** A leader who doesn’t understand the work can’t evaluate what agents produce, or the people driving them
+- **the pace has changed.** An idea can be tested in days. A CTO who can’t test it themselves decides on opinions, not results
 
 ## The CTO who builds
 
 A good CTO today:
 
-- **knows the craft hands-on**: reads code, knows how an order flows through the systems, knows where the data lives;
-- **drives AI agents themselves** to analyze existing code, prototype an idea, build a tool;
-- **sets quality rules**: what must be reviewed, tested, and approved by a human, and by whom;
-- **plans the organization around agents**: which roles change, which profiles to hire, how to train the team;
-- **is still a leader**: decides, owns decisions, talks to the board. Building doesn’t replace leading; it makes leadership credible.
+- **knows the craft hands-on**: reads code, knows how an order flows through the systems, knows where the data lives
+- **drives AI agents themselves** to analyze existing code, prototype an idea, build a tool
+- **sets quality rules**: what must be reviewed, tested, and approved by a human, and by whom
+- **plans the organization around agents**: which roles change, which profiles to hire, how to train the team
+- **is still a leader**: decides, owns decisions, talks to the board. Building doesn’t replace leading, but it makes leadership credible
 
 ## What it means for a small or mid-sized company
 

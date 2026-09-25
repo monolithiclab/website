@@ -22,9 +22,9 @@ You’ll also hear transitional CTO.
 
 The engagement has three defining traits:
 
-- **a fast start**: they step in within days, not months;
-- **a clear goal**: steady the team, make the calls that can’t wait, prepare what comes next;
-- **a planned end**: they leave once the successor is hired and settled in.
+- **a fast start**: they step in within days, not months
+- **a clear goal**: steady the team, make the calls that can’t wait, prepare what comes next
+- **a planned end**: they leave once the successor is hired and settled in
 
 ## Interim CTO or fractional CTO?
 

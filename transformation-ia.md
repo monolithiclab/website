@@ -37,20 +37,20 @@ Monolithic Lab applique ce modèle à la transformation d’une PME :
 
 L’IA change la façon de construire un logiciel. Des agents écrivent, relisent, testent et documentent une part croissante du code. L’équipe technique doit changer de pratiques :
 
-- agents de code intégrés au cycle de développement : écriture, revue, tests, documentation, migrations ;
-- nouvelles compétences : spécifier précisément, découper le travail, relire et valider ce que produisent les agents ;
-- garde-fous : sécurité, confidentialité des données, propriété du code, maîtrise des coûts ;
-- organisation : taille des équipes, rôles, profils à recruter.
+- agents de code intégrés au cycle de développement : écriture, revue, tests, documentation, migrations
+- nouvelles compétences : spécifier précisément, découper le travail, relire et valider ce que produisent les agents
+- garde-fous : sécurité, confidentialité des données, propriété du code, maîtrise des coûts
+- organisation : taille des équipes, rôles, profils à recruter
 
 ## Pour toutes les autres équipes
 
 L’IA ne concerne pas que les développeurs. Les gains les plus rapides se trouvent souvent ailleurs :
 
-- **service client** : tri des demandes, préparation des réponses, base de connaissance à jour ;
-- **ventes et marketing** : préparation des rendez-vous, qualification, production de contenu ;
-- **finance et administration** : extraction de documents, rapprochements, reporting ;
-- **opérations** : suivi, planification, contrôle qualité ;
-- **RH** : intégration des nouveaux arrivants, documentation interne.
+- **service client** : tri des demandes, préparation des réponses, base de connaissance à jour
+- **ventes et marketing** : préparation des rendez-vous, qualification, production de contenu
+- **finance et administration** : extraction de documents, rapprochements, reporting
+- **opérations** : suivi, planification, contrôle qualité
+- **RH** : intégration des nouveaux arrivants, documentation interne
 
 ## Le plan d’adoption, construit avec vos équipes
 

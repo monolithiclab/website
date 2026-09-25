@@ -38,20 +38,20 @@ Monolithic Lab applies this model to transforming a small or mid-sized company:
 
 AI is changing how software gets built. Agents write, review, test, and document a growing share of the code. The engineering team has to change how it works:
 
-- coding agents built into the development cycle: writing, review, testing, documentation, migrations;
-- new skills: precise specs, breaking down work, reviewing and validating what agents produce;
-- guardrails: security, data privacy, code ownership, cost control;
-- organization: team size, roles, profiles to hire.
+- coding agents built into the development cycle: writing, review, testing, documentation, migrations
+- new skills: precise specs, breaking down work, reviewing and validating what agents produce
+- guardrails: security, data privacy, code ownership, cost control
+- organization: team size, roles, profiles to hire
 
 ## For every other team
 
 AI isn’t just for developers. The fastest gains are often elsewhere:
 
-- **customer support**: triaging requests, drafting replies, keeping the knowledge base current;
-- **sales and marketing**: meeting prep, lead qualification, content production;
-- **finance and admin**: document extraction, reconciliations, reporting;
-- **operations**: tracking, scheduling, quality control;
-- **HR**: onboarding new hires, internal documentation.
+- **customer support**: triaging requests, drafting replies, keeping the knowledge base current
+- **sales and marketing**: meeting prep, lead qualification, content production
+- **finance and admin**: document extraction, reconciliations, reporting
+- **operations**: tracking, scheduling, quality control
+- **HR**: onboarding new hires, internal documentation
 
 ## The adoption plan, built with your teams
 

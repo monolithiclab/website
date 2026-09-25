@@ -42,33 +42,33 @@ An acquisition, a merger, due diligence, a major incident, a critical migration,
 
 ### Take control
 
-- meet every member of the team;
-- inventory projects in flight, risks, and commitments made;
-- secure access, backups, and critical vendors;
-- unblock stalled decisions.
+- meet every member of the team
+- inventory projects in flight, risks, and commitments made
+- secure access, backups, and critical vendors
+- unblock stalled decisions
 
 ### Steady the team and lead
 
-- restore clear priorities and a delivery rhythm;
-- start the AI transformation: equip the engineering team with agents, launch the first use cases in other teams, set an adoption plan built with them;
-- address the risks identified;
-- keep the team: an empty CTO seat often triggers more departures;
-- tell leadership, and the board if needed, where the technology really stands.
+- restore clear priorities and a delivery rhythm
+- start the AI transformation: equip the engineering team with agents, launch the first use cases in other teams, set an adoption plan built with them
+- address the risks identified
+- keep the team: an empty CTO seat often triggers more departures
+- tell leadership, and the board if needed, where the technology really stands
 
 ### Hand over
 
-- define the successor’s profile with leadership, including their ability to carry the AI transformation forward;
-- take part in hiring;
-- support the new CTO’s first weeks;
-- document decisions, architecture, and open projects.
+- define the successor’s profile with leadership, including their ability to carry the AI transformation forward
+- take part in hiring
+- support the new CTO’s first weeks
+- document decisions, architecture, and open projects
 
 ## What you get
 
-- technical leadership with no gap;
-- a candid written assessment you can hire against;
-- a better-targeted search, because the need was measured from the inside;
-- a successor who starts with a clear picture;
-- an AI transformation underway instead of postponed: a transition is often the right moment to change how the team works.
+- technical leadership with no gap
+- a candid written assessment you can hire against
+- a better-targeted search, because the need was measured from the inside
+- a successor who starts with a clear picture
+- an AI transformation underway instead of postponed: a transition is often the right moment to change how the team works
 
 ## Why Monolithic Lab
 

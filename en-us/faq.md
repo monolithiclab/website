@@ -48,9 +48,9 @@ Small and mid-sized companies and scale-ups, typically 10 to 100 people, whose p
 
 ### When is it the wrong answer?
 
-- when all you need is development capacity;
-- when the engineering team is several dozen people and needs a leader there every day;
-- when leadership isn’t ready to hand over a real mandate: a CTO with no authority to decide is useless.
+- when all you need is development capacity
+- when the engineering team is several dozen people and needs a leader there every day
+- when leadership isn’t ready to hand over a real mandate: a CTO with no authority to decide is useless
 
 ## Cadence, length, pricing
 

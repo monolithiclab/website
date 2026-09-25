@@ -39,38 +39,38 @@ Levée de fonds, due diligence, rachat, refonte, ouverture à l’international,
 
 ### Décisions techniques
 
-- architecture et choix de stack ;
-- construire, acheter ou arrêter ;
-- priorités techniques alignées sur les objectifs de l’entreprise ;
-- dette technique : ce qui se rembourse maintenant, ce qui attend.
+- architecture et choix de stack
+- construire, acheter ou arrêter
+- priorités techniques alignées sur les objectifs de l’entreprise
+- dette technique : ce qui se rembourse maintenant, ce qui attend
 
 ### Équipe
 
-- organisation et rôles ;
-- recrutements, de la fiche de poste à l’entretien final ;
-- accompagnement des leads et des profils seniors ;
-- préparation d’un futur CTO interne, recruté ou promu.
+- organisation et rôles
+- recrutements, de la fiche de poste à l’entretien final
+- accompagnement des leads et des profils seniors
+- préparation d’un futur CTO interne, recruté ou promu
 
 ### Transformation IA
 
-- agents IA dans le cycle de développement : écriture, revue, tests, documentation ;
-- nouvelles pratiques et garde-fous pour l’équipe technique ;
-- usages de l’IA dans les autres équipes : service client, ventes, finance, opérations ;
-- plan d’adoption construit avec les équipes, dans une approche inspirée du Forward Deployed Engineer : sur place, sur vos données, jugé sur l’usage réel.
+- agents IA dans le cycle de développement : écriture, revue, tests, documentation
+- nouvelles pratiques et garde-fous pour l’équipe technique
+- usages de l’IA dans les autres équipes : service client, ventes, finance, opérations
+- plan d’adoption construit avec les équipes, dans une approche inspirée du Forward Deployed Engineer : sur place, sur vos données, jugé sur l’usage réel
 
 [La transformation IA en détail](/transformation-ia)
 
 ### Fiabilité et opérations
 
-- sécurité, sauvegardes, gestion des accès ;
-- incidents et continuité de service ;
-- SI, outils internes, intégrations, automatisations.
+- sécurité, sauvegardes, gestion des accès
+- incidents et continuité de service
+- SI, outils internes, intégrations, automatisations
 
 ### Gouvernance
 
-- interlocuteur technique du CEO, du comité de direction et du board ;
-- budget technique et choix des fournisseurs ;
-- réponses aux investisseurs et aux acquéreurs en due diligence.
+- interlocuteur technique du CEO, du comité de direction et du board
+- budget technique et choix des fournisseurs
+- réponses aux investisseurs et aux acquéreurs en due diligence
 
 ## Fonctionnement
 

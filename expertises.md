@@ -69,8 +69,8 @@ Une première version en production, utilisée par de vrais utilisateurs, sur un
 
 ## Les règles, quel que soit le format
 
-- un seul interlocuteur senior, du premier échange au passage de relais ;
-- un périmètre écrit : ce qui est inclus, ce qui ne l’est pas ;
-- des livrables que votre équipe peut reprendre ;
-- aucune commission d’éditeur, d’intégrateur ou de fournisseur d’IA ;
-- une fin de mission préparée dès le début.
+- un seul interlocuteur senior, du premier échange au passage de relais
+- un périmètre écrit : ce qui est inclus, ce qui ne l’est pas
+- des livrables que votre équipe peut reprendre
+- aucune commission d’éditeur, d’intégrateur ou de fournisseur d’IA
+- une fin de mission préparée dès le début

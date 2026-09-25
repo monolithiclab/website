@@ -21,9 +21,9 @@ On parle aussi de CTO par intérim, ou d’*interim CTO* en anglais.
 
 Sa mission a trois caractéristiques :
 
-- **un début rapide** : il prend le poste en quelques jours, pas en quelques mois ;
-- **un objectif précis** : stabiliser, trancher ce qui ne peut pas attendre, préparer la suite ;
-- **une fin prévue** : il part quand le successeur est recruté et installé.
+- **un début rapide** : il prend le poste en quelques jours, pas en quelques mois
+- **un objectif précis** : stabiliser, trancher ce qui ne peut pas attendre, préparer la suite
+- **une fin prévue** : il part quand le successeur est recruté et installé
 
 ## CTO de transition ou CTO à temps partagé ?
 
