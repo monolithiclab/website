@@ -122,6 +122,16 @@ service-list, trust-grid, step-timeline, contact-form { display: block; }
   display: none !important;
 }
 
+/* Read by screen readers, not shown. */
+.visually-hidden {
+  position: absolute;
+  width: 1px;
+  height: 1px;
+  overflow: hidden;
+  clip-path: inset(50%);
+  white-space: nowrap;
+}
+
 html {
   -webkit-text-size-adjust: 100%;
   scroll-padding-top: calc(var(--header-height) + 16px);
@@ -317,6 +327,11 @@ strong {
 
 /* --- Skip Link --- */
 
+/* The skip link focuses main; the ring would outline the whole page. */
+#main-content:focus {
+  outline: none;
+}
+
 .skip-link {
   position: absolute;
   top: -100%;
@@ -447,6 +462,11 @@ strong {
 .header__nav-item--has-submenu:hover .header__submenu,
 .header__nav-item--has-submenu:focus-within .header__submenu {
   display: block;
+}
+
+/* Escape dismisses the open submenu until the pointer and focus leave it. */
+.header__nav-item--has-submenu.is-dismissed .header__submenu {
+  display: none;
 }
 
 .header__submenu-link {

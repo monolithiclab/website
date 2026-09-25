@@ -22,6 +22,10 @@ build: clean
 ## Remove files that must not be published, and fail loudly if any survives
 prune:
 	@rm -f $(PRUNE)
+	@# gomddoc always generates a tag index; the site uses no tags, so it is an
+	@# empty page with an untranslated heading. Drop it and its sitemap entry.
+	@rm -rf public/tags
+	@perl -0pi -e 's{\s*<url>\s*<loc>[^<]*/tags/</loc>.*?</url>}{}s' public/sitemap.xml
 	@if find public \( -name 'CLAUDE.md' -o -name 'PLAN.md' -o -name 'DESIGN_PROMPT.md' \
 	                   -o -path '*/docs/*' \) -print | grep .; then \
 		echo "REFUSING: private file reached the build output (above)"; exit 1; \

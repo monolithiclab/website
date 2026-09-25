@@ -14,7 +14,7 @@ cta_band:
   button_url: "/en-us/contact"
 ---
 
-<step-timeline>
+<step-timeline heading="The method in five steps">
   <step-item number="01" title="Understand before acting">Architecture, code, team, organization, contracts, costs. The assessment comes before the recommendations, and it’s in writing.</step-item>
   <step-item number="02" title="Pick few priorities">Not everything gets fixed at once. Three or four projects that change the situation beat a list of thirty.</step-item>
   <step-item number="03" title="Decide and own it">A CTO makes the call. Decisions are explained to the team, defended in front of leadership, and owned by whoever made them.</step-item>

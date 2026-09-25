@@ -6,7 +6,7 @@
 {{- $heroSub := index $hero "subheadline" -}}
 
 {{ if not $compact }}
-    <section class="hero" aria-label="Hero">
+    <section class="hero">
       <div class="hero__slab" aria-hidden="true"><div class="slab"></div></div>
       <div class="hero__content">
         {{ if $heroLabel }}<span class="eyebrow">{{ $heroLabel }}</span>{{ end }}
@@ -21,7 +21,7 @@
       </div>
     </section>
 {{ else }}
-    <section class="hero-compact" aria-label="Hero">
+    <section class="hero-compact">
       {{ if $heroLabel }}<span class="eyebrow">{{ $heroLabel }}</span>{{ end }}
       <h1 class="hero-compact__headline" data-accent-last>{{ index $hero "headline" }}</h1>
       {{ if $heroSub }}<p class="hero-compact__sub">{{ $heroSub }}</p>{{ end }}

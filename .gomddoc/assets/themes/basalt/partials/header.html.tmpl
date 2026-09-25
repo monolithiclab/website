@@ -1,7 +1,7 @@
 {{ define "header" }}
 {{- $lang := or (index .Page.Meta "lang") "fr" -}}
-{{- $frURL := "#" -}}
-{{- $enURL := "#" -}}
+{{- $frURL := "" -}}
+{{- $enURL := "" -}}
 {{- if eq $lang "en" -}}
   {{- $frURL = or (index .Page.Meta "alternate") "/" -}}
 {{- else -}}
@@ -19,7 +19,7 @@
         <li><a href="{{ if eq $lang "en" }}{{ contentURL "en-us/approach.md" }}{{ else }}{{ contentURL "approche.md" }}{{ end }}" class="header__nav-link">{{ if eq $lang "en" }}Approach{{ else }}Approche{{ end }}</a></li>
         <li class="header__nav-item header__nav-item--has-submenu">
           <a href="{{ if eq $lang "en" }}{{ contentURL "en-us/expertise.md" }}{{ else }}{{ contentURL "expertises.md" }}{{ end }}" class="header__nav-link">{{ if eq $lang "en" }}Services{{ else }}Offres{{ end }}</a>
-          <div class="header__submenu" aria-label="{{ if eq $lang "en" }}Services submenu{{ else }}Sous-menu offres{{ end }}">
+          <div class="header__submenu">
             <div class="header__submenu-panel">
               <a href="{{ if eq $lang "en" }}{{ contentURL "en-us/fractional-cto.md" }}{{ else }}{{ contentURL "cto-temps-partage.md" }}{{ end }}" class="header__submenu-link">{{ if eq $lang "en" }}Fractional CTO{{ else }}CTO à temps partagé{{ end }}</a>
               <a href="{{ if eq $lang "en" }}{{ contentURL "en-us/interim-cto.md" }}{{ else }}{{ contentURL "cto-de-transition.md" }}{{ end }}" class="header__submenu-link">{{ if eq $lang "en" }}Interim CTO{{ else }}CTO de transition{{ end }}</a>
@@ -34,11 +34,11 @@
     </nav>
 
     <div class="header__actions">
-      <div class="lang-switcher" aria-label="Language selector">
-        <a href="{{ $frURL }}" class="lang-switcher__link{{ if eq $lang "fr" }} lang-switcher__link--active{{ end }}">FR</a>
-        <span class="lang-switcher__sep">/</span>
-        <a href="{{ $enURL }}" class="lang-switcher__link{{ if eq $lang "en" }} lang-switcher__link--active{{ end }}">EN</a>
-      </div>
+      <nav class="lang-switcher" aria-label="{{ if eq $lang "en" }}Language{{ else }}Langue{{ end }}">
+        {{ if eq $lang "fr" }}<span class="lang-switcher__link lang-switcher__link--active" lang="fr" aria-current="true">FR</span>{{ else }}<a href="{{ $frURL }}" class="lang-switcher__link" lang="fr" hreflang="fr">FR</a>{{ end }}
+        <span class="lang-switcher__sep" aria-hidden="true">/</span>
+        {{ if eq $lang "en" }}<span class="lang-switcher__link lang-switcher__link--active" lang="en" aria-current="true">EN</span>{{ else }}<a href="{{ $enURL }}" class="lang-switcher__link" lang="en" hreflang="en">EN</a>{{ end }}
+      </nav>
 
       <a href="{{ if eq $lang "en" }}{{ contentURL "en-us/contact.md" }}{{ else }}{{ contentURL "contact.md" }}{{ end }}" class="header__nav-link header__nav-link--cta">Contact<span class="header__cta-arrow" aria-hidden="true">&rarr;</span></a>
 
@@ -69,11 +69,11 @@
       </ul>
     </nav>
     <div class="header__mobile-lang">
-      <div class="lang-switcher" aria-label="Language selector">
-        <a href="{{ $frURL }}" class="lang-switcher__link{{ if eq $lang "fr" }} lang-switcher__link--active{{ end }}">FR</a>
-        <span class="lang-switcher__sep">/</span>
-        <a href="{{ $enURL }}" class="lang-switcher__link{{ if eq $lang "en" }} lang-switcher__link--active{{ end }}">EN</a>
-      </div>
+      <nav class="lang-switcher" aria-label="{{ if eq $lang "en" }}Language{{ else }}Langue{{ end }}">
+        {{ if eq $lang "fr" }}<span class="lang-switcher__link lang-switcher__link--active" lang="fr" aria-current="true">FR</span>{{ else }}<a href="{{ $frURL }}" class="lang-switcher__link" lang="fr" hreflang="fr">FR</a>{{ end }}
+        <span class="lang-switcher__sep" aria-hidden="true">/</span>
+        {{ if eq $lang "en" }}<span class="lang-switcher__link lang-switcher__link--active" lang="en" aria-current="true">EN</span>{{ else }}<a href="{{ $enURL }}" class="lang-switcher__link" lang="en" hreflang="en">EN</a>{{ end }}
+      </nav>
     </div>
   </div>
 </header>

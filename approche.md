@@ -13,7 +13,7 @@ cta_band:
   button_url: "/contact"
 ---
 
-<step-timeline>
+<step-timeline heading="La méthode en cinq étapes">
   <step-item number="01" title="Comprendre avant d’agir">Architecture, code, équipe, organisation, contrats, coûts. Le constat vient avant les recommandations, et il est écrit.</step-item>
   <step-item number="02" title="Choisir peu de priorités">Tout ne se traite pas en même temps. Trois ou quatre chantiers qui changent la situation valent mieux qu’une liste de trente.</step-item>
   <step-item number="03" title="Décider et assumer">Un CTO tranche. Les décisions sont expliquées à l’équipe, défendues devant la direction, et leur auteur en répond.</step-item>

@@ -63,9 +63,29 @@
   }
 
 
+  /* --- Services submenu: Escape closes it (it opens on hover and focus) --- */
+  var submenuItems = document.querySelectorAll(".header__nav-item--has-submenu");
+  submenuItems.forEach(function (item) {
+    function reset() {
+      if (!item.matches(":hover") && !item.contains(document.activeElement)) {
+        item.classList.remove("is-dismissed");
+      }
+    }
+    item.addEventListener("mouseleave", reset);
+    item.addEventListener("focusout", function () { setTimeout(reset, 0); });
+  });
+  document.addEventListener("keydown", function (e) {
+    if (e.key !== "Escape") { return; }
+    submenuItems.forEach(function (item) {
+      if (item.matches(":hover") || item.contains(document.activeElement)) {
+        item.classList.add("is-dismissed");
+      }
+    });
+  });
+
   /* --- Current page in the nav --- */
   var here = location.pathname.replace(/\/$/, "") || "/";
-  document.querySelectorAll(".header__nav-link, .header__submenu-link").forEach(function (link) {
+  document.querySelectorAll(".header__nav-link, .header__submenu-link, .header__mobile-nav-link, .header__mobile-subnav-link").forEach(function (link) {
     var path = link.pathname.replace(/\/$/, "") || "/";
     if (path === here) { link.setAttribute("aria-current", "page"); }
   });
@@ -176,9 +196,13 @@ class StepTimeline extends HTMLElement {
     this.setAttribute("data-rendered", "");
 
     var items = Array.from(this.querySelectorAll("step-item"));
+    // Optional: an h2 for screen readers, where no visible heading precedes
+    // the timeline and its h3 steps would otherwise sit straight under the h1.
+    var heading = this.getAttribute("heading");
 
     this.className = "steps";
     this.textContent = "";
+    if (heading) { this.appendChild(el("h2", "visually-hidden", heading)); }
 
     items.forEach(function (item, i) {
       var step = el("div", "step");
@@ -252,28 +276,28 @@ class ContactFormElement extends HTMLElement {
         '<div class="contact-form__status" role="status" aria-live="polite" tabindex="-1" hidden></div>' +
         '<form class="contact-form" action="https://formspree.io/f/myegyjky" method="POST">' +
           '<div aria-hidden="true" style="position:absolute;left:-9999px;">' +
-            '<label for="_gotcha">Do not fill this field</label>' +
+            '<label for="_gotcha">' + (isEn ? "Do not fill this field" : "Ne pas remplir ce champ") + '</label>' +
             '<input type="text" id="_gotcha" name="_gotcha" tabindex="-1" autocomplete="off">' +
           '</div>' +
           '<div class="contact-form__field">' +
             '<label class="eyebrow eyebrow--muted" for="contact-name">' + (isEn ? "Name" : "Nom") + '</label>' +
-            '<input class="contact-form__input" type="text" id="contact-name" name="name" autocomplete="name" placeholder="' + (isEn ? "Your name" : "Votre nom") + '" required>' +
-            '<span class="contact-form__error" data-error-for="name" hidden></span>' +
+            '<input class="contact-form__input" type="text" id="contact-name" name="name" aria-describedby="contact-name-error" autocomplete="name" placeholder="' + (isEn ? "Your name" : "Votre nom") + '" required>' +
+            '<span class="contact-form__error" id="contact-name-error" data-error-for="name" hidden></span>' +
           '</div>' +
           '<div class="contact-form__field">' +
             '<label class="eyebrow eyebrow--muted" for="contact-email">Email</label>' +
-            '<input class="contact-form__input" type="email" id="contact-email" name="email" autocomplete="email" placeholder="' + (isEn ? "you@company.com" : "votre@email.com") + '" required>' +
-            '<span class="contact-form__error" data-error-for="email" hidden></span>' +
+            '<input class="contact-form__input" type="email" id="contact-email" name="email" aria-describedby="contact-email-error" autocomplete="email" placeholder="' + (isEn ? "you@company.com" : "votre@email.com") + '" required>' +
+            '<span class="contact-form__error" id="contact-email-error" data-error-for="email" hidden></span>' +
           '</div>' +
           '<div class="contact-form__field">' +
             '<label class="eyebrow eyebrow--muted" for="contact-company">' + (isEn ? "Company" : "Entreprise") + ' <span class="contact-form__optional">(' + (isEn ? "optional" : "facultatif") + ')</span></label>' +
-            '<input class="contact-form__input" type="text" id="contact-company" name="company" autocomplete="organization" placeholder="' + (isEn ? "Your company name" : "Nom de votre entreprise") + '">' +
-            '<span class="contact-form__error" data-error-for="company" hidden></span>' +
+            '<input class="contact-form__input" type="text" id="contact-company" name="company" aria-describedby="contact-company-error" autocomplete="organization" placeholder="' + (isEn ? "Your company name" : "Nom de votre entreprise") + '">' +
+            '<span class="contact-form__error" id="contact-company-error" data-error-for="company" hidden></span>' +
           '</div>' +
           '<div class="contact-form__field">' +
             '<label class="eyebrow eyebrow--muted" for="contact-message">Message</label>' +
-            '<textarea class="contact-form__textarea" id="contact-message" name="message" rows="7" placeholder="' + (isEn ? "Your situation, what\u2019s blocking, the deadline\u2026" : "Votre situation, ce qui bloque, l\u2019\u00e9ch\u00e9ance\u2026") + '" required></textarea>' +
-            '<span class="contact-form__error" data-error-for="message" hidden></span>' +
+            '<textarea class="contact-form__textarea" id="contact-message" name="message" aria-describedby="contact-message-error" rows="7" placeholder="' + (isEn ? "Your situation, what\u2019s blocking, the deadline\u2026" : "Votre situation, ce qui bloque, l\u2019\u00e9ch\u00e9ance\u2026") + '" required></textarea>' +
+            '<span class="contact-form__error" id="contact-message-error" data-error-for="message" hidden></span>' +
           '</div>' +
           '<button class="btn btn--primary contact-form__submit" type="submit">' + t.send + '</button>' +
           '<p class="contact-form__privacy">' + (isEn ? 'Your data is used only to answer your request. <a href="/en-us/legal">Details in the legal notice</a>.' : 'Vos donn\u00e9es servent uniquement \u00e0 r\u00e9pondre \u00e0 votre demande. <a href="/mentions-legales">D\u00e9tails dans les mentions l\u00e9gales</a>.') + '</p>' +
@@ -483,6 +507,8 @@ class CookieBannerElement extends HTMLElement {
     var legalHref = lang === "en" ? "/en-us/legal" : "/mentions-legales";
 
     this.className = "cookie-banner";
+    this.setAttribute("role", "region");
+    this.setAttribute("aria-label", lang === "en" ? "Cookie consent" : "Consentement aux cookies");
     this.innerHTML =
       '<div class="cookie-banner__inner">' +
         '<p class="cookie-banner__text">' + t.text + '<a href="' + legalHref + '">' + t.linkText + '</a>.</p>' +
@@ -498,14 +524,20 @@ class CookieBannerElement extends HTMLElement {
 
     declineButton.addEventListener("click", function () {
       writeCookieConsent(false);
-      self.hidden = true;
+      self.close();
     });
 
     acceptButton.addEventListener("click", function () {
       writeCookieConsent(true);
       updateAnalyticsConsent(true);
-      self.hidden = true;
+      self.close();
     });
+
+    // The fixed banner covers the bottom of the page: reserve its height so
+    // focused elements scroll clear of it and the footer stays reachable.
+    if (window.ResizeObserver) {
+      new ResizeObserver(function () { self.reserveSpace(); }).observe(this);
+    }
 
     var stored = readCookieConsent();
     if (stored) {
@@ -514,10 +546,35 @@ class CookieBannerElement extends HTMLElement {
     } else {
       this.hidden = false;
     }
+    this.reserveSpace();
+  }
+
+  reserveSpace() {
+    var height = this.hidden ? 0 : this.offsetHeight;
+    document.documentElement.style.scrollPaddingBottom = height ? height + 16 + "px" : "";
+    document.body.style.paddingBottom = height ? height + "px" : "";
   }
 
   open() {
+    this.returnFocus = document.activeElement;
     this.hidden = false;
+    this.reserveSpace();
+    this.querySelector("button").focus();
+  }
+
+  close() {
+    var hadFocus = this.contains(document.activeElement);
+    this.hidden = true;
+    this.reserveSpace();
+    if (!hadFocus) { return; }
+    // Back to the "manage cookies" button that reopened the banner, or to
+    // the start of the content, rather than dropping focus on <body>.
+    var target = this.returnFocus && document.contains(this.returnFocus)
+      ? this.returnFocus
+      : document.getElementById("main-content");
+    if (target && target.id === "main-content") { target.setAttribute("tabindex", "-1"); }
+    if (target) { target.focus({ preventScroll: true }); }
+    this.returnFocus = null;
   }
 }
 
