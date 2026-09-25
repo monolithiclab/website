@@ -25,7 +25,7 @@ Le **CTO de transition** occupe un poste vacant pour une durée limitée : prés
 
 ### Et les missions au forfait ?
 
-Diagnostic technique, exploration IA, POC, MVP : une question précise, un livrable, un délai et un prix fixés à l’avance. Une mission au forfait produit un résultat, puis s’arrête. Elle ne remplace pas une direction technique : si le besoin est de diriger l’équipe dans la durée, c’est un rôle de CTO. [Voir les offres](/expertises)
+Diagnostic technique, exploration IA, POC, MVP : une question précise, un livrable, un délai et un prix fixés à l’avance. Une mission au forfait produit un résultat, puis s’arrête. Elle ne remplace pas une direction technique : si le besoin est de diriger l’équipe dans la durée, c’est un rôle de CTO. [Voir les missions au forfait](/missions-au-forfait)
 
 ### Quelle différence avec un consultant ?
 

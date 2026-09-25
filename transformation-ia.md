@@ -65,4 +65,4 @@ L’IA ne concerne pas que les développeurs. Les gains les plus rapides se trou
 ## Dans quel cadre
 
 - **Au sein d’une mission de CTO.** La transformation IA fait partie du rôle de [CTO à temps partagé](/cto-temps-partage) comme de celui de [CTO de transition](/cto-de-transition).
-- **En mission au forfait.** Exploration IA, POC ou MVP, avec un périmètre, un livrable et un prix fixés à l’avance. [Voir les missions au forfait](/expertises)
+- **En mission au forfait.** Exploration IA, POC ou MVP, avec un périmètre, un livrable et un prix fixés à l’avance. [Voir les missions au forfait](/missions-au-forfait)

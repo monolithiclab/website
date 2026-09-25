@@ -18,7 +18,7 @@ cta_band:
 <service-list label="Three formats" heading="Two CTO roles, plus fixed-price projects">
   <service-item title="Fractional CTO" href="/en-us/fractional-cto">1 to 3 days a week, over several months. Technical leadership and AI transformation for companies that have developers but no one to lead them, and don’t yet need a full-time CTO.</service-item>
   <service-item title="Interim CTO" href="/en-us/interim-cto">The CTO seat is empty, or the person in it can no longer do the job. Technical leadership picks up right away and holds until a successor arrives, with a team already moving on AI.</service-item>
-  <service-item title="Fixed-price projects" href="/en-us/expertise">Technology assessment, AI exploration, POC, MVP. A specific question, with deliverable, timeline, and price set up front.</service-item>
+  <service-item title="Fixed-price projects" href="/en-us/fixed-price-projects">Technology assessment, AI exploration, POC, MVP. A specific question, with deliverable, timeline, and price set up front.</service-item>
 </service-list>
 
 <trust-grid label="Why Monolithic Lab">
@@ -33,7 +33,7 @@ cta_band:
 
 **Interim CTO.** Also called a transitional CTO. A technology executive who fills an empty seat for a set period, with a clear mandate: steady the team, make the calls that can’t wait, and prepare the successor. More hours, shorter engagement. [What is an interim CTO?](/en-us/articles/what-is-an-interim-cto)
 
-For a one-off, well-defined need — an assessment, an AI exploration, a POC, an MVP — a [fixed-price project](/en-us/expertise) is enough.
+For a one-off, well-defined need — an assessment, an AI exploration, a POC, an MVP — a [fixed-price project](/en-us/fixed-price-projects) is enough.
 
 ## AI across the whole company
 

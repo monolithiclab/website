@@ -85,7 +85,7 @@ A fundraise, due diligence, an acquisition, a rebuild, international expansion, 
 
 ## Fractional, interim, or fixed-price?
 
-A fractional CTO fits when the need is ongoing but doesn’t fill a week. If the CTO seat is empty and you need someone close to full-time for a few months, that’s an [interim CTO](/en-us/interim-cto) engagement. For a one-off, well-defined need — assessment, AI exploration, POC, MVP — a [fixed-price project](/en-us/expertise) is enough.
+A fractional CTO fits when the need is ongoing but doesn’t fill a week. If the CTO seat is empty and you need someone close to full-time for a few months, that’s an [interim CTO](/en-us/interim-cto) engagement. For a one-off, well-defined need — assessment, AI exploration, POC, MVP — a [fixed-price project](/en-us/fixed-price-projects) is enough.
 
 ## Why Monolithic Lab
 

@@ -83,6 +83,7 @@ The site is the repository root — there is no `Website/` wrapper directory.
   cto-temps-partage.md                  # FR fractional CTO pillar page
   cto-de-transition.md                  # FR interim (transitional) CTO pillar page
   transformation-ia.md                  # FR AI transformation page (FDE approach, adoption plan)
+  missions-au-forfait.md                # FR fixed-price projects page (assessment, AI exploration, POC, MVP)
   expertises.md                         # FR offers page (CTO roles + missions au forfait)
   references.md                         # FR case studies (MeilleursAgents, Prose)
   faq.md                                # FR frequently asked questions
@@ -97,6 +98,7 @@ The site is the repository root — there is no `Website/` wrapper directory.
     fractional-cto.md                   # EN fractional CTO page
     interim-cto.md                      # EN interim CTO page
     ai-transformation.md                # EN AI transformation page
+    fixed-price-projects.md             # EN fixed-price projects page
     expertise.md                        # EN services page (CTO roles + fixed-price projects)
     references.md                       # EN references page
     faq.md                              # EN FAQ page

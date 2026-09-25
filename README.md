@@ -17,7 +17,7 @@ cta_band:
 <service-list label="Trois formats" heading="Deux rôles de CTO, et des missions au forfait">
   <service-item title="CTO à temps partagé" href="/cto-temps-partage">1 à 3 jours par semaine, sur plusieurs mois. La direction technique et la transformation IA pour l’entreprise qui a des développeurs mais personne pour les diriger, et pas encore le besoin d’un CTO à plein temps.</service-item>
   <service-item title="CTO de transition" href="/cto-de-transition">Le poste de CTO est vacant, ou son titulaire ne peut plus l’assumer. Reprise de la direction technique sans délai, jusqu’à l’arrivée d’un successeur, avec une équipe déjà engagée dans l’IA.</service-item>
-  <service-item title="Missions au forfait" href="/expertises">Diagnostic technique, exploration IA, POC, MVP. Une question précise, un livrable, un délai et un prix fixés à l’avance.</service-item>
+  <service-item title="Missions au forfait" href="/missions-au-forfait">Diagnostic technique, exploration IA, POC, MVP. Une question précise, un livrable, un délai et un prix fixés à l’avance.</service-item>
 </service-list>
 
 <trust-grid label="Pourquoi Monolithic Lab">
@@ -32,7 +32,7 @@ cta_band:
 
 **CTO de transition.** Un directeur technique qui occupe un poste vacant pour une durée limitée, avec un mandat précis : stabiliser l’équipe, trancher ce qui ne peut pas attendre, préparer le successeur. L’engagement est plus intense, la durée plus courte. [Qu’est-ce qu’un CTO de transition ?](/articles/cto-de-transition-definition)
 
-Pour un besoin ponctuel et bien délimité — un diagnostic, une exploration IA, un POC, un MVP — une [mission au forfait](/expertises) suffit.
+Pour un besoin ponctuel et bien délimité — un diagnostic, une exploration IA, un POC, un MVP — une [mission au forfait](/missions-au-forfait) suffit.
 
 ## L’IA dans toute l’entreprise
 

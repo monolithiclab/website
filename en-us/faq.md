@@ -26,7 +26,7 @@ An **interim CTO** fills an empty seat for a set period: more hours, shorter eng
 
 ### What about fixed-price projects?
 
-Technology assessment, AI exploration, POC, MVP: a specific question, with deliverable, timeline, and price set up front. A fixed-price project delivers a result, then ends. It doesn’t replace technical leadership: if you need someone to lead the team over time, that’s a CTO role. [See services](/en-us/expertise)
+Technology assessment, AI exploration, POC, MVP: a specific question, with deliverable, timeline, and price set up front. A fixed-price project delivers a result, then ends. It doesn’t replace technical leadership: if you need someone to lead the team over time, that’s a CTO role. [See fixed-price projects](/en-us/fixed-price-projects)
 
 ### How is that different from a consultant?
 

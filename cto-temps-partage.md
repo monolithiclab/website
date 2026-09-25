@@ -84,7 +84,7 @@ Levée de fonds, due diligence, rachat, refonte, ouverture à l’international,
 
 ## Temps partagé, transition ou forfait ?
 
-Le temps partagé convient quand le besoin est durable mais ne remplit pas une semaine. Si le poste de CTO est vacant et qu’il faut quelqu’un de très présent pendant quelques mois, il s’agit d’une mission de [CTO de transition](/cto-de-transition). Pour un besoin ponctuel et délimité — diagnostic, exploration IA, POC, MVP — une [mission au forfait](/expertises) suffit.
+Le temps partagé convient quand le besoin est durable mais ne remplit pas une semaine. Si le poste de CTO est vacant et qu’il faut quelqu’un de très présent pendant quelques mois, il s’agit d’une mission de [CTO de transition](/cto-de-transition). Pour un besoin ponctuel et délimité — diagnostic, exploration IA, POC, MVP — une [mission au forfait](/missions-au-forfait) suffit.
 
 ## Pourquoi Monolithic Lab
 

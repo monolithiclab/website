@@ -60,6 +60,6 @@ L’IA est encore récente. Peu d’entreprises l’ont déployée avec succès 
 
 Dans une PME, le CTO est souvent la seule personne capable de voir l’ensemble des systèmes de l’entreprise. C’est donc à lui de conduire la transformation IA, dans l’équipe technique comme dans les autres, avec la posture d’un FDE : sur place, les mains dans le travail, jugé sur le résultat.
 
-C’est l’approche de Monolithic Lab, en [CTO à temps partagé](/cto-temps-partage), en [CTO de transition](/cto-de-transition), ou en [mission au forfait](/expertises) : exploration IA, POC, MVP.
+C’est l’approche de Monolithic Lab, en [CTO à temps partagé](/cto-temps-partage), en [CTO de transition](/cto-de-transition), ou en [mission au forfait](/missions-au-forfait) : exploration IA, POC, MVP.
 
 [La transformation IA en détail](/transformation-ia)

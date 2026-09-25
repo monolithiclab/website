@@ -66,6 +66,8 @@ A first version in production, used by real users, on a deliberately narrow scop
 
 **Deliverable**: a product in production, the code, the documentation, and a team able to evolve it.
 
+[Fixed-price projects in detail](/en-us/fixed-price-projects)
+
 ---
 
 ## The rules, whatever the format

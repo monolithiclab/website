@@ -65,6 +65,8 @@ Une première version en production, utilisée par de vrais utilisateurs, sur un
 
 **Livrable** : un produit en production, le code, la documentation, et une équipe capable de le faire évoluer.
 
+[Détail des missions au forfait](/missions-au-forfait)
+
 ---
 
 ## Les règles, quel que soit le format

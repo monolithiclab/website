@@ -66,4 +66,4 @@ AI isn’t just for developers. The fastest gains are often elsewhere:
 ## How to engage
 
 - **As part of a CTO engagement.** AI transformation is part of both the [fractional CTO](/en-us/fractional-cto) and the [interim CTO](/en-us/interim-cto) roles.
-- **As a fixed-price project.** AI exploration, POC, or MVP, with scope, deliverable, and price set in advance. [See fixed-price projects](/en-us/expertise)
+- **As a fixed-price project.** AI exploration, POC, or MVP, with scope, deliverable, and price set in advance. [See fixed-price projects](/en-us/fixed-price-projects)
