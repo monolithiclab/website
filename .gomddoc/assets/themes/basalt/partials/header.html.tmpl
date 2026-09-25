@@ -30,7 +30,6 @@
         </li>
         <li><a href="{{ if eq $lang "en" }}{{ contentURL "en-us/articles/README.md" }}{{ else }}{{ contentURL "articles/README.md" }}{{ end }}" class="header__nav-link">Articles</a></li>
         <li><a href="{{ if eq $lang "en" }}{{ contentURL "en-us/references.md" }}{{ else }}{{ contentURL "references.md" }}{{ end }}" class="header__nav-link">{{ if eq $lang "en" }}References{{ else }}Références{{ end }}</a></li>
-        <li><a href="{{ if eq $lang "en" }}{{ contentURL "en-us/contact.md" }}{{ else }}{{ contentURL "contact.md" }}{{ end }}" class="header__nav-link header__nav-link--cta">Contact</a></li>
       </ul>
     </nav>
 
@@ -40,6 +39,8 @@
         <span class="lang-switcher__sep">/</span>
         <a href="{{ $enURL }}" class="lang-switcher__link{{ if eq $lang "en" }} lang-switcher__link--active{{ end }}">EN</a>
       </div>
+
+      <a href="{{ if eq $lang "en" }}{{ contentURL "en-us/contact.md" }}{{ else }}{{ contentURL "contact.md" }}{{ end }}" class="header__nav-link header__nav-link--cta">Contact<span class="header__cta-arrow" aria-hidden="true">&rarr;</span></a>
 
       <button class="header__hamburger" type="button" aria-expanded="false" aria-controls="mobile-nav" aria-label="{{ if eq $lang "en" }}Open menu{{ else }}Ouvrir le menu{{ end }}">
         <span class="header__hamburger-line"></span>

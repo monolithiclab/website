@@ -400,8 +400,12 @@ strong {
   color: var(--color-accent);
 }
 
+/* The Contact button sits at the far right of the bar, after the language
+   switcher; on a phone the mobile menu carries it instead. */
 .header__nav-link--cta {
-  display: inline-flex;
+  display: none;
+  align-items: center;
+  gap: 12px;
   padding: 10px 18px;
   font-weight: 600;
   color: var(--color-text-inverse);
@@ -563,6 +567,10 @@ strong {
     display: block;
   }
 
+  .header__nav-link--cta {
+    display: inline-flex;
+  }
+
   .header__hamburger {
     display: none;
   }
@@ -641,6 +649,14 @@ strong {
 @media (min-width: 768px) {
   .hero__slab {
     min-height: 360px;
+  }
+}
+
+/* Side by side with the lead, the button is centred in its column. */
+@media (min-width: 900px) {
+  .hero__cta {
+    justify-self: center;
+    align-self: center;
   }
 }
 
@@ -895,6 +911,7 @@ strong {
   .row {
     grid-template-columns: 64px minmax(0, 1.1fr) minmax(0, 1fr) 32px;
     gap: 24px;
+    align-items: start;
     padding: 32px 0;
   }
 
@@ -931,6 +948,24 @@ strong {
   gap: 12px;
   padding-top: 20px;
   border-top: 3px solid var(--color-text-inverse);
+}
+
+/* Side by side, the rule moves to the right of each proof, between columns. */
+@media (min-width: 900px) {
+  .proof-grid {
+    grid-template-columns: repeat(3, minmax(0, 1fr));
+  }
+
+  .proof {
+    padding-top: 0;
+    padding-right: clamp(24px, 3vw, 48px);
+    border-top: none;
+    border-right: 3px solid var(--color-text-inverse);
+  }
+
+  .proof:last-child {
+    border-right: none;
+  }
 }
 
 .proof__value {
