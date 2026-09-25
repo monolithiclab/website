@@ -43,7 +43,7 @@ cta_band:
 
 - **the consultation and the formulation algorithm**: the first implementation of a model that combines machine learning and expert rules, refined with every customer’s feedback after use. More than 60 million prescriptions generated
 - **the subscription**: the formula improves with every order, based on weather, pollution, new ingredients, and customer feedback. A rare model in personal care, where products are mostly bought one-off. The repeat rate runs 30 points above the industry average
-- **production and fulfilment**: the software that runs the manufacturing of unique bottles in two factories, in Brooklyn and Los Angeles, up to 50,000 a day
+- **production and fulfilment**: the software that runs the manufacturing of unique products on the automated lines of two factories, in Brooklyn and Los Angeles. The second machine, an improved version of the first, can produce up to 50,000 personalized products a day
 - **build or buy**: build what Prose’s model made unique, buy the rest (inventory, forecasting, customer service)
 - **Singular**: from an in-house tool to a complete personalization platform, which now carries Prose’s image as the leader in its field
 

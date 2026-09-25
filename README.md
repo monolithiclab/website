@@ -22,7 +22,7 @@ cta_band:
 
 <trust-grid label="Pourquoi Monolithic Lab">
   <trust-card value="25+" label="Ans d’expérience">Architecture, systèmes d’information, opérations et direction d’équipes, toujours depuis l’intérieur de l’entreprise.</trust-card>
-  <trust-card value="2" label="Scale-ups construites de l’intérieur">MeilleursAgents, du premier serveur à 1,8 million de visiteurs par mois. Prose, cofondée en 2017 : jusqu’à 50 000 flacons uniques fabriqués par jour.</trust-card>
+  <trust-card value="2" label="Scale-ups construites de l’intérieur">MeilleursAgents, du premier serveur à 1,8 million de visiteurs par mois. Prose, cofondée en 2017 : plus de 15 millions de produits fabriqués sur mesure.</trust-card>
   <trust-card value="1" label="Interlocuteur">Nicolas Mussat mène chaque mission lui-même, du premier échange au passage de relais. Pas de junior, pas de sous-traitance.</trust-card>
 </trust-grid>
 

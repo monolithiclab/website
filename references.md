@@ -22,11 +22,11 @@ cta_band:
 **Rôle.** Avec Julien Cheyssial, cofondateur technique, il conçoit et construit la première version des trois produits : le site public d’estimation, le back-office qui fait tourner l’entreprise et la relation avec les agences partenaires, et l’extranet des agents immobiliers. Il choisit la stack (Python, PostgreSQL, React) et l’hébergeur. En neuf ans, il passe de lead developer à CTO, et construit l’équipe technique jusqu’à 30 personnes.
 
 - **le modèle d’estimation** : architecture, infrastructure et premier POC, puis direction de l’équipe qui le développe
-- **le pivot, en 2015** : du partage de transactions avec des agences sélectionnées à un abonnement pour les professionnels (vitrine en ligne, avis clients, ventes récentes mises en avant), sans arrêter l’ancien modèle. De la décision à l’exécution : conception produit, planification, mise en œuvre technique. En deux ans, les agences partenaires passent de 600 à plus de 4 500
+- **le pivot, en 2015** : du partage de transactions avec des agences sélectionnées à un abonnement pour les professionnels (vitrine en ligne, avis clients, ventes récentes mises en avant), sans arrêter l’ancien modèle. De la décision à l’exécution : conception produit, planification, mise en œuvre technique. En deux ans, les agences partenaires passent de 600 à plus de 4 500
 - **le passage au cloud, la même année** : AWS et Google Cloud mis en concurrence. Google Cloud retenu, plus simple et au coût des serveurs physiques, quand l’architecture proposée par AWS coûtait trois fois plus
 - **la due diligence technique** de la levée de 7 millions d’euros menée par Piton Capital et Bpifrance, en 2016
 
-**Résultat.** MeilleursAgents devient le leader français de l’estimation immobilière en ligne : 1,8 million de visiteurs uniques et 10 millions de pages vues par mois, 5 000 agences partenaires. L’entreprise est rachetée par Axel Springer en 2019.
+**Résultat.** MeilleursAgents devient le leader français de l’estimation immobilière en ligne : 1,8 million de visiteurs uniques et 10 millions de pages vues par mois, 5 000 agences partenaires. L’entreprise est rachetée par Axel Springer en 2019.
 
 **Ce qu’un CTO doit en retenir.** Une plateforme se construit par étapes : chaque choix des débuts doit pouvoir évoluer avec l’entreprise. Un pivot se mène sans casser ce qui rapporte. Et une infrastructure se juge à son coût et à sa simplicité, pas à la sophistication de son architecture.
 
@@ -42,11 +42,11 @@ cta_band:
 
 - **la consultation et l’algorithme de formulation** : la première implémentation d’un modèle qui combine machine learning et règles d’experts, affiné par les retours de chaque client après usage. Plus de 60 millions de prescriptions générées
 - **l’abonnement** : la formule s’améliore à chaque commande, selon la météo, la pollution, les nouveaux ingrédients et les retours clients. Un modèle rare dans les soins, où l’achat reste le plus souvent ponctuel. Le taux de réachat dépasse de 30 points la moyenne du secteur
-- **la production et l’expédition** : le logiciel qui pilote la fabrication de flacons uniques dans deux usines, à Brooklyn et à Los Angeles, jusqu’à 50 000 par jour
+- **la production et l’expédition** : le logiciel qui pilote la fabrication de produits uniques sur les lignes automatisées de deux usines, à Brooklyn et à Los Angeles. La seconde machine, une version améliorée de la première, peut produire jusqu’à 50 000 produits personnalisés par jour
 - **construire ou acheter** : construire ce que le modèle de Prose rendait unique, acheter le reste (gestion des stocks, prévisions, service client)
 - **Singular** : de l’outil interne à une plateforme de personnalisation complète, qui porte aujourd’hui l’image de Prose comme leader du secteur
 
-**Résultat.** De trois produits capillaires en 2017 à une gamme complète : soins et coiffants, compléments alimentaires, soins du visage. 8,7 millions de profils clients, plus de 15 millions de produits fabriqués sur mesure, 500 000 avis cinq étoiles et 500 millions de dollars de ventes cumulées. Environ 300 personnes, dont 160 dans les usines, et 75 millions de dollars levés auprès d’Insight Partners et Forerunner Ventures. La plateforme de fabrication à la commande reste sans équivalent dans l’industrie.
+**Résultat.** De trois produits capillaires en 2017 à une gamme complète : soins et coiffants, compléments alimentaires, soins du visage. 8,7 millions de profils clients, plus de 15 millions de produits fabriqués sur mesure, 500 000 avis cinq étoiles et 500 millions de dollars de ventes cumulées. Environ 300 personnes, dont 160 dans les usines, et 75 millions de dollars levés auprès d’Insight Partners et Forerunner Ventures. La plateforme de fabrication à la commande reste sans équivalent dans l’industrie.
 
 **Ce qu’un CTO doit en retenir.** Construire plutôt qu’acheter se justifie là où le modèle de l’entreprise n’existe nulle part ailleurs, et seulement là. Quand le produit est physique, le logiciel ne s’arrête pas au site : il va jusqu’à la ligne de production. Et un abonnement se mérite : il tient parce que le produit s’améliore à chaque commande.
 

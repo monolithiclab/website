@@ -7,7 +7,7 @@ alternate: "/en-us/legal"
 ## Éditeur du site
 
 **Monolithic Lab SASU**<br>
-Société par actions simplifiée unipersonnelle au capital de 1 000 euros<br>
+Société par actions simplifiée unipersonnelle au capital de 1 000 euros<br>
 Siège social : 14 rue de Cambrai, 75019 Paris, France<br>
 RCS Paris : en cours d’immatriculation<br>
 SIRET : en cours d’attribution<br>
