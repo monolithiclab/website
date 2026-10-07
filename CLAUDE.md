@@ -1,149 +1,105 @@
-# Monolithic Lab — Website Project Conventions
+# CLAUDE.md
 
-## Brand & Design
+The source of monolithiclab.fr, a public repo: Markdown pages built by gomddoc with the custom `basalt` theme into a
+static site that GitHub Pages serves. French at the root, English under `en-us/`. The human README is
+[.github/README.md](.github/README.md); `make help` lists every command.
 
-All design rules (colors, typography, visual language, layout patterns) live in **`brand/` in the
-private `monolithiclab/company` repository** — that is the single source of truth for visual decisions,
-shared with the print documents so the site and the PDFs cannot drift apart. This repository is public
-and holds the implementation only; this file covers technical conventions.
+## Hard rules
 
-Summary, so a change can be sanity-checked without the private repo to hand ("Basalt"): dark basalt
-ground, stone and bone text, one ochre accent. Big Shoulders Display 800 uppercase for display,
-Hanken Grotesk for everything else. The one motif is the monolith: an ochre strata slab beside hero
-headlines, repeated as staircase bars in step sequences. Rules, not boxes. No border-radius, no
-shadows, no transparency, no soft gradients (the strata's hard-stop stripes are the exception), no
-photographs. Hover is an instant fill swap; the slab rising on load is the only animation.
+- **This repo is public: assume anything committed once is permanently readable.** Strategy, pricing, planning and
+  brand rationale live in the private `company` repo. `PLAN.md`, `DESIGN_PROMPT.md` and `docs/` are gitignored, and
+  `make lint` fails if one is ever tracked.
+- **Every push to `main` deploys the live site** (`.github/workflows/deploy.yml`). Small copy changes (wording fixes,
+  aligning a sentence) are committed **and pushed** to `main` directly: "All good for small copy changes, no worries
+  with the commit and push." Design or layout changes, new pages and multi-file rewrites are committed, then shown,
+  and pushed only once Nicolas says so.
+- **`_tokens.css` is generated, never edited.** It is rendered from `brand/tokens.json` by `make brand` in the
+  company repo, then committed here. `main.css` holds no colour literal: `var(--color-*)`, or
+  `rgb(var(--rgb-*) / <alpha>)` for the translucent cases.
+- **Nothing is loaded from Google's font CDN** (RGPD: the visitor's IP reaches Google before consent). Fonts are
+  self-hosted in `fonts/`.
+- **Marketing copy:** no first person in any page copy ("je"/"I", "mon"/"my", "moi"/"me"); write impersonally, with
+  "Monolithic Lab" as subject, or in the third person for the bio. Direct address ("vous"/"you") is fine. No "not X,
+  it's Y" contrasts, no fragment chains, no heavy em-dashes. "Monolithic Lab" is two words, never "Monolithic"
+  alone. French copy follows `brand/editorial-fr.md` in the company repo (insécables, `« »`).
+- **Facts about clients and past roles** (MeilleursAgents, Prose) come from `company/references/*.md` only. Never
+  invent one.
 
-## Stack
+## Constraints that look like bugs
 
-- **Static site generator:** gomddoc (no JavaScript framework)
-- **CSS:** Hand-written, no framework — vanilla CSS with custom properties
-- **JS:** Vanilla JavaScript, minimal and progressive-enhancement only
-- **Fonts:** Big Shoulders Display + Hanken Grotesk, self-hosted in `fonts/` (variable woff2)
-- **Assets:** CSS and JS inlined into HTML via gomddoc's `inlineCSSAsset` / `inlineJSAsset`
+- **The root `README.md` is the French home page**, not a repository README: gomddoc renders each directory's
+  `README.md` as its index. The human README lives in `.github/`, which gomddoc never publishes.
+- **Every repo-tooling file at the root is both excluded and pruned.** `CLAUDE.md`, `Makefile` and `common.mk` are
+  listed under `exclude:` in `.gomddoc/config.yml` (`make lint` checks it), and `make prune` deletes and then refuses
+  any private file that reaches `public/`. Up to gomddoc v0.1.1, `exclude` still published a stub at the file's
+  path; CI pins v0.1.2, and prune stays as defence in depth. A new tooling file at the root joins both lists.
+  Patterns that match nothing in a checkout (the gitignored files) stay out of `exclude:`, because `gomddoc doctor`
+  flags them.
+- **`make build` cleans first, on purpose.** gomddoc skips only the output directory it is writing to, so a stale
+  `public/` gets walked as content and duplicates every page.
+- **`make prune` deletes `public/tags/` and its sitemap entry.** gomddoc always generates a tag index; the site uses
+  no tags.
+- **`gtm_id` sits under `theme.vars`** in `config.yml` although it is no CSS property: gomddoc v0.1.2 exposes no
+  other extensible map to templates.
+- **`layouts/error.html.tmpl` must exist**: without it gomddoc falls back to the default theme for the 404.
+- **The vendored themes** (`dalle`, `default`, `monolithic`, `terminal`) under `.gomddoc/assets/themes/` are
+  gitignored. Only `basalt` is ours.
 
-## Build & Serve
+## Traps `make ci` won't explain
 
-| Command       | Description                                                                     |
-| ------------- | ------------------------------------------------------------------------------- |
-| `make run`    | Local preview with live reload                                                  |
-| `make build`  | Production build (static output in `public/`)                                   |
-| `make lint`   | Invariant checks: no colour literals, no Google Fonts, no private files tracked |
-| `make ci`     | The gate: `lint` + `build` — what the deploy workflow runs                      |
-| `make clean`  | Remove build output                                                             |
-| `make deploy` | Push to `main`, triggering GitHub Actions → GitHub Pages (the live site)        |
+- Internal links are extensionless (`/contact`, `/en-us/approach`): gomddoc strips `.md` and serves `approche.md` at
+  `approche/index.html`.
+- A page is French unless its front matter says `lang: "en"`. `alternate:` points at the same page in the other
+  language and drives the language switch and `hreflang`, so set it on both sides.
+- `make lint` greps the theme CSS for any hex, including inside a comment.
 
-## CSS Conventions
+## Where things go
 
-- **BEM-like naming:** `.block__element--modifier`
-- **No nesting deeper than 2 levels** in selectors
-- **Custom properties** for all colors, spacing, and type sizes
-- **Mobile-first** media queries
-- Two CSS files, both inlined via `inlineCSSAsset` and both under
-  `.gomddoc/assets/themes/basalt/`:
-  - `_tokens.css` — **generated, do not edit.** The palette, rendered from `brand/tokens.json` in
-    the private company repo by `make brand` there. Inlined first so `main.css` can use it.
-  - `main.css` — everything else. Write no colour literal here: use `var(--color-*)`, or
-    `rgb(var(--rgb-*) / <alpha>)` for the translucent cases. Adding a hex reintroduces the drift
-    the tokens exist to prevent.
-- **Fonts are self-hosted** in `fonts/` — nothing may be loaded from Google's CDN (RGPD)
+- A content page is a flat `<slug>.md` (FR at the root, EN under `en-us/`), never `<slug>/README.md`; only the
+  section indexes are `README.md` (root, `en-us/`, both `articles/`). Articles go in `articles/` and
+  `en-us/articles/`; app pages (privacy, support) in `apps/<app>/`.
+- Navigation and footer links are hard-coded, per language, in `partials/header.html.tmpl` and
+  `partials/footer.html.tmpl` of `.gomddoc/assets/themes/basalt/`.
+- Front matter the theme reads: `title`, `description`, `lang`, `alternate`, `hero` (`label`, `headline`,
+  `subheadline`, `cta_text`, `cta_url`, `compact`), `cta_band` (`text`, `button_text`, `button_url`), `robots`.
+- Structured blocks inside a page are custom elements defined in `main.js`: `<service-list>`/`<service-item>`,
+  `<trust-grid>`/`<trust-card>`, `<step-timeline>`/`<step-item>`, `<contact-form>` (Formspree).
+- CSS: `main.css` only, BEM-like (`.block__element--modifier`), selectors at most two levels deep, custom properties
+  for colour, spacing and type, mobile-first media queries. `_tokens.css` and `main.css` are inlined into every page
+  through `inlineCSSAsset`; JS (`main.js`, vanilla, progressive enhancement only) through `inlineJSAsset`.
+- Open Graph images (`images/og-image{,-en}.png`) are rendered by `make og` in the company repo.
 
-## Marketing Voice
+## Brand and voice
 
-- **Positioning:** fractional CTO (_CTO à temps partagé_) and interim CTO (_CTO de transition_) for
-  small and mid-sized companies, both carrying the company's AI transformation (engineering and
-  every other team). Fixed-price projects (_missions au forfait_: assessment, AI exploration, POC,
-  MVP) are a separate offer: a defined deliverable, never a substitute for the CTO roles
-- **AI approach:** modeled on the forward deployed engineer (on site, real data, judged on usage);
-  the adoption plan is co-built with the client's teams, never a ready-made method
-- **Leadership stance:** a CTO who builds, not just manages: knows the craft hands-on and drives AI
-  agents for execution
-- **EN terminology:** "interim CTO" is the primary term (US search usage); "transitional CTO" appears
-  as a synonym
-- **No first person** — never use "je"/"I", "mon"/"my", "moi"/"me" in any page copy
-- Use impersonal constructions, "Monolithic Lab" as subject, or third person for the bio
-- Direct address ("vous"/"you") is fine
+The design rules live in `brand/` in the private company repo, shared with the print documents. Summary ("Basalt"),
+so a change can be sanity-checked without it: dark basalt ground, stone and bone text, one ochre accent. Big Shoulders
+Display 800 uppercase for display, Hanken Grotesk for everything else. The one motif is the monolith: an ochre strata
+slab beside hero headlines, repeated as staircase bars in step sequences. Rules, not boxes. No border-radius, no
+shadows, no transparency, no soft gradients (the strata's hard-stop stripes are the exception), no photographs.
+Hover is an instant fill swap; the slab rising on load is the only animation.
 
-## Directory Structure
+- **Positioning:** fractional CTO (_CTO à temps partagé_) and interim CTO (_CTO de transition_) for small and
+  mid-sized companies, both carrying the company's AI transformation (engineering and every other team).
+  Fixed-price projects (_missions au forfait_: assessment, AI exploration, POC, MVP) are a separate offer: a defined
+  deliverable, never a substitute for the CTO roles.
+- **AI approach:** modelled on the forward deployed engineer (on site, real data, judged on usage); the adoption
+  plan is co-built with the client's teams, never a ready-made method.
+- **Leadership stance:** a CTO who builds as well as manages: knows the craft hands-on and drives AI agents for
+  execution.
+- **EN terminology:** "interim CTO" is the primary term (US search usage); "transitional CTO" appears as a synonym.
 
-The site is the repository root — there is no `Website/` wrapper directory.
+## Documentation
 
-```
-.
-  .gomddoc/
-    config.yml                          # Site config (title, domain, theme, language)
-    assets/themes/basalt/
-      layouts/default.html.tmpl         # Page template (handles all layouts)
-      layouts/error.html.tmpl           # 404 — without it gomddoc falls back to the default theme
-      partials/                         # Header, footer, head partials
-      _tokens.css                       # GENERATED palette — see company/brand/tokens.json
-      main.css                          # Stylesheet (inlined via inlineCSSAsset)
-      main.js                           # JS — menu, nav state, content components, form, cookies
-  fonts/                                # Self-hosted woff2 + OFL notices (never load from Google)
-  README.md                             # FR homepage (directory index)
-  approche.md                           # FR approach page
-  cto-temps-partage.md                  # FR fractional CTO pillar page
-  cto-de-transition.md                  # FR interim (transitional) CTO pillar page
-  transformation-ia.md                  # FR AI transformation page (FDE approach, adoption plan)
-  missions-au-forfait.md                # FR fixed-price projects page (assessment, AI exploration, POC, MVP)
-  expertises.md                         # FR offers page (CTO roles + missions au forfait)
-  references.md                         # FR case studies (MeilleursAgents, Prose)
-  faq.md                                # FR frequently asked questions
-  contact.md                            # FR contact page
-  mentions-legales.md                   # FR legal page
-  articles/
-    README.md                           # FR articles index
-    *.md                                # FR articles (definitions, SMB case, FDE, AI-era CTO, experience)
-  en-us/
-    README.md                           # EN homepage (directory index)
-    approach.md                         # EN approach page
-    fractional-cto.md                   # EN fractional CTO page
-    interim-cto.md                      # EN interim CTO page
-    ai-transformation.md                # EN AI transformation page
-    fixed-price-projects.md             # EN fixed-price projects page
-    expertise.md                        # EN services page (CTO roles + fixed-price projects)
-    references.md                       # EN references page
-    faq.md                              # EN FAQ page
-    contact.md                          # EN contact page
-    legal.md                            # EN legal page
-    articles/                           # EN articles index (README.md) + articles
-  images/                               # favicon.svg, og-image{,-en}.png (rendered by `make og` in company)
-```
+| Document | Owns |
+| --- | --- |
+| `.github/README.md` | What the repo is, how to build and preview it |
+| `.gomddoc/config.yml` | Site config, the `exclude:` list and why `exclude` is not a confidentiality boundary |
+| `Makefile` | The lint invariants and the prune step, each with its reason |
+| company `brand/` | Palette, type, logo, voice, French typography |
+| company `PLAN.md` | Open website items (the 2026-09-24 audit) |
 
-## URLs
+## Workflow
 
-- gomddoc strips `.md` extensions by default (`strip_extensions: [".md"]`)
-- Content pages use flat `.md` files (e.g., `approche.md`), not `folder/README.md`
-- Only section indexes remain as `README.md` (root, `en-us/`, and the two `articles/` directories)
-- All internal links use extensionless paths (e.g., `/contact`, `/en-us/approach`)
-- Requests to `/contact.md` are 301-redirected to `/contact` by gomddoc
-- In build mode, `approche.md` outputs to `approche/index.html` for static host compatibility
-
-## i18n
-
-- Default language: `fr` (content at root)
-- English: `en-us/` subdirectory
-- Language detection via `lang: "en"` frontmatter field (absent = French)
-- Navigation and footer are language-aware in the template
-- Cross-language links via `alternate` frontmatter field
-
-## gomddoc Theme
-
-The site uses a custom `basalt` theme with a single `default.html.tmpl` template.
-
-**Template functions:**
-
-- `inlineCSSAsset "main.css"` — inlines CSS inside `<style>` (returns `template.CSS`)
-- `inlineJSAsset "main.js"` — inlines JS inside `<script>` (returns `template.JS`)
-- `canonicalURL .Page.Path` — returns the canonical URL for a page
-
-**Page layout** is controlled by frontmatter fields:
-
-- `layout`: "home" or "page" — determines which sections render
-- `hero`: object with headline, subheadline, label, cta_text, cta_url, compact
-- `services`: array of service cards (home page only, currently 3 items)
-- `trust_signals`: array (home page only, currently 3 items)
-- `methodology`: array of timeline steps (currently 5 items)
-- `contact_form`: boolean — renders the Formspree contact form
-- `cta_band`: object with text, button_text, button_url
-- `alternate`: URL of the corresponding page in the other language
+1. Minimal change, plus the owning doc in the same change
+2. `make ci` green
+3. Commit with the session's trailers; push only small copy fixes without asking (see Hard rules)
