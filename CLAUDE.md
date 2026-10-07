@@ -52,6 +52,10 @@ static site that GitHub Pages serves. French at the root, English under `en-us/`
 - A page is French unless its front matter says `lang: "en"`. `alternate:` points at the same page in the other
   language and drives the language switch and `hreflang`, so set it on both sides.
 - `make lint` greps the theme CSS for any hex, including inside a comment.
+- **Local and deployed gomddoc can differ.** `make ci` uses whatever `gomddoc` is on the `PATH`; the deploy installs
+  the `GOMDDOC_VERSION` pinned in `.github/workflows/deploy.yml`. A green local gate on a newer gomddoc proves nothing
+  about the pinned one. A version bump changes that pin, then re-checks the comments in `.gomddoc/config.yml` and the
+  `Makefile` that name v0.1.1/v0.1.2 behaviour (`exclude`, `theme.vars`), in the same commit.
 
 ## Where things go
 
