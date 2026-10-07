@@ -7,8 +7,10 @@
 public/
 
 # Agent-local state, never shared. Broader than the standard block above: this
-# repo is public, so nothing under .claude/ is committed here.
-.claude/
+# repo is public, so nothing under .claude/ is committed here except the shared
+# permission shapes (lab-repo-standards), which hold no secret.
+.claude/*
+!.claude/settings.json
 
 # Vendored gomddoc themes we do not author. Only basalt is ours.
 .gomddoc/assets/themes/dalle/
