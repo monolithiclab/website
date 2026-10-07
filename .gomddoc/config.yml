@@ -34,6 +34,7 @@ language: fr
 exclude:
   - "CLAUDE.md"
   - "Makefile"
+  - "common.mk"
 
 theme:
   name: basalt

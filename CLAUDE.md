@@ -24,12 +24,14 @@ photographs. Hover is an instant fill swap; the slab rising on load is the only 
 
 ## Build & Serve
 
-| Command       | Description                                              |
-| ------------- | -------------------------------------------------------- |
-| `make dev`    | Start development server with live reload                |
-| `make build`  | Production build (static output in `public/`)            |
-| `make clean`  | Remove build output                                      |
-| `make deploy` | Push to `main`, triggering GitHub Actions → GitHub Pages |
+| Command       | Description                                                                     |
+| ------------- | ------------------------------------------------------------------------------- |
+| `make run`    | Local preview with live reload                                                  |
+| `make build`  | Production build (static output in `public/`)                                   |
+| `make lint`   | Invariant checks: no colour literals, no Google Fonts, no private files tracked |
+| `make ci`     | The gate: `lint` + `build` — what the deploy workflow runs                      |
+| `make clean`  | Remove build output                                                             |
+| `make deploy` | Push to `main`, triggering GitHub Actions → GitHub Pages (the live site)        |
 
 ## CSS Conventions
 
