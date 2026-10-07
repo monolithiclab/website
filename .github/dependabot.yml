@@ -1,0 +1,15 @@
+version: 2
+
+# Keeps the SHA-pinned actions in .github/workflows/ moving. gomddoc itself is
+# pinned by GOMDDOC_VERSION in deploy.yml and bumped by hand after a local build.
+updates:
+  - package-ecosystem: github-actions
+    directory: "/"
+    schedule:
+      interval: weekly
+      day: monday
+    commit-message:
+      prefix: "chore(ci-deps)"
+    groups:
+      actions-minor-patch:
+        update-types: [minor, patch]

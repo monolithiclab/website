@@ -2,10 +2,10 @@ include common.mk
 
 THEME := .gomddoc/assets/themes/basalt
 
-# Files that live in the repo but must never be served. gomddoc v0.1.1's
-# `exclude` suppresses page rendering but still emits a meta-refresh stub at the
-# markdown path, publishing the filename. No content leaks in build mode, but
-# the name does. See the comment in .gomddoc/config.yml.
+# Files that live in the repo but must never be served. Up to gomddoc v0.1.1,
+# `exclude` still emitted a meta-refresh stub at the markdown path, publishing
+# the filename; v0.1.2 (pinned in CI) fixed it, and prune stays as defence in
+# depth. See the comment in .gomddoc/config.yml.
 PRUNE = public/CLAUDE.md
 
 .PHONY: run

@@ -5,25 +5,20 @@ meta:
 
 language: fr
 
-# WARNING: in gomddoc v0.1.1 — the version this repo pins in CI — `exclude` is
-# NOT a confidentiality boundary.
+# WARNING: up to gomddoc v0.1.1, `exclude` was NOT a confidentiality boundary.
 #
-# It suppresses page rendering, search, navigation and metadata, so every
-# visible signal says the file is excluded. But `resolve.Build` was never given
-# this list, so it still mints a clean URL for each entry, and the exclusion
-# check runs against the *request* path, which strip_extensions has already
-# stripped: the pattern "PLAN.md" never matches a request for "/PLAN".
-#   - gomddoc serve: /PLAN returns 200 with the full rendered content.
-#   - gomddoc build: no content is written, but a 260-byte meta-refresh stub
-#     lands at public/PLAN.md, disclosing the filename. This is what `make
-#     prune` deletes.
-# Directory patterns ("docs/") hold in serve mode — they carry no extension, so
-# they still match the stripped path — but leak stubs in build mode.
+# It suppressed page rendering, search, navigation and metadata, so every
+# visible signal said the file was excluded. But `resolve.Build` was never given
+# this list, so it still minted a clean URL for each entry, and the exclusion
+# check ran against the *request* path, which strip_extensions had already
+# stripped: the pattern "PLAN.md" never matched a request for "/PLAN".
+#   - gomddoc serve: /PLAN returned 200 with the full rendered content.
+#   - gomddoc build: no content was written, but a 260-byte meta-refresh stub
+#     landed at public/PLAN.md, disclosing the filename.
 #
-# Fixed upstream by c80981e, unmerged and unreleased as of v0.1.1. See
-# TICKET-exclude-confidentiality.md in the gomddoc checkout. Once a release
-# carries it, bump GOMDDOC_VERSION in .github/workflows/deploy.yml; keep the
-# prune step regardless, as defence in depth.
+# Fixed upstream by c80981e, first released in v0.1.2 — the version CI pins
+# (GOMDDOC_VERSION in .github/workflows/deploy.yml). `make prune` still deletes
+# and refuses private files in public/, as defence in depth.
 #
 # The real defence is that private material is not in this repository at all:
 # see .gitignore.
@@ -40,7 +35,7 @@ theme:
   name: basalt
   vars:
     # Not a CSS custom property despite living under theme.vars — gomddoc
-    # v0.1.1's MetaConfig has no field for arbitrary IDs, and theme.vars is the
+    # v0.1.2's MetaConfig has no field for arbitrary IDs, and theme.vars is the
     # only extensible map exposed to templates. Safe here because head.html.tmpl
     # never calls the CSS-generating function that would otherwise turn every
     # theme.vars key into a --theme-* custom property.
