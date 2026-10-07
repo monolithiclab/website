@@ -56,6 +56,10 @@ static site that GitHub Pages serves. French at the root, English under `en-us/`
   the `GOMDDOC_VERSION` pinned in `.github/workflows/deploy.yml`. A green local gate on a newer gomddoc proves nothing
   about the pinned one. A version bump changes that pin, then re-checks the comments in `.gomddoc/config.yml` and the
   `Makefile` that name v0.1.1/v0.1.2 behaviour (`exclude`, `theme.vars`), in the same commit.
+- **A gomddoc bump can change the site, not only fix it.** Since v0.1.2, `.gomddoc/config.yml` is decoded strictly
+  (`KnownFields(true)`): a misplaced key is a build error instead of a silent no-op, and a key that never applied
+  starts applying (`color_chips: false` first took effect at the v0.1.2 bump). Check config.yml against the new
+  version's schema and run `make ci` with that version before changing the pin.
 
 ## Where things go
 
