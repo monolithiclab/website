@@ -30,7 +30,7 @@ by hand.
 
 ## Documentation
 
-- [CLAUDE.md](../CLAUDE.md): conventions for contributors and agents (hard rules, placements, the theme's front
+- [AGENTS.md](../AGENTS.md): conventions for contributors and agents (hard rules, placements, the theme's front
   matter and components).
 - `.gomddoc/config.yml` and `Makefile`: the site config and the lint and prune invariants, each with its reason.
 

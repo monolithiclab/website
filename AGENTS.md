@@ -1,4 +1,4 @@
-# CLAUDE.md
+# AGENTS.md
 
 The source of monolithiclab.fr, a public repo: Markdown pages built by gomddoc with the custom `basalt` theme into a
 static site that GitHub Pages serves. French at the root, English under `en-us/`. The human README is
@@ -29,7 +29,7 @@ static site that GitHub Pages serves. French at the root, English under `en-us/`
 
 - **The root `README.md` is the French home page**, not a repository README: gomddoc renders each directory's
   `README.md` as its index. The human README lives in `.github/`, which gomddoc never publishes.
-- **Every repo-tooling file at the root is both excluded and pruned.** `CLAUDE.md`, `Makefile` and `common.mk` are
+- **Every repo-tooling file at the root is both excluded and pruned.** `AGENTS.md`, `Makefile` and `common.mk` are
   listed under `exclude:` in `.gomddoc/config.yml` (`make lint` checks it), and `make prune` deletes and then refuses
   any private file that reaches `public/`. Up to gomddoc v0.1.1, `exclude` still published a stub at the file's
   path; CI pins v0.1.2, and prune stays as defence in depth. A new tooling file at the root joins both lists.

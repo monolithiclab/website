@@ -27,7 +27,7 @@ language: fr
 # checkout, so they are not listed here (gomddoc doctor flags patterns that
 # match nothing); the Makefile's prune step still checks for them.
 exclude:
-  - "CLAUDE.md"
+  - "AGENTS.md"
   - "Makefile"
   - "common.mk"
 

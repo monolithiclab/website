@@ -6,7 +6,7 @@ THEME := .gomddoc/assets/themes/basalt
 # `exclude` still emitted a meta-refresh stub at the markdown path, publishing
 # the filename; v0.1.2 (pinned in CI) fixed it, and prune stays as defence in
 # depth. See the comment in .gomddoc/config.yml.
-PRUNE = public/CLAUDE.md
+PRUNE = public/AGENTS.md
 
 .PHONY: run
 run: ## Local preview with live reload; opens the browser
@@ -22,7 +22,7 @@ build: clean ## Production build (static site in public/)
 	@$(MAKE) prune
 
 .PHONY: lint
-lint: lint-tokens lint-fonts lint-private ## Check the CLAUDE.md invariants: no colour literals, no Google Fonts, no private files
+lint: lint-tokens lint-fonts lint-private ## Check the AGENTS.md invariants: no colour literals, no Google Fonts, no private files
 
 .PHONY: ci
 ci: lint build ## The gate: lint, then the production build (what the deploy workflow runs)
@@ -50,7 +50,7 @@ lint-private:
 	@if git ls-files PLAN.md DESIGN_PROMPT.md docs | grep .; then \
 		echo "lint: private file tracked in this public repo (above)"; exit 1; \
 	fi
-	@for f in CLAUDE.md Makefile common.mk; do \
+	@for f in AGENTS.md Makefile common.mk; do \
 		grep -qE "^  - \"$$f\"$$" .gomddoc/config.yml || { \
 			echo "lint: $$f is not under exclude: in .gomddoc/config.yml"; exit 1; }; \
 	done
@@ -63,7 +63,7 @@ prune: ## Remove files that must not be published, and fail loudly if any surviv
 	@rm -f $(PRUNE)
 	@rm -rf public/tags
 	@perl -0pi -e 's{\s*<url>\s*<loc>[^<]*/tags/</loc>.*?</url>}{}s' public/sitemap.xml
-	@if find public \( -name 'CLAUDE.md' -o -name 'PLAN.md' -o -name 'DESIGN_PROMPT.md' \
+	@if find public \( -name 'AGENTS.md' -o -name 'PLAN.md' -o -name 'DESIGN_PROMPT.md' \
 	                   -o -name 'Makefile' -o -name 'common.mk' -o -path '*/docs/*' \) -print | grep .; then \
 		echo "REFUSING: private file reached the build output (above)"; exit 1; \
 	fi
