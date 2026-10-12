@@ -4,8 +4,8 @@ THEME := .gomddoc/assets/themes/basalt
 
 # Files that live in the repo but must never be served. Up to gomddoc v0.1.1,
 # `exclude` still emitted a meta-refresh stub at the markdown path, publishing
-# the filename; v0.1.2 (pinned in CI) fixed it, and prune stays as defence in
-# depth. See the comment in .gomddoc/config.yml.
+# the filename; v0.1.2 fixed it (CI pins a later version), and prune stays as
+# defence in depth. See the comment in .gomddoc/config.yml.
 PRUNE = public/AGENTS.md
 
 .PHONY: run

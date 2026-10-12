@@ -16,7 +16,7 @@ language: fr
 #   - gomddoc build: no content was written, but a 260-byte meta-refresh stub
 #     landed at public/PLAN.md, disclosing the filename.
 #
-# Fixed upstream by c80981e, first released in v0.1.2 — the version CI pins
+# Fixed upstream by c80981e, first released in v0.1.2; CI pins a later version
 # (GOMDDOC_VERSION in .github/workflows/deploy.yml). `make prune` still deletes
 # and refuses private files in public/, as defence in depth.
 #

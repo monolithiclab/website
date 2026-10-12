@@ -32,15 +32,15 @@ static site that GitHub Pages serves. French at the root, English under `en-us/`
 - **Every repo-tooling file at the root is both excluded and pruned.** `AGENTS.md`, `Makefile` and `common.mk` are
   listed under `exclude:` in `.gomddoc/config.yml` (`make lint` checks it), and `make prune` deletes and then refuses
   any private file that reaches `public/`. Up to gomddoc v0.1.1, `exclude` still published a stub at the file's
-  path; CI pins v0.1.2, and prune stays as defence in depth. A new tooling file at the root joins both lists.
+  path; v0.1.2 fixed it, and prune stays as defence in depth. A new tooling file at the root joins both lists.
   Patterns that match nothing in a checkout (the gitignored files) stay out of `exclude:`, because `gomddoc doctor`
   flags them.
 - **`make build` cleans first, on purpose.** gomddoc skips only the output directory it is writing to, so a stale
   `public/` gets walked as content and duplicates every page.
 - **`make prune` deletes `public/tags/` and its sitemap entry.** gomddoc always generates a tag index; the site uses
   no tags.
-- **`gtm_id` sits under `theme.vars`** in `config.yml` although it is no CSS property: gomddoc v0.1.2 exposes no
-  other extensible map to templates.
+- **`gtm_id` sits under `theme.vars`** in `config.yml` although it is no CSS property: gomddoc (still at v0.1.4)
+  exposes no other extensible map to templates.
 - **`layouts/error.html.tmpl` must exist**: without it gomddoc falls back to the default theme for the 404.
 - **The vendored themes** (`dalle`, `default`, `monolithic`, `terminal`) under `.gomddoc/assets/themes/` are
   gitignored. Only `basalt` is ours.
