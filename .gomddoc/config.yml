@@ -28,6 +28,7 @@ language: fr
 # match nothing); the Makefile's prune step still checks for them.
 exclude:
   - "AGENTS.md"
+  - "LICENSE"
   - "Makefile"
   - "common.mk"
 

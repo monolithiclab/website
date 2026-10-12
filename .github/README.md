@@ -36,5 +36,5 @@ by hand.
 
 ## Licence
 
-No licence file yet. Until one is chosen, the content and the `basalt` theme are © Monolithic Lab, all rights
-reserved; the fonts in `fonts/` carry their own OFL notices.
+© Monolithic Lab, all rights reserved: the repo is public so the site can be built, not licensed for reuse. The
+fonts in `fonts/` carry their own OFL notices. See [LICENSE](../LICENSE).

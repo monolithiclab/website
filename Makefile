@@ -50,7 +50,7 @@ lint-private:
 	@if git ls-files PLAN.md DESIGN_PROMPT.md docs | grep .; then \
 		echo "lint: private file tracked in this public repo (above)"; exit 1; \
 	fi
-	@for f in AGENTS.md Makefile common.mk; do \
+	@for f in AGENTS.md LICENSE Makefile common.mk; do \
 		grep -qE "^  - \"$$f\"$$" .gomddoc/config.yml || { \
 			echo "lint: $$f is not under exclude: in .gomddoc/config.yml"; exit 1; }; \
 	done
@@ -64,7 +64,7 @@ prune: ## Remove files that must not be published, and fail loudly if any surviv
 	@rm -rf public/tags
 	@perl -0pi -e 's{\s*<url>\s*<loc>[^<]*/tags/</loc>.*?</url>}{}s' public/sitemap.xml
 	@if find public \( -name 'AGENTS.md' -o -name 'PLAN.md' -o -name 'DESIGN_PROMPT.md' \
-	                   -o -name 'Makefile' -o -name 'common.mk' -o -path '*/docs/*' \) -print | grep .; then \
+	                   -o -name 'LICENSE' -o -name 'Makefile' -o -name 'common.mk' -o -path '*/docs/*' \) -print | grep .; then \
 		echo "REFUSING: private file reached the build output (above)"; exit 1; \
 	fi
 
