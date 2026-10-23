@@ -7,17 +7,17 @@ hero:
   headline: "Un CTO senior pour diriger votre technique et réussir votre passage à l’IA."
   subheadline: "Monolithic Lab prend la direction technique des PME et scale-ups qui n’ont pas encore besoin d’un CTO à plein temps, ou qui viennent de perdre le leur, et conduit leur transformation IA, dans l’équipe technique comme dans toutes les autres. Plus de 25 ans d’expérience, dont MeilleursAgents, construit de zéro jusqu’au leader français de l’estimation immobilière en ligne, et Prose, cofondée en 2017, dont il a construit la plateforme de la consultation à l’usine."
   cta_text: "Décrire votre situation"
-  cta_url: "/contact"
+  cta_url: "/contact/"
 cta_band:
   text: "Une équipe technique sans direction, un poste de CTO vacant, ou un projet IA à lancer ? Un premier échange suffit pour savoir si Monolithic Lab est la bonne réponse."
   button_text: "Décrire votre situation"
-  button_url: "/contact"
+  button_url: "/contact/"
 ---
 
 <service-list label="Trois formats" heading="Deux rôles de CTO, et des missions au forfait">
-  <service-item title="CTO à temps partagé" href="/cto-temps-partage">1 à 3 jours par semaine, sur plusieurs mois. La direction technique et la transformation IA pour l’entreprise qui a des développeurs mais personne pour les diriger, et pas encore le besoin d’un CTO à plein temps.</service-item>
-  <service-item title="CTO de transition" href="/cto-de-transition">Le poste de CTO est vacant, ou son titulaire ne peut plus l’assumer. Reprise de la direction technique sans délai, jusqu’à l’arrivée d’un successeur, avec une équipe déjà engagée dans l’IA.</service-item>
-  <service-item title="Missions au forfait" href="/missions-au-forfait">Diagnostic technique, exploration IA, POC, MVP. Une question précise, un livrable, un délai et un prix fixés à l’avance.</service-item>
+  <service-item title="CTO à temps partagé" href="/cto-temps-partage/">1 à 3 jours par semaine, sur plusieurs mois. La direction technique et la transformation IA pour l’entreprise qui a des développeurs mais personne pour les diriger, et pas encore le besoin d’un CTO à plein temps.</service-item>
+  <service-item title="CTO de transition" href="/cto-de-transition/">Le poste de CTO est vacant, ou son titulaire ne peut plus l’assumer. Reprise de la direction technique sans délai, jusqu’à l’arrivée d’un successeur, avec une équipe déjà engagée dans l’IA.</service-item>
+  <service-item title="Missions au forfait" href="/missions-au-forfait/">Diagnostic technique, exploration IA, POC, MVP. Une question précise, un livrable, un délai et un prix fixés à l’avance.</service-item>
 </service-list>
 
 <trust-grid label="Pourquoi Monolithic Lab">
@@ -28,11 +28,11 @@ cta_band:
 
 ## Temps partagé ou transition
 
-**CTO à temps partagé.** Un directeur technique qui tient le rôle complet — décisions, équipe, budget, transformation IA — quelques jours par semaine seulement. Le besoin est durable, mais il ne remplit pas une semaine entière. [Qu’est-ce qu’un CTO à temps partagé ?](/articles/cto-temps-partage-definition)
+**CTO à temps partagé.** Un directeur technique qui tient le rôle complet — décisions, équipe, budget, transformation IA — quelques jours par semaine seulement. Le besoin est durable, mais il ne remplit pas une semaine entière. [Qu’est-ce qu’un CTO à temps partagé ?](/articles/cto-temps-partage-definition/)
 
-**CTO de transition.** Un directeur technique qui occupe un poste vacant pour une durée limitée, avec un mandat précis : stabiliser l’équipe, trancher ce qui ne peut pas attendre, préparer le successeur. L’engagement est plus intense, la durée plus courte. [Qu’est-ce qu’un CTO de transition ?](/articles/cto-de-transition-definition)
+**CTO de transition.** Un directeur technique qui occupe un poste vacant pour une durée limitée, avec un mandat précis : stabiliser l’équipe, trancher ce qui ne peut pas attendre, préparer le successeur. L’engagement est plus intense, la durée plus courte. [Qu’est-ce qu’un CTO de transition ?](/articles/cto-de-transition-definition/)
 
-Pour un besoin ponctuel et bien délimité — un diagnostic, une exploration IA, un POC, un MVP — une [mission au forfait](/missions-au-forfait) suffit.
+Pour un besoin ponctuel et bien délimité — un diagnostic, une exploration IA, un POC, un MVP — une [mission au forfait](/missions-au-forfait/) suffit.
 
 ## L’IA dans toute l’entreprise
 
@@ -40,7 +40,7 @@ L’IA change la façon de travailler de toutes les équipes : développement, s
 
 Monolithic Lab s’inspire du **Forward Deployed Engineer**, le modèle qu’OpenAI et Anthropic utilisent pour déployer l’IA chez leurs clients : travailler au sein des équipes, construire sur les données et les outils réels, et mesurer l’usage après la mise en production. Le plan d’adoption se construit avec vos équipes, à partir de leur travail.
 
-[La transformation IA en détail](/transformation-ia)
+[La transformation IA en détail](/transformation-ia/)
 
 ## Un CTO qui fait, pas seulement qui gère
 
@@ -48,7 +48,7 @@ Les profils de pur manager disparaissent. Avec l’IA, une petite équipe peut p
 
 Un bon CTO aujourd’hui connaît son métier sur le plan opérationnel, pilote lui-même des agents IA pour exécuter, et sait juger ce qu’ils produisent. C’est ainsi que travaille Monolithic Lab : un prototype se teste en quelques jours, une décision se prend sur un résultat, pas sur une opinion.
 
-[Lire l’article : le CTO à l’ère de l’IA](/articles/cto-ere-ia)
+[Lire l’article : le CTO à l’ère de l’IA](/articles/cto-ere-ia/)
 
 ## Pourquoi c’est pertinent pour une PME
 
@@ -57,7 +57,7 @@ Un bon CTO aujourd’hui connaît son métier sur le plan opérationnel, pilote 
 - **Ces décisions coûtent cher plus tard.** Une architecture qui ne passe pas la croissance, un prestataire que personne ne pilote, un projet IA qui n’aboutit pas, une due diligence difficile.
 - **Le temps partagé donne accès au même niveau d’expérience**, dans la quantité dont l’entreprise a réellement besoin.
 
-[Lire l’article complet](/articles/cto-temps-partage-pme)
+[Lire l’article complet](/articles/cto-temps-partage-pme/)
 
 ## Ce que couvre le rôle
 
@@ -79,9 +79,9 @@ Un bon CTO aujourd’hui connaît son métier sur le plan opérationnel, pilote 
 
 ## Articles
 
-- [Qu’est-ce qu’un CTO à temps partagé ?](/articles/cto-temps-partage-definition)
-- [Qu’est-ce qu’un CTO de transition ?](/articles/cto-de-transition-definition)
-- [Pourquoi un CTO à temps partagé est pertinent pour une PME](/articles/cto-temps-partage-pme)
-- [Qu’est-ce qu’un Forward Deployed Engineer ?](/articles/forward-deployed-engineer)
-- [Le CTO à l’ère de l’IA : la fin du pur manager](/articles/cto-ere-ia)
-- [Ce que 25 ans d’expérience apportent à un poste de CTO](/articles/experience-cto-senior)
+- [Qu’est-ce qu’un CTO à temps partagé ?](/articles/cto-temps-partage-definition/)
+- [Qu’est-ce qu’un CTO de transition ?](/articles/cto-de-transition-definition/)
+- [Pourquoi un CTO à temps partagé est pertinent pour une PME](/articles/cto-temps-partage-pme/)
+- [Qu’est-ce qu’un Forward Deployed Engineer ?](/articles/forward-deployed-engineer/)
+- [Le CTO à l’ère de l’IA : la fin du pur manager](/articles/cto-ere-ia/)
+- [Ce que 25 ans d’expérience apportent à un poste de CTO](/articles/experience-cto-senior/)

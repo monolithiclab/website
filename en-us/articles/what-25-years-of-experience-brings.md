@@ -2,7 +2,7 @@
 title: "What 25 Years of Experience Brings to the CTO Role — Monolithic Lab"
 description: "A fractional or interim CTO has little time to understand and decide. Experience makes the difference. What 25 years in the field changes in practice."
 lang: "en"
-alternate: "/articles/experience-cto-senior"
+alternate: "/articles/experience-cto-senior/"
 hero:
   compact: true
   label: "Article"
@@ -11,7 +11,7 @@ hero:
 cta_band:
   text: "Need a CTO who has already seen your situation somewhere else? Describe it."
   button_text: "Get in touch"
-  button_url: "/en-us/contact"
+  button_url: "/en-us/contact/"
 ---
 
 ## Why experience matters more here
@@ -38,7 +38,7 @@ An experienced CTO doesn’t reject what’s new. They can tell a technology tha
 
 Twenty-five years in the field could lead to a pure-manager role. That’s exactly what to avoid today. With AI agents, a CTO has to understand the work in detail and be able to execute: analyze code, prototype an idea, build a tool.
 
-Experience doesn’t replace that practice; it makes it more effective. Knowing what failed elsewhere means judging agents’ output faster, and knowing where not to trust them. [Read the article: the CTO in the AI era](/en-us/articles/cto-in-the-ai-era)
+Experience doesn’t replace that practice; it makes it more effective. Knowing what failed elsewhere means judging agents’ output faster, and knowing where not to trust them. [Read the article: the CTO in the AI era](/en-us/articles/cto-in-the-ai-era/)
 
 ## Knowing when not to build
 
@@ -62,4 +62,4 @@ Two companies built from the inside teach one thing: the work that matters is th
 
 A senior CTO’s experience shows in how fast and how accurately they decide in a situation that’s new to them. That’s exactly what a fractional role and an interim engagement demand.
 
-See [references](/en-us/references), or the [fractional CTO](/en-us/fractional-cto) and [interim CTO](/en-us/interim-cto) services.
+See [references](/en-us/references/), or the [fractional CTO](/en-us/fractional-cto/) and [interim CTO](/en-us/interim-cto/) services.

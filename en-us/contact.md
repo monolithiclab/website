@@ -2,7 +2,7 @@
 title: "Contact — Monolithic Lab"
 description: "Describe your situation: fractional CTO, interim CTO, or fixed-price project. A personal reply from Nicolas Mussat within two business days."
 lang: "en"
-alternate: "/contact"
+alternate: "/contact/"
 hero:
   compact: true
   label: "Contact"

@@ -1,7 +1,7 @@
 ---
 title: "Qu’est-ce qu’un Forward Deployed Engineer ? Le modèle qui fait réussir l’IA en entreprise — Monolithic Lab"
 description: "Le Forward Deployed Engineer travaille au sein des équipes du client pour faire fonctionner l’IA en production. Définition, origine, différences avec le conseil, et ce que ce modèle change pour une PME."
-alternate: "/en-us/articles/forward-deployed-engineer"
+alternate: "/en-us/articles/forward-deployed-engineer/"
 hero:
   compact: true
   label: "Article"
@@ -10,7 +10,7 @@ hero:
 cta_band:
   text: "Vous voulez déployer l’IA dans le travail réel de vos équipes ? Décrivez votre situation."
   button_text: "Prendre contact"
-  button_url: "/contact"
+  button_url: "/contact/"
 ---
 
 ## Définition
@@ -60,6 +60,6 @@ L’IA est encore récente. Peu d’entreprises l’ont déployée avec succès 
 
 Dans une PME, le CTO est souvent la seule personne capable de voir l’ensemble des systèmes de l’entreprise. C’est donc à lui de conduire la transformation IA, dans l’équipe technique comme dans les autres, avec la posture d’un FDE : sur place, les mains dans le travail, jugé sur le résultat.
 
-C’est l’approche de Monolithic Lab, en [CTO à temps partagé](/cto-temps-partage), en [CTO de transition](/cto-de-transition), ou en [mission au forfait](/missions-au-forfait) : exploration IA, POC, MVP.
+C’est l’approche de Monolithic Lab, en [CTO à temps partagé](/cto-temps-partage/), en [CTO de transition](/cto-de-transition/), ou en [mission au forfait](/missions-au-forfait/) : exploration IA, POC, MVP.
 
-[La transformation IA en détail](/transformation-ia)
+[La transformation IA en détail](/transformation-ia/)

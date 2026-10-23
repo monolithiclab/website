@@ -2,7 +2,7 @@
 title: "FAQ — Monolithic Lab"
 description: "Fractional CTO, interim CTO, fixed-price projects, AI transformation: differences, cadence, length, pricing, hiring, confidentiality. Answers to the questions asked before an engagement."
 lang: "en"
-alternate: "/faq"
+alternate: "/faq/"
 hero:
   compact: true
   label: "FAQ"
@@ -11,7 +11,7 @@ hero:
 cta_band:
   text: "Don’t see your question? Ask it directly."
   button_text: "Get in touch"
-  button_url: "/en-us/contact"
+  button_url: "/en-us/contact/"
 ---
 
 ## The two roles
@@ -22,11 +22,11 @@ A **fractional CTO** covers an ongoing need that doesn’t fill a week: 1 to 3 d
 
 An **interim CTO** fills an empty seat for a set period: more hours, shorter engagement, a clear goal — steady the team, then onboard a successor.
 
-[Fractional CTO](/en-us/articles/what-is-a-fractional-cto) · [Interim CTO](/en-us/articles/what-is-an-interim-cto)
+[Fractional CTO](/en-us/articles/what-is-a-fractional-cto/) · [Interim CTO](/en-us/articles/what-is-an-interim-cto/)
 
 ### What about fixed-price projects?
 
-Technology assessment, AI exploration, POC, MVP: a specific question, with deliverable, timeline, and price set up front. A fixed-price project delivers a result, then ends. It doesn’t replace technical leadership: if you need someone to lead the team over time, that’s a CTO role. [See fixed-price projects](/en-us/fixed-price-projects)
+Technology assessment, AI exploration, POC, MVP: a specific question, with deliverable, timeline, and price set up front. A fixed-price project delivers a result, then ends. It doesn’t replace technical leadership: if you need someone to lead the team over time, that’s a CTO role. [See fixed-price projects](/en-us/fixed-price-projects/)
 
 ### How is that different from a consultant?
 
@@ -98,11 +98,11 @@ No. No partnerships with software vendors, integrators, AI providers, or recruit
 
 ### Is AI only for the engineering team?
 
-No. Developers are changing how they work with coding agents, but the gains are often just as fast elsewhere: customer support, sales, finance, operations, HR. The transformation covers the whole company. [AI transformation in detail](/en-us/ai-transformation)
+No. Developers are changing how they work with coding agents, but the gains are often just as fast elsewhere: customer support, sales, finance, operations, HR. The transformation covers the whole company. [AI transformation in detail](/en-us/ai-transformation/)
 
 ### What’s a forward deployed engineer, and how does it relate?
 
-An engineer who works inside a client’s teams to turn a loosely defined problem into a system that runs in production. The model comes from Palantir, and both OpenAI and Anthropic use it to deploy AI at their customers. Monolithic Lab takes its cue from it: on site, on your data, judged on real usage. [Read the article](/en-us/articles/forward-deployed-engineer)
+An engineer who works inside a client’s teams to turn a loosely defined problem into a system that runs in production. The model comes from Palantir, and both OpenAI and Anthropic use it to deploy AI at their customers. Monolithic Lab takes its cue from it: on site, on your data, judged on real usage. [Read the article](/en-us/articles/forward-deployed-engineer/)
 
 ### Do you have a ready-made method?
 

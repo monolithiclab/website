@@ -1,7 +1,7 @@
 ---
 title: "CTO à temps partagé pour PME et scale-ups — Monolithic Lab"
 description: "Un CTO senior 1 à 3 jours par semaine : décisions techniques, équipe, recrutements, transformation IA. Pour les PME qui ont besoin d’une direction technique avant de pouvoir justifier un poste à plein temps."
-alternate: "/en-us/fractional-cto"
+alternate: "/en-us/fractional-cto/"
 hero:
   compact: true
   label: "CTO à temps partagé"
@@ -10,7 +10,7 @@ hero:
 cta_band:
   text: "Votre équipe technique avance sans direction ? Décrivez votre situation."
   button_text: "Prendre contact"
-  button_url: "/contact"
+  button_url: "/contact/"
 ---
 
 ## Définition
@@ -19,7 +19,7 @@ Un **CTO à temps partagé** — on dit aussi CTO fractionné, ou *fractional CT
 
 Ce n’est ni un consultant ni un prestataire. Il prend les décisions, dirige l’équipe et répond des résultats, comme un CTO salarié. La différence porte sur le volume : quelques jours par semaine au lieu de cinq, et des honoraires au lieu d’un salaire.
 
-[Lire l’article complet : qu’est-ce qu’un CTO à temps partagé ?](/articles/cto-temps-partage-definition)
+[Lire l’article complet : qu’est-ce qu’un CTO à temps partagé ?](/articles/cto-temps-partage-definition/)
 
 ## Pour qui
 
@@ -58,7 +58,7 @@ Levée de fonds, due diligence, rachat, refonte, ouverture à l’international,
 - usages de l’IA dans les autres équipes : service client, ventes, finance, opérations
 - plan d’adoption construit avec les équipes, dans une approche inspirée du Forward Deployed Engineer : sur place, sur vos données, jugé sur l’usage réel
 
-[La transformation IA en détail](/transformation-ia)
+[La transformation IA en détail](/transformation-ia/)
 
 ### Fiabilité et opérations
 
@@ -84,7 +84,7 @@ Levée de fonds, due diligence, rachat, refonte, ouverture à l’international,
 
 ## Temps partagé, transition ou forfait ?
 
-Le temps partagé convient quand le besoin est durable mais ne remplit pas une semaine. Si le poste de CTO est vacant et qu’il faut quelqu’un de très présent pendant quelques mois, il s’agit d’une mission de [CTO de transition](/cto-de-transition). Pour un besoin ponctuel et délimité — diagnostic, exploration IA, POC, MVP — une [mission au forfait](/missions-au-forfait) suffit.
+Le temps partagé convient quand le besoin est durable mais ne remplit pas une semaine. Si le poste de CTO est vacant et qu’il faut quelqu’un de très présent pendant quelques mois, il s’agit d’une mission de [CTO de transition](/cto-de-transition/). Pour un besoin ponctuel et délimité — diagnostic, exploration IA, POC, MVP — une [mission au forfait](/missions-au-forfait/) suffit.
 
 ## Pourquoi Monolithic Lab
 
@@ -94,4 +94,4 @@ Un CTO qui fait, pas seulement qui gère : Nicolas Mussat pilote lui-même des a
 
 Un seul interlocuteur, indépendant de tout éditeur, intégrateur ou fournisseur d’IA : les recommandations ne servent que votre entreprise.
 
-[Voir les références](/references)
+[Voir les références](/references/)

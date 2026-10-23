@@ -2,7 +2,7 @@
 title: "Legal Information — Monolithic Lab"
 description: "Legal information, company details, and privacy policy for Monolithic Lab SASU."
 lang: "en"
-alternate: "/mentions-legales"
+alternate: "/mentions-legales/"
 hero:
   compact: true
   headline: "Legal information"

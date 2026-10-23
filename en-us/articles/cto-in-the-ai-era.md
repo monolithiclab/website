@@ -2,7 +2,7 @@
 title: "The CTO in the AI Era: The End of the Pure Manager — Monolithic Lab"
 description: "With AI agents, a technology leader’s value no longer comes from coordination. A good CTO knows the craft hands-on and can drive agents to get work done."
 lang: "en"
-alternate: "/articles/cto-ere-ia"
+alternate: "/articles/cto-ere-ia/"
 hero:
   compact: true
   label: "Article"
@@ -11,7 +11,7 @@ hero:
 cta_band:
   text: "Looking for a CTO who can both lead and build? Describe your situation."
   button_text: "Get in touch"
-  button_url: "/en-us/contact"
+  button_url: "/en-us/contact/"
 ---
 
 ## What’s changing
@@ -59,4 +59,4 @@ When hiring, or choosing a fractional or interim CTO, a few simple questions:
 
 25+ years of experience, and a daily practice of AI agents. Nicolas Mussat drives them himself to prototype, analyze, and build, and passes that practice on to the teams he leads, technical or not.
 
-See also: [AI transformation](/en-us/ai-transformation), and [what 25 years of experience brings to the CTO role](/en-us/articles/what-25-years-of-experience-brings).
+See also: [AI transformation](/en-us/ai-transformation/), and [what 25 years of experience brings to the CTO role](/en-us/articles/what-25-years-of-experience-brings/).

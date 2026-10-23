@@ -1,7 +1,7 @@
 ---
 title: "Contact — Monolithic Lab"
 description: "Décrivez votre situation : CTO à temps partagé, CTO de transition ou mission au forfait. Réponse personnelle de Nicolas Mussat sous 48 heures ouvrées."
-alternate: "/en-us/contact"
+alternate: "/en-us/contact/"
 hero:
   compact: true
   label: "Contact"

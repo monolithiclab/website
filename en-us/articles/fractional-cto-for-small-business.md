@@ -2,7 +2,7 @@
 title: "Why a Fractional CTO Makes Sense for Small and Mid-Sized Companies — Monolithic Lab"
 description: "A small company needs a CTO’s decisions, rarely five days of CTO a week. What a full-time CTO costs, what having no CTO costs, and the signs it’s time."
 lang: "en"
-alternate: "/articles/cto-temps-partage-pme"
+alternate: "/articles/cto-temps-partage-pme/"
 hero:
   compact: true
   label: "Article"
@@ -11,7 +11,7 @@ hero:
 cta_band:
   text: "See your company in these signs? Talk to Monolithic Lab."
   button_text: "Describe your situation"
-  button_url: "/en-us/contact"
+  button_url: "/en-us/contact/"
 ---
 
 ## The problem
@@ -69,7 +69,7 @@ The consequences show up later, and cost more:
 - the company depends on a single developer or a single agency
 - a major technical hire is coming up
 - a fundraise, a sale, or a large customer demands precise technical answers
-- the CTO just left. In that case, see [interim CTO](/en-us/articles/what-is-an-interim-cto)
+- the CTO just left. In that case, see [interim CTO](/en-us/articles/what-is-an-interim-cto/)
 
 ## When it’s the wrong answer
 
@@ -81,4 +81,4 @@ The consequences show up later, and cost more:
 
 For a small or mid-sized company, the question isn’t “do we need a CTO?” but “how much CTO do we need?” As long as the answer is less than a full week, fractional is the most effective option.
 
-See also: [what is a fractional CTO](/en-us/articles/what-is-a-fractional-cto), and [Monolithic Lab’s fractional CTO service](/en-us/fractional-cto).
+See also: [what is a fractional CTO](/en-us/articles/what-is-a-fractional-cto/), and [Monolithic Lab’s fractional CTO service](/en-us/fractional-cto/).

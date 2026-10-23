@@ -1,7 +1,7 @@
 ---
 title: "Ce que 25 ans d’expérience apportent à un poste de CTO — Monolithic Lab"
 description: "Dans un rôle à temps partagé ou de transition, le CTO a peu de temps pour comprendre et décider. L’expérience fait la différence. Ce que 25 ans de métier changent concrètement."
-alternate: "/en-us/articles/what-25-years-of-experience-brings"
+alternate: "/en-us/articles/what-25-years-of-experience-brings/"
 hero:
   compact: true
   label: "Article"
@@ -10,7 +10,7 @@ hero:
 cta_band:
   text: "Besoin d’un CTO qui a déjà vu votre situation ailleurs ? Décrivez-la."
   button_text: "Prendre contact"
-  button_url: "/contact"
+  button_url: "/contact/"
 ---
 
 ## Pourquoi l’expérience compte davantage ici
@@ -37,7 +37,7 @@ Un CTO expérimenté ne rejette pas les nouveautés. Il sait distinguer une tech
 
 Vingt-cinq ans de métier pourraient mener à un poste de pur manager. C’est précisément ce qu’il faut éviter aujourd’hui. Avec les agents IA, un CTO doit comprendre le travail dans le détail et savoir exécuter lui-même : analyser un code, prototyper une idée, construire un outil.
 
-L’expérience ne remplace pas cette pratique ; elle la rend plus efficace. Savoir ce qui a échoué ailleurs permet de juger plus vite ce que produisent les agents, et de savoir où ne pas leur faire confiance. [Lire l’article : le CTO à l’ère de l’IA](/articles/cto-ere-ia)
+L’expérience ne remplace pas cette pratique ; elle la rend plus efficace. Savoir ce qui a échoué ailleurs permet de juger plus vite ce que produisent les agents, et de savoir où ne pas leur faire confiance. [Lire l’article : le CTO à l’ère de l’IA](/articles/cto-ere-ia/)
 
 ## Savoir ne pas construire
 
@@ -61,4 +61,4 @@ Deux entreprises construites de l’intérieur enseignent une chose : le travail
 
 L’expérience d’un CTO senior se mesure à la vitesse et à la justesse de ses décisions dans une situation qu’il découvre. C’est exactement ce qu’exigent un rôle à temps partagé et une mission de transition.
 
-Voir les [références](/references), ou les offres de [CTO à temps partagé](/cto-temps-partage) et de [CTO de transition](/cto-de-transition).
+Voir les [références](/references/), ou les offres de [CTO à temps partagé](/cto-temps-partage/) et de [CTO de transition](/cto-de-transition/).

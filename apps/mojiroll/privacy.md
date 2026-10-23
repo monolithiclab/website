@@ -36,4 +36,4 @@ time by writing to [contact@monolithiclab.fr](mailto:contact@monolithiclab.fr?su
 
 [contact@monolithiclab.fr](mailto:contact@monolithiclab.fr?subject=Mojiroll%20privacy)
 
-[Back to Mojiroll](/apps/mojiroll)
+[Back to Mojiroll](/apps/mojiroll/)

@@ -1,7 +1,7 @@
 ---
 title: "Le CTO à l’ère de l’IA : la fin du pur manager — Monolithic Lab"
 description: "Avec les agents IA, la valeur d’un dirigeant technique ne tient plus à la coordination. Un bon CTO comprend son métier sur le plan opérationnel et sait piloter des agents pour exécuter."
-alternate: "/en-us/articles/cto-in-the-ai-era"
+alternate: "/en-us/articles/cto-in-the-ai-era/"
 hero:
   compact: true
   label: "Article"
@@ -10,7 +10,7 @@ hero:
 cta_band:
   text: "Vous cherchez un CTO qui sait diriger et faire ? Décrivez votre situation."
   button_text: "Prendre contact"
-  button_url: "/contact"
+  button_url: "/contact/"
 ---
 
 ## Ce qui change
@@ -58,4 +58,4 @@ Au moment de recruter, ou de choisir un CTO à temps partagé ou de transition, 
 
 Plus de 25 ans d’expérience, et une pratique quotidienne des agents IA. Nicolas Mussat les pilote lui-même pour prototyper, analyser et construire, et transmet cette pratique aux équipes qu’il dirige, techniques ou non.
 
-Voir aussi : [la transformation IA](/transformation-ia), et [ce que 25 ans d’expérience apportent à un poste de CTO](/articles/experience-cto-senior).
+Voir aussi : [la transformation IA](/transformation-ia/), et [ce que 25 ans d’expérience apportent à un poste de CTO](/articles/experience-cto-senior/).

@@ -2,7 +2,7 @@
 title: "What Is a Forward Deployed Engineer? The Model That Makes AI Work in Companies — Monolithic Lab"
 description: "A forward deployed engineer works inside a client’s teams to make AI run in production. Definition, origin, how it differs from consulting, and what the model means for a small or mid-sized company."
 lang: "en"
-alternate: "/articles/forward-deployed-engineer"
+alternate: "/articles/forward-deployed-engineer/"
 hero:
   compact: true
   label: "Article"
@@ -11,7 +11,7 @@ hero:
 cta_band:
   text: "Want to put AI to work in your teams’ real day-to-day? Describe your situation."
   button_text: "Get in touch"
-  button_url: "/en-us/contact"
+  button_url: "/en-us/contact/"
 ---
 
 ## Definition
@@ -61,6 +61,6 @@ AI is still new. Few companies have deployed it successfully in a real transform
 
 In a small or mid-sized company, the CTO is often the only person who can see all of the company’s systems. So it falls to the CTO to drive the AI transformation, in engineering and every other team, with an FDE’s mindset: on site, hands in the work, judged on results.
 
-That’s Monolithic Lab’s approach, as a [fractional CTO](/en-us/fractional-cto), an [interim CTO](/en-us/interim-cto), or through a [fixed-price project](/en-us/fixed-price-projects): AI exploration, POC, MVP.
+That’s Monolithic Lab’s approach, as a [fractional CTO](/en-us/fractional-cto/), an [interim CTO](/en-us/interim-cto/), or through a [fixed-price project](/en-us/fixed-price-projects/): AI exploration, POC, MVP.
 
-[AI transformation in detail](/en-us/ai-transformation)
+[AI transformation in detail](/en-us/ai-transformation/)

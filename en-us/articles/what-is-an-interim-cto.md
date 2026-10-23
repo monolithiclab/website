@@ -2,7 +2,7 @@
 title: "What Is an Interim CTO? Definition, Role, and Timeline — Monolithic Lab"
 description: "An interim (or transitional) CTO fills an empty technology executive seat for a set period. Definition, typical situations, how an engagement runs, how long it lasts, and how to choose one."
 lang: "en"
-alternate: "/articles/cto-de-transition-definition"
+alternate: "/articles/cto-de-transition-definition/"
 hero:
   compact: true
   label: "Article"
@@ -11,7 +11,7 @@ hero:
 cta_band:
   text: "Is your CTO seat empty, or about to be? The sooner the transition starts, the less it costs."
   button_text: "Describe your situation"
-  button_url: "/en-us/contact"
+  button_url: "/en-us/contact/"
 ---
 
 ## Definition
@@ -30,7 +30,7 @@ The engagement has three defining traits:
 
 Both hold the full CTO role. What sets them apart is the starting point.
 
-A [fractional CTO](/en-us/articles/what-is-a-fractional-cto) covers a need that is **ongoing but partial**: the company needs a CTO, just not five days a week. The engagement can last more than a year.
+A [fractional CTO](/en-us/articles/what-is-a-fractional-cto/) covers a need that is **ongoing but partial**: the company needs a CTO, just not five days a week. The engagement can last more than a year.
 
 An interim CTO covers a **break**: the role existed, and it’s now empty or not working. The time commitment is heavier, often close to full-time at first, and the engagement is shorter.
 
@@ -66,7 +66,7 @@ Document the architecture, decisions, and open projects. Support the new CTO’s
 
 ## How long?
 
-Long enough to steady things, then hire and onboard the successor: usually a few months. An interim engagement that drags on with no search underway is often a sign the company actually needs a [fractional CTO](/en-us/fractional-cto).
+Long enough to steady things, then hire and onboard the successor: usually a few months. An interim engagement that drags on with no search underway is often a sign the company actually needs a [fractional CTO](/en-us/fractional-cto/).
 
 ## How to choose one
 
@@ -87,4 +87,4 @@ Long enough to steady things, then hire and onboard the successor: usually a few
 
 An interim CTO keeps an empty seat from turning into a crisis. They take over technical leadership, steady the team, and turn hiring the successor into an informed decision.
 
-See also: [Monolithic Lab’s interim CTO service](/en-us/interim-cto).
+See also: [Monolithic Lab’s interim CTO service](/en-us/interim-cto/).

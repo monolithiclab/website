@@ -1,7 +1,7 @@
 ---
 title: "Offres — Monolithic Lab"
 description: "CTO à temps partagé, CTO de transition, et missions au forfait : diagnostic technique, exploration IA, POC, MVP. Direction technique senior et transformation IA pour PME et scale-ups."
-alternate: "/en-us/expertise"
+alternate: "/en-us/expertise/"
 hero:
   compact: true
   label: "Offres"
@@ -10,7 +10,7 @@ hero:
 cta_band:
   text: "Vous hésitez entre un rôle de CTO et une mission au forfait ? Le premier échange sert à trancher."
   button_text: "Prendre contact"
-  button_url: "/contact"
+  button_url: "/contact/"
 ---
 
 ## Les rôles de CTO
@@ -21,19 +21,19 @@ Une direction technique dans la durée, facturée au temps passé. Le CTO décid
 
 Le rôle complet, 1 à 3 jours par semaine, de quelques mois à plus d’un an. Pour les entreprises qui ont une équipe technique mais pas de direction, et pas encore le besoin d’un CTO à plein temps.
 
-[Détail du CTO à temps partagé](/cto-temps-partage)
+[Détail du CTO à temps partagé](/cto-temps-partage/)
 
 ### CTO de transition
 
 Le poste de CTO est vacant ou fragilisé. Monolithic Lab le reprend, stabilise l’équipe, tranche ce qui ne peut pas attendre, puis recrute et installe le successeur.
 
-[Détail du CTO de transition](/cto-de-transition)
+[Détail du CTO de transition](/cto-de-transition/)
 
 ### La transformation IA, dans les deux rôles
 
 Dans l’équipe technique comme dans les autres équipes, le CTO identifie les usages, les construit avec les équipes concernées, et pilote un plan d’adoption construit avec elles.
 
-[La transformation IA en détail](/transformation-ia)
+[La transformation IA en détail](/transformation-ia/)
 
 ---
 
@@ -65,7 +65,7 @@ Une première version en production, utilisée par de vrais utilisateurs, sur un
 
 **Livrable** : un produit en production, le code, la documentation, et une équipe capable de le faire évoluer.
 
-[Détail des missions au forfait](/missions-au-forfait)
+[Détail des missions au forfait](/missions-au-forfait/)
 
 ---
 

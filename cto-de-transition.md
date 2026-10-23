@@ -1,7 +1,7 @@
 ---
 title: "CTO de transition — Monolithic Lab"
 description: "Votre poste de CTO est vacant ou fragilisé ? Un CTO de transition reprend la direction technique sans délai, stabilise l’équipe et prépare l’arrivée du successeur."
-alternate: "/en-us/interim-cto"
+alternate: "/en-us/interim-cto/"
 hero:
   compact: true
   label: "CTO de transition"
@@ -10,7 +10,7 @@ hero:
 cta_band:
   text: "Le poste de CTO est vacant, ou va l’être ? Plus tôt la transition commence, moins elle coûte."
   button_text: "Prendre contact"
-  button_url: "/contact"
+  button_url: "/contact/"
 ---
 
 ## Définition
@@ -19,9 +19,9 @@ Un **CTO de transition** est un directeur technique en management de transition.
 
 Sa mission a un début, une fin et un objectif : stabiliser l’équipe, trancher ce qui ne peut pas attendre, et remettre au successeur une équipe et des systèmes en ordre.
 
-L’engagement est plus intense qu’en [temps partagé](/cto-temps-partage), souvent proche d’un temps plein au démarrage. Il est aussi plus court : quelques mois, le temps de recruter et d’installer le prochain CTO.
+L’engagement est plus intense qu’en [temps partagé](/cto-temps-partage/), souvent proche d’un temps plein au démarrage. Il est aussi plus court : quelques mois, le temps de recruter et d’installer le prochain CTO.
 
-[Lire l’article complet : qu’est-ce qu’un CTO de transition ?](/articles/cto-de-transition-definition)
+[Lire l’article complet : qu’est-ce qu’un CTO de transition ?](/articles/cto-de-transition-definition/)
 
 ## Quand y recourir
 
@@ -77,4 +77,4 @@ Un CTO de transition qui fait, pas seulement qui gère : Nicolas Mussat pilote l
 
 Monolithic Lab n’a aucun intérêt à prolonger une mission de transition : l’objectif est un successeur installé et une équipe qui n’a plus besoin de renfort.
 
-[Voir les références](/references)
+[Voir les références](/references/)

@@ -2,7 +2,7 @@
 title: "What Is a Fractional CTO? Definition, Role, and Cost — Monolithic Lab"
 description: "A fractional CTO holds the full technology executive role a few days a week. Definition, responsibilities, cadence, cost, limits, and how it differs from a consultant or an in-house CTO."
 lang: "en"
-alternate: "/articles/cto-temps-partage-definition"
+alternate: "/articles/cto-temps-partage-definition/"
 hero:
   compact: true
   label: "Article"
@@ -11,7 +11,7 @@ hero:
 cta_band:
   text: "Does your company need a fractional CTO? One conversation will tell you."
   button_text: "Describe your situation"
-  button_url: "/en-us/contact"
+  button_url: "/en-us/contact/"
 ---
 
 ## Definition
@@ -78,4 +78,4 @@ At two days a week, the company pays for two days of technical leadership. No re
 
 A fractional CTO gives a small or mid-sized company an experienced technology executive, in the amount it actually needs. They decide, they lead, and they prepare for the day the company no longer needs them.
 
-Read next: [why it makes sense for small and mid-sized companies](/en-us/articles/fractional-cto-for-small-business), and [how it differs from an interim CTO](/en-us/articles/what-is-an-interim-cto).
+Read next: [why it makes sense for small and mid-sized companies](/en-us/articles/fractional-cto-for-small-business/), and [how it differs from an interim CTO](/en-us/articles/what-is-an-interim-cto/).

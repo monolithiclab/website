@@ -1,7 +1,7 @@
 ---
 title: "Missions au forfait — Monolithic Lab"
 description: "Diagnostic technique, exploration IA, POC, MVP : une question précise, un livrable, un délai et un prix fixés à l’avance. Des missions au forfait menées par un CTO senior."
-alternate: "/en-us/fixed-price-projects"
+alternate: "/en-us/fixed-price-projects/"
 hero:
   compact: true
   label: "Missions au forfait"
@@ -10,14 +10,14 @@ hero:
 cta_band:
   text: "Décrivez votre question : une proposition écrite suit, avec un prix ferme."
   button_text: "Prendre contact"
-  button_url: "/contact"
+  button_url: "/contact/"
 ---
 
 ## Définition
 
 Une **mission au forfait** répond à une question délimitée : que vaut notre technique, où l’IA peut-elle nous servir, cette idée fonctionne-t-elle, peut-on la mettre entre les mains de vrais utilisateurs. Le périmètre, le livrable, le délai et le prix sont écrits avant le démarrage, et ne bougent pas en cours de route sans accord des deux côtés.
 
-Une mission au forfait n’est pas un rôle de CTO. Elle ne dirige pas l’équipe et ne tranche pas les décisions de tous les jours : elle livre un résultat, puis s’arrête. Si le besoin est de diriger la technique dans la durée, il s’agit d’un rôle de [CTO à temps partagé](/cto-temps-partage) ou de [CTO de transition](/cto-de-transition).
+Une mission au forfait n’est pas un rôle de CTO. Elle ne dirige pas l’équipe et ne tranche pas les décisions de tous les jours : elle livre un résultat, puis s’arrête. Si le besoin est de diriger la technique dans la durée, il s’agit d’un rôle de [CTO à temps partagé](/cto-temps-partage/) ou de [CTO de transition](/cto-de-transition/).
 
 ## Les quatre formats
 
@@ -91,4 +91,4 @@ Chaque mission est menée par un CTO qui a tenu le rôle : plus de 25 ans dans d
 
 Nicolas Mussat construit lui-même, en pilotant des agents IA : les prototypes et les MVP sortent en semaines, pas en trimestres, et le code reste relu et testé.
 
-[Voir les références](/references)
+[Voir les références](/references/)

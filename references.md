@@ -1,7 +1,7 @@
 ---
 title: "Références — Monolithic Lab"
 description: "MeilleursAgents, construit de zéro jusqu’au leader français de l’estimation immobilière en ligne, et Prose, cofondée en 2017 : deux entreprises dont Nicolas Mussat a construit la technique et l’équipe."
-alternate: "/en-us/references"
+alternate: "/en-us/references/"
 hero:
   compact: true
   label: "Références"
@@ -10,7 +10,7 @@ hero:
 cta_band:
   text: "Votre entreprise traverse une phase comparable ? Décrivez votre situation."
   button_text: "Prendre contact"
-  button_url: "/contact"
+  button_url: "/contact/"
 ---
 
 ## MeilleursAgents
@@ -60,4 +60,4 @@ cta_band:
 - changer de modèle ou d’échelle sans casser ce qui rapporte
 - laisser des systèmes que l’équipe fait vivre sans aide extérieure
 
-Ce sont les réflexes qu’un [CTO à temps partagé](/cto-temps-partage) ou un [CTO de transition](/cto-de-transition) apporte à votre entreprise.
+Ce sont les réflexes qu’un [CTO à temps partagé](/cto-temps-partage/) ou un [CTO de transition](/cto-de-transition/) apporte à votre entreprise.

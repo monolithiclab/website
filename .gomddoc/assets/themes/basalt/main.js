@@ -300,7 +300,7 @@ class ContactFormElement extends HTMLElement {
             '<span class="contact-form__error" id="contact-message-error" data-error-for="message" hidden></span>' +
           '</div>' +
           '<button class="btn btn--primary contact-form__submit" type="submit">' + t.send + '</button>' +
-          '<p class="contact-form__privacy">' + (isEn ? 'Your data is used only to answer your request. <a href="/en-us/legal">Details in the legal notice</a>.' : 'Vos donn\u00e9es servent uniquement \u00e0 r\u00e9pondre \u00e0 votre demande. <a href="/mentions-legales">D\u00e9tails dans les mentions l\u00e9gales</a>.') + '</p>' +
+          '<p class="contact-form__privacy">' + (isEn ? 'Your data is used only to answer your request. <a href="/en-us/legal/">Details in the legal notice</a>.' : 'Vos donn\u00e9es servent uniquement \u00e0 r\u00e9pondre \u00e0 votre demande. <a href="/mentions-legales/">D\u00e9tails dans les mentions l\u00e9gales</a>.') + '</p>' +
         '</form>' +
       '</div>' +
       '<div class="contact-layout__info">' +
@@ -504,7 +504,7 @@ class CookieBannerElement extends HTMLElement {
   connectedCallback() {
     var lang = this.getAttribute("lang") === "en" ? "en" : "fr";
     var t = COOKIE_BANNER_STRINGS[lang];
-    var legalHref = lang === "en" ? "/en-us/legal" : "/mentions-legales";
+    var legalHref = lang === "en" ? "/en-us/legal/" : "/mentions-legales/";
 
     this.className = "cookie-banner";
     this.setAttribute("role", "region");

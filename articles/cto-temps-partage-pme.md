@@ -1,7 +1,7 @@
 ---
 title: "Pourquoi un CTO à temps partagé est pertinent pour une PME — Monolithic Lab"
 description: "Une PME a besoin des décisions d’un CTO, rarement de cinq jours de CTO par semaine. Coût d’un CTO à plein temps, coût de l’absence de CTO, et signes que le moment est venu."
-alternate: "/en-us/articles/fractional-cto-for-small-business"
+alternate: "/en-us/articles/fractional-cto-for-small-business/"
 hero:
   compact: true
   label: "Article"
@@ -10,7 +10,7 @@ hero:
 cta_band:
   text: "Vous reconnaissez votre entreprise dans ces signes ? Parlez-en à Monolithic Lab."
   button_text: "Décrire votre situation"
-  button_url: "/contact"
+  button_url: "/contact/"
 ---
 
 ## Le problème
@@ -68,7 +68,7 @@ Les conséquences apparaissent plus tard, et coûtent plus cher :
 - l’entreprise dépend d’un seul développeur ou d’une seule agence
 - un recrutement technique important approche
 - une levée de fonds, une cession ou un gros client exige des réponses techniques précises
-- le CTO vient de partir. Dans ce cas, voir le [CTO de transition](/articles/cto-de-transition-definition)
+- le CTO vient de partir. Dans ce cas, voir le [CTO de transition](/articles/cto-de-transition-definition/)
 
 ## Quand ce n’est pas la bonne réponse
 
@@ -80,4 +80,4 @@ Les conséquences apparaissent plus tard, et coûtent plus cher :
 
 Pour une PME, la question n’est pas « avons-nous besoin d’un CTO ? », mais « de combien de CTO avons-nous besoin ? ». Tant que la réponse est moins d’une semaine, le temps partagé est la formule la plus efficace.
 
-Voir aussi : [définition du CTO à temps partagé](/articles/cto-temps-partage-definition), et [l’offre de Monolithic Lab](/cto-temps-partage).
+Voir aussi : [définition du CTO à temps partagé](/articles/cto-temps-partage-definition/), et [l’offre de Monolithic Lab](/cto-temps-partage/).

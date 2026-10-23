@@ -19,4 +19,4 @@ include your device model, iOS version and HazeReel version.
 
 Answers to common questions are coming soon.
 
-[Back to HazeReel](/apps/hazereel)
+[Back to HazeReel](/apps/hazereel/)

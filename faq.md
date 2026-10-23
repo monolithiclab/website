@@ -1,7 +1,7 @@
 ---
 title: "Questions fréquentes — Monolithic Lab"
 description: "CTO à temps partagé, CTO de transition, missions au forfait, transformation IA : différences, rythme, durée, tarifs, recrutement, confidentialité. Les réponses aux questions posées avant une mission."
-alternate: "/en-us/faq"
+alternate: "/en-us/faq/"
 hero:
   compact: true
   label: "FAQ"
@@ -10,7 +10,7 @@ hero:
 cta_band:
   text: "Votre question n’est pas ici ? Posez-la directement."
   button_text: "Prendre contact"
-  button_url: "/contact"
+  button_url: "/contact/"
 ---
 
 ## Les deux rôles
@@ -21,11 +21,11 @@ Le **CTO à temps partagé** répond à un besoin durable qui ne remplit pas une
 
 Le **CTO de transition** occupe un poste vacant pour une durée limitée : présence plus forte, mission plus courte, objectif précis — stabiliser, puis installer un successeur.
 
-[CTO à temps partagé](/articles/cto-temps-partage-definition) · [CTO de transition](/articles/cto-de-transition-definition)
+[CTO à temps partagé](/articles/cto-temps-partage-definition/) · [CTO de transition](/articles/cto-de-transition-definition/)
 
 ### Et les missions au forfait ?
 
-Diagnostic technique, exploration IA, POC, MVP : une question précise, un livrable, un délai et un prix fixés à l’avance. Une mission au forfait produit un résultat, puis s’arrête. Elle ne remplace pas une direction technique : si le besoin est de diriger l’équipe dans la durée, c’est un rôle de CTO. [Voir les missions au forfait](/missions-au-forfait)
+Diagnostic technique, exploration IA, POC, MVP : une question précise, un livrable, un délai et un prix fixés à l’avance. Une mission au forfait produit un résultat, puis s’arrête. Elle ne remplace pas une direction technique : si le besoin est de diriger l’équipe dans la durée, c’est un rôle de CTO. [Voir les missions au forfait](/missions-au-forfait/)
 
 ### Quelle différence avec un consultant ?
 
@@ -97,11 +97,11 @@ Non. Aucun partenariat avec des éditeurs, des intégrateurs, des fournisseurs d
 
 ### L’IA concerne-t-elle seulement l’équipe technique ?
 
-Non. Les développeurs changent de pratiques avec les agents de code, mais les gains sont souvent aussi rapides ailleurs : service client, ventes, finance, opérations, RH. La transformation porte sur toute l’entreprise. [La transformation IA en détail](/transformation-ia)
+Non. Les développeurs changent de pratiques avec les agents de code, mais les gains sont souvent aussi rapides ailleurs : service client, ventes, finance, opérations, RH. La transformation porte sur toute l’entreprise. [La transformation IA en détail](/transformation-ia/)
 
 ### Qu’est-ce qu’un Forward Deployed Engineer, et quel rapport ?
 
-Un ingénieur qui travaille au sein des équipes du client pour transformer un problème mal défini en système qui fonctionne en production. Le modèle vient de Palantir, et OpenAI comme Anthropic l’utilisent pour déployer l’IA chez leurs clients. Monolithic Lab s’en inspire : sur place, sur vos données, jugé sur l’usage réel. [Lire l’article](/articles/forward-deployed-engineer)
+Un ingénieur qui travaille au sein des équipes du client pour transformer un problème mal défini en système qui fonctionne en production. Le modèle vient de Palantir, et OpenAI comme Anthropic l’utilisent pour déployer l’IA chez leurs clients. Monolithic Lab s’en inspire : sur place, sur vos données, jugé sur l’usage réel. [Lire l’article](/articles/forward-deployed-engineer/)
 
 ### Avez-vous une méthode toute faite ?
 

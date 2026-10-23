@@ -11,5 +11,5 @@ hero:
 
 A full description of Mojiroll is coming soon.
 
-- [Support](/apps/mojiroll/support)
-- [Privacy policy](/apps/mojiroll/privacy)
+- [Support](/apps/mojiroll/support/)
+- [Privacy policy](/apps/mojiroll/privacy/)

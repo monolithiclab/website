@@ -22,7 +22,7 @@ build: clean ## Production build (static site in public/)
 	@$(MAKE) prune
 
 .PHONY: lint
-lint: lint-tokens lint-fonts lint-private ## Check the AGENTS.md invariants: no colour literals, no Google Fonts, no private files
+lint: lint-tokens lint-fonts lint-private lint-links ## Check the AGENTS.md invariants (colours, fonts, private files, links)
 
 .PHONY: ci
 ci: lint build ## The gate: lint, then the production build (what the deploy workflow runs)
@@ -54,6 +54,15 @@ lint-private:
 		grep -qE "^  - \"$$f\"$$" .gomddoc/config.yml || { \
 			echo "lint: $$f is not under exclude: in .gomddoc/config.yml"; exit 1; }; \
 	done
+
+# GitHub Pages answers /approche with a 301 to /approche/. Every slashless
+# internal link or hreflang alternate sends Google through that redirect, and
+# Search Console lists the source URL under "Page with redirect".
+.PHONY: lint-links
+lint-links:
+	@if git grep -nE '(\]\(|href="|_url: "|alternate: ")/[A-Za-z0-9/_-]*[A-Za-z0-9_-][#")]' -- '*.md' '$(THEME)/*.js' '$(THEME)/*.tmpl' ':!AGENTS.md' ':!.github'; then \
+		echo "lint: internal link without a trailing slash (above) — write /contact/, not /contact"; exit 1; \
+	fi
 
 # gomddoc always generates a tag index; the site uses no tags, so it is an
 # empty page with an untranslated heading. prune drops it and its sitemap

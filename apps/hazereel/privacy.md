@@ -36,4 +36,4 @@ time by writing to [contact@monolithiclab.fr](mailto:contact@monolithiclab.fr?su
 
 [contact@monolithiclab.fr](mailto:contact@monolithiclab.fr?subject=HazeReel%20privacy)
 
-[Back to HazeReel](/apps/hazereel)
+[Back to HazeReel](/apps/hazereel/)

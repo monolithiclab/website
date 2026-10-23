@@ -2,7 +2,7 @@
 title: "Fixed-Price Projects — Monolithic Lab"
 description: "Technology assessment, AI exploration, POC, MVP: a specific question, with deliverable, timeline, and price set up front. Fixed-price projects led by a senior CTO."
 lang: "en"
-alternate: "/missions-au-forfait"
+alternate: "/missions-au-forfait/"
 hero:
   compact: true
   label: "Fixed-price projects"
@@ -11,14 +11,14 @@ hero:
 cta_band:
   text: "Describe your question: a written proposal follows, with a firm price."
   button_text: "Get in touch"
-  button_url: "/en-us/contact"
+  button_url: "/en-us/contact/"
 ---
 
 ## Definition
 
 A **fixed-price project** answers a bounded question: how sound is our technology, where can AI help us, does this idea work, can we put it in front of real users. Scope, deliverable, timeline, and price are written down before work starts, and don’t change along the way without both sides agreeing.
 
-A fixed-price project isn’t a CTO role. It doesn’t lead the team or make the day-to-day calls: it delivers a result, then ends. If you need someone to lead technology over time, that’s a [fractional CTO](/en-us/fractional-cto) or [interim CTO](/en-us/interim-cto) role.
+A fixed-price project isn’t a CTO role. It doesn’t lead the team or make the day-to-day calls: it delivers a result, then ends. If you need someone to lead technology over time, that’s a [fractional CTO](/en-us/fractional-cto/) or [interim CTO](/en-us/interim-cto/) role.
 
 ## Four formats
 
@@ -92,4 +92,4 @@ Every project is led by a CTO who has held the role: 25+ years in growing compan
 
 Nicolas Mussat builds hands-on, driving AI agents: prototypes and MVPs ship in weeks, not quarters, and the code is still reviewed and tested.
 
-[See references](/en-us/references)
+[See references](/en-us/references/)

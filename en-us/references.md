@@ -2,7 +2,7 @@
 title: "References — Monolithic Lab"
 description: "MeilleursAgents, built from scratch into France’s leading online real estate valuation platform, and Prose, cofounded in 2017: two companies whose technology and team Nicolas Mussat built."
 lang: "en"
-alternate: "/references"
+alternate: "/references/"
 hero:
   compact: true
   label: "References"
@@ -11,7 +11,7 @@ hero:
 cta_band:
   text: "Is your company going through a similar phase? Describe your situation."
   button_text: "Get in touch"
-  button_url: "/en-us/contact"
+  button_url: "/en-us/contact/"
 ---
 
 ## MeilleursAgents
@@ -61,4 +61,4 @@ cta_band:
 - changing the model or the scale without breaking what brings in revenue
 - leaving systems the team runs without outside help
 
-Those are the instincts a [fractional CTO](/en-us/fractional-cto) or an [interim CTO](/en-us/interim-cto) brings to your company.
+Those are the instincts a [fractional CTO](/en-us/fractional-cto/) or an [interim CTO](/en-us/interim-cto/) brings to your company.

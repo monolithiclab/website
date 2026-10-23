@@ -2,7 +2,7 @@
 title: "Fractional CTO for Small and Mid-Sized Companies — Monolithic Lab"
 description: "A senior CTO 1 to 3 days a week: technical decisions, team, hiring, AI transformation. For companies that need technical leadership before a full-time hire makes sense."
 lang: "en"
-alternate: "/cto-temps-partage"
+alternate: "/cto-temps-partage/"
 hero:
   compact: true
   label: "Fractional CTO"
@@ -11,7 +11,7 @@ hero:
 cta_band:
   text: "Is your engineering team moving without direction? Describe your situation."
   button_text: "Get in touch"
-  button_url: "/en-us/contact"
+  button_url: "/en-us/contact/"
 ---
 
 ## Definition
@@ -20,7 +20,7 @@ A **fractional CTO** is a technology executive who holds the full CTO role for a
 
 A fractional CTO is not a consultant or a contractor. They make the decisions, lead the team, and answer for the results, like an in-house CTO. What changes is the volume: a few days a week instead of five, and a fee instead of a salary.
 
-[Read the full article: what is a fractional CTO?](/en-us/articles/what-is-a-fractional-cto)
+[Read the full article: what is a fractional CTO?](/en-us/articles/what-is-a-fractional-cto/)
 
 ## Who it’s for
 
@@ -59,7 +59,7 @@ A fundraise, due diligence, an acquisition, a rebuild, international expansion, 
 - AI use cases in other teams: customer support, sales, finance, operations
 - an adoption plan built with the teams, modeled on the forward deployed engineer: on site, on your data, judged on real usage
 
-[AI transformation in detail](/en-us/ai-transformation)
+[AI transformation in detail](/en-us/ai-transformation/)
 
 ### Reliability and operations
 
@@ -85,7 +85,7 @@ A fundraise, due diligence, an acquisition, a rebuild, international expansion, 
 
 ## Fractional, interim, or fixed-price?
 
-A fractional CTO fits when the need is ongoing but doesn’t fill a week. If the CTO seat is empty and you need someone close to full-time for a few months, that’s an [interim CTO](/en-us/interim-cto) engagement. For a one-off, well-defined need — assessment, AI exploration, POC, MVP — a [fixed-price project](/en-us/fixed-price-projects) is enough.
+A fractional CTO fits when the need is ongoing but doesn’t fill a week. If the CTO seat is empty and you need someone close to full-time for a few months, that’s an [interim CTO](/en-us/interim-cto/) engagement. For a one-off, well-defined need — assessment, AI exploration, POC, MVP — a [fixed-price project](/en-us/fixed-price-projects/) is enough.
 
 ## Why Monolithic Lab
 
@@ -95,4 +95,4 @@ A CTO who builds, not just manages: Nicolas Mussat drives AI agents himself to p
 
 One point of contact, independent of any software vendor, integrator, or AI provider: every recommendation serves your company alone.
 
-[See references](/en-us/references)
+[See references](/en-us/references/)

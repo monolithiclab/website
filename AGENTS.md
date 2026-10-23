@@ -47,8 +47,9 @@ static site that GitHub Pages serves. French at the root, English under `en-us/`
 
 ## Traps `make ci` won't explain
 
-- Internal links are extensionless (`/contact`, `/en-us/approach`): gomddoc strips `.md` and serves `approche.md` at
-  `approche/index.html`.
+- Internal links are extensionless and end with a slash (`/contact/`, `/en-us/approach/`), `alternate:` included:
+  gomddoc serves `approche.md` at `approche/index.html`, and GitHub Pages 301s `/approche` to `/approche/`, which
+  Search Console then reports as "Page with redirect". `make lint` fails on a slashless one.
 - A page is French unless its front matter says `lang: "en"`. `alternate:` points at the same page in the other
   language and drives the language switch and `hreflang`, so set it on both sides.
 - `make lint` greps the theme CSS for any hex, including inside a comment.

@@ -19,4 +19,4 @@ include your device model, iOS version and Mojiroll version.
 
 Answers to common questions are coming soon.
 
-[Back to Mojiroll](/apps/mojiroll)
+[Back to Mojiroll](/apps/mojiroll/)

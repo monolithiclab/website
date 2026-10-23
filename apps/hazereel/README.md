@@ -11,5 +11,5 @@ hero:
 
 A full description of HazeReel is coming soon.
 
-- [Support](/apps/hazereel/support)
-- [Privacy policy](/apps/hazereel/privacy)
+- [Support](/apps/hazereel/support/)
+- [Privacy policy](/apps/hazereel/privacy/)

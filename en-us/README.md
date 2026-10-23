@@ -8,17 +8,17 @@ hero:
   headline: "A senior CTO to lead your technology and make your move to AI work."
   subheadline: "Monolithic Lab leads technology for small and mid-sized companies that don’t need a full-time CTO yet, or that just lost theirs, and drives their AI transformation, in the engineering team and every other team. 25+ years of experience, including MeilleursAgents, built from scratch into France’s leading online real estate valuation platform, and Prose, cofounded in 2017, whose platform he built from the consultation to the factory."
   cta_text: "Describe your situation"
-  cta_url: "/en-us/contact"
+  cta_url: "/en-us/contact/"
 cta_band:
   text: "An engineering team with no one leading it, an empty CTO seat, or an AI project to launch? One conversation is enough to know whether Monolithic Lab is the right fit."
   button_text: "Describe your situation"
-  button_url: "/en-us/contact"
+  button_url: "/en-us/contact/"
 ---
 
 <service-list label="Three formats" heading="Two CTO roles, plus fixed-price projects">
-  <service-item title="Fractional CTO" href="/en-us/fractional-cto">1 to 3 days a week, over several months. Technical leadership and AI transformation for companies that have developers but no one to lead them, and don’t yet need a full-time CTO.</service-item>
-  <service-item title="Interim CTO" href="/en-us/interim-cto">The CTO seat is empty, or the person in it can no longer do the job. Technical leadership picks up right away and holds until a successor arrives, with a team already moving on AI.</service-item>
-  <service-item title="Fixed-price projects" href="/en-us/fixed-price-projects">Technology assessment, AI exploration, POC, MVP. A specific question, with deliverable, timeline, and price set up front.</service-item>
+  <service-item title="Fractional CTO" href="/en-us/fractional-cto/">1 to 3 days a week, over several months. Technical leadership and AI transformation for companies that have developers but no one to lead them, and don’t yet need a full-time CTO.</service-item>
+  <service-item title="Interim CTO" href="/en-us/interim-cto/">The CTO seat is empty, or the person in it can no longer do the job. Technical leadership picks up right away and holds until a successor arrives, with a team already moving on AI.</service-item>
+  <service-item title="Fixed-price projects" href="/en-us/fixed-price-projects/">Technology assessment, AI exploration, POC, MVP. A specific question, with deliverable, timeline, and price set up front.</service-item>
 </service-list>
 
 <trust-grid label="Why Monolithic Lab">
@@ -29,11 +29,11 @@ cta_band:
 
 ## Fractional or interim
 
-**Fractional CTO.** A technology executive who holds the full CTO role — decisions, team, budget, AI transformation — only a few days a week. The need is ongoing, but it doesn’t fill a full week. [What is a fractional CTO?](/en-us/articles/what-is-a-fractional-cto)
+**Fractional CTO.** A technology executive who holds the full CTO role — decisions, team, budget, AI transformation — only a few days a week. The need is ongoing, but it doesn’t fill a full week. [What is a fractional CTO?](/en-us/articles/what-is-a-fractional-cto/)
 
-**Interim CTO.** Also called a transitional CTO. A technology executive who fills an empty seat for a set period, with a clear mandate: steady the team, make the calls that can’t wait, and prepare the successor. More hours, shorter engagement. [What is an interim CTO?](/en-us/articles/what-is-an-interim-cto)
+**Interim CTO.** Also called a transitional CTO. A technology executive who fills an empty seat for a set period, with a clear mandate: steady the team, make the calls that can’t wait, and prepare the successor. More hours, shorter engagement. [What is an interim CTO?](/en-us/articles/what-is-an-interim-cto/)
 
-For a one-off, well-defined need — an assessment, an AI exploration, a POC, an MVP — a [fixed-price project](/en-us/fixed-price-projects) is enough.
+For a one-off, well-defined need — an assessment, an AI exploration, a POC, an MVP — a [fixed-price project](/en-us/fixed-price-projects/) is enough.
 
 ## AI across the whole company
 
@@ -41,7 +41,7 @@ AI is changing how every team works: engineering, customer support, sales, finan
 
 Monolithic Lab takes its cue from the **forward deployed engineer**, the model OpenAI and Anthropic use to deploy AI at their customers: work inside the teams, build on real data and real tools, and measure usage after go-live. The adoption plan gets built with your teams, starting from their work.
 
-[AI transformation in detail](/en-us/ai-transformation)
+[AI transformation in detail](/en-us/ai-transformation/)
 
 ## A CTO who builds, not just manages
 
@@ -49,7 +49,7 @@ Pure-manager profiles are on their way out. With AI, a small team can produce fa
 
 A good CTO today knows the craft hands-on, drives AI agents to get work done, and can judge what they produce. That’s how Monolithic Lab works: a prototype gets tested in days, and decisions rest on results, not opinions.
 
-[Read the article: the CTO in the AI era](/en-us/articles/cto-in-the-ai-era)
+[Read the article: the CTO in the AI era](/en-us/articles/cto-in-the-ai-era/)
 
 ## Why it makes sense for a small or mid-sized company
 
@@ -58,7 +58,7 @@ A good CTO today knows the craft hands-on, drives AI agents to get work done, an
 - **Those decisions get expensive later.** An architecture that can’t handle growth, a vendor no one manages, an AI project that goes nowhere, a painful due diligence.
 - **A fractional CTO gives you the same level of experience**, in the amount your company actually needs.
 
-[Read the full article](/en-us/articles/fractional-cto-for-small-business)
+[Read the full article](/en-us/articles/fractional-cto-for-small-business/)
 
 ## What the role covers
 
@@ -80,9 +80,9 @@ A good CTO today knows the craft hands-on, drives AI agents to get work done, an
 
 ## Articles
 
-- [What is a fractional CTO?](/en-us/articles/what-is-a-fractional-cto)
-- [What is an interim CTO?](/en-us/articles/what-is-an-interim-cto)
-- [Why a fractional CTO makes sense for small and mid-sized companies](/en-us/articles/fractional-cto-for-small-business)
-- [What is a forward deployed engineer?](/en-us/articles/forward-deployed-engineer)
-- [The CTO in the AI era: the end of the pure manager](/en-us/articles/cto-in-the-ai-era)
-- [What 25 years of experience brings to the CTO role](/en-us/articles/what-25-years-of-experience-brings)
+- [What is a fractional CTO?](/en-us/articles/what-is-a-fractional-cto/)
+- [What is an interim CTO?](/en-us/articles/what-is-an-interim-cto/)
+- [Why a fractional CTO makes sense for small and mid-sized companies](/en-us/articles/fractional-cto-for-small-business/)
+- [What is a forward deployed engineer?](/en-us/articles/forward-deployed-engineer/)
+- [The CTO in the AI era: the end of the pure manager](/en-us/articles/cto-in-the-ai-era/)
+- [What 25 years of experience brings to the CTO role](/en-us/articles/what-25-years-of-experience-brings/)

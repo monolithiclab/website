@@ -1,7 +1,7 @@
 ---
 title: "Approche — Monolithic Lab"
 description: "Comprendre avant d’agir, décider et assumer, construire avec les équipes, transmettre avant de partir. La méthode de Monolithic Lab, et le parcours de Nicolas Mussat."
-alternate: "/en-us/approach"
+alternate: "/en-us/approach/"
 hero:
   compact: true
   label: "Approche"
@@ -10,7 +10,7 @@ hero:
 cta_band:
   text: "Cette façon de travailler correspond à votre situation ? Décrivez-la."
   button_text: "Prendre contact"
-  button_url: "/contact"
+  button_url: "/contact/"
 ---
 
 <step-timeline heading="La méthode en cinq étapes">
@@ -29,7 +29,7 @@ Les profils de pur manager disparaissent. Un bon CTO comprend le travail de ses 
 
 ### Construire le plan d’adoption avec vous
 
-L’IA est récente, et peu d’entreprises l’ont déployée avec succès dans une vraie transformation. Aucune méthode toute faite ne s’applique telle quelle. Le plan d’adoption se construit avec vos équipes, sur leur travail réel, dans une approche inspirée du [Forward Deployed Engineer](/articles/forward-deployed-engineer).
+L’IA est récente, et peu d’entreprises l’ont déployée avec succès dans une vraie transformation. Aucune méthode toute faite ne s’applique telle quelle. Le plan d’adoption se construit avec vos équipes, sur leur travail réel, dans une approche inspirée du [Forward Deployed Engineer](/articles/forward-deployed-engineer/).
 
 ### Assez de structure, pas plus
 
@@ -53,4 +53,4 @@ Chez **Prose**, marque de soins capillaires et du visage personnalisés, il a é
 
 Il mène chaque mission lui-même, sans équipe junior ni sous-traitance.
 
-[Voir les références](/references) · [Ce que 25 ans d’expérience apportent à un poste de CTO](/articles/experience-cto-senior)
+[Voir les références](/references/) · [Ce que 25 ans d’expérience apportent à un poste de CTO](/articles/experience-cto-senior/)

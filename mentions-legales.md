@@ -1,7 +1,7 @@
 ---
 title: "Mentions légales — Monolithic Lab"
 description: "Mentions légales du site monolithiclab.fr — informations sur l’éditeur, l’hébergeur, la propriété intellectuelle et la protection des données personnelles."
-alternate: "/en-us/legal"
+alternate: "/en-us/legal/"
 hero:
   compact: true
   headline: "Mentions légales"

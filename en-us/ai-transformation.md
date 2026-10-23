@@ -2,7 +2,7 @@
 title: "AI Transformation for Small and Mid-Sized Companies — Monolithic Lab"
 description: "Put AI to work in the real day-to-day of every team, technical or not. An approach modeled on the forward deployed engineer, and an adoption plan built with your teams."
 lang: "en"
-alternate: "/transformation-ia"
+alternate: "/transformation-ia/"
 hero:
   compact: true
   label: "AI transformation"
@@ -11,7 +11,7 @@ hero:
 cta_band:
   text: "Want to know where AI can really help your company? Describe your situation."
   button_text: "Get in touch"
-  button_url: "/en-us/contact"
+  button_url: "/en-us/contact/"
 ---
 
 ## The reality
@@ -32,7 +32,7 @@ Monolithic Lab applies this model to transforming a small or mid-sized company:
 - **Judged on usage.** A successful deployment is measured after go-live: time saved, errors avoided, service quality.
 - **Handed over.** Your team can evolve what was built without outside help.
 
-[Read the article: what is a forward deployed engineer?](/en-us/articles/forward-deployed-engineer)
+[Read the article: what is a forward deployed engineer?](/en-us/articles/forward-deployed-engineer/)
 
 ## For the engineering team
 
@@ -65,5 +65,5 @@ AI isn’t just for developers. The fastest gains are often elsewhere:
 
 ## How to engage
 
-- **As part of a CTO engagement.** AI transformation is part of both the [fractional CTO](/en-us/fractional-cto) and the [interim CTO](/en-us/interim-cto) roles.
-- **As a fixed-price project.** AI exploration, POC, or MVP, with scope, deliverable, and price set in advance. [See fixed-price projects](/en-us/fixed-price-projects)
+- **As part of a CTO engagement.** AI transformation is part of both the [fractional CTO](/en-us/fractional-cto/) and the [interim CTO](/en-us/interim-cto/) roles.
+- **As a fixed-price project.** AI exploration, POC, or MVP, with scope, deliverable, and price set in advance. [See fixed-price projects](/en-us/fixed-price-projects/)

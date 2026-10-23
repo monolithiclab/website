@@ -2,7 +2,7 @@
 title: "Services — Monolithic Lab"
 description: "Fractional CTO, interim CTO, and fixed-price projects: technology assessment, AI exploration, POC, MVP. Senior technical leadership and AI transformation for small and mid-sized companies."
 lang: "en"
-alternate: "/expertises"
+alternate: "/expertises/"
 hero:
   compact: true
   label: "Services"
@@ -11,7 +11,7 @@ hero:
 cta_band:
   text: "Not sure whether you need a CTO role or a fixed-price project? That’s what the first conversation is for."
   button_text: "Get in touch"
-  button_url: "/en-us/contact"
+  button_url: "/en-us/contact/"
 ---
 
 ## CTO roles
@@ -22,19 +22,19 @@ Ongoing technical leadership, billed on time. The CTO makes decisions, leads the
 
 The full role, 1 to 3 days a week, from a few months to more than a year. For companies with an engineering team but no leader, that don’t yet need a full-time CTO.
 
-[Fractional CTO in detail](/en-us/fractional-cto)
+[Fractional CTO in detail](/en-us/fractional-cto/)
 
 ### Interim CTO
 
 The CTO seat is empty or at risk. Monolithic Lab takes it over, steadies the team, makes the calls that can’t wait, then hires and onboards the successor.
 
-[Interim CTO in detail](/en-us/interim-cto)
+[Interim CTO in detail](/en-us/interim-cto/)
 
 ### AI transformation, in both roles
 
 In the engineering team and every other team, the CTO finds the use cases, builds them with the people concerned, and runs an adoption plan developed with them.
 
-[AI transformation in detail](/en-us/ai-transformation)
+[AI transformation in detail](/en-us/ai-transformation/)
 
 ---
 
@@ -66,7 +66,7 @@ A first version in production, used by real users, on a deliberately narrow scop
 
 **Deliverable**: a product in production, the code, the documentation, and a team able to evolve it.
 
-[Fixed-price projects in detail](/en-us/fixed-price-projects)
+[Fixed-price projects in detail](/en-us/fixed-price-projects/)
 
 ---
 

@@ -1,7 +1,7 @@
 ---
 title: "Transformation IA pour PME et scale-ups — Monolithic Lab"
 description: "Déployer l’IA dans le travail réel de toutes vos équipes, techniques ou non. Une approche inspirée du Forward Deployed Engineer et un plan d’adoption construit avec vos équipes."
-alternate: "/en-us/ai-transformation"
+alternate: "/en-us/ai-transformation/"
 hero:
   compact: true
   label: "Transformation IA"
@@ -10,7 +10,7 @@ hero:
 cta_band:
   text: "Vous voulez savoir où l’IA peut réellement servir dans votre entreprise ? Décrivez votre situation."
   button_text: "Prendre contact"
-  button_url: "/contact"
+  button_url: "/contact/"
 ---
 
 ## Le constat
@@ -31,7 +31,7 @@ Monolithic Lab applique ce modèle à la transformation d’une PME :
 - **Jugé sur l’usage.** Un déploiement réussi se mesure après la mise en production : temps gagné, erreurs évitées, qualité du service.
 - **Transmis.** L’équipe sait faire évoluer ce qui a été construit, sans aide extérieure.
 
-[Lire l’article : qu’est-ce qu’un Forward Deployed Engineer ?](/articles/forward-deployed-engineer)
+[Lire l’article : qu’est-ce qu’un Forward Deployed Engineer ?](/articles/forward-deployed-engineer/)
 
 ## Pour l’équipe technique
 
@@ -64,5 +64,5 @@ L’IA ne concerne pas que les développeurs. Les gains les plus rapides se trou
 
 ## Dans quel cadre
 
-- **Au sein d’une mission de CTO.** La transformation IA fait partie du rôle de [CTO à temps partagé](/cto-temps-partage) comme de celui de [CTO de transition](/cto-de-transition).
-- **En mission au forfait.** Exploration IA, POC ou MVP, avec un périmètre, un livrable et un prix fixés à l’avance. [Voir les missions au forfait](/missions-au-forfait)
+- **Au sein d’une mission de CTO.** La transformation IA fait partie du rôle de [CTO à temps partagé](/cto-temps-partage/) comme de celui de [CTO de transition](/cto-de-transition/).
+- **En mission au forfait.** Exploration IA, POC ou MVP, avec un périmètre, un livrable et un prix fixés à l’avance. [Voir les missions au forfait](/missions-au-forfait/)

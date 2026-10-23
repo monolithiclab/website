@@ -1,7 +1,7 @@
 ---
 title: "Qu’est-ce qu’un CTO à temps partagé ? Définition, rôle et coût — Monolithic Lab"
 description: "Le CTO à temps partagé exerce le rôle complet de directeur technique quelques jours par semaine. Définition, missions, rythme, coût, limites, et différences avec un consultant ou un CTO salarié."
-alternate: "/en-us/articles/what-is-a-fractional-cto"
+alternate: "/en-us/articles/what-is-a-fractional-cto/"
 hero:
   compact: true
   label: "Article"
@@ -10,7 +10,7 @@ hero:
 cta_band:
   text: "Votre entreprise a-t-elle besoin d’un CTO à temps partagé ? Un premier échange permet de le savoir."
   button_text: "Décrire votre situation"
-  button_url: "/contact"
+  button_url: "/contact/"
 ---
 
 ## Définition
@@ -77,4 +77,4 @@ Le CTO à temps partagé facture des honoraires, à la journée ou au forfait me
 
 Le CTO à temps partagé donne à une PME un directeur technique expérimenté, au volume dont elle a réellement besoin. Il décide, dirige, et prépare le jour où l’entreprise n’aura plus besoin de lui.
 
-Pour aller plus loin : [pourquoi c’est pertinent pour une PME](/articles/cto-temps-partage-pme), et [la différence avec un CTO de transition](/articles/cto-de-transition-definition).
+Pour aller plus loin : [pourquoi c’est pertinent pour une PME](/articles/cto-temps-partage-pme/), et [la différence avec un CTO de transition](/articles/cto-de-transition-definition/).

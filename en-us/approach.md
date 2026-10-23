@@ -2,7 +2,7 @@
 title: "Approach — Monolithic Lab"
 description: "Understand before acting, make and own decisions, build with the teams, hand over before leaving. How Monolithic Lab works, and Nicolas Mussat’s background."
 lang: "en"
-alternate: "/approche"
+alternate: "/approche/"
 hero:
   compact: true
   label: "Approach"
@@ -11,7 +11,7 @@ hero:
 cta_band:
   text: "Does this way of working fit your situation? Describe it."
   button_text: "Get in touch"
-  button_url: "/en-us/contact"
+  button_url: "/en-us/contact/"
 ---
 
 <step-timeline heading="The method in five steps">
@@ -30,7 +30,7 @@ Pure-manager profiles are on their way out. A good CTO understands the team’s 
 
 ### Build the adoption plan with you
 
-AI is new, and few companies have deployed it successfully in a real transformation. No ready-made method applies as is. The adoption plan gets built with your teams, on their real work, in an approach modeled on the [forward deployed engineer](/en-us/articles/forward-deployed-engineer).
+AI is new, and few companies have deployed it successfully in a real transformation. No ready-made method applies as is. The adoption plan gets built with your teams, on their real work, in an approach modeled on the [forward deployed engineer](/en-us/articles/forward-deployed-engineer/).
 
 ### Enough structure, no more
 
@@ -54,4 +54,4 @@ At **Prose**, the personalized hair and skincare brand, he was cofounder and CTO
 
 He runs every engagement personally, with no junior staff and no subcontractors.
 
-[See references](/en-us/references) · [What 25 years of experience brings to the CTO role](/en-us/articles/what-25-years-of-experience-brings)
+[See references](/en-us/references/) · [What 25 years of experience brings to the CTO role](/en-us/articles/what-25-years-of-experience-brings/)

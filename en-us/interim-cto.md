@@ -2,7 +2,7 @@
 title: "Interim CTO — Monolithic Lab"
 description: "Is your CTO seat empty or at risk? An interim CTO takes over technical leadership right away, steadies the team, and prepares the successor’s arrival."
 lang: "en"
-alternate: "/cto-de-transition"
+alternate: "/cto-de-transition/"
 hero:
   compact: true
   label: "Interim CTO"
@@ -11,7 +11,7 @@ hero:
 cta_band:
   text: "Is the CTO seat empty, or about to be? The sooner the transition starts, the less it costs."
   button_text: "Get in touch"
-  button_url: "/en-us/contact"
+  button_url: "/en-us/contact/"
 ---
 
 ## Definition
@@ -20,9 +20,9 @@ An **interim CTO** — also called a transitional CTO — is a technology execut
 
 The engagement has a start, an end, and a goal: steady the team, make the calls that can’t wait, and hand the successor a team and systems in good order.
 
-It takes more time than a [fractional engagement](/en-us/fractional-cto), often close to full-time at the start. It’s also shorter: a few months, long enough to hire and onboard the next CTO.
+It takes more time than a [fractional engagement](/en-us/fractional-cto/), often close to full-time at the start. It’s also shorter: a few months, long enough to hire and onboard the next CTO.
 
-[Read the full article: what is an interim CTO?](/en-us/articles/what-is-an-interim-cto)
+[Read the full article: what is an interim CTO?](/en-us/articles/what-is-an-interim-cto/)
 
 ## When you need one
 
@@ -78,4 +78,4 @@ An interim CTO who builds, not just manages: Nicolas Mussat drives AI agents him
 
 Monolithic Lab has no interest in stretching out an interim engagement. The goal is a successor in place and a team that no longer needs outside help.
 
-[See references](/en-us/references)
+[See references](/en-us/references/)
