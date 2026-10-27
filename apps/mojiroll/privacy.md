@@ -30,10 +30,10 @@ Mojiroll is published by Monolithic Lab SASU, 14 rue de Cambrai, 75019 Paris, Fr
 ## Your rights
 
 Under the GDPR, you may request access to, correction or deletion of your personal data at any
-time by writing to [contact@monolithiclab.fr](mailto:contact@monolithiclab.fr?subject=Mojiroll%20privacy).
+time by writing to [privacy@monolithiclab.fr](mailto:privacy@monolithiclab.fr?subject=Mojiroll%20privacy).
 
 ## Contact
 
-[contact@monolithiclab.fr](mailto:contact@monolithiclab.fr?subject=Mojiroll%20privacy)
+[privacy@monolithiclab.fr](mailto:privacy@monolithiclab.fr?subject=Mojiroll%20privacy)
 
 [Back to Mojiroll](/apps/mojiroll/)

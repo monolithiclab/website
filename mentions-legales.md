@@ -44,7 +44,7 @@ Ce site utilise Google Tag Manager pour charger Google Analytics 4, un outil de 
 
 Cette mesure d’audience repose sur votre consentement (article 6.1.a du RGPD), que vous pouvez retirer à tout moment. Si vous consentez au suivi, Google Analytics dépose des cookies (_ga, _ga_*) pendant 13 mois maximum, à des fins de mesure d’audience (pages consultées, provenance du trafic, durée de visite). Ces données sont traitées par Google Ireland Limited et peuvent être transférées vers les États-Unis. Si vous refusez ou ne répondez pas à la bannière, aucun cookie n’est déposé et aucune donnée de navigation n’est collectée.
 
-Conformément au Règlement général sur la protection des données (RGPD) et à la loi Informatique et Libertés, vous disposez d’un droit d’accès, de rectification, d’effacement, de limitation du traitement, de portabilité et d’opposition concernant vos données personnelles. Pour exercer ces droits, contactez-nous à l’adresse : contact@monolithiclab.fr.
+Conformément au Règlement général sur la protection des données (RGPD) et à la loi Informatique et Libertés, vous disposez d’un droit d’accès, de rectification, d’effacement, de limitation du traitement, de portabilité et d’opposition concernant vos données personnelles. Pour exercer ces droits, contactez-nous à l’adresse : privacy@monolithiclab.fr.
 
 Si vous estimez, après nous avoir contactés, que vos droits ne sont pas respectés, vous pouvez adresser une réclamation à la Commission nationale de l’informatique et des libertés (CNIL), 3 place de Fontenoy, TSA 80715, 75334 Paris Cedex 07 — www.cnil.fr.
 

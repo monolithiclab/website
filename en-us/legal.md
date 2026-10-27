@@ -44,7 +44,7 @@ Outside of the possible consent to Google Analytics described above, this websit
 
 When you submit the contact form, your name, email address, company name, and message are transmitted to Formspree, Inc. (https://formspree.io), our processor, for the sole purpose of delivering your message. This data is used only to answer your request, is not stored on our servers, and is not shared with any third party. Formspree, Inc. is established in the United States, so this delivery involves a transfer of data outside the European Union. The processing is based on steps taken at your request prior to entering into a contract (GDPR article 6.1.b). Messages are kept for as long as needed to handle your request, and at most three years after our last exchange.
 
-In accordance with the EU General Data Protection Regulation (GDPR) and the French Data Protection Act, you have the right to access, rectify, and erase your personal data, to restrict or object to its processing, and to data portability. To exercise these rights, contact us at contact@monolithiclab.fr.
+In accordance with the EU General Data Protection Regulation (GDPR) and the French Data Protection Act, you have the right to access, rectify, and erase your personal data, to restrict or object to its processing, and to data portability. To exercise these rights, contact us at privacy@monolithiclab.fr.
 
 If, after contacting us, you believe your rights have not been respected, you may lodge a complaint with the French data protection authority (CNIL), 3 place de Fontenoy, TSA 80715, 75334 Paris Cedex 07, France — www.cnil.fr.
 
