@@ -39,7 +39,7 @@ static site that GitHub Pages serves. French at the root, English under `en-us/`
   `public/` gets walked as content and duplicates every page.
 - **`make prune` deletes `public/tags/` and its sitemap entry.** gomddoc always generates a tag index; the site uses
   no tags.
-- **`gtm_id` sits under `theme.vars`** in `config.yml` although it is no CSS property: gomddoc (still at v0.1.4)
+- **`gtm_id` sits under `theme.vars`** in `config.yml` although it is no CSS property: gomddoc (as of v0.4.0)
   exposes no other extensible map to templates.
 - **`layouts/error.html.tmpl` must exist**: without it gomddoc falls back to the default theme for the 404.
 - **The vendored themes** (`dalle`, `default`, `monolithic`, `terminal`) under `.gomddoc/assets/themes/` are
