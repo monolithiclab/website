@@ -81,20 +81,55 @@
   <!-- Google Tag Manager -->
   {{ $gtmID := index .Site.Theme.Vars "gtm_id" }}
   {{ if $gtmID }}
-  <!-- Consent Mode default: must run before the GTM loader below so GTM/GA
-       pick it up on their first pageview. Analytics stays denied until the
-       cookie banner (main.js) records an explicit accept; ad_* stays denied
-       permanently since this site runs no advertising tags. -->
+  <!-- Consent Mode, then GTM: the order matters. Every signal is granted by
+       default and denied in the regions that require opt-in (Google applies
+       the region from the visitor's IP); a stored banner choice is re-applied
+       here, before GTM loads. The cookie banner (main.js) records the choice
+       through window.mlabConsent. -->
   <script>
   window.dataLayer = window.dataLayer || [];
   function gtag(){dataLayer.push(arguments);}
-  gtag('consent', 'default', {
-    ad_storage: 'denied',
-    ad_user_data: 'denied',
-    ad_personalization: 'denied',
-    analytics_storage: 'denied',
-    wait_for_update: 500
-  });
+  (function () {
+    var SIGNALS = ['analytics_storage', 'ad_storage', 'ad_user_data', 'ad_personalization'];
+    function all(state) {
+        var s = {};
+        SIGNALS.forEach(function (k) { s[k] = state; });
+        return s;
+    }
+    gtag('consent', 'default', all('granted'));
+    var optIn = all('denied');
+    optIn.wait_for_update = 500;
+    // EEA (EU 27, Iceland, Liechtenstein, Norway), United Kingdom, Switzerland, Quebec, and the US states with a
+    // consumer privacy law in force (California first).
+    optIn.region = ['AT', 'BE', 'BG', 'HR', 'CY', 'CZ', 'DK', 'EE', 'FI', 'FR', 'DE', 'GR', 'HU', 'IE', 'IT',
+        'LV', 'LT', 'LU', 'MT', 'NL', 'PL', 'PT', 'RO', 'SK', 'SI', 'ES', 'SE', 'IS', 'LI', 'NO', 'GB', 'CH',
+        'CA-QC', 'US-CA', 'US-CO', 'US-CT', 'US-DE', 'US-IA', 'US-IN', 'US-KY', 'US-MD', 'US-MN', 'US-MT',
+        'US-NE', 'US-NH', 'US-NJ', 'US-OR', 'US-RI', 'US-TN', 'US-TX', 'US-UT', 'US-VA'];
+    gtag('consent', 'default', optIn);
+    // The choice lives in a first-party cookie, re-asked after 6 months (CNIL's guidance). The Google tag
+    // requires analytics_storage in GTM, so gtag.js loads only once this is granted.
+    window.mlabConsent = {
+        COOKIE: 'mlab_consent',
+        MAX_AGE_S: 60 * 60 * 24 * 180,
+        read: function () {
+            var m = document.cookie.match(/(?:^|;\s*)mlab_consent=(granted|denied)(?:;|$)/);
+            return m ? { granted: m[1] === 'granted' } : null;
+        },
+        store: function (granted) {
+            document.cookie = this.COOKIE + '=' + (granted ? 'granted' : 'denied') + '; Max-Age=' + this.MAX_AGE_S +
+                '; Path=/; SameSite=Lax' + (location.protocol === 'https:' ? '; Secure' : '');
+            this.apply(granted);
+            // GTM never re-runs a tag its consent check blocked at Initialization: this event fires it, unless
+            // the tag already ran on this page (consent was granted at load).
+            if (granted && !document.querySelector('script[src*="googletagmanager.com/gtag/js"]')) {
+                dataLayer.push({ event: 'consent_update' });
+            }
+        },
+        apply: function (granted) { gtag('consent', 'update', all(granted ? 'granted' : 'denied')); }
+    };
+    var stored = window.mlabConsent.read();
+    if (stored) { window.mlabConsent.apply(stored.granted); }
+  })();
   </script>
   <script>(function(w,d,s,l,i){w[l]=w[l]||[];w[l].push({'gtm.start':
   new Date().getTime(),event:'gtm.js'});var f=d.getElementsByTagName(s)[0],

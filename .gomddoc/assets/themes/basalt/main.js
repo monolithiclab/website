@@ -440,65 +440,30 @@ customElements.define("contact-form", ContactFormElement);
 
 /* --- cookie-banner ---
 
-   Consent Mode's default (all denied) is set inline in <head>, before GTM
-   loads, so GA collects nothing until this component records an explicit
-   accept. Binary choice only — analytics is the only non-essential purpose
-   this site has, so a granular category picker would be pure overhead.
+   Consent Mode's defaults (denied in the regions that require opt-in, granted
+   elsewhere) and window.mlabConsent are set inline in <head>, before GTM
+   loads; this component only asks and records the choice. Binary choice
+   only — analytics is the only non-essential purpose this site has, so a
+   granular category picker would be pure overhead.
 
-   The choice is re-asked every 6 months (CNIL's guidance on maximum consent
-   validity), and can be revisited any time via the "manage cookies" footer
-   button, which just re-opens this same element. */
-
-var COOKIE_CONSENT_KEY = "mlab-cookie-consent";
-var COOKIE_CONSENT_MAX_AGE_MS = 1000 * 60 * 60 * 24 * 180; // 180 days
+   The choice is kept 6 months in the mlab_consent cookie (CNIL's guidance on
+   maximum consent validity), and can be revisited any time via the "manage
+   cookies" footer button, which just re-opens this same element. */
 
 var COOKIE_BANNER_STRINGS = {
   fr: {
-    text: "Ce site utilise Google Analytics pour mesurer l’audience. Vos données ne sont collectées qu’avec votre accord. Voir les ",
+    text: "Ce site mesure son audience avec Google Analytics. Acceptez, ou refusez pour que vos visites ne soient plus mesurées. Voir les ",
     linkText: "mentions légales",
     accept: "Accepter",
     decline: "Refuser"
   },
   en: {
-    text: "This site uses Google Analytics to measure audience. Your data is only collected with your consent. See the ",
+    text: "This site measures its audience with Google Analytics. Allow it, or decline to stop the measurement of your visits from now on. See the ",
     linkText: "legal notice",
     accept: "Accept",
     decline: "Decline"
   }
 };
-
-function readCookieConsent() {
-  var raw;
-  try {
-    raw = localStorage.getItem(COOKIE_CONSENT_KEY);
-  } catch (e) {
-    return null;
-  }
-  if (!raw) { return null; }
-  var parsed;
-  try {
-    parsed = JSON.parse(raw);
-  } catch (e) {
-    return null;
-  }
-  if (!parsed || typeof parsed.ts !== "number") { return null; }
-  if (Date.now() - parsed.ts > COOKIE_CONSENT_MAX_AGE_MS) { return null; }
-  return parsed;
-}
-
-function writeCookieConsent(analytics) {
-  try {
-    localStorage.setItem(COOKIE_CONSENT_KEY, JSON.stringify({ analytics: analytics, ts: Date.now() }));
-  } catch (e) {
-    // Private browsing or storage disabled: consent still applies for this
-    // page view via updateAnalyticsConsent, it just won't be remembered.
-  }
-}
-
-function updateAnalyticsConsent(granted) {
-  if (typeof window.gtag !== "function") { return; }
-  window.gtag("consent", "update", { analytics_storage: granted ? "granted" : "denied" });
-}
 
 class CookieBannerElement extends HTMLElement {
   connectedCallback() {
@@ -522,14 +487,15 @@ class CookieBannerElement extends HTMLElement {
     var declineButton = this.querySelector("[data-decline]");
     var acceptButton = this.querySelector("[data-accept]");
 
+    var consent = window.mlabConsent;
+
     declineButton.addEventListener("click", function () {
-      writeCookieConsent(false);
+      consent.store(false);
       self.close();
     });
 
     acceptButton.addEventListener("click", function () {
-      writeCookieConsent(true);
-      updateAnalyticsConsent(true);
+      consent.store(true);
       self.close();
     });
 
@@ -539,13 +505,7 @@ class CookieBannerElement extends HTMLElement {
       new ResizeObserver(function () { self.reserveSpace(); }).observe(this);
     }
 
-    var stored = readCookieConsent();
-    if (stored) {
-      if (stored.analytics) { updateAnalyticsConsent(true); }
-      this.hidden = true;
-    } else {
-      this.hidden = false;
-    }
+    this.hidden = consent.read() !== null;
     this.reserveSpace();
   }
 

@@ -40,9 +40,9 @@ L’ensemble du contenu de ce site — textes, images, graphismes, logo, structu
 
 Les informations recueillies via le formulaire de contact — nom, adresse e-mail, nom de l’entreprise et message — sont transmises à Formspree, Inc. (https://formspree.io), notre sous-traitant, aux seules fins de nous acheminer votre message. Elles sont utilisées exclusivement pour répondre à votre demande, ne sont pas stockées sur nos serveurs et ne sont communiquées à aucun tiers. Formspree, Inc. étant établie aux États-Unis, cet acheminement implique un transfert de données hors de l’Union européenne. Ce traitement repose sur les mesures précontractuelles prises à votre demande (article 6.1.b du RGPD). Vos messages sont conservés le temps nécessaire au traitement de votre demande, et au plus trois ans après notre dernier échange.
 
-Ce site utilise Google Tag Manager pour charger Google Analytics 4, un outil de mesure d’audience de Google Ireland Limited. Cet outil n’est activé qu’après votre consentement, recueilli via la bannière affichée lors de votre première visite. Vous pouvez modifier votre choix à tout moment via le bouton « Gérer les cookies » en pied de page.
+Ce site utilise Google Tag Manager pour charger Google Analytics 4, un outil de mesure d’audience de Google Ireland Limited. Dans l’Espace économique européen, au Royaume-Uni, en Suisse, au Québec, en Californie et dans les autres États américains dotés d’une loi sur la protection des données des consommateurs, Google Analytics n’est chargé qu’après votre consentement, recueilli via la bannière affichée lors de votre première visite. Ailleurs, la mesure est active dès la première page vue, et un refus dans la bannière l’arrête pour la suite. Votre région est déterminée par Google à partir de votre adresse IP. Vous pouvez modifier votre choix à tout moment via le bouton « Gérer les cookies » en pied de page.
 
-Cette mesure d’audience repose sur votre consentement (article 6.1.a du RGPD), que vous pouvez retirer à tout moment. Si vous consentez au suivi, Google Analytics dépose des cookies (_ga, _ga_*) pendant 13 mois maximum, à des fins de mesure d’audience (pages consultées, provenance du trafic, durée de visite). Ces données sont traitées par Google Ireland Limited et peuvent être transférées vers les États-Unis. Si vous refusez ou ne répondez pas à la bannière, aucun cookie n’est déposé et aucune donnée de navigation n’est collectée.
+En Europe, cette mesure d’audience repose sur votre consentement (article 6.1.a du RGPD), que vous pouvez retirer à tout moment. Lorsque la mesure est active, Google Analytics dépose des cookies (_ga, _ga_*) pendant 13 mois maximum, à des fins de mesure d’audience (pages consultées, provenance du trafic, durée de visite). Ces données sont traitées par Google Ireland Limited et peuvent être transférées vers les États-Unis. Si vous refusez ou ne répondez pas à la bannière, Google Analytics n’est pas chargé : aucun cookie n’est déposé et rien n’est envoyé à Google.
 
 Conformément au Règlement général sur la protection des données (RGPD) et à la loi Informatique et Libertés, vous disposez d’un droit d’accès, de rectification, d’effacement, de limitation du traitement, de portabilité et d’opposition concernant vos données personnelles. Pour exercer ces droits, contactez-nous à l’adresse : privacy@monolithiclab.fr.
 
@@ -50,7 +50,7 @@ Si vous estimez, après nous avoir contactés, que vos droits ne sont pas respec
 
 ## Cookies
 
-En dehors du consentement éventuel à Google Analytics décrit ci-dessus, ce site ne dépose aucun cookie. Votre choix de consentement est mémorisé localement dans votre navigateur pendant 6 mois, sans être partagé avec un tiers.
+En dehors des cookies de Google Analytics décrits ci-dessus, ce site ne dépose qu’un cookie, mlab_consent, qui mémorise votre choix pendant 6 mois. Il n’est lu que par ce site et n’est partagé avec aucun tiers.
 
 ## Limitation de responsabilité
 
