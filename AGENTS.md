@@ -9,10 +9,8 @@ static site that GitHub Pages serves. French at the root, English under `en-us/`
 - **This repo is public: assume anything committed once is permanently readable.** Strategy, pricing, planning and
   brand rationale live in the private `company` repo. `PLAN.md`, `DESIGN_PROMPT.md` and `docs/` are gitignored, and
   `make lint` fails if one is ever tracked.
-- **Every push to `main` deploys the live site** (`.github/workflows/deploy.yml`). Small copy changes (wording fixes,
-  aligning a sentence) are committed **and pushed** to `main` directly: "All good for small copy changes, no worries
-  with the commit and push." Design or layout changes, new pages and multi-file rewrites are committed, then shown,
-  and pushed only once Nicolas says so.
+- **Every push to `main` deploys the live site** (`.github/workflows/deploy.yml`), so the lab rule on production side
+  effects applies.
 - **`_tokens.css` is generated, never edited.** It is rendered from `brand/tokens.json` by `make brand` in the
   company repo, then committed here. `main.css` holds no colour literal: `var(--color-*)`, or
   `rgb(var(--rgb-*) / <alpha>)` for the translucent cases.
@@ -111,4 +109,4 @@ Hover is an instant fill swap; the slab rising on load is the only animation.
 
 1. Minimal change, plus the owning doc in the same change
 2. `make ci` green
-3. Commit with the session's trailers; push only small copy fixes without asking (see Hard rules)
+3. Commit with the session's trailers, then push
