@@ -14,7 +14,8 @@ cta_band:
   button_url: "/en-us/contact/"
 ---
 
-<service-list label="Articles" heading="Six articles to help you decide">
+<service-list label="Articles" heading="Seven articles to help you decide">
+  <service-item title="Self-improving software: what a CEO has to decide first" href="/en-us/articles/self-improving-software/">Agents can read errors and propose a fix. The four decisions that stay with leadership, and where to start.</service-item>
   <service-item title="What is a fractional CTO?" href="/en-us/articles/what-is-a-fractional-cto/">Definition, role, cadence, cost, and limits. How it differs from a consultant, a freelancer, and an in-house CTO.</service-item>
   <service-item title="What is an interim CTO?" href="/en-us/articles/what-is-an-interim-cto/">Definition, typical situations, how an engagement runs, how long it lasts, and how to choose one.</service-item>
   <service-item title="Why a fractional CTO makes sense for small and mid-sized companies" href="/en-us/articles/fractional-cto-for-small-business/">What a full-time CTO costs, what having no CTO costs, and the signs that it’s time.</service-item>

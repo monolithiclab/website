@@ -63,6 +63,8 @@ AI isn’t just for developers. The fastest gains are often elsewhere:
   <step-item number="05" title="Expand and hand over">Internal champions in each team, a repeatable method, and a plan for the next use cases.</step-item>
 </step-timeline>
 
+[Read the article: self-improving software](/en-us/articles/self-improving-software/)
+
 ## How to engage
 
 - **As part of a CTO engagement.** AI transformation is part of both the [fractional CTO](/en-us/fractional-cto/) and the [interim CTO](/en-us/interim-cto/) roles.

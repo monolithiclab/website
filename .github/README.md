@@ -10,7 +10,7 @@ gomddoc never publishes.
 
 ## Status
 
-Live at [monolithiclab.fr](https://monolithiclab.fr): ten pages and six articles in each language, plus placeholder
+Live at [monolithiclab.fr](https://monolithiclab.fr): ten pages and seven articles in each language, plus placeholder
 pages for the Hazereel and Mojiroll apps under `apps/`. Open items are tracked privately with the rest of the
 company's plan.
 

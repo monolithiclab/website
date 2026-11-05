@@ -62,6 +62,8 @@ L’IA ne concerne pas que les développeurs. Les gains les plus rapides se trou
   <step-item number="05" title="Étendre et transmettre">Des référents internes dans chaque équipe, une méthode reproductible, et un plan pour les cas suivants.</step-item>
 </step-timeline>
 
+[Lire l’article : le logiciel qui s’améliore tout seul](/articles/logiciel-qui-s-ameliore/)
+
 ## Dans quel cadre
 
 - **Au sein d’une mission de CTO.** La transformation IA fait partie du rôle de [CTO à temps partagé](/cto-temps-partage/) comme de celui de [CTO de transition](/cto-de-transition/).

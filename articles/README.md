@@ -13,7 +13,8 @@ cta_band:
   button_url: "/contact/"
 ---
 
-<service-list label="Articles" heading="Six articles pour décider">
+<service-list label="Articles" heading="Sept articles pour décider">
+  <service-item title="Le logiciel qui s’améliore tout seul : ce qu’un dirigeant doit décider d’abord" href="/articles/logiciel-qui-s-ameliore/">Des agents savent lire les erreurs et proposer un correctif. Les quatre décisions qui restent à la direction, et par où commencer.</service-item>
   <service-item title="Qu’est-ce qu’un CTO à temps partagé ?" href="/articles/cto-temps-partage-definition/">Définition, rôle, rythme, coût et limites. Ce qui le distingue d’un consultant, d’un freelance et d’un CTO salarié.</service-item>
   <service-item title="Qu’est-ce qu’un CTO de transition ?" href="/articles/cto-de-transition-definition/">Définition, situations types, déroulé d’une mission, durée, et les critères pour bien le choisir.</service-item>
   <service-item title="Pourquoi un CTO à temps partagé est pertinent pour une PME" href="/articles/cto-temps-partage-pme/">Ce que coûte un CTO à plein temps, ce que coûte l’absence de CTO, et les signes que le moment est venu.</service-item>
