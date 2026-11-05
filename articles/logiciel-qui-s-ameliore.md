@@ -49,7 +49,7 @@ Inutile de viser tout le logiciel de l’entreprise. Mieux vaut partir d’un p�
 
 Monolithic Lab développe [Millstream](/apps/millstream/), une plateforme de pipelines qui mêle code, agents IA et décisions humaines, encore en préversion. Les analyses de production y sont calculées par des règles, sans IA. Un agent rédige les propositions, le moteur les valide sur l’historique, et une personne les accepte.
 
-Sur le scénario de test, avec des données synthétiques qui suivent une règle, le code proposé a remplacé l’agent sur 260 cas sur 270, et le coût en agents de la journée suivante est tombé à 3,7 % du coût de départ. Ce chiffre montre la boucle à l’œuvre de bout en bout. Sur un processus réel, le résultat dépend de ses données. [Le détail technique](https://millstream.dev/blog/self-improving-pipelines) est disponible en anglais.
+Sur le scénario de test, avec des données synthétiques qui suivent une règle, le code proposé a remplacé l’agent sur 260 cas sur 270, et le coût en agents de la journée suivante est tombé à 5,2 % du coût de départ, contrôles par échantillon compris. Ce chiffre montre la boucle à l’œuvre de bout en bout. Sur un processus réel, le résultat dépend de ses données. [Le détail technique](https://millstream.dev/blog/self-improving-pipelines) est disponible en anglais.
 
 ## Le lien avec le rôle de CTO
 
