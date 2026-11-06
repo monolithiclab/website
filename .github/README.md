@@ -25,7 +25,7 @@ make run     # local preview with live reload, opens the browser
 make ci      # the gate: lint checks, then the production build into public/
 ```
 
-Every push to `main` deploys. The palette (`_tokens.css`) is generated from the private company repo; never edit it
+A `v*` tag on `main` deploys, after a green `make ci`. The palette (`_tokens.css`) is generated from the private company repo; never edit it
 by hand.
 
 ## Documentation
