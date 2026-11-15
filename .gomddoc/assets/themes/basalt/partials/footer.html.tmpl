@@ -29,7 +29,7 @@
     </div>
   </div>
   <div class="footer__bottom">
-    <span class="footer__copy">&copy; 2026 Monolithic Lab SASU</span>
+    <span class="footer__copy">&copy; 2026 Monolithic Lab SARL</span>
     <div class="footer__legal-links">
       <a href="{{ if eq $lang "en" }}{{ contentURL "en-us/legal.md" }}{{ else }}{{ contentURL "mentions-legales.md" }}{{ end }}" class="footer__legal">{{ if eq $lang "en" }}Legal notice{{ else }}Mentions légales{{ end }}</a>
       {{- if index .Site.Theme.Vars "gtm_id" }}

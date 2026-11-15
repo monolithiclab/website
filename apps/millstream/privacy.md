@@ -13,7 +13,7 @@ _Last updated: 27 October 2026_
 
 ## Publisher
 
-Millstream is published by Monolithic Lab SASU, 14 rue de Cambrai, 75019 Paris, France.
+Millstream is published by Monolithic Lab SARL, 14 rue de Cambrai, 75019 Paris, France.
 
 ## Data collected
 

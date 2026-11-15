@@ -1,6 +1,6 @@
 ---
 title: "Legal Information — Monolithic Lab"
-description: "Legal information, company details, and privacy policy for Monolithic Lab SASU."
+description: "Legal information, company details, and privacy policy for Monolithic Lab SARL."
 lang: "en"
 alternate: "/mentions-legales/"
 hero:
@@ -10,14 +10,14 @@ hero:
 
 ## Company information
 
-**Legal name:** Monolithic Lab SASU<br>
-**Legal form:** simplified joint-stock company with a single shareholder (SASU)<br>
+**Legal name:** Monolithic Lab SARL<br>
+**Legal form:** limited liability company with a single shareholder (société à responsabilité limitée, SARL)<br>
 **Registered office:** 14 rue de Cambrai, 75019 Paris, France<br>
 **Share capital:** EUR 1,000<br>
 **Trade register:** RCS Paris (registration pending)<br>
 **SIRET:** (pending)<br>
 **VAT:** not applicable, article 293 B of the French General Tax Code<br>
-**President:** Nicolas Mussat
+**Managing director (gérant):** Nicolas Mussat
 
 ## Publication
 
@@ -50,10 +50,10 @@ If, after contacting us, you believe your rights have not been respected, you ma
 
 ## Intellectual property
 
-All content on this website — text, graphics, logos, and design — is the property of Monolithic Lab SASU and is protected by applicable intellectual property laws. Reproduction, distribution, or use of any content without prior written consent is prohibited.
+All content on this website — text, graphics, logos, and design — is the property of Monolithic Lab SARL and is protected by applicable intellectual property laws. Reproduction, distribution, or use of any content without prior written consent is prohibited.
 
 ## Limitation of liability
 
-The information published on this website is provided for general information and may change at any time. Monolithic Lab SASU strives to keep it accurate and up to date, but cannot be held liable for any errors, omissions, or results obtained from its use.
+The information published on this website is provided for general information and may change at any time. Monolithic Lab SARL strives to keep it accurate and up to date, but cannot be held liable for any errors, omissions, or results obtained from its use.
 
-Links to third-party websites do not make Monolithic Lab SASU responsible for the content of those websites.
+Links to third-party websites do not make Monolithic Lab SARL responsible for the content of those websites.

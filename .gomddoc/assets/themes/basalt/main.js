@@ -320,7 +320,7 @@ class ContactFormElement extends HTMLElement {
           '</div>' +
           '<div class="contact-info__block">' +
             '<span class="eyebrow eyebrow--muted">' + (isEn ? "Company" : "Soci\u00e9t\u00e9") + '</span>' +
-            '<span class="contact-info__value">Monolithic Lab SASU</span>' +
+            '<span class="contact-info__value">Monolithic Lab SARL</span>' +
           '</div>' +
         '</div>' +
       '</div>';

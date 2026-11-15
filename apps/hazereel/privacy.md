@@ -13,7 +13,7 @@ _Last updated: 30 October 2026_
 
 ## Publisher
 
-Hazereel is published by Monolithic Lab SASU, 14 rue de Cambrai, 75019 Paris, France.
+Hazereel is published by Monolithic Lab SARL, 14 rue de Cambrai, 75019 Paris, France.
 
 ## Data collected
 

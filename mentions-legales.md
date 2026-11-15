@@ -9,13 +9,13 @@ hero:
 
 ## Éditeur du site
 
-**Monolithic Lab SASU**<br>
-Société par actions simplifiée unipersonnelle au capital de 1 000 euros<br>
+**Monolithic Lab SARL**<br>
+Société à responsabilité limitée à associé unique au capital de 1 000 euros<br>
 Siège social : 14 rue de Cambrai, 75019 Paris, France<br>
 RCS Paris : en cours d’immatriculation<br>
 SIRET : en cours d’attribution<br>
 TVA : non applicable, article 293 B du Code général des impôts<br>
-Président : Nicolas Mussat<br>
+Gérant : Nicolas Mussat<br>
 Directeur de la publication : Nicolas Mussat
 
 ## Contact
@@ -34,7 +34,7 @@ Site web : https://github.com
 
 ## Propriété intellectuelle
 
-L’ensemble du contenu de ce site — textes, images, graphismes, logo, structure — est la propriété exclusive de Monolithic Lab SASU, sauf mention contraire. Toute reproduction, représentation, modification ou adaptation, totale ou partielle, est interdite sans autorisation écrite préalable.
+L’ensemble du contenu de ce site — textes, images, graphismes, logo, structure — est la propriété exclusive de Monolithic Lab SARL, sauf mention contraire. Toute reproduction, représentation, modification ou adaptation, totale ou partielle, est interdite sans autorisation écrite préalable.
 
 ## Données personnelles
 
@@ -54,6 +54,6 @@ En dehors des cookies de Google Analytics décrits ci-dessus, ce site ne dépose
 
 ## Limitation de responsabilité
 
-Les informations publiées sur ce site sont fournies à titre indicatif et sont susceptibles d’être modifiées à tout moment. Monolithic Lab SASU s’efforce de maintenir des informations exactes et à jour, mais ne saurait être tenue responsable d’éventuelles erreurs, omissions ou résultats obtenus suite à l’utilisation de ces informations.
+Les informations publiées sur ce site sont fournies à titre indicatif et sont susceptibles d’être modifiées à tout moment. Monolithic Lab SARL s’efforce de maintenir des informations exactes et à jour, mais ne saurait être tenue responsable d’éventuelles erreurs, omissions ou résultats obtenus suite à l’utilisation de ces informations.
 
-Les liens hypertextes vers des sites tiers ne sauraient engager la responsabilité de Monolithic Lab SASU quant au contenu de ces sites.
+Les liens hypertextes vers des sites tiers ne sauraient engager la responsabilité de Monolithic Lab SARL quant au contenu de ces sites.
