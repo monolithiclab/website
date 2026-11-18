@@ -1,6 +1,6 @@
 ---
 title: "CTO à temps partagé pour PME et scale-ups — Monolithic Lab"
-description: "Un CTO senior 1 à 3 jours par semaine : décisions techniques, équipe, recrutements, transformation IA. Pour les PME qui ont besoin d’une direction technique avant de pouvoir justifier un poste à plein temps."
+description: "Un CTO senior 1 à 3 jours par semaine : décisions techniques, équipe, recrutements, transformation IA. Pour les PME qui ont besoin d’une direction technique avant de pouvoir justifier un poste à plein temps."
 alternate: "/en-us/fractional-cto/"
 hero:
   compact: true
@@ -8,7 +8,7 @@ hero:
   headline: "Une direction technique complète, quelques jours par semaine"
   subheadline: "Pour les PME et scale-ups qui ont une équipe technique mais personne pour la diriger. Monolithic Lab tient le rôle de CTO 1 à 3 jours par semaine, et conduit la transformation IA de toute l’entreprise."
 cta_band:
-  text: "Votre équipe technique avance sans direction ? Décrivez votre situation."
+  text: "Votre équipe technique avance sans direction ? Décrivez votre situation."
   button_text: "Prendre contact"
   button_url: "/contact/"
 ---
@@ -17,9 +17,9 @@ cta_band:
 
 Un **CTO à temps partagé** — on dit aussi CTO fractionné, ou *fractional CTO* en anglais — est un directeur technique qui exerce le rôle complet pour une entreprise, sur une partie de son temps seulement.
 
-Ce n’est ni un consultant ni un prestataire. Il prend les décisions, dirige l’équipe et répond des résultats, comme un CTO salarié. La différence porte sur le volume : quelques jours par semaine au lieu de cinq, et des honoraires au lieu d’un salaire.
+Ce n’est ni un consultant ni un prestataire. Il prend les décisions, dirige l’équipe et répond des résultats, comme un CTO salarié. La différence porte sur le volume : quelques jours par semaine au lieu de cinq, et des honoraires au lieu d’un salaire.
 
-[Lire l’article complet : qu’est-ce qu’un CTO à temps partagé ?](/articles/cto-temps-partage-definition/)
+[Lire l’article complet : qu’est-ce qu’un CTO à temps partagé ?](/articles/cto-temps-partage-definition/)
 
 ## Pour qui
 
@@ -42,7 +42,7 @@ Levée de fonds, due diligence, rachat, refonte, ouverture à l’international,
 - architecture et choix de stack
 - construire, acheter ou arrêter
 - priorités techniques alignées sur les objectifs de l’entreprise
-- dette technique : ce qui se rembourse maintenant, ce qui attend
+- dette technique : ce qui se rembourse maintenant, ce qui attend
 
 ### Équipe
 
@@ -53,10 +53,10 @@ Levée de fonds, due diligence, rachat, refonte, ouverture à l’international,
 
 ### Transformation IA
 
-- agents IA dans le cycle de développement : écriture, revue, tests, documentation
+- agents IA dans le cycle de développement : écriture, revue, tests, documentation
 - nouvelles pratiques et garde-fous pour l’équipe technique
-- usages de l’IA dans les autres équipes : service client, ventes, finance, opérations
-- plan d’adoption construit avec les équipes, dans une approche inspirée du Forward Deployed Engineer : sur place, sur vos données, jugé sur l’usage réel
+- usages de l’IA dans les autres équipes : service client, ventes, finance, opérations
+- plan d’adoption construit avec les équipes, dans une approche inspirée du Forward Deployed Engineer : sur place, sur vos données, jugé sur l’usage réel
 
 [La transformation IA en détail](/transformation-ia/)
 
@@ -80,9 +80,9 @@ Levée de fonds, due diligence, rachat, refonte, ouverture à l’international,
 
 **Durée.** De quelques mois à plus d’un an. La mission s’arrête quand l’entreprise peut s’en passer.
 
-**Fin de mission.** Elle se prépare dès le départ : décisions documentées, architecture décrite, successeur recruté ou formé.
+**Fin de mission.** Elle se prépare dès le départ : décisions documentées, architecture décrite, successeur recruté ou formé.
 
-## Temps partagé, transition ou forfait ?
+## Temps partagé, transition ou forfait ?
 
 Le temps partagé convient quand le besoin est durable mais ne remplit pas une semaine. Si le poste de CTO est vacant et qu’il faut quelqu’un de très présent pendant quelques mois, il s’agit d’une mission de [CTO de transition](/cto-de-transition/). Pour un besoin ponctuel et délimité — diagnostic, exploration IA, POC, MVP — une [mission au forfait](/missions-au-forfait/) suffit.
 
@@ -90,8 +90,8 @@ Le temps partagé convient quand le besoin est durable mais ne remplit pas une s
 
 Plus de 25 ans d’expérience en développement, architecture et direction d’équipes techniques. Chez **MeilleursAgents**, premier salarié devenu CTO, Nicolas Mussat a construit de zéro la technique et l’équipe d’une plateforme de 1,8 million de visiteurs par mois. Chez **Prose**, cofondateur et CTO, il a construit la plateforme de personnalisation et de fabrication à la commande qui fait tourner l’entreprise.
 
-Un CTO qui fait, pas seulement qui gère : Nicolas Mussat pilote lui-même des agents IA pour prototyper, analyser et construire, et transmet cette pratique aux équipes.
+Un CTO qui fait, pas seulement qui gère : Nicolas Mussat pilote lui-même des agents IA pour prototyper, analyser et construire, et transmet cette pratique aux équipes.
 
-Un seul interlocuteur, indépendant de tout éditeur, intégrateur ou fournisseur d’IA : les recommandations ne servent que votre entreprise.
+Un seul interlocuteur, indépendant de tout éditeur, intégrateur ou fournisseur d’IA : les recommandations ne servent que votre entreprise.
 
 [Voir les références](/references/)

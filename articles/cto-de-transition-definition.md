@@ -1,14 +1,14 @@
 ---
-title: "Qu’est-ce qu’un CTO de transition ? Définition, missions et durée — Monolithic Lab"
+title: "Qu’est-ce qu’un CTO de transition ? Définition, missions et durée — Monolithic Lab"
 description: "Le CTO de transition occupe un poste de directeur technique vacant pour une durée limitée. Définition, situations types, déroulé d’une mission, durée et critères de choix."
 alternate: "/en-us/articles/what-is-an-interim-cto/"
 hero:
   compact: true
   label: "Article"
-  headline: "Qu’est-ce qu’un CTO de transition ?"
+  headline: "Qu’est-ce qu’un CTO de transition ?"
   subheadline: "Définition, situations types, déroulé d’une mission, et ce qu’il faut vérifier avant d’en choisir un."
 cta_band:
-  text: "Votre poste de CTO est vacant, ou va l’être ? Plus tôt la transition commence, moins elle coûte."
+  text: "Votre poste de CTO est vacant, ou va l’être ? Plus tôt la transition commence, moins elle coûte."
   button_text: "Décrire votre situation"
   button_url: "/contact/"
 ---
@@ -19,21 +19,21 @@ Un **CTO de transition** est un directeur technique engagé pour une durée limi
 
 On parle aussi de CTO par intérim, ou d’*interim CTO* en anglais.
 
-Sa mission a trois caractéristiques :
+Sa mission a trois caractéristiques :
 
-- **un début rapide** : il prend le poste en quelques jours, pas en quelques mois
-- **un objectif précis** : stabiliser, trancher ce qui ne peut pas attendre, préparer la suite
-- **une fin prévue** : il part quand le successeur est recruté et installé
+- **un début rapide** : il prend le poste en quelques jours, pas en quelques mois
+- **un objectif précis** : stabiliser, trancher ce qui ne peut pas attendre, préparer la suite
+- **une fin prévue** : il part quand le successeur est recruté et installé
 
-## CTO de transition ou CTO à temps partagé ?
+## CTO de transition ou CTO à temps partagé ?
 
 Les deux exercent le rôle complet de CTO. Ce qui les distingue, c’est la situation de départ.
 
-Le [CTO à temps partagé](/articles/cto-temps-partage-definition/) répond à un besoin **durable mais partiel** : l’entreprise a besoin d’un CTO, mais pas cinq jours par semaine. La mission peut durer plus d’un an.
+Le [CTO à temps partagé](/articles/cto-temps-partage-definition/) répond à un besoin **durable mais partiel** : l’entreprise a besoin d’un CTO, mais pas cinq jours par semaine. La mission peut durer plus d’un an.
 
-Le CTO de transition répond à une **rupture** : le poste existait, il est vide ou ne fonctionne plus. L’engagement est plus intense, souvent proche d’un temps plein au démarrage, et la mission plus courte.
+Le CTO de transition répond à une **rupture** : le poste existait, il est vide ou ne fonctionne plus. L’engagement est plus intense, souvent proche d’un temps plein au démarrage, et la mission plus courte.
 
-Les deux formats se suivent parfois : une transition se prolonge en temps partagé, le temps que l’entreprise décide si elle a vraiment besoin d’un CTO à plein temps.
+Les deux formats se suivent parfois : une transition se prolonge en temps partagé, le temps que l’entreprise décide si elle a vraiment besoin d’un CTO à plein temps.
 
 ## Les situations types
 
@@ -53,7 +53,7 @@ Rencontrer chaque membre de l’équipe. Recenser les chantiers en cours, les en
 
 ### Stabiliser et diriger
 
-Remettre des priorités claires et un rythme de livraison. Traiter les risques identifiés. Engager la transformation IA plutôt que la reporter : une transition est souvent le bon moment pour changer les pratiques de l’équipe. Retenir l’équipe : une vacance de CTO provoque souvent des départs en chaîne, et chaque départ allonge la sortie de crise. Informer la direction, et le board si besoin, de l’état réel de la technique.
+Remettre des priorités claires et un rythme de livraison. Traiter les risques identifiés. Engager la transformation IA plutôt que la reporter : une transition est souvent le bon moment pour changer les pratiques de l’équipe. Retenir l’équipe : une vacance de CTO provoque souvent des départs en chaîne, et chaque départ allonge la sortie de crise. Informer la direction, et le board si besoin, de l’état réel de la technique.
 
 ### Préparer la succession
 
@@ -63,9 +63,9 @@ Le CTO de transition connaît le poste de l’intérieur. Il est le mieux placé
 
 Documenter l’architecture, les décisions et les chantiers ouverts. Accompagner les premières semaines du nouveau CTO. Partir.
 
-## Combien de temps ?
+## Combien de temps ?
 
-Le temps de stabiliser, puis de recruter et d’installer le successeur : en général quelques mois. Une mission qui s’éternise sans recrutement en cours est souvent le signe que l’entreprise a en réalité besoin d’un [CTO à temps partagé](/cto-temps-partage/).
+Le temps de stabiliser, puis de recruter et d’installer le successeur : en général quelques mois. Une mission qui s’éternise sans recrutement en cours est souvent le signe que l’entreprise a en réalité besoin d’un [CTO à temps partagé](/cto-temps-partage/).
 
 ## Comment le choisir
 
@@ -86,4 +86,4 @@ Le temps de stabiliser, puis de recruter et d’installer le successeur : en gé
 
 Le CTO de transition évite qu’un poste vacant ne devienne une crise. Il reprend la direction technique, stabilise l’équipe, et transforme le recrutement du successeur en décision informée.
 
-Voir aussi : [l’offre de CTO de transition de Monolithic Lab](/cto-de-transition/).
+Voir aussi : [l’offre de CTO de transition de Monolithic Lab](/cto-de-transition/).

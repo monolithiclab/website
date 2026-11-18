@@ -6,9 +6,9 @@ hero:
   compact: true
   label: "Approche"
   headline: "Comprendre, décider, transmettre"
-  subheadline: "Une mission de CTO se juge à ce qu’elle laisse derrière elle : de meilleures décisions, une équipe plus solide, et une entreprise qui n’a plus besoin de renfort."
+  subheadline: "Une mission de CTO se juge à ce qu’elle laisse derrière elle : de meilleures décisions, une équipe plus solide, et une entreprise qui n’a plus besoin de renfort."
 cta_band:
-  text: "Cette façon de travailler correspond à votre situation ? Décrivez-la."
+  text: "Cette façon de travailler correspond à votre situation ? Décrivez-la."
   button_text: "Prendre contact"
   button_url: "/contact/"
 ---
@@ -17,7 +17,7 @@ cta_band:
   <step-item number="01" title="Comprendre avant d’agir">Architecture, code, équipe, organisation, contrats, coûts. Le constat vient avant les recommandations, et il est écrit.</step-item>
   <step-item number="02" title="Choisir peu de priorités">Tout ne se traite pas en même temps. Trois ou quatre chantiers qui changent la situation valent mieux qu’une liste de trente.</step-item>
   <step-item number="03" title="Décider et assumer">Un CTO tranche. Les décisions sont expliquées à l’équipe, défendues devant la direction, et leur auteur en répond.</step-item>
-  <step-item number="04" title="Construire avec les équipes">Un outil, une automatisation ou un usage de l’IA se construit avec les personnes qui s’en serviront, sur leurs données, et se justifie par ce qu’il rapporte : un coût supprimé, un délai raccourci, un risque éliminé.</step-item>
+  <step-item number="04" title="Construire avec les équipes">Un outil, une automatisation ou un usage de l’IA se construit avec les personnes qui s’en serviront, sur leurs données, et se justifie par ce qu’il rapporte : un coût supprimé, un délai raccourci, un risque éliminé.</step-item>
   <step-item number="05" title="Transmettre avant de partir">Décisions documentées, équipe autonome, successeur recruté ou formé. La mission est réussie quand l’entreprise peut s’en passer.</step-item>
 </step-timeline>
 
@@ -25,7 +25,7 @@ cta_band:
 
 ### Comprendre le métier, piloter les agents
 
-Les profils de pur manager disparaissent. Un bon CTO comprend le travail de ses équipes sur le plan opérationnel, et pilote lui-même des agents IA pour exécuter : analyser un code, prototyper une idée, construire un outil. Il juge sur des résultats, et il sait vérifier ce que les agents produisent.
+Les profils de pur manager disparaissent. Un bon CTO comprend le travail de ses équipes sur le plan opérationnel, et pilote lui-même des agents IA pour exécuter : analyser un code, prototyper une idée, construire un outil. Il juge sur des résultats, et il sait vérifier ce que les agents produisent.
 
 ### Construire le plan d’adoption avec vous
 

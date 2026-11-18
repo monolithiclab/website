@@ -1,14 +1,14 @@
 ---
 title: "CTO de transition — Monolithic Lab"
-description: "Votre poste de CTO est vacant ou fragilisé ? Un CTO de transition reprend la direction technique sans délai, stabilise l’équipe et prépare l’arrivée du successeur."
+description: "Votre poste de CTO est vacant ou fragilisé ? Un CTO de transition reprend la direction technique sans délai, stabilise l’équipe et prépare l’arrivée du successeur."
 alternate: "/en-us/interim-cto/"
 hero:
   compact: true
   label: "CTO de transition"
   headline: "Votre CTO part. La direction technique continue."
-  subheadline: "Départ, désaccord, absence longue, rachat : quand le poste de CTO se vide, Monolithic Lab reprend la direction technique, engage la transformation IA de l’équipe, et tient le poste jusqu’à l’arrivée du successeur."
+  subheadline: "Départ, désaccord, absence longue, rachat : quand le poste de CTO se vide, Monolithic Lab reprend la direction technique, engage la transformation IA de l’équipe, et tient le poste jusqu’à l’arrivée du successeur."
 cta_band:
-  text: "Le poste de CTO est vacant, ou va l’être ? Plus tôt la transition commence, moins elle coûte."
+  text: "Le poste de CTO est vacant, ou va l’être ? Plus tôt la transition commence, moins elle coûte."
   button_text: "Prendre contact"
   button_url: "/contact/"
 ---
@@ -17,11 +17,11 @@ cta_band:
 
 Un **CTO de transition** est un directeur technique en management de transition. Il occupe le poste pour une durée limitée, entre deux titulaires ou pendant une période critique.
 
-Sa mission a un début, une fin et un objectif : stabiliser l’équipe, trancher ce qui ne peut pas attendre, et remettre au successeur une équipe et des systèmes en ordre.
+Sa mission a un début, une fin et un objectif : stabiliser l’équipe, trancher ce qui ne peut pas attendre, et remettre au successeur une équipe et des systèmes en ordre.
 
-L’engagement est plus intense qu’en [temps partagé](/cto-temps-partage/), souvent proche d’un temps plein au démarrage. Il est aussi plus court : quelques mois, le temps de recruter et d’installer le prochain CTO.
+L’engagement est plus intense qu’en [temps partagé](/cto-temps-partage/), souvent proche d’un temps plein au démarrage. Il est aussi plus court : quelques mois, le temps de recruter et d’installer le prochain CTO.
 
-[Lire l’article complet : qu’est-ce qu’un CTO de transition ?](/articles/cto-de-transition-definition/)
+[Lire l’article complet : qu’est-ce qu’un CTO de transition ?](/articles/cto-de-transition-definition/)
 
 ## Quand y recourir
 
@@ -49,9 +49,9 @@ Rachat, fusion, due diligence, incident majeur, migration critique, changement d
 ### Stabiliser et diriger
 
 - remettre des priorités claires et un rythme de livraison
-- engager la transformation IA : outiller l’équipe technique avec des agents, lancer les premiers usages dans les autres équipes, poser un plan d’adoption construit avec elles
+- engager la transformation IA : outiller l’équipe technique avec des agents, lancer les premiers usages dans les autres équipes, poser un plan d’adoption construit avec elles
 - traiter les risques identifiés
-- retenir l’équipe : une vacance de CTO provoque souvent d’autres départs
+- retenir l’équipe : une vacance de CTO provoque souvent d’autres départs
 - informer la direction, et le board si besoin, de l’état réel de la technique
 
 ### Passer le relais
@@ -67,14 +67,14 @@ Rachat, fusion, due diligence, incident majeur, migration critique, changement d
 - un état des lieux écrit, honnête, utilisable pour recruter
 - un recrutement mieux ciblé, parce que le besoin a été mesuré de l’intérieur
 - un successeur qui arrive sur une situation connue
-- une transformation IA engagée plutôt que reportée : une transition est souvent le bon moment pour changer les pratiques
+- une transformation IA engagée plutôt que reportée : une transition est souvent le bon moment pour changer les pratiques
 
 ## Pourquoi Monolithic Lab
 
 Reprendre un poste en cours de route demande de comprendre vite des systèmes et des équipes construits par d’autres. Plus de 25 ans passés dans des entreprises en croissance, dont MeilleursAgents, de ses débuts au rang de leader français, et Prose, cofondée en 2017, apprennent à repérer rapidement où se trouve le risque, qui porte quoi, et ce qui peut attendre.
 
-Un CTO de transition qui fait, pas seulement qui gère : Nicolas Mussat pilote lui-même des agents IA pour analyser un code qu’il n’a pas écrit, prototyper et construire, ce qui accélère la reprise en main.
+Un CTO de transition qui fait, pas seulement qui gère : Nicolas Mussat pilote lui-même des agents IA pour analyser un code qu’il n’a pas écrit, prototyper et construire, ce qui accélère la reprise en main.
 
-Monolithic Lab n’a aucun intérêt à prolonger une mission de transition : l’objectif est un successeur installé et une équipe qui n’a plus besoin de renfort.
+Monolithic Lab n’a aucun intérêt à prolonger une mission de transition : l’objectif est un successeur installé et une équipe qui n’a plus besoin de renfort.
 
 [Voir les références](/references/)

@@ -8,27 +8,27 @@ hero:
   headline: "Pourquoi un CTO à temps partagé est pertinent pour une PME"
   subheadline: "Une PME a besoin des décisions d’un CTO. Elle a rarement besoin de cinq jours de CTO par semaine."
 cta_band:
-  text: "Vous reconnaissez votre entreprise dans ces signes ? Parlez-en à Monolithic Lab."
+  text: "Vous reconnaissez votre entreprise dans ces signes ? Parlez-en à Monolithic Lab."
   button_text: "Décrire votre situation"
   button_url: "/contact/"
 ---
 
 ## Le problème
 
-Dans une PME de 10 à 100 personnes, la technique pèse lourd : le produit, le site, le SI, les outils internes, les données, la sécurité. Les décisions techniques engagent l’entreprise pour des années.
+Dans une PME de 10 à 100 personnes, la technique pèse lourd : le produit, le site, le SI, les outils internes, les données, la sécurité. Les décisions techniques engagent l’entreprise pour des années.
 
 Pourtant, la direction technique n’y remplit pas toujours une semaine. Une équipe de cinq développeurs a besoin de quelqu’un qui fixe le cap, recrute bien et tranche les choix d’architecture. Elle n’a pas besoin de cette personne en réunion tous les jours.
 
-L’entreprise se retrouve donc face à un faux choix : recruter un CTO trop tôt, ou s’en passer trop longtemps.
+L’entreprise se retrouve donc face à un faux choix : recruter un CTO trop tôt, ou s’en passer trop longtemps.
 
 ## Ce que coûte un CTO à plein temps
 
-Le salaire n’est qu’une partie du coût. Il faut y ajouter :
+Le salaire n’est qu’une partie du coût. Il faut y ajouter :
 
 - **les charges et la part variable**
 - **le capital**, souvent demandé par les profils expérimentés
-- **le recrutement** : honoraires de cabinet, temps des dirigeants, et plusieurs mois de recherche
-- **le risque d’erreur** : un CTO mal choisi se découvre après six mois, et ses décisions restent quand il part
+- **le recrutement** : honoraires de cabinet, temps des dirigeants, et plusieurs mois de recherche
+- **le risque d’erreur** : un CTO mal choisi se découvre après six mois, et ses décisions restent quand il part
 
 Pour une PME, c’est souvent le poste le plus cher et le plus risqué à recruter.
 
@@ -36,7 +36,7 @@ Pour une PME, c’est souvent le poste le plus cher et le plus risqué à recrut
 
 Sans CTO, les décisions techniques se prennent quand même. Elles se prennent par défaut, par un fondateur qui manque de temps, par le développeur le plus ancien, ou par un prestataire dont ce n’est pas l’intérêt.
 
-Les conséquences apparaissent plus tard, et coûtent plus cher :
+Les conséquences apparaissent plus tard, et coûtent plus cher :
 
 - une architecture qui ne passe pas la croissance et qu’il faut refaire
 - une dépendance totale à un développeur ou à une agence
@@ -73,11 +73,11 @@ Les conséquences apparaissent plus tard, et coûtent plus cher :
 ## Quand ce n’est pas la bonne réponse
 
 - **Le besoin est uniquement de la capacité de développement.** Un freelance ou une agence coûtera moins cher.
-- **L’équipe technique compte déjà plusieurs dizaines de personnes.** La direction quotidienne remplit une semaine : il faut un CTO à plein temps.
+- **L’équipe technique compte déjà plusieurs dizaines de personnes.** La direction quotidienne remplit une semaine : il faut un CTO à plein temps.
 - **La direction n’est pas prête à déléguer.** Un CTO sans pouvoir de décision ne change rien.
 
 ## En résumé
 
-Pour une PME, la question n’est pas « avons-nous besoin d’un CTO ? », mais « de combien de CTO avons-nous besoin ? ». Tant que la réponse est moins d’une semaine, le temps partagé est la formule la plus efficace.
+Pour une PME, la question n’est pas « avons-nous besoin d’un CTO ? », mais « de combien de CTO avons-nous besoin ? ». Tant que la réponse est moins d’une semaine, le temps partagé est la formule la plus efficace.
 
-Voir aussi : [définition du CTO à temps partagé](/articles/cto-temps-partage-definition/), et [l’offre de Monolithic Lab](/cto-temps-partage/).
+Voir aussi : [définition du CTO à temps partagé](/articles/cto-temps-partage-definition/), et [l’offre de Monolithic Lab](/cto-temps-partage/).
