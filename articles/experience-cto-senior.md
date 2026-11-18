@@ -1,6 +1,7 @@
 ---
 title: "Ce que 25 ans d’expérience apportent à un poste de CTO — Monolithic Lab"
 description: "Dans un rôle à temps partagé ou de transition, le CTO a peu de temps pour comprendre et décider. L’expérience fait la différence. Ce que 25 ans de métier changent concrètement."
+date: "2026-09-23"
 alternate: "/en-us/articles/what-25-years-of-experience-brings/"
 hero:
   compact: true

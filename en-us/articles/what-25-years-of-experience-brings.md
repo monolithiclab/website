@@ -1,6 +1,7 @@
 ---
 title: "What 25 Years of Experience Brings to the CTO Role — Monolithic Lab"
 description: "A fractional or interim CTO has little time to understand and decide. Experience makes the difference. What 25 years in the field changes in practice."
+date: "2026-09-23"
 lang: "en"
 alternate: "/articles/experience-cto-senior/"
 hero:

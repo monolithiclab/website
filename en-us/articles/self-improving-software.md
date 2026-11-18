@@ -1,6 +1,7 @@
 ---
 title: "Self-Improving Software: What a CEO Has to Decide First — Monolithic Lab"
 description: "AI agents can read errors and tickets and propose a fix. Saying what “better” means, proving each change, and keeping someone accountable remain leadership decisions."
+date: "2026-11-05"
 lang: "en"
 alternate: "/articles/logiciel-qui-s-ameliore/"
 hero:

@@ -15,6 +15,7 @@
   {{- $canonical = "" -}}
 {{- end -}}
 {{- $robots := index .Page.Meta "robots" -}}
+{{- $origin := printf "https://%s" .Site.Meta.Domain -}}
 <head>
   <meta charset="utf-8">
   <meta name="viewport" content="width=device-width, initial-scale=1">
@@ -39,13 +40,6 @@
   <style>{{ inlineCSSAsset "_tokens.css" }}</style>
   <style>{{ inlineCSSAsset "main.css" }}</style>
 
-  <!-- Open Graph -->
-  {{ if $canonical }}
-  <meta property="og:title" content="{{ or $title .Site.Meta.Title }}">
-  <meta property="og:description" content="{{ $description }}">
-  <meta property="og:type" content="{{ if $isHome }}website{{ else }}article{{ end }}">
-  <meta property="og:url" content="{{ $canonical }}">
-  <meta property="og:locale" content="{{ if eq $lang "en" }}en_US{{ else }}fr_FR{{ end }}">
   {{- /* Rendered from brand/og-image.html in the company repo (`make og`). PNG,
          not SVG: no social platform accepts an SVG og:image. */}}
   {{- $ogImage := "/images/og-image.png" -}}
@@ -54,13 +48,20 @@
     {{- $ogImage = "/images/og-image-en.png" -}}
     {{- $ogAlt = "Monolithic Lab — fractional and interim CTO" -}}
   {{- end }}
-  <meta property="og:image" content="https://{{ .Site.Meta.Domain }}{{ $ogImage }}">
+  <!-- Open Graph -->
+  {{ if $canonical }}
+  <meta property="og:title" content="{{ or $title .Site.Meta.Title }}">
+  <meta property="og:description" content="{{ $description }}">
+  <meta property="og:type" content="{{ if $isHome }}website{{ else }}article{{ end }}">
+  <meta property="og:url" content="{{ $canonical }}">
+  <meta property="og:locale" content="{{ if eq $lang "en" }}en_US{{ else }}fr_FR{{ end }}">
+  <meta property="og:image" content="{{ $origin }}{{ $ogImage }}">
   <meta property="og:image:type" content="image/png">
   <meta property="og:image:width" content="1200">
   <meta property="og:image:height" content="630">
   <meta property="og:image:alt" content="{{ $ogAlt }}">
   <meta name="twitter:card" content="summary_large_image">
-  <meta name="twitter:image" content="https://{{ .Site.Meta.Domain }}{{ $ogImage }}">
+  <meta name="twitter:image" content="{{ $origin }}{{ $ogImage }}">
   <meta name="twitter:title" content="{{ or $title .Site.Meta.Title }}">
   <meta name="twitter:description" content="{{ $description }}">
   {{ end }}
@@ -69,11 +70,11 @@
   {{ if $alternate }}
   {{ if eq $lang "en" }}
   <link rel="alternate" hreflang="en" href="{{ $canonical }}">
-  <link rel="alternate" hreflang="fr" href="https://{{ .Site.Meta.Domain }}{{ $alternate }}">
-  <link rel="alternate" hreflang="x-default" href="https://{{ .Site.Meta.Domain }}{{ $alternate }}">
+  <link rel="alternate" hreflang="fr" href="{{ $origin }}{{ $alternate }}">
+  <link rel="alternate" hreflang="x-default" href="{{ $origin }}{{ $alternate }}">
   {{ else }}
   <link rel="alternate" hreflang="fr" href="{{ $canonical }}">
-  <link rel="alternate" hreflang="en" href="https://{{ .Site.Meta.Domain }}{{ $alternate }}">
+  <link rel="alternate" hreflang="en" href="{{ $origin }}{{ $alternate }}">
   <link rel="alternate" hreflang="x-default" href="{{ $canonical }}">
   {{ end }}
   {{ end }}
@@ -139,30 +140,117 @@
   {{ end }}
   <!-- End Google Tag Manager -->
 
-  <!-- JSON-LD -->
-  {{ if $isHome }}
-  {{ if eq $lang "fr" }}
+  <!-- JSON-LD: one @graph per page. The organisation and the site on every
+       page; the page itself (FAQPage when its front matter lists `faq`), its
+       breadcrumb, and an Article for each dated page. Values are inserted bare:
+       in this script context html/template JSON-encodes each one. -->
+  {{- $site := printf "%s/" $origin -}}
+  {{- $orgID := printf "%s#organization" $site -}}
+  {{- $siteID := printf "%s#website" $site -}}
+  {{- $pageID := printf "%s#webpage" $canonical -}}
+  {{- $crumbID := printf "%s#breadcrumb" $canonical -}}
+  {{- $orgDescription := .Site.Meta.Description -}}
+  {{- if eq $lang "en" }}{{ $orgDescription = "Fractional CTO, interim CTO, and AI transformation for small and mid-sized companies." }}{{ end -}}
+  {{- $hero := index .Page.Meta "hero" -}}
+  {{- $headline := $title -}}
+  {{- if $hero }}{{ with index $hero "headline" }}{{ $headline = . }}{{ end }}{{ end -}}
+  {{- $faq := index .Page.Meta "faq" -}}
+  {{- $date := index .Page.Meta "date" -}}
+  {{- /* gomddoc's own breadcrumbs are labelled from the slugs ("Cto-Ere-Ia"), so
+         the trail is built here: home, the articles index for a dated page
+         (only articles carry a `date`), then the page's headline. */ -}}
+  {{- $homeURL := $site -}}
+  {{- $crumbHome := "Accueil" -}}
+  {{- if eq $lang "en" }}{{ $homeURL = printf "%sen-us/" $site }}{{ $crumbHome = "Home" }}{{ end -}}
   <script type="application/ld+json">
   {
     "@context": "https://schema.org",
-    "@type": "Organization",
-    "name": "Monolithic Lab",
-    "url": "https://monolithiclab.fr",
-    "description": "{{ .Site.Meta.Description }}",
-    "address": {
-      "@type": "PostalAddress",
-      "streetAddress": "14 rue de Cambrai",
-      "addressLocality": "Paris",
-      "postalCode": "75019",
-      "addressCountry": "FR"
-    },
-    "founder": {
-      "@type": "Person",
-      "name": "Nicolas Mussat"
-    }
+    "@graph": [
+      {
+        "@type": "ProfessionalService",
+        "@id": {{ $orgID }},
+        "name": "Monolithic Lab",
+        "legalName": "Monolithic Lab SARL",
+        "url": {{ $site }},
+        "email": "contact@monolithiclab.fr",
+        "description": {{ $orgDescription }},
+        "logo": {{ printf "%simages/favicon.svg" $site }},
+        "image": {{ printf "%simages/og-image.png" $site }},
+        "areaServed": { "@type": "Country", "name": "France" },
+        "address": {
+          "@type": "PostalAddress",
+          "streetAddress": "14 rue de Cambrai",
+          "addressLocality": "Paris",
+          "postalCode": "75019",
+          "addressCountry": "FR"
+        },
+        "founder": { "@type": "Person", "name": "Nicolas Mussat" }
+      },
+      {
+        "@type": "WebSite",
+        "@id": {{ $siteID }},
+        "url": {{ $site }},
+        "name": "Monolithic Lab",
+        "inLanguage": ["fr", "en"],
+        "publisher": { "@id": {{ $orgID }} }
+      }
+      {{- if $canonical }},
+      {
+        "@type": {{ if $faq }}"FAQPage"{{ else }}"WebPage"{{ end }},
+        "@id": {{ $pageID }},
+        "url": {{ $canonical }},
+        "name": {{ or $title .Site.Meta.Title }},
+        "description": {{ $description }},
+        "inLanguage": {{ $lang }},
+        "isPartOf": { "@id": {{ $siteID }} },
+        "about": { "@id": {{ $orgID }} }
+        {{- if not $isHome }},
+        "breadcrumb": { "@id": {{ $crumbID }} }
+        {{- end }}
+        {{- if $faq }},
+        "mainEntity": [
+          {{- range $i, $item := $faq }}{{ if $i }},{{ end }}
+          {
+            "@type": "Question",
+            "name": {{ index $item "q" }},
+            "acceptedAnswer": { "@type": "Answer", "text": {{ index $item "a" }} }
+          }
+          {{- end }}
+        ]
+        {{- end }}
+      }
+      {{- if not $isHome }},
+      {
+        "@type": "BreadcrumbList",
+        "@id": {{ $crumbID }},
+        "itemListElement": [
+          { "@type": "ListItem", "position": 1, "name": {{ $crumbHome }}, "item": {{ $homeURL }} },
+          {{- if $date }}
+          { "@type": "ListItem", "position": 2, "name": "Articles", "item": {{ printf "%sarticles/" $homeURL }} },
+          { "@type": "ListItem", "position": 3, "name": {{ $headline }}, "item": {{ $canonical }} }
+          {{- else }}
+          { "@type": "ListItem", "position": 2, "name": {{ $headline }}, "item": {{ $canonical }} }
+          {{- end }}
+        ]
+      }
+      {{- end }}
+      {{- if $date }},
+      {
+        "@type": "Article",
+        "@id": {{ printf "%s#article" $canonical }},
+        "headline": {{ $headline }},
+        "description": {{ $description }},
+        "datePublished": {{ $date }},
+        "inLanguage": {{ $lang }},
+        "image": {{ printf "%s%s" $origin $ogImage }},
+        "author": { "@id": {{ $orgID }} },
+        "publisher": { "@id": {{ $orgID }} },
+        "mainEntityOfPage": { "@id": {{ $pageID }} }
+      }
+      {{- end }}
+      {{- end }}
+    ]
   }
   </script>
-  {{ end }}
-  {{ end }}
 </head>
 {{ end }}

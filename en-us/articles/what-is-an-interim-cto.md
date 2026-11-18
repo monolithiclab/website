@@ -1,6 +1,7 @@
 ---
 title: "What Is an Interim CTO? Definition, Role, and Timeline — Monolithic Lab"
 description: "An interim (or transitional) CTO fills an empty technology executive seat for a set period. Definition, typical situations, how an engagement runs, how long it lasts, and how to choose one."
+date: "2026-09-23"
 lang: "en"
 alternate: "/articles/cto-de-transition-definition/"
 hero:

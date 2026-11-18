@@ -1,6 +1,7 @@
 ---
 title: "Pourquoi un CTO à temps partagé est pertinent pour une PME — Monolithic Lab"
 description: "Une PME a besoin des décisions d’un CTO, rarement de cinq jours de CTO par semaine. Coût d’un CTO à plein temps, coût de l’absence de CTO, et signes que le moment est venu."
+date: "2026-09-23"
 alternate: "/en-us/articles/fractional-cto-for-small-business/"
 hero:
   compact: true

@@ -1,6 +1,7 @@
 ---
 title: "The CTO in the AI Era: The End of the Pure Manager — Monolithic Lab"
 description: "With AI agents, a technology leader’s value no longer comes from coordination. A good CTO knows the craft hands-on and can drive agents to get work done."
+date: "2026-09-23"
 lang: "en"
 alternate: "/articles/cto-ere-ia/"
 hero:

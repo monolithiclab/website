@@ -1,6 +1,7 @@
 ---
 title: "Le logiciel qui s’améliore tout seul : ce qu’un dirigeant doit décider d’abord — Monolithic Lab"
 description: "Des agents IA savent lire les erreurs et les tickets, puis proposer un correctif. Dire ce que « mieux » signifie, prouver chaque changement et garder un responsable restent des décisions de direction."
+date: "2026-11-05"
 alternate: "/en-us/articles/self-improving-software/"
 hero:
   compact: true

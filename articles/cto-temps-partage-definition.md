@@ -1,6 +1,7 @@
 ---
 title: "Qu’est-ce qu’un CTO à temps partagé ? Définition, rôle et coût — Monolithic Lab"
 description: "Le CTO à temps partagé exerce le rôle complet de directeur technique quelques jours par semaine. Définition, missions, rythme, coût, limites, et différences avec un consultant ou un CTO salarié."
+date: "2026-09-23"
 alternate: "/en-us/articles/what-is-a-fractional-cto/"
 hero:
   compact: true

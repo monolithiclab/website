@@ -22,7 +22,7 @@ build: clean ## Production build (static site in public/)
 	@$(MAKE) prune
 
 .PHONY: lint
-lint: lint-tokens lint-fonts lint-private lint-links ## Check the AGENTS.md invariants (colours, fonts, private files, links)
+lint: lint-tokens lint-fonts lint-private lint-links lint-faq ## Check the AGENTS.md invariants (colours, fonts, private files, links, FAQ data)
 
 .PHONY: ci
 ci: lint build ## The gate: lint, then the production build (what the deploy workflow runs)
@@ -63,6 +63,19 @@ lint-links:
 	@if git grep -nE '(\]\(|href="|_url: "|alternate: ")/[A-Za-z0-9/_-]*[A-Za-z0-9_-][#")]' -- '*.md' '$(THEME)/*.js' '$(THEME)/*.tmpl' ':!AGENTS.md' ':!.github'; then \
 		echo "lint: internal link without a trailing slash (above) — write /contact/, not /contact"; exit 1; \
 	fi
+
+# The FAQPage JSON-LD is built from each FAQ page's `faq:` front matter, which
+# templates can read; the rendered body they cannot. `make faq` regenerates
+# that list from the page's questions, and lint fails when it has drifted.
+FAQ_PAGES := faq.md en-us/faq.md
+
+.PHONY: faq
+faq: ## Regenerate the faq: front matter (FAQPage JSON-LD) from the FAQ pages' questions
+	@python3 .github/scripts/faq.py $(FAQ_PAGES)
+
+.PHONY: lint-faq
+lint-faq:
+	@python3 .github/scripts/faq.py --check $(FAQ_PAGES)
 
 # gomddoc always generates a tag index; the site uses no tags, so it is an
 # empty page with an untranslated heading. prune drops it and its sitemap

@@ -1,6 +1,7 @@
 ---
 title: "Qu’est-ce qu’un CTO de transition ? Définition, missions et durée — Monolithic Lab"
 description: "Le CTO de transition occupe un poste de directeur technique vacant pour une durée limitée. Définition, situations types, déroulé d’une mission, durée et critères de choix."
+date: "2026-09-23"
 alternate: "/en-us/articles/what-is-an-interim-cto/"
 hero:
   compact: true

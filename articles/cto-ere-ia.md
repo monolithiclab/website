@@ -1,6 +1,7 @@
 ---
 title: "Le CTO à l’ère de l’IA : la fin du pur manager — Monolithic Lab"
 description: "Avec les agents IA, la valeur d’un dirigeant technique ne tient plus à la coordination. Un bon CTO comprend son métier sur le plan opérationnel et sait piloter des agents pour exécuter."
+date: "2026-09-23"
 alternate: "/en-us/articles/cto-in-the-ai-era/"
 hero:
   compact: true

@@ -1,6 +1,7 @@
 ---
 title: "Why a Fractional CTO Makes Sense for Small and Mid-Sized Companies — Monolithic Lab"
 description: "A small company needs a CTO’s decisions, rarely five days of CTO a week. What a full-time CTO costs, what having no CTO costs, and the signs it’s time."
+date: "2026-09-23"
 lang: "en"
 alternate: "/articles/cto-temps-partage-pme/"
 hero:

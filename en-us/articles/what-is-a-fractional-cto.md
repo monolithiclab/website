@@ -1,6 +1,7 @@
 ---
 title: "What Is a Fractional CTO? Definition, Role, and Cost — Monolithic Lab"
 description: "A fractional CTO holds the full technology executive role a few days a week. Definition, responsibilities, cadence, cost, limits, and how it differs from a consultant or an in-house CTO."
+date: "2026-09-23"
 lang: "en"
 alternate: "/articles/cto-temps-partage-definition/"
 hero:

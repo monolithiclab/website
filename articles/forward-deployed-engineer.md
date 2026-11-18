@@ -1,6 +1,7 @@
 ---
 title: "Qu’est-ce qu’un Forward Deployed Engineer ? Le modèle qui fait réussir l’IA en entreprise — Monolithic Lab"
 description: "Le Forward Deployed Engineer travaille au sein des équipes du client pour faire fonctionner l’IA en production. Définition, origine, différences avec le conseil, et ce que ce modèle change pour une PME."
+date: "2026-09-23"
 alternate: "/en-us/articles/forward-deployed-engineer/"
 hero:
   compact: true
